@@ -19,11 +19,9 @@ import org.junit.runner.RunWith;
 
 
         monochrome = true,
-
-
         features = "./src/test/resources/features",//PATH OF FEATURES FOLDER
         glue = {"stepdefinitions","hooks"},//PATH OF STEPDEFINITIONS FOLDER
-        dryRun = true,//dryRun = true : RUNS AND GENERATES ONLY MISSING STEP DEFS. dryRun = false: RUN NORMAL. THIS IS DEFAULT VALUE
+        dryRun = false,//dryRun = true : RUNS AND GENERATES ONLY MISSING STEP DEFS. dryRun = false: RUN NORMAL. THIS IS DEFAULT VALUE
         tags = "@dean_contact_message"
 )
 public class Runner {
