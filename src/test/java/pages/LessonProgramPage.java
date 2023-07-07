@@ -24,6 +24,9 @@ public class LessonProgramPage {
     @FindBy(xpath = "//input[@id='react-select-3-input']")
     public WebElement chooseLesson;
 
+    @FindBy(xpath = "//div[@class=' css-1wy0on6']")
+    public WebElement arrow;
+
 
 
     //Education term dropdown
@@ -50,5 +53,16 @@ public class LessonProgramPage {
     //success message
     @FindBy(xpath = "//div[text()='Created Lesson Program']")
     public WebElement successMessage;
+
+    //fail message for no day
+    @FindBy(xpath = "//button[@aria-label='close']")
+    public WebElement failMessageNoDay;
+
+    //fail message for no lesson
+    @FindBy(xpath = "//div[text()='lessons must not empty']")
+    public WebElement failMessageNoLesson;
+
+
+
 
 }

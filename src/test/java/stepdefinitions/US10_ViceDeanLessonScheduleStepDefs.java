@@ -6,6 +6,7 @@ import pages.HomePage;
 import pages.LessonProgramPage;
 import pages.Login;
 import pages.ViceDeanManagement;
+import utilities.JSUtils;
 import utilities.ReusableMethods;
 
 public class US10_ViceDeanLessonScheduleStepDefs {
@@ -49,12 +50,13 @@ public class US10_ViceDeanLessonScheduleStepDefs {
 
     }
     @Given("user selects a lesson from Choose Lessons")
-    public void user_selects_a_lesson_from_choose_lessons() {
+    public void user_selects_a_lesson_from_choose_lessons() throws InterruptedException {
 
 //        lessonProgramPage.chooseLesson.sendKeys("JavaScript");
 
+        JSUtils.clickWithTimeoutByJS(lessonProgramPage.arrow);
 
-        ReusableMethods.waitFor(2);
+        Thread.sleep(3000);
 
     }
     @Given("user selects a semester")
@@ -97,7 +99,7 @@ public class US10_ViceDeanLessonScheduleStepDefs {
     //NEGATIVE TEST CASE TC_002
     @Then("Verify that new lesson program can not be created")
     public void verifyThatNewLessonProgramCanNotBeCreated() {
-
+        ReusableMethods.verifyElementIsDisplayed(lessonProgramPage.failMessageNoDay);
     }
 
 
@@ -105,5 +107,6 @@ public class US10_ViceDeanLessonScheduleStepDefs {
     @Then("Verify that new lesson can't be created due to lesson section")
     public void verifyThatNewLessonCanTBeCreatedDueToLessonSection() {
 
+        ReusableMethods.verifyElementIsDisplayed(lessonProgramPage.failMessageNoLesson);
     }
 }
