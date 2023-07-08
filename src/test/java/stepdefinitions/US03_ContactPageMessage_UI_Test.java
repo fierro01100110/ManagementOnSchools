@@ -16,11 +16,12 @@ public class US03_ContactPageMessage_UI_Test {
     ContactHomePage contactHomePage =new ContactHomePage();
     ContactMessagePage contactMessagePage=new ContactMessagePage();
     public static String sendSuccesfull;
-    @Given("user goes to {string}")
-    public void userGoesTo(String url) {
 
-        Driver.getDriver().get(url);
-    }
+    // Scenario:TC_001 view the student info list as a teacher
+@Given("user goes to home page {string}")
+public void userGoesToHomePage(String url) {
+    Driver.getDriver().get(url);
+}
     @Given("user clicks Contact button")
     public void user_clicks_contact_button() {
         //managementHomePage.contactButton.click();

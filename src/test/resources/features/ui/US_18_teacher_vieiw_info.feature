@@ -5,10 +5,11 @@ Background:log in as a teacher
   Given user goes to "https://managementonschools.com"
   And user logs in as a teacher
 
+
   Scenario:TC_001 view the student info list as a teacher
     Then assert that user sees the student info list
 
-
+@upgrade
 Scenario Outline: TC_002 update student grade as a teacher
     When user clicks Edit button
   And user selects lesson
@@ -24,7 +25,7 @@ Examples: student info
   | Absentee | Midterm Exam | Final Exam | Info Note     |
   | 2        | 55           | 80         | good job well done|
 
-
+@delete
   Scenario: TC_003 delete student info list as a teacher
     When user clicks delete button
-    Then assert the success mesage in delete
+    Then assert the success message in delete

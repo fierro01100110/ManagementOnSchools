@@ -3,7 +3,7 @@ Feature: US03_User_can_send_a_message
 
   Scenario Outline: send a message from Contact page
 
-    Given user goes to "https://managementonschools.com"
+    Given user goes to home page "https://managementonschools.com"
     Given user clicks Contact button
     And user enters a name "<name>"
     And user enters an email "<email>"

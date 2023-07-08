@@ -19,6 +19,7 @@ public class UI_US08_StepDefs {
 
     @Given("user goes to {string}")
     public void user_goes_to(String url) {
+
         Driver.getDriver().get(url);
     }
     @When("user click on login")
