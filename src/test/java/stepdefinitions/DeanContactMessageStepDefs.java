@@ -1,5 +1,6 @@
 package stepdefinitions;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -14,6 +15,10 @@ import utilities.Driver;
 import utilities.JSUtils;
 import utilities.WaitUtils;
 
+import java.io.IOException;
+
+import static utilities.MediaUtils.takeScreenshotOfTheEntirePage;
+import static utilities.ReusableMethods.getElementsText;
 import static utilities.ReusableMethods.verifyElementIsDisplayed;
 
 public class DeanContactMessageStepDefs {
@@ -51,7 +56,7 @@ public class DeanContactMessageStepDefs {
         JSUtils.clickWithTimeoutByJS(deanManagement.contactGetAll);
     }
     @Then("verify dean is able see delete button")
-    public void verify_dean_is_able_see_delete_button() {
+    public void verify_dean_is_able_see_delete_button() throws IOException {
 
         SoftAssert softAssert = new SoftAssert();
         softAssert.assertTrue(deanContactMessage.deleteButton.isDisplayed(),"Fail there is no delete button");
@@ -81,4 +86,17 @@ public class DeanContactMessageStepDefs {
         verifyElementIsDisplayed(deanContactMessage.subject);
     }
 
+    @And("verify all the table one by one")
+    public void verifyAllTheTableOneByOne() throws IOException {
+        System.out.println(getElementsText(deanContactMessage.tableBody));
+
+    }
+
+    @Then("verify dean can delete messages")
+    public void verifyDeanCanDeleteMessages() throws IOException {
+        SoftAssert softAssert = new SoftAssert();
+        softAssert.assertTrue(deanContactMessage.deleteButton.isDisplayed(),"Fail dean can not delete messages");
+        softAssert.assertAll();
+
+    }
 }

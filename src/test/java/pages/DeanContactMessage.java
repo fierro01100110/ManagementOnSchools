@@ -5,6 +5,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
+import java.util.List;
+
 public class DeanContactMessage {
     public DeanContactMessage(){
         PageFactory.initElements(Driver.getDriver(),this);
@@ -34,6 +36,10 @@ public class DeanContactMessage {
     //Subject
     @FindBy(xpath = "//th[text()='Subject']")
     public WebElement subject;
+
+    //All the table
+    @FindBy(xpath = "//tbody")
+    public List<WebElement> tableBody;
 
 
 

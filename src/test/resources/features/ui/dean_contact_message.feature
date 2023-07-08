@@ -19,5 +19,11 @@
           And verify dean is able to see emails
           And verify dean is able to see sending dates
           And verify dean is able to see subject information
+          And verify all the table one by one
+
+          Scenario: TC_003 dean can delete messages
+            Given dean navigates to menu
+            When dean clicks to contact get all
+            Then verify dean can delete messages
 
 
