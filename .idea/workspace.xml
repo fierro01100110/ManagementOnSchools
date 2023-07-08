@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1b23fb8-97c1-4e32-b6d1-49bb90892d77" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/hooks/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hooks/Hooks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/runners/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/embedded1.png" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/embedded1.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,15 +32,10 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="workspaceImportEnabled" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
   <component name="ProjectId" id="2S4EDCuheBgTw04zWHx63FsNV1W" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
@@ -83,15 +82,15 @@
     </task>
     <servers />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/runners/Runner.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
