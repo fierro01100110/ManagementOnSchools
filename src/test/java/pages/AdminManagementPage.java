@@ -5,9 +5,9 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
-public class MOSAdminManagementPage {
+public class AdminManagementPage {
 
-    public MOSAdminManagementPage(){
+    public AdminManagementPage(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
 

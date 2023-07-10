@@ -1,5 +1,5 @@
 @US_05
-Feature: Admins should be able to see and delete Deans
+Feature: Admins should be able to see, update and delete Deans information
 
 @test_case_001
     Scenario: TC_001 Admin should be able to see Name, Gender, Phone Number, SSN and User Name information of Deans

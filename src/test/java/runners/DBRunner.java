@@ -21,8 +21,8 @@ import org.junit.runner.RunWith;
         monochrome = true,
         features = "./src/test/resources/features",//PATH OF FEATURES FOLDER
         glue = {"stepdefinitions"},//PATH OF STEPDEFINITIONS FOLDER
-        dryRun = false,//dryRun = true : RUNS AND GENERATES ONLY MISSING STEP DEFS. dryRun = false: RUN NORMAL. THIS IS DEFAULT VALUE
-        tags = ""
+        dryRun = true,//dryRun = true : RUNS AND GENERATES ONLY MISSING STEP DEFS. dryRun = false: RUN NORMAL. THIS IS DEFAULT VALUE
+        tags = "@database_test"
 )
 
 public class DBRunner {
