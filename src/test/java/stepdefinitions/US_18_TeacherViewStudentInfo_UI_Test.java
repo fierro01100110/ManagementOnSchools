@@ -29,11 +29,14 @@ public class US_18_TeacherViewStudentInfo_UI_Test {
 
     @When("user clicks Edit button")
     public void user_clicks_edit_button() {
-  teacherPage.editButton.click();
+
+        //teacherPage.editButton.click();
+        ReusableMethods.clickWithTimeOut(teacherPage.editButton,3);
     }
     @When("user selects lesson")
     public void user_selects_lesson() {
- ReusableMethods.selectByVisibleText(teacherPage.chooseLesson,"Java");
+
+        ReusableMethods.selectByVisibleText(teacherPage.chooseLesson,"Java");
     }
     @When("user select Education Term")
     public void user_select_education_term() {
@@ -62,7 +65,8 @@ ReusableMethods.sendKeysWithTimeout(teacherPage.absentee,absentee,3);
 ReusableMethods.clickWithTimeOut(teacherPage.submitUpgrade,3);
     }
     @Then("assert the success message in upgrade")
-    public void assert_the_success_message_in_upgrade() {
+    public void assert_the_success_message_in_upgrade() throws InterruptedException {
+        Thread.sleep(3000);
 ReusableMethods.verifyElementIsDisplayed(teacherPage.upgradeSuccessMessage);
 
     }
