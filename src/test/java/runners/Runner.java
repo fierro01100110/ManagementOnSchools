@@ -22,9 +22,9 @@ import org.junit.runner.RunWith;
         features = "./src/test/resources/features",//PATH OF FEATURES FOLDER
         glue = {"stepdefinitions","hooks"},//PATH OF STEPDEFINITIONS FOLDER
 
-        dryRun = false,//dryRun = true : RUNS AND GENERATES ONLY MISSING STEP DEFS. dryRun = false: RUN NORMAL. THIS IS DEFAULT VALUE
+        dryRun = true,//dryRun = true : RUNS AND GENERATES ONLY MISSING STEP DEFS. dryRun = false: RUN NORMAL. THIS IS DEFAULT VALUE
 
-        tags = "@US_05"
+        tags = "@Api"
 
 )
 public class Runner {

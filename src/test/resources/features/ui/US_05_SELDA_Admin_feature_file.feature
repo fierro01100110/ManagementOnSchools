@@ -28,7 +28,7 @@ Feature: Admins should be able to see, update and delete Deans information
           And click on the menu
           And click on Dean Management
           Then click on edit button
-          Then change surname
+          Then change birthplace
           Then Enter admin password
           Then click on submit button
           Then verify Deans information updated

@@ -30,11 +30,14 @@ public class MainMenuPage {
     @FindBy(xpath = "//th[.='Gender']")
     public WebElement gender;
 
+
     @FindBy(xpath = "//th[.='Phone Number']")
     public WebElement phoneNumber;
 
+
     @FindBy(xpath = "//th[.='Ssn']")
     public WebElement ssn;
+
 
     @FindBy(xpath = "//th[.='User Name']")
     public WebElement userName;

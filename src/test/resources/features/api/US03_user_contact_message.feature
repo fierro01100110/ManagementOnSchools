@@ -1,6 +1,6 @@
 @e2e @user_message_api_test
-Feature: Get the message created and validate
+Feature: Update the Dean information
 
-  Scenario: Send get request do assertion
-    Given send the request
-    Then validate the body
+  Scenario:update the Dean information by Admin
+    Given update the Dean information via birthplace "<birthplace>"
+    Then verify the birthplace is updated

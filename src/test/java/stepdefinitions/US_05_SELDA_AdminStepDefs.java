@@ -31,7 +31,7 @@ public class US_05_SELDA_AdminStepDefs {
     }
     @Then("add user name")
     public void add_user_name() {
-        homePage.userName.sendKeys("AdminProject");
+        homePage.userName.sendKeys("Project09Admin");
         WaitUtils.waitFor(1);
     }
     @Then("add password")
@@ -53,6 +53,7 @@ public class US_05_SELDA_AdminStepDefs {
     public void verify_admin_is_able_to_see_gender() {
         ReusableMethods.verifyElementIsDisplayed(mainMenuPage.gender);
     }
+
     @Then("verify admin is able to see phone number")
     public void verify_admin_is_able_to_see_phone_number() {
         ReusableMethods.verifyElementIsDisplayed(mainMenuPage.phoneNumber);
@@ -61,6 +62,7 @@ public class US_05_SELDA_AdminStepDefs {
     public void verify_admin_is_able_to_see_ssn() {
         ReusableMethods.verifyElementIsDisplayed(mainMenuPage.ssn);
     }
+
     @Then("verify admin is able to see user name information")
     public void verify_admin_is_able_to_see_user_name_information() throws IOException {
         ReusableMethods.verifyElementIsDisplayed(mainMenuPage.userName);
@@ -78,6 +80,7 @@ public class US_05_SELDA_AdminStepDefs {
     public void click_on_admin_management() {
         mainMenuPage.adminManagement.click();
     }
+
     @Then("click on delete button")
     public void click_on_delete_button() throws IOException {
         JSUtils.clickWithTimeoutByJS(adminManagementPage.deleteButton);
@@ -96,25 +99,30 @@ public class US_05_SELDA_AdminStepDefs {
         //mosDeanManagementPage.editButton.click();
         JSUtils.clickWithTimeoutByJS(deanManagement.editButton);
     }
-    @Then("change surname")
-    public void change_surname() {
-        deanManagement.surname.isSelected();
-        deanManagement.surname.clear();
-        WaitUtils.waitForVisibility(deanManagement.surname,3);
-        deanManagement.surname.sendKeys("Beyaz");
+
+    @Then("change birthplace")
+    public void changeBirthplace() {
+        JSUtils.clickWithTimeoutByJS(deanManagement.deanManagementEditBirthplace);
+        ReusableMethods.doubleClick(deanManagement.deanManagementEditBirthplace);
+        deanManagement.deanManagementEditBirthplace.sendKeys("Calgary");
+        WaitUtils.waitForVisibility(deanManagement.deanManagementEditBirthplace,3);
     }
+
     @Then("Enter admin password")
     public void enter_admin_password() {
         deanManagement.deanManagementEditPassword.sendKeys("12345678");
     }
+
     @Then("click on submit button")
     public void click_on_submit_button() throws IOException {
         deanManagement.deanManagementSubmitButton.click();
         MediaUtils.takeScreenshotOfTheEntirePage();
     }
+
     @Then("verify Deans information updated")
-    public void verify_deans_information_updated() throws IOException {
+    public void verify_deans_information_updated() {
         ReusableMethods.verifyElementIsDisplayed(deanManagement.deanUpdatedSuccessful);
-        MediaUtils.takeScreenshotOfTheEntirePage();
     }
+
+
 }
