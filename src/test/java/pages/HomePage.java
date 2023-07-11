@@ -19,4 +19,8 @@ public class HomePage {
     @FindBy(xpath = "//a[@href='/login']")
     public WebElement login;
 
+    //Register
+    @FindBy(xpath = "//a[@href='/register']")
+    public WebElement register;
+
 }
