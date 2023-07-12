@@ -7,6 +7,7 @@ import utilities.Driver;
 
 public class ViceDeanManagement {
 
+
     public ViceDeanManagement(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
@@ -19,6 +20,16 @@ public class ViceDeanManagement {
     @FindBy(xpath = "//a[text()='Lesson Management']")
     public WebElement lessonManagement;
 
+
+
+
+    //Main Menu Link
+    @FindBy(id = "offcanvasNavbarLabel-expand-lg")
+    public WebElement mainMenu;
+
+    //Teacher Management Link
+    @FindBy(xpath = "//a[text()='Teacher Management']")
+    public WebElement teacherManagement;
 
 
 }
