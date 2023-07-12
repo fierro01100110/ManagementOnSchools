@@ -20,6 +20,7 @@ Feature: Vice Dean creates lesson schedule
       Then user sees Created lesson program success message
 
 
+      @TC_002
       Scenario: TC_002 Vice Dean should not be able to create a lesson schedule without selecting a day
         Given user clicks on Menu
         And user selects Lesson Management from the menu
@@ -32,6 +33,7 @@ Feature: Vice Dean creates lesson schedule
         Then Verify that new lesson program can not be created
 
 
+        @TC_003
         Scenario: TC_003 Vice Dean should not be able to create a lesson schedule without selecting a lesson
           Given user clicks on Menu
           And user selects Lesson Management from the menu

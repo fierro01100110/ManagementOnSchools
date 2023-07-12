@@ -86,13 +86,16 @@ public class US10_ViceDeanLessonScheduleStepDefs {
     }
     @When("user clicks on Submit button")
     public void user_clicks_on_submit_button() {
-       ReusableMethods.clickWithTimeOut(ReusableMethods.waitForClickablility(lessonProgramPage.submitButton, 5),5);
+
+        ReusableMethods.waitFor(2);
+       ReusableMethods.clickWithTimeOut(lessonProgramPage.submitButton, 5);
 
     }
     @Then("user sees Created lesson program success message")
     public void user_sees_created_lesson_program_success_message() {
 
-        ReusableMethods.verifyElementIsDisplayed(lessonProgramPage.successMessage);
+
+        ReusableMethods.verifyElementIsDisplayed(ReusableMethods.waitForVisibility(lessonProgramPage.successMessage, 5));
     }
 
 
