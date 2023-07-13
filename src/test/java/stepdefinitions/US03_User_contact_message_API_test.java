@@ -3,8 +3,7 @@ package stepdefinitions;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.restassured.response.Response;
-
-import static base_url.Base_Url.spec;
+import static base_url.MOSBaseUrl.spec;
 import static io.restassured.RestAssured.given;
 
 public class US03_User_contact_message_API_test {

@@ -1,7 +1,10 @@
-@Api
-Feature: Admins should be able to see, update and delete Deans information
+@US_05_api_test
+Feature: Admins should be able to see, update and delete Deans information(ByAPI)
 
+  Scenario Outline:  Update Dean information by Admin
 
-  Scenario: Update Dean information by Admin
-    Given update the Dean information via birthplace "<birthplace>"
-    Then verify the birthplace is updated
+    Given send get request by "<ssn>"
+    Then body should contain name "<name>", gender "<gender>", phoneNumber "<phoneNumber>", ssn "<ssn>", username"<username>"
+    Examples:
+      | name     | gender | phoneNumber  | ssn         | username       |
+      | Terrence | MALE   | 431-799-8916 | 162-59-8030 | everette.olson |

@@ -96,6 +96,7 @@ public class DeanManagement {
     @FindBy(xpath = "//div[text()='Dean updated Successful']")
     public WebElement deanUpdatedSuccessful;
 
+    public static String DeanId;
 }
 
 
