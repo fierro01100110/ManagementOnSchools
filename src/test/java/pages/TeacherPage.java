@@ -18,11 +18,11 @@ public class TeacherPage {
     @FindBy(xpath = "(//button[@class='text-dark btn btn-outline-info'])[1]") //(//span//button[@type='button'])[1]
     public WebElement editButton;
     //For assertion
-    @FindBy(xpath = "(//select[@id='lessonId'])[1]")
+    @FindBy(xpath = "(//select[@id='lessonId'])[2]")
     public WebElement chooseLesson;
 
     //For assertion
-    @FindBy(xpath = "(//select[@id='educationTermId'])[1]")
+    @FindBy(xpath = "(//select[@id='educationTermId'])[2]")
     public WebElement educationTerm;
 
     @FindBy(xpath = "(//input[@placeholder='Absentee'])[2]")
@@ -41,7 +41,7 @@ public class TeacherPage {
     @FindBy(xpath = "(//button[text()='Submit'])[2]")
     public WebElement submitUpgrade;
 
-    @FindBy(xpath = "//div[@id='4']")
+    @FindBy(xpath = "(//div[@role='alert'])[1]") ////div[text()='Student Info updated Successfully']
     public WebElement upgradeSuccessMessage;
 
     @FindBy(xpath = "(//span//button[@type='button'])[1]")
