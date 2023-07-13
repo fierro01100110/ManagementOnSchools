@@ -18,11 +18,7 @@ import org.junit.runner.RunWith;
         },
 
 
-        monochrome = true,
-        tags = "@database_test",
-        features = "./src/test/resources/features",
-        glue = {"stepdefinitions"},
-        dryRun = false
+
 
 )
 
