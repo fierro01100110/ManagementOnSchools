@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        //        ADDING CONFIGURATIONS
+
         plugin = {
                 "pretty",
                 "html:target/default-cucumber-reports.html",
@@ -19,9 +19,9 @@ import org.junit.runner.RunWith;
 
 
         monochrome = true,
-        features = "./src/test/resources/features",//PATH OF FEATURES FOLDER
-        glue = {"stepdefinitions"},//PATH OF STEPDEFINITIONS FOLDER
-        dryRun = false,//dryRun = true : RUNS AND GENERATES ONLY MISSING STEP DEFS. dryRun = false: RUN NORMAL. THIS IS DEFAULT VALUE
+        features = "./src/test/resources/features",
+        glue = {"stepdefinitions"},
+        dryRun = false,
         tags = ""
 )
 
