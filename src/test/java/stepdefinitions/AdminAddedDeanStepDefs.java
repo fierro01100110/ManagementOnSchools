@@ -48,8 +48,7 @@ public class AdminAddedDeanStepDefs {
     @Given("admin clicks on menu button")
     public void admin_clicks_on_menu_button() {
 
-
-        JSUtils.clickWithTimeoutByJS(deanManagement.menuButton2);
+        JSUtils.clickWithTimeoutByJS(deanManagement.menu);
 
 
     }
@@ -118,7 +117,8 @@ public class AdminAddedDeanStepDefs {
 
     @Then("admin clicks on last page of dean list")
     public void admin_clicks_on_last_page_of_dean_list(){
-        deanManagement.lastPageDeanList.click();
+       // deanManagement.lastPageDeanList.click();
+        JSUtils.clickWithTimeoutByJS(deanManagement.lastPageDeanList);
     }
 
     @Then("admin sees dean Hakan on dean list")

@@ -71,7 +71,7 @@ public class DeanManagement {
     public WebElement deanSubmit;
 
     //Last page on Dean List
-    @FindBy(xpath="//span[@aria-hidden='true']")
+    @FindBy(xpath="//span[text()='Last']")////span[@aria-hidden='true']
     public WebElement lastPageDeanList;
 
     //Dean Hakan on Dean List
