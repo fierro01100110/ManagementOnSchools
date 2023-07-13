@@ -33,13 +33,13 @@ public class US03_ApiStepDefs {
 //      assertEquals(200,response.statusCode());
 //      assertEquals(name,actualData.getName());
 //
-//        JsonPath jsonPath = response.jsonPath();
-//        String actName = jsonPath.getList("content.findAll{it.email}.name").get(0).toString();
-//        System.out.println("********");
-//        System.out.println("actual name is "+actName);
-//        System.out.println("********");
-//        assertEquals(name,actName);
-//
+        JsonPath jsonPath = response.jsonPath();
+        String actName = jsonPath.getList("content.findAll{it.email}.name").get(0).toString();
+        System.out.println("********");
+        System.out.println("actual name is "+actName);
+        System.out.println("********");
+        assertEquals(name,actName);
+
 
 
 
