@@ -1,27 +1,19 @@
 package stepdefinitions;
 
-import io.cucumber.java.en.And;
+import com.github.javafaker.Faker;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.asserts.SoftAssert;
-import pages.DeanContactMessage;
 import pages.DeanManagement;
 import pages.HomePage;
 import pages.Login;
-import utilities.ConfigReader;
-import utilities.Driver;
-import utilities.JSUtils;
-import utilities.WaitUtils;
-
-import java.time.Duration;
+import utilities.*;
 
 
 import static utilities.ReusableMethods.*;
 
-public class AdminAddedDeanStepDefs {
+public class US04_AdminAddedDeanStepDefs {
     HomePage homePage = new HomePage();
     Login login = new Login();
     DeanManagement deanManagement = new DeanManagement();
@@ -38,8 +30,8 @@ public class AdminAddedDeanStepDefs {
 
         homePage.login.click();
         WaitUtils.waitFor(2);
-        login.username.sendKeys(ConfigReader.getProperty("admin_username"));
-        login.password.sendKeys(ConfigReader.getProperty("admin_password"));
+        login.username.sendKeys(ConfigReader.getProperty("adminCreate_username"));
+        login.password.sendKeys(ConfigReader.getProperty("adminCreate_password"));
         login.login.click();
 
 
@@ -63,67 +55,75 @@ public class AdminAddedDeanStepDefs {
         SoftAssert softAssert = new SoftAssert();
         softAssert.assertTrue(deanManagement.deanSubmit.isDisplayed(),"Fail there is no submit button");
         softAssert.assertAll();
+        WaitUtils.waitFor(1);
+
     }
 
     @Then("admin enters dean name")
     public void admin_enters_dean_name() {
         deanManagement.deanName.sendKeys("Hakan");
+        WaitUtils.waitFor(1);
     }
 
     @Then("admin enters dean surname")
     public void admin_enters_dean_surname(){
         deanManagement.deanSurname.sendKeys("Mollaoglu");
+        WaitUtils.waitFor(1);
     }
 
     @Then("admin enters dean birthplace")
     public void admin_enters_dean_birthplace() {
-        deanManagement.deanBirthday.sendKeys("London");
+        deanManagement.deanBirthPlace.sendKeys("Toronto");
+        WaitUtils.waitFor(1);
     }
 
     @Then("admin clicks on gender male")
     public void admin_clicks_on_gender_male() {
         deanManagement.deanGenderMale.click();
+        WaitUtils.waitFor(1);
     }
 
     @Then("admin enters dean birthday")
     public void admin_enters_dean_birthday() {
-        deanManagement.deanBirthday.sendKeys("1980-10-10");
+        deanManagement.deanBirthday.sendKeys("001970-10-10");
+        WaitUtils.waitFor(1);
     }
 
     @Then("admin enters dean phone number")
     public void admin_enters_dean_phone_number() {
-        deanManagement.deanPhoneNumber.sendKeys("633-999-0055");
+        deanManagement.deanPhoneNumber.sendKeys("333-999-2222");
+        WaitUtils.waitFor(1);
     }
 
     @Then("admin enters dean ssn")
     public void admin_enters_dean_ssn(){
-        deanManagement.deanSsn.sendKeys("323-55-6743");
+        deanManagement.deanSsn.sendKeys("333-44-6666");
+        WaitUtils.waitFor(1);
     }
 
     @Then("admin enters dean username")
     public void admin_enters_dean_username(){
-        deanManagement.deanUsername.sendKeys("hakanmollaoglu");
+        deanManagement.deanUsername.sendKeys("hakanmollaoglu4");
+        WaitUtils.waitFor(1);
     }
 
     @Then("admin enters dean password")
     public void admin_enters_dean_password(){
         deanManagement.deanPassword.sendKeys("Deanisthedean2023");
+        WaitUtils.waitFor(1);
     }
 
     @Then("admin clicks on submit button")
     public void admin_clicks_on_submit_button(){
         deanManagement.deanSubmit.click();
+        WaitUtils.waitFor(1);
     }
 
-    @Then("admin clicks on last page of dean list")
-    public void admin_clicks_on_last_page_of_dean_list(){
-       // deanManagement.lastPageDeanList.click();
-        JSUtils.clickWithTimeoutByJS(deanManagement.lastPageDeanList);
-    }
 
-    @Then("admin sees dean Hakan on dean list")
-    public void admin_sees_dean_hakan_on_dean_list(){
-        verifyElementIsDisplayed(deanManagement.deanHakanOnDeanList);
+    @Then("admin sees dean saved")
+    public void admin_sees_dean_saved(){
+        ReusableMethods.waitForVisibility(deanManagement.deanSaved,2000);
+        verifyElementIsDisplayed(deanManagement.deanSaved);
     }
 
 
