@@ -7,7 +7,7 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="eead64f9-710c-42c0-b273-facbb3649d2c">
-      <console name="Connection" type="STANDARD" schema="school_management" session="Main"><![CDATA[SELECT * from Main Menu;]]></console>
+      <console name="Connection" type="STANDARD" schema="school_management" session="Main"><![CDATA[select * from main_menu;]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
@@ -18,6 +18,14 @@
   </component>
   <component name="DBNavigator.Project.ExecutionManager">
     <retain-sticky-names value="false" />
+  </component>
+  <component name="DBNavigator.Project.MethodExecutionManager">
+    <method-browser />
+    <execution-history>
+      <group-entries value="true" />
+      <execution-inputs />
+    </execution-history>
+    <argument-values-cache />
   </component>
   <component name="DBNavigator.Project.ObjectQuickFilterManager">
     <last-used-operator value="EQUAL" />
