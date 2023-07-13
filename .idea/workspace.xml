@@ -4,23 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1b23fb8-97c1-4e32-b6d1-49bb90892d77" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/LessonManagement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/MainMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/Page.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/TeacherManagement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/ViceDeanManagement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/US13_CreateTeacherStepDefs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/ViceDeanLessonProgramStepDefs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/ui/US13_create_teacher.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/ui/vicedean_lessonprogram.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runners/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/Runner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/api_stepdefinitions/US03_ApiStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/api_stepdefinitions/US03_ApiStepDefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/embedded1.png" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/embedded1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/embedded2.png" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/embedded2.png" afterDir="false" />
-    </list>
+    <list default="true" id="e1b23fb8-97c1-4e32-b6d1-49bb90892d77" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -121,7 +105,6 @@
       <option name="SUGGESTED_NAME" value="Scenario: TC_001 dean can see delete button" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
-
         <pattern>
           <option name="PATTERN" value="io.cucumber.core.cli.*" />
           <option name="ENABLED" value="true" />
