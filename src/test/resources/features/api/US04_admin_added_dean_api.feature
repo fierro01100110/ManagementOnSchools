@@ -6,7 +6,8 @@ Feature: Admin added dean api
     Then Body contains username "<username>", name "<name>", surname "<surname>",birthday "<birthday>", ssn "<ssn>", birth_place "<birth_place>", phone_number "<phone_number>", gender "<gender>"
 
     Examples:
-      | username | name | surname | birthday | ssn | birth_place | phone_number | gender |
+      | username        | name | surname | birthday | ssn | birth_place | phone_number | gender |
+      | hakanmollaoglu4 | Hakan | "Mollaoglu | 1970-10-10 | 333-44-6666 | oronto | 333-999-2222 | MALE |
 
 
 
