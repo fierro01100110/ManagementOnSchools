@@ -1,0 +1,649 @@
+Index: src/test/java/utilities/ManagementOnSchoolsAuth.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/utilities/ManagementOnSchoolsAuth.java b/src/test/java/utilities/ManagementOnSchoolsAuth.java
+new file mode 100644
+--- /dev/null	(date 1689280891769)
++++ b/src/test/java/utilities/ManagementOnSchoolsAuth.java	(date 1689280891769)
+@@ -0,0 +1,20 @@
++package utilities;
++
++import io.restassured.http.ContentType;
++import io.restassured.response.Response;
++
++import static io.restassured.RestAssured.given;
++
++public class ManagementOnSchoolsAuth {
++
++    public static String generateToken(){
++
++        String payload = "{ \"password\": \"12345678\", \"username\": \"Project09Admin\"}";
++        Response response =  given()
++                .contentType(ContentType.JSON)
++                .body(payload)
++                .post("https://managementonschools.com/app/auth/login");
++        return response.jsonPath().getString("token");
++    }
++
++}
+Index: src/test/java/utilities/ContactMessagePojo.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/utilities/ContactMessagePojo.java b/src/test/java/utilities/ContactMessagePojo.java
+new file mode 100644
+--- /dev/null	(date 1689280891768)
++++ b/src/test/java/utilities/ContactMessagePojo.java	(date 1689280891768)
+@@ -0,0 +1,64 @@
++package utilities;
++
++import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
++
++@JsonIgnoreProperties(ignoreUnknown = true)
++public class ContactMessagePojo {
++    private String name;
++    private String subject;
++    private String message;
++    private String email;
++
++    public ContactMessagePojo(){
++
++    }
++
++    public ContactMessagePojo(String name, String subject, String message, String email) {
++        this.name = name;
++        this.subject = subject;
++        this.message = message;
++        this.email = email;
++    }
++
++    public String getName() {
++        return name;
++    }
++
++    public void setName(String name) {
++        this.name = name;
++    }
++
++    public String getSubject() {
++        return subject;
++    }
++
++    public void setSubject(String subject) {
++        this.subject = subject;
++    }
++
++    public String getMessage() {
++        return message;
++    }
++
++    public void setMessage(String message) {
++        this.message = message;
++    }
++
++    public String getEmail() {
++        return email;
++    }
++
++    public void setEmail(String email) {
++        this.email = email;
++    }
++
++    @Override
++    public String toString() {
++        return "ContactMessagePojo{" +
++                "name='" + name + '\'' +
++                ", subject='" + subject + '\'' +
++                ", message='" + message + '\'' +
++                ", email='" + email + '\'' +
++                '}';
++    }
++}
+Index: src/test/resources/features/api/US03_user_contact_message.feature
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>@e2e @user_message_api_test\r\nFeature: Get the message created and validate\r\n\r\n  Scenario: Send get request do assertion\r\n    Given send the request\r\n    Then validate the body
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/resources/features/api/US03_user_contact_message.feature b/src/test/resources/features/api/US03_user_contact_message.feature
+--- a/src/test/resources/features/api/US03_user_contact_message.feature	(revision cd412219050d32d9db489af352aa26f04ad1a870)
++++ b/src/test/resources/features/api/US03_user_contact_message.feature	(date 1689280891770)
+@@ -1,6 +1,10 @@
+-@e2e @user_message_api_test
+-Feature: Get the message created and validate
++@e2e @us02_user_message_api_test
++Feature: Users should be able to send messages from the page(Contact)
+ 
+-  Scenario: Send get request do assertion
+-    Given send the request
+-    Then validate the body
+\ No newline at end of file
++  Scenario Outline: US01_GetUserMessageByEmail
++
++    Given send get request by "<email>"
++    Then body should contain name "<name>", subject "<subject>", message "<message>",email "<email>"
++    Examples:
++      | email                    | name   | subject  | message                                              |
++      | andreytest0102@gmail.com | Andrey | greeting | hi mr dean i would like to know my final exam result |
+Index: src/test/java/stepdefinitions/database/US18_DB_testing.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package stepdefinitions.database;\r\n\r\nimport io.cucumber.java.en.Given;\r\nimport io.cucumber.java.en.Then;\r\n\r\nimport java.sql.Connection;\r\nimport java.sql.ResultSet;\r\nimport java.sql.SQLException;\r\n\r\nimport static org.junit.Assert.assertEquals;\r\nimport static org.junit.Assert.assertFalse;\r\nimport static utilities.DataBaseUtils.getResultSet;\r\n\r\npublic class US18_DB_testing {\r\n    Connection connection;\r\n    ResultSet resultSet;\r\n    @Given(\"get student info via id {string}\")\r\n    public void get_student_info_via_id(String id) {\r\n\r\n        String sqlQuery = \"SELECT * FROM guest_user WHERE id ='\" + id + \"'\";\r\n\r\n        resultSet = getResultSet(sqlQuery);\r\n\r\n\r\n    }\r\n    @Then(\"body contains lesson_name {string}, absentee {string}, midterm {string}, final {string}, note {string}, info_note {string}, average {string}\")\r\n    public void body_contains_lesson_name_absentee_midterm_final_note_info_note_average(String lesson_name, String absentee, String midterm, String finalExam, String note, String info_note, String average) throws SQLException {\r\n\r\n        resultSet.next();  //very importsny  to move the pointer to the necxt record from the header\r\n        System.out.println(resultSet.getString(\"lesson_name\"));//2023-07-01\r\n        String actLesson_name=resultSet.getString(\"lesson_name\");\r\n        String actAbsentee=resultSet.getString(\"absentee\");\r\n        String actMidterm=resultSet.getString(\"midterm\");\r\n        String actFinalExam=resultSet.getString(\"finalExam\");\r\n        String actNote=resultSet.getString(\"note\");\r\n        String actInfo_note=resultSet.getString(\"info_note\");\r\n        String actAverage=resultSet.getString(\"average\");\r\n\r\n        assertEquals(lesson_name, actLesson_name);\r\n        assertEquals(absentee, actAbsentee);\r\n        assertEquals(midterm, actMidterm);\r\n        assertEquals(finalExam, actFinalExam);\r\n        //    assertEquals(phone_number, actPhone_number);\r\n        assertEquals(note, actNote);\r\n        assertEquals(info_note, actInfo_note);\r\n        assertEquals(average, actAverage);\r\n\r\n    }\r\n\r\n    @Given(\"get guest user via username {string}\")\r\n    public void get_guest_user_via_username(String username) throws SQLException {\r\n        assertFalse(resultSet.next());\r\n\r\n    }\r\n    @Then(\"body should be empty\")\r\n    public void body_should_be_empty() {\r\n\r\n\r\n    }\r\n\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/stepdefinitions/database/US18_DB_testing.java b/src/test/java/stepdefinitions/database/US18_DB_testing.java
+--- a/src/test/java/stepdefinitions/database/US18_DB_testing.java	(revision cd412219050d32d9db489af352aa26f04ad1a870)
++++ b/src/test/java/stepdefinitions/database/US18_DB_testing.java	(date 1689280891768)
+@@ -47,14 +47,16 @@
+ 
+     }
+ 
+-    @Given("get guest user via username {string}")
+-    public void get_guest_user_via_username(String username) throws SQLException {
+-        assertFalse(resultSet.next());
++    @Given("get guest user via id {string}")
++    public void get_guest_user_via_id(String id)  {
++        String sql = "SELECT * FROM guest_user WHERE id ='2'";
++        resultSet = getResultSet(sql);
+ 
+     }
+     @Then("body should be empty")
+-    public void body_should_be_empty() {
++    public void body_should_be_empty() throws SQLException {
+ 
++        assertFalse(resultSet.next());
+ 
+     }
+ 
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"162d383b-7bed-4747-a0b4-1b0bde01944f\" name=\"Changes\" comment=\"\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/dbnavigator.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/dbnavigator.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/pages/Page.java\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/runners/DBRunner.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/test/java/runners/DBRunner.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/stepdefinitions/database/US13_DatabaseStepDefs.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/test/java/stepdefinitions/database/US13_DatabaseStepDefs.java\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2STUIrRWQF3RA5jMSybnCAaIkDr\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"autoscrollFromSource\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,\r\n    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,\r\n    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,\r\n    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RunManager\">\r\n    <configuration name=\"DBRunner\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"ManagementOnSchools\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"runners.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"runners\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"runners.DBRunner\" />\r\n      <option name=\"TEST_OBJECT\" value=\"class\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"JUnit.DBRunner\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"162d383b-7bed-4747-a0b4-1b0bde01944f\" name=\"Changes\" comment=\"\" />\r\n      <created>1689169988022</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1689169988022</updated>\r\n    </task>\r\n    <servers />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision cd412219050d32d9db489af352aa26f04ad1a870)
++++ b/.idea/workspace.xml	(date 1689282058196)
+@@ -4,6 +4,10 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
++    <list default="true" id="e1b23fb8-97c1-4e32-b6d1-49bb90892d77" name="Changes" comment="">
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/java/runners/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/Runner.java" afterDir="false" />
++    </list>
+     <list default="true" id="162d383b-7bed-4747-a0b4-1b0bde01944f" name="Changes" comment="">
+       <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+@@ -24,13 +28,20 @@
+     </option>
+   </component>
+   <component name="Git.Settings">
++    <option name="RECENT_BRANCH_BY_REPOSITORY">
++      <map>
++        <entry key="$PROJECT_DIR$" value="andrey" />
++      </map>
++    </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
+   <component name="MarkdownSettingsMigration">
+     <option name="stateVersion" value="1" />
+   </component>
+   <component name="ProjectId" id="2STUIrRWQF3RA5jMSybnCAaIkDr" />
+-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
++  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
++    <ConfirmationsSetting value="1" id="Add" />
++  </component>
+   <component name="ProjectViewState">
+     <option name="autoscrollFromSource" value="true" />
+     <option name="showLibraryContents" value="true" />
+@@ -39,12 +50,133 @@
+   &quot;keyToString&quot;: {
+     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++
++    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
++    &quot;git-widget-placeholder&quot;: &quot;hakan&quot;,
++    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
++    &quot;last_opened_file_path&quot;: &quot;C:/Users/mdurm/OneDrive/Desktop&quot;,
++
++
+     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
++    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
++ }
+     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+   }
+ }</component>
++  <component name="RecentsManager">
++    <key name="CopyClassDialog.RECENTS_KEY">
++      <recent name="utilities" />
++      <recent name="pages" />
++    </key>
++  </component>
++  <component name="RunManager" selected="JUnit.Runner">
++    <configuration name="Scenario: TC_001 admin can add dean" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
++      <option name="CUCUMBER_CORE_VERSION" value="5" />
++      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/ui/admin_added_dean.feature" />
++      <option name="GLUE" value="stepdefinitions hooks" />
++      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
++      <module name="ManagementOnSchools" />
++      <option name="NAME_FILTER" value="^TC_001 admin can add dean$" />
++      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC_001 admin can add dean$&quot;" />
++      <option name="SUGGESTED_NAME" value="Scenario: TC_001 admin can add dean" />
++      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
++      <extension name="coverage">
++        <pattern>
++          <option name="PATTERN" value="io.cucumber.core.cli.*" />
++          <option name="ENABLED" value="true" />
++        </pattern>
++      </extension>
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="Scenario: TC_001 admin can can add dean" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
++      <option name="CUCUMBER_CORE_VERSION" value="5" />
++      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/ui/admin_added_dean.feature" />
++      <option name="GLUE" value="stepdefinitions hooks" />
++      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
++      <module name="ManagementOnSchools" />
++      <option name="NAME_FILTER" value="^TC_001 admin can can add dean$" />
++      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC_001 admin can can add dean$&quot;" />
++      <option name="SUGGESTED_NAME" value="Scenario: TC_001 admin can can add dean" />
++      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
++      <extension name="coverage">
++        <pattern>
++          <option name="PATTERN" value="io.cucumber.core.cli.*" />
++          <option name="ENABLED" value="true" />
++        </pattern>
++      </extension>
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="Scenario: TC_001 dean can see delete button" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
++      <option name="CUCUMBER_CORE_VERSION" value="5" />
++      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/ui/dean_contact_message.feature" />
++      <option name="GLUE" value="stepdefinitions hooks" />
++      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
++      <module name="ManagementOnSchools" />
++      <option name="NAME_FILTER" value="^TC_001 dean can see delete button$" />
++      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC_001 dean can see delete button$&quot;" />
++      <option name="SUGGESTED_NAME" value="Scenario: TC_001 dean can see delete button" />
++      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
++      <extension name="coverage">
++        <pattern>
++          <option name="PATTERN" value="io.cucumber.core.cli.*" />
++          <option name="ENABLED" value="true" />
++        </pattern>
++      </extension>
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="Scenario: TC_002 update student grade as a teacher" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
++      <option name="CUCUMBER_CORE_VERSION" value="5" />
++      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/ui/US_18_teacher_vieiw_info.feature" />
++      <option name="GLUE" value="stepdefinitions hooks" />
++      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
++      <module name="ManagementOnSchools" />
++      <option name="NAME_FILTER" value="^TC_002 update student grade as a teacher$" />
++      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC_002 update student grade as a teacher$&quot;" />
++      <option name="SUGGESTED_NAME" value="Scenario: TC_002 update student grade as a teacher" />
++      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
++      <extension name="coverage">
++        <pattern>
++          <option name="PATTERN" value="io.cucumber.core.cli.*" />
++          <option name="ENABLED" value="true" />
++        </pattern>
++      </extension>
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="Runner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
++      <module name="ManagementOnSchools" />
++      <extension name="coverage">
++        <pattern>
++          <option name="PATTERN" value="runners.*" />
++          <option name="ENABLED" value="true" />
++        </pattern>
++      </extension>
++      <option name="PACKAGE_NAME" value="runners" />
++      <option name="MAIN_CLASS_NAME" value="runners.Runner" />
++      <option name="TEST_OBJECT" value="class" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <recent_temporary>
++      <list>
++        <item itemvalue="JUnit.Runner" />
++        <item itemvalue="Cucumber Java.Scenario: TC_002 update student grade as a teacher" />
++        <item itemvalue="Cucumber Java.Scenario: TC_001 dean can see delete button" />
++        <item itemvalue="Cucumber Java.Scenario: TC_001 admin can can add dean" />
++        <item itemvalue="Cucumber Java.Scenario: TC_001 admin can add dean" />
++      </list>
++    </recent_temporary>
++  </component>
+   <component name="RunManager">
+     <configuration name="DBRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+       <module name="ManagementOnSchools" />
+@@ -70,7 +202,7 @@
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+     <task active="true" id="Default" summary="Default task">
+-      <changelist id="162d383b-7bed-4747-a0b4-1b0bde01944f" name="Changes" comment="" />
++      <changelist id="e1b23fb8-97c1-4e32-b6d1-49bb90892d77" name="Changes" comment="" />
+       <created>1689169988022</created>
+       <option name="number" value="Default" />
+       <option name="presentableId" value="Default" />
+@@ -78,4 +210,15 @@
+     </task>
+     <servers />
+   </component>
++  <component name="Vcs.Log.Tabs.Properties">
++    <option name="TAB_STATES">
++      <map>
++        <entry key="MAIN">
++          <value>
++            <State />
++          </value>
++        </entry>
++      </map>
++    </option>
++  </component>
+ </project>
+\ No newline at end of file
+Index: src/test/java/stepdefinitions/api_stepdefinitions/US03_ApiStepDefs.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/stepdefinitions/api_stepdefinitions/US03_ApiStepDefs.java b/src/test/java/stepdefinitions/api_stepdefinitions/US03_ApiStepDefs.java
+new file mode 100644
+--- /dev/null	(date 1689280891767)
++++ b/src/test/java/stepdefinitions/api_stepdefinitions/US03_ApiStepDefs.java	(date 1689280891767)
+@@ -0,0 +1,49 @@
++package stepdefinitions.api_stepdefinitions;
++
++import io.cucumber.java.en.Given;
++import io.cucumber.java.en.Then;
++import io.restassured.path.json.JsonPath;
++import io.restassured.response.Response;
++import org.codehaus.groovy.transform.SourceURIASTTransformation;
++import utilities.ContactMessagePojo;
++
++import static base_url.Base_Url.spec;
++import static io.restassured.RestAssured.given;
++import static org.junit.Assert.assertEquals;
++
++public class US03_ApiStepDefs {
++    Response response;
++    @Given("send get request by {string}")
++    public void send_get_request_by(String string) {
++        //set the url
++//https://managementonschools.com/app/contactMessages/searchByEmail?email=andreytest0102%40gmail.com&size=1000
++        spec.pathParams("first","contactMessages","second","searchByEmail").queryParam("email","andreytest0102@gmail.com");
++
++        //Set the expected data
++        //my scenario outline datas stands for my expectating data
++
++        //send the get request and get the response
++       response=given(spec).get("{first}/{second}");
++       response.prettyPrint();
++
++    }
++    @Then("body should contain name {string}, subject {string}, message {string},email {string}")
++    public void body_should_contain_name_subject_message(String name, String subject, String massage, String email) {
++//      ContactMessagePojo actualData= response.as(ContactMessagePojo.class);
++//      assertEquals(200,response.statusCode());
++//      assertEquals(name,actualData.getName());
++//
++        JsonPath jsonPath = response.jsonPath();
++        String actName = jsonPath.getList("content.findAll{it.email}.name").get(0).toString();
++        System.out.println("********");
++        System.out.println("actual name is "+actName);
++        System.out.println("********");
++        assertEquals(name,actName);
++
++
++
++
++
++
++    }
++}
+Index: src/test/java/stepdefinitions/US_18_TeacherViewStudentInfo_UI_Test.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package stepdefinitions;\r\n\r\nimport io.cucumber.java.en.Given;\r\nimport io.cucumber.java.en.Then;\r\nimport io.cucumber.java.en.When;\r\nimport pages.HomePage;\r\nimport pages.Login;\r\nimport pages.TeacherPage;\r\nimport utilities.ConfigReader;\r\nimport utilities.ReusableMethods;\r\n\r\npublic class US_18_TeacherViewStudentInfo_UI_Test {\r\n    HomePage homePage=new HomePage();\r\n    Login login =new Login();\r\n    TeacherPage teacherPage=new TeacherPage();\r\n    @Given(\"user logs in as a teacher\")\r\n    public void user_logs_in_as_a_teacher() {\r\n        homePage.login.click();\r\n   login.username.sendKeys(ConfigReader.getProperty(\"andrey_teacher_name\"));\r\n   login.password.sendKeys(ConfigReader.getProperty(\"andrey_teacher_password\"));\r\n   login.login.click();\r\n    }\r\n    @Then(\"assert that user sees the student info list\")\r\n    public void assert_that_user_sees_the_student_info_list() {\r\n        ReusableMethods.verifyElementIsDisplayed(teacherPage.studentInfoList);\r\n\r\n    }\r\n    //Scenario 2 = Scenario Outline: TC_002 update student grade as a teacher\r\n\r\n    @When(\"user clicks Edit button\")\r\n    public void user_clicks_edit_button() {\r\n\r\n        //teacherPage.editButton.click();\r\n        ReusableMethods.clickWithTimeOut(teacherPage.editButton,3);\r\n    }\r\n    @When(\"user selects lesson\")\r\n    public void user_selects_lesson() {\r\n\r\n        ReusableMethods.selectByVisibleText(teacherPage.chooseLesson,\"Java\");\r\n    }\r\n    @When(\"user select Education Term\")\r\n    public void user_select_education_term() {\r\n        ReusableMethods.selectByVisibleText(teacherPage.educationTerm,\"SPRING_SEMESTER\");\r\n\r\n    }\r\n    @When(\"user upgrades Absentee {string}\")\r\n    public void user_upgrades_absentee(String absentee) {\r\nReusableMethods.sendKeysWithTimeout(teacherPage.absentee,absentee,3);\r\n\r\n    }\r\n    @When(\"user upgrades Midterm Exam {string}\")\r\n    public void user_upgrades_midterm_exam(String midtermExam) {\r\n        ReusableMethods.sendKeysWithTimeout(teacherPage.midtermExam,midtermExam,3);\r\n    }\r\n    @When(\"user upgrades Final Exam {string}\")\r\n    public void user_upgrades_final_exam(String finalExam) {\r\n        ReusableMethods.sendKeysWithTimeout(teacherPage.finalExam,finalExam,3);\r\n    }\r\n    @When(\"user upgrades Info Note {string}\")\r\n    public void user_upgrades_info_note(String infoNote) {\r\n;ReusableMethods.sendKeysWithTimeout(teacherPage.midtermExam,infoNote,3);\r\n    }\r\n    @When(\"user clicks Submit button\")\r\n    public void user_clicks_submit_button() {\r\nReusableMethods.clickWithTimeOut(teacherPage.submitUpgrade,3);\r\n    }\r\n    @Then(\"assert the success message in upgrade\")\r\n    public void assert_the_success_message_in_upgrade() throws InterruptedException {\r\n        Thread.sleep(3000);\r\nReusableMethods.verifyElementIsDisplayed(teacherPage.upgradeSuccessMessage);\r\n\r\n    }\r\n\r\n    //Scenario 3 =   Scenario: TC_003 delete student info list as a teacher\r\n\r\n\r\n    @When(\"user clicks delete button\")\r\n    public void user_clicks_delete_button() {\r\nReusableMethods.clickWithTimeOut(teacherPage.deleteStudentInfo,3);\r\n\r\n    }\r\n    @Then(\"assert the success message in delete\")\r\n    public void assert_the_success_message_in_delete() {\r\n//ReusableMethods.verifyElementIsDisplayed(teacherPage.);\r\n    }\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/stepdefinitions/US_18_TeacherViewStudentInfo_UI_Test.java b/src/test/java/stepdefinitions/US_18_TeacherViewStudentInfo_UI_Test.java
+--- a/src/test/java/stepdefinitions/US_18_TeacherViewStudentInfo_UI_Test.java	(revision cd412219050d32d9db489af352aa26f04ad1a870)
++++ b/src/test/java/stepdefinitions/US_18_TeacherViewStudentInfo_UI_Test.java	(date 1689280891766)
+@@ -66,9 +66,9 @@
+     }
+     @Then("assert the success message in upgrade")
+     public void assert_the_success_message_in_upgrade() throws InterruptedException {
+-        Thread.sleep(3000);
+-ReusableMethods.verifyElementIsDisplayed(teacherPage.upgradeSuccessMessage);
++      ReusableMethods.verifyElementIsDisplayed(teacherPage.upgradeSuccessMessage);
+ 
++
+     }
+ 
+     //Scenario 3 =   Scenario: TC_003 delete student info list as a teacher
+Index: .idea/dbnavigator.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"DBNavigator.Project.DataEditorManager\">\r\n    <record-view-column-sorting-type value=\"BY_INDEX\" />\r\n    <value-preview-text-wrapping value=\"false\" />\r\n    <value-preview-pinned value=\"false\" />\r\n  </component>\r\n  <component name=\"DBNavigator.Project.DatabaseBrowserManager\">\r\n    <autoscroll-to-editor value=\"false\" />\r\n    <autoscroll-from-editor value=\"true\" />\r\n    <show-object-properties value=\"true\" />\r\n    <loaded-nodes />\r\n  </component>\r\n  <component name=\"DBNavigator.Project.DatabaseConsoleManager\">\r\n    <connection id=\"2a3641f5-800d-4435-80b3-4212d5e9b727\">\r\n      <console name=\"MOS\" type=\"STANDARD\" schema=\"school_management\" session=\"Main\"><![CDATA[SELECT * FROM \"public\".teacher WHERE username = 'jessicajessica']]></console>\r\n    </connection>\r\n  </component>\r\n  <component name=\"DBNavigator.Project.DatabaseEditorStateManager\">\r\n    <last-used-providers />\r\n  </component>\r\n  <component name=\"DBNavigator.Project.DatabaseFileManager\">\r\n    <open-files />\r\n  </component>\r\n  <component name=\"DBNavigator.Project.ExecutionManager\">\r\n    <retain-sticky-names value=\"false\" />\r\n  </component>\r\n  <component name=\"DBNavigator.Project.ObjectQuickFilterManager\">\r\n    <last-used-operator value=\"EQUAL\" />\r\n    <filters />\r\n  </component>\r\n  <component name=\"DBNavigator.Project.Settings\">\r\n    <connections>\r\n      <connection id=\"2a3641f5-800d-4435-80b3-4212d5e9b727\" active=\"true\" signed=\"true\">\r\n        <database>\r\n          <name value=\"ManagementOnSchools\" />\r\n          <description value=\"\" />\r\n          <database-type value=\"POSTGRES\" />\r\n          <config-type value=\"BASIC\" />\r\n          <database-version value=\"14.8\" />\r\n          <driver-source value=\"BUILTIN\" />\r\n          <driver-library value=\"\" />\r\n          <driver value=\"\" />\r\n          <url-type value=\"DATABASE\" />\r\n          <host value=\"managementonschools.com\" />\r\n          <port value=\"5432\" />\r\n          <database value=\"school_management\" />\r\n          <type value=\"USER_PASSWORD\" />\r\n          <user value=\"select_user\" />\r\n          <deprecated-pwd value=\"NDN3NWlqZnNv\" />\r\n        </database>\r\n        <properties>\r\n          <auto-commit value=\"false\" />\r\n        </properties>\r\n        <ssh-settings>\r\n          <active value=\"false\" />\r\n          <proxy-host value=\"\" />\r\n          <proxy-port value=\"22\" />\r\n          <proxy-user value=\"\" />\r\n          <deprecated-proxy-pwd value=\"\" />\r\n          <auth-type value=\"PASSWORD\" />\r\n          <key-file value=\"\" />\r\n          <key-passphrase value=\"\" />\r\n        </ssh-settings>\r\n        <ssl-settings>\r\n          <active value=\"false\" />\r\n          <certificate-authority-file value=\"\" />\r\n          <client-certificate-file value=\"\" />\r\n          <client-key-file value=\"\" />\r\n        </ssl-settings>\r\n        <details>\r\n          <charset value=\"UTF-8\" />\r\n          <session-management value=\"true\" />\r\n          <ddl-file-binding value=\"true\" />\r\n          <database-logging value=\"true\" />\r\n          <connect-automatically value=\"true\" />\r\n          <restore-workspace value=\"true\" />\r\n          <restore-workspace-deep value=\"false\" />\r\n          <environment-type value=\"default\" />\r\n          <connectivity-timeout value=\"10\" />\r\n          <idle-time-to-disconnect value=\"30\" />\r\n          <idle-time-to-disconnect-pool value=\"5\" />\r\n          <credential-expiry-time value=\"10\" />\r\n          <max-connection-pool-size value=\"7\" />\r\n          <alternative-statement-delimiter value=\"\" />\r\n        </details>\r\n        <object-filters hide-empty-schemas=\"false\" hide-pseudo-columns=\"false\">\r\n          <object-type-filter>\r\n            <object-type name=\"SCHEMA\" enabled=\"true\" />\r\n            <object-type name=\"USER\" enabled=\"true\" />\r\n            <object-type name=\"ROLE\" enabled=\"true\" />\r\n            <object-type name=\"PRIVILEGE\" enabled=\"true\" />\r\n            <object-type name=\"CHARSET\" enabled=\"true\" />\r\n            <object-type name=\"TABLE\" enabled=\"true\" />\r\n            <object-type name=\"VIEW\" enabled=\"true\" />\r\n            <object-type name=\"MATERIALIZED_VIEW\" enabled=\"true\" />\r\n            <object-type name=\"NESTED_TABLE\" enabled=\"true\" />\r\n            <object-type name=\"COLUMN\" enabled=\"true\" />\r\n            <object-type name=\"INDEX\" enabled=\"true\" />\r\n            <object-type name=\"CONSTRAINT\" enabled=\"true\" />\r\n            <object-type name=\"DATASET_TRIGGER\" enabled=\"true\" />\r\n            <object-type name=\"DATABASE_TRIGGER\" enabled=\"true\" />\r\n            <object-type name=\"SYNONYM\" enabled=\"true\" />\r\n            <object-type name=\"SEQUENCE\" enabled=\"true\" />\r\n            <object-type name=\"PROCEDURE\" enabled=\"true\" />\r\n            <object-type name=\"FUNCTION\" enabled=\"true\" />\r\n            <object-type name=\"PACKAGE\" enabled=\"true\" />\r\n            <object-type name=\"TYPE\" enabled=\"true\" />\r\n            <object-type name=\"TYPE_ATTRIBUTE\" enabled=\"true\" />\r\n            <object-type name=\"ARGUMENT\" enabled=\"true\" />\r\n            <object-type name=\"DIMENSION\" enabled=\"true\" />\r\n            <object-type name=\"CLUSTER\" enabled=\"true\" />\r\n            <object-type name=\"DBLINK\" enabled=\"true\" />\r\n          </object-type-filter>\r\n          <object-name-filters />\r\n        </object-filters>\r\n      </connection>\r\n    </connections>\r\n    <browser-settings>\r\n      <general>\r\n        <display-mode value=\"TABBED\" />\r\n        <navigation-history-size value=\"100\" />\r\n        <show-object-details value=\"false\" />\r\n      </general>\r\n      <filters>\r\n        <object-type-filter>\r\n          <object-type name=\"SCHEMA\" enabled=\"true\" />\r\n          <object-type name=\"USER\" enabled=\"true\" />\r\n          <object-type name=\"ROLE\" enabled=\"true\" />\r\n          <object-type name=\"PRIVILEGE\" enabled=\"true\" />\r\n          <object-type name=\"CHARSET\" enabled=\"true\" />\r\n          <object-type name=\"TABLE\" enabled=\"true\" />\r\n          <object-type name=\"VIEW\" enabled=\"true\" />\r\n          <object-type name=\"MATERIALIZED_VIEW\" enabled=\"true\" />\r\n          <object-type name=\"NESTED_TABLE\" enabled=\"true\" />\r\n          <object-type name=\"COLUMN\" enabled=\"true\" />\r\n          <object-type name=\"INDEX\" enabled=\"true\" />\r\n          <object-type name=\"CONSTRAINT\" enabled=\"true\" />\r\n          <object-type name=\"DATASET_TRIGGER\" enabled=\"true\" />\r\n          <object-type name=\"DATABASE_TRIGGER\" enabled=\"true\" />\r\n          <object-type name=\"SYNONYM\" enabled=\"true\" />\r\n          <object-type name=\"SEQUENCE\" enabled=\"true\" />\r\n          <object-type name=\"PROCEDURE\" enabled=\"true\" />\r\n          <object-type name=\"FUNCTION\" enabled=\"true\" />\r\n          <object-type name=\"PACKAGE\" enabled=\"true\" />\r\n          <object-type name=\"TYPE\" enabled=\"true\" />\r\n          <object-type name=\"TYPE_ATTRIBUTE\" enabled=\"true\" />\r\n          <object-type name=\"ARGUMENT\" enabled=\"true\" />\r\n          <object-type name=\"DIMENSION\" enabled=\"true\" />\r\n          <object-type name=\"CLUSTER\" enabled=\"true\" />\r\n          <object-type name=\"DBLINK\" enabled=\"true\" />\r\n        </object-type-filter>\r\n      </filters>\r\n      <sorting>\r\n        <object-type name=\"COLUMN\" sorting-type=\"NAME\" />\r\n        <object-type name=\"FUNCTION\" sorting-type=\"NAME\" />\r\n        <object-type name=\"PROCEDURE\" sorting-type=\"NAME\" />\r\n        <object-type name=\"ARGUMENT\" sorting-type=\"POSITION\" />\r\n        <object-type name=\"TYPE ATTRIBUTE\" sorting-type=\"POSITION\" />\r\n      </sorting>\r\n      <default-editors>\r\n        <object-type name=\"VIEW\" editor-type=\"SELECTION\" />\r\n        <object-type name=\"PACKAGE\" editor-type=\"SELECTION\" />\r\n        <object-type name=\"TYPE\" editor-type=\"SELECTION\" />\r\n      </default-editors>\r\n    </browser-settings>\r\n    <navigation-settings>\r\n      <lookup-filters>\r\n        <lookup-objects>\r\n          <object-type name=\"SCHEMA\" enabled=\"true\" />\r\n          <object-type name=\"USER\" enabled=\"false\" />\r\n          <object-type name=\"ROLE\" enabled=\"false\" />\r\n          <object-type name=\"PRIVILEGE\" enabled=\"false\" />\r\n          <object-type name=\"CHARSET\" enabled=\"false\" />\r\n          <object-type name=\"TABLE\" enabled=\"true\" />\r\n          <object-type name=\"VIEW\" enabled=\"true\" />\r\n          <object-type name=\"MATERIALIZED VIEW\" enabled=\"true\" />\r\n          <object-type name=\"INDEX\" enabled=\"true\" />\r\n          <object-type name=\"CONSTRAINT\" enabled=\"true\" />\r\n          <object-type name=\"DATASET TRIGGER\" enabled=\"true\" />\r\n          <object-type name=\"DATABASE TRIGGER\" enabled=\"true\" />\r\n          <object-type name=\"SYNONYM\" enabled=\"false\" />\r\n          <object-type name=\"SEQUENCE\" enabled=\"true\" />\r\n          <object-type name=\"PROCEDURE\" enabled=\"true\" />\r\n          <object-type name=\"FUNCTION\" enabled=\"true\" />\r\n          <object-type name=\"PACKAGE\" enabled=\"true\" />\r\n          <object-type name=\"TYPE\" enabled=\"true\" />\r\n          <object-type name=\"DIMENSION\" enabled=\"false\" />\r\n          <object-type name=\"CLUSTER\" enabled=\"false\" />\r\n          <object-type name=\"DBLINK\" enabled=\"true\" />\r\n        </lookup-objects>\r\n        <force-database-load value=\"false\" />\r\n        <prompt-connection-selection value=\"true\" />\r\n        <prompt-schema-selection value=\"true\" />\r\n      </lookup-filters>\r\n    </navigation-settings>\r\n    <dataset-grid-settings>\r\n      <general>\r\n        <enable-zooming value=\"true\" />\r\n        <enable-column-tooltip value=\"true\" />\r\n      </general>\r\n      <sorting>\r\n        <nulls-first value=\"true\" />\r\n        <max-sorting-columns value=\"4\" />\r\n      </sorting>\r\n      <audit-columns>\r\n        <column-names value=\"\" />\r\n        <visible value=\"true\" />\r\n        <editable value=\"false\" />\r\n      </audit-columns>\r\n    </dataset-grid-settings>\r\n    <dataset-editor-settings>\r\n      <text-editor-popup>\r\n        <active value=\"false\" />\r\n        <active-if-empty value=\"false\" />\r\n        <data-length-threshold value=\"100\" />\r\n        <popup-delay value=\"1000\" />\r\n      </text-editor-popup>\r\n      <values-actions-popup>\r\n        <show-popup-button value=\"true\" />\r\n        <element-count-threshold value=\"1000\" />\r\n        <data-length-threshold value=\"250\" />\r\n      </values-actions-popup>\r\n      <general>\r\n        <fetch-block-size value=\"100\" />\r\n        <fetch-timeout value=\"30\" />\r\n        <trim-whitespaces value=\"true\" />\r\n        <convert-empty-strings-to-null value=\"true\" />\r\n        <select-content-on-cell-edit value=\"true\" />\r\n        <large-value-preview-active value=\"true\" />\r\n      </general>\r\n      <filters>\r\n        <prompt-filter-dialog value=\"true\" />\r\n        <default-filter-type value=\"BASIC\" />\r\n      </filters>\r\n      <qualified-text-editor text-length-threshold=\"300\">\r\n        <content-types>\r\n          <content-type name=\"Text\" enabled=\"true\" />\r\n          <content-type name=\"Properties\" enabled=\"true\" />\r\n          <content-type name=\"XML\" enabled=\"true\" />\r\n          <content-type name=\"DTD\" enabled=\"true\" />\r\n          <content-type name=\"HTML\" enabled=\"true\" />\r\n          <content-type name=\"XHTML\" enabled=\"true\" />\r\n          <content-type name=\"Java\" enabled=\"true\" />\r\n          <content-type name=\"SQL\" enabled=\"true\" />\r\n          <content-type name=\"PL/SQL\" enabled=\"true\" />\r\n          <content-type name=\"JSON\" enabled=\"true\" />\r\n          <content-type name=\"JSON5\" enabled=\"true\" />\r\n          <content-type name=\"Groovy\" enabled=\"true\" />\r\n          <content-type name=\"AIDL\" enabled=\"true\" />\r\n          <content-type name=\"YAML\" enabled=\"true\" />\r\n          <content-type name=\"Manifest\" enabled=\"true\" />\r\n        </content-types>\r\n      </qualified-text-editor>\r\n      <record-navigation>\r\n        <navigation-target value=\"VIEWER\" />\r\n      </record-navigation>\r\n    </dataset-editor-settings>\r\n    <code-editor-settings>\r\n      <general>\r\n        <show-object-navigation-gutter value=\"false\" />\r\n        <show-spec-declaration-navigation-gutter value=\"true\" />\r\n        <enable-spellchecking value=\"true\" />\r\n        <enable-reference-spellchecking value=\"false\" />\r\n      </general>\r\n      <confirmations>\r\n        <save-changes value=\"false\" />\r\n        <revert-changes value=\"true\" />\r\n      </confirmations>\r\n    </code-editor-settings>\r\n    <code-completion-settings>\r\n      <filters>\r\n        <basic-filter>\r\n          <filter-element type=\"RESERVED_WORD\" id=\"keyword\" selected=\"true\" />\r\n          <filter-element type=\"RESERVED_WORD\" id=\"function\" selected=\"true\" />\r\n          <filter-element type=\"RESERVED_WORD\" id=\"parameter\" selected=\"true\" />\r\n          <filter-element type=\"RESERVED_WORD\" id=\"datatype\" selected=\"true\" />\r\n          <filter-element type=\"RESERVED_WORD\" id=\"exception\" selected=\"true\" />\r\n          <filter-element type=\"OBJECT\" id=\"schema\" selected=\"true\" />\r\n          <filter-element type=\"OBJECT\" id=\"role\" selected=\"true\" />\r\n          <filter-element type=\"OBJECT\" id=\"user\" selected=\"true\" />\r\n          <filter-element type=\"OBJECT\" id=\"privilege\" selected=\"true\" />\r\n          <user-schema>\r\n            <filter-element type=\"OBJECT\" id=\"table\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"view\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"materialized view\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"index\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"constraint\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"trigger\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"synonym\" selected=\"false\" />\r\n            <filter-element type=\"OBJECT\" id=\"sequence\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"procedure\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"function\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"package\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"type\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"dimension\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"cluster\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"dblink\" selected=\"true\" />\r\n          </user-schema>\r\n          <public-schema>\r\n            <filter-element type=\"OBJECT\" id=\"table\" selected=\"false\" />\r\n            <filter-element type=\"OBJECT\" id=\"view\" selected=\"false\" />\r\n            <filter-element type=\"OBJECT\" id=\"materialized view\" selected=\"false\" />\r\n            <filter-element type=\"OBJECT\" id=\"index\" selected=\"false\" />\r\n            <filter-element type=\"OBJECT\" id=\"constraint\" selected=\"false\" />\r\n            <filter-element type=\"OBJECT\" id=\"trigger\" selected=\"false\" />\r\n            <filter-element type=\"OBJECT\" id=\"synonym\" selected=\"false\" />\r\n            <filter-element type=\"OBJECT\" id=\"sequence\" selected=\"false\" />\r\n            <filter-element type=\"OBJECT\" id=\"procedure\" selected=\"false\" />\r\n            <filter-element type=\"OBJECT\" id=\"function\" selected=\"false\" />\r\n            <filter-element type=\"OBJECT\" id=\"package\" selected=\"false\" />\r\n            <filter-element type=\"OBJECT\" id=\"type\" selected=\"false\" />\r\n            <filter-element type=\"OBJECT\" id=\"dimension\" selected=\"false\" />\r\n            <filter-element type=\"OBJECT\" id=\"cluster\" selected=\"false\" />\r\n            <filter-element type=\"OBJECT\" id=\"dblink\" selected=\"false\" />\r\n          </public-schema>\r\n          <any-schema>\r\n            <filter-element type=\"OBJECT\" id=\"table\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"view\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"materialized view\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"index\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"constraint\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"trigger\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"synonym\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"sequence\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"procedure\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"function\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"package\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"type\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"dimension\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"cluster\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"dblink\" selected=\"true\" />\r\n          </any-schema>\r\n        </basic-filter>\r\n        <extended-filter>\r\n          <filter-element type=\"RESERVED_WORD\" id=\"keyword\" selected=\"true\" />\r\n          <filter-element type=\"RESERVED_WORD\" id=\"function\" selected=\"true\" />\r\n          <filter-element type=\"RESERVED_WORD\" id=\"parameter\" selected=\"true\" />\r\n          <filter-element type=\"RESERVED_WORD\" id=\"datatype\" selected=\"true\" />\r\n          <filter-element type=\"RESERVED_WORD\" id=\"exception\" selected=\"true\" />\r\n          <filter-element type=\"OBJECT\" id=\"schema\" selected=\"true\" />\r\n          <filter-element type=\"OBJECT\" id=\"user\" selected=\"true\" />\r\n          <filter-element type=\"OBJECT\" id=\"role\" selected=\"true\" />\r\n          <filter-element type=\"OBJECT\" id=\"privilege\" selected=\"true\" />\r\n          <user-schema>\r\n            <filter-element type=\"OBJECT\" id=\"table\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"view\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"materialized view\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"index\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"constraint\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"trigger\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"synonym\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"sequence\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"procedure\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"function\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"package\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"type\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"dimension\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"cluster\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"dblink\" selected=\"true\" />\r\n          </user-schema>\r\n          <public-schema>\r\n            <filter-element type=\"OBJECT\" id=\"table\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"view\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"materialized view\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"index\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"constraint\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"trigger\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"synonym\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"sequence\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"procedure\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"function\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"package\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"type\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"dimension\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"cluster\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"dblink\" selected=\"true\" />\r\n          </public-schema>\r\n          <any-schema>\r\n            <filter-element type=\"OBJECT\" id=\"table\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"view\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"materialized view\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"index\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"constraint\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"trigger\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"synonym\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"sequence\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"procedure\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"function\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"package\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"type\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"dimension\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"cluster\" selected=\"true\" />\r\n            <filter-element type=\"OBJECT\" id=\"dblink\" selected=\"true\" />\r\n          </any-schema>\r\n        </extended-filter>\r\n      </filters>\r\n      <sorting enabled=\"true\">\r\n        <sorting-element type=\"RESERVED_WORD\" id=\"keyword\" />\r\n        <sorting-element type=\"RESERVED_WORD\" id=\"datatype\" />\r\n        <sorting-element type=\"OBJECT\" id=\"column\" />\r\n        <sorting-element type=\"OBJECT\" id=\"table\" />\r\n        <sorting-element type=\"OBJECT\" id=\"view\" />\r\n        <sorting-element type=\"OBJECT\" id=\"materialized view\" />\r\n        <sorting-element type=\"OBJECT\" id=\"index\" />\r\n        <sorting-element type=\"OBJECT\" id=\"constraint\" />\r\n        <sorting-element type=\"OBJECT\" id=\"trigger\" />\r\n        <sorting-element type=\"OBJECT\" id=\"synonym\" />\r\n        <sorting-element type=\"OBJECT\" id=\"sequence\" />\r\n        <sorting-element type=\"OBJECT\" id=\"procedure\" />\r\n        <sorting-element type=\"OBJECT\" id=\"function\" />\r\n        <sorting-element type=\"OBJECT\" id=\"package\" />\r\n        <sorting-element type=\"OBJECT\" id=\"type\" />\r\n        <sorting-element type=\"OBJECT\" id=\"dimension\" />\r\n        <sorting-element type=\"OBJECT\" id=\"cluster\" />\r\n        <sorting-element type=\"OBJECT\" id=\"dblink\" />\r\n        <sorting-element type=\"OBJECT\" id=\"schema\" />\r\n        <sorting-element type=\"OBJECT\" id=\"role\" />\r\n        <sorting-element type=\"OBJECT\" id=\"user\" />\r\n        <sorting-element type=\"RESERVED_WORD\" id=\"function\" />\r\n        <sorting-element type=\"RESERVED_WORD\" id=\"parameter\" />\r\n      </sorting>\r\n      <format>\r\n        <enforce-code-style-case value=\"true\" />\r\n      </format>\r\n    </code-completion-settings>\r\n    <execution-engine-settings>\r\n      <statement-execution>\r\n        <fetch-block-size value=\"100\" />\r\n        <execution-timeout value=\"20\" />\r\n        <debug-execution-timeout value=\"600\" />\r\n        <focus-result value=\"false\" />\r\n        <prompt-execution value=\"false\" />\r\n      </statement-execution>\r\n      <script-execution>\r\n        <command-line-interfaces />\r\n        <execution-timeout value=\"300\" />\r\n      </script-execution>\r\n      <method-execution>\r\n        <execution-timeout value=\"30\" />\r\n        <debug-execution-timeout value=\"600\" />\r\n        <parameter-history-size value=\"10\" />\r\n      </method-execution>\r\n    </execution-engine-settings>\r\n    <operation-settings>\r\n      <transactions>\r\n        <uncommitted-changes>\r\n          <on-project-close value=\"ASK\" />\r\n          <on-disconnect value=\"ASK\" />\r\n          <on-autocommit-toggle value=\"ASK\" />\r\n        </uncommitted-changes>\r\n        <multiple-uncommitted-changes>\r\n          <on-commit value=\"ASK\" />\r\n          <on-rollback value=\"ASK\" />\r\n        </multiple-uncommitted-changes>\r\n      </transactions>\r\n      <session-browser>\r\n        <disconnect-session value=\"ASK\" />\r\n        <kill-session value=\"ASK\" />\r\n        <reload-on-filter-change value=\"false\" />\r\n      </session-browser>\r\n      <compiler>\r\n        <compile-type value=\"KEEP\" />\r\n        <compile-dependencies value=\"ASK\" />\r\n        <always-show-controls value=\"false\" />\r\n      </compiler>\r\n      <debugger>\r\n        <debugger-type value=\"ASK\" />\r\n        <use-generic-runners value=\"true\" />\r\n      </debugger>\r\n    </operation-settings>\r\n    <ddl-file-settings>\r\n      <extensions>\r\n        <mapping file-type-id=\"VIEW\" extensions=\"vw\" />\r\n        <mapping file-type-id=\"TRIGGER\" extensions=\"trg\" />\r\n        <mapping file-type-id=\"PROCEDURE\" extensions=\"prc\" />\r\n        <mapping file-type-id=\"FUNCTION\" extensions=\"fnc\" />\r\n        <mapping file-type-id=\"PACKAGE\" extensions=\"pkg\" />\r\n        <mapping file-type-id=\"PACKAGE_SPEC\" extensions=\"pks\" />\r\n        <mapping file-type-id=\"PACKAGE_BODY\" extensions=\"pkb\" />\r\n        <mapping file-type-id=\"TYPE\" extensions=\"tpe\" />\r\n        <mapping file-type-id=\"TYPE_SPEC\" extensions=\"tps\" />\r\n        <mapping file-type-id=\"TYPE_BODY\" extensions=\"tpb\" />\r\n      </extensions>\r\n      <general>\r\n        <lookup-ddl-files value=\"true\" />\r\n        <create-ddl-files value=\"false\" />\r\n        <synchronize-ddl-files value=\"true\" />\r\n        <use-qualified-names value=\"false\" />\r\n        <make-scripts-rerunnable value=\"true\" />\r\n      </general>\r\n    </ddl-file-settings>\r\n    <general-settings>\r\n      <regional-settings>\r\n        <date-format value=\"MEDIUM\" />\r\n        <number-format value=\"UNGROUPED\" />\r\n        <locale value=\"SYSTEM_DEFAULT\" />\r\n        <use-custom-formats value=\"false\" />\r\n      </regional-settings>\r\n      <environment>\r\n        <environment-types>\r\n          <environment-type id=\"development\" name=\"Development\" description=\"Development environment\" color=\"-2430209/-12296320\" readonly-code=\"false\" readonly-data=\"false\" />\r\n          <environment-type id=\"integration\" name=\"Integration\" description=\"Integration environment\" color=\"-2621494/-12163514\" readonly-code=\"true\" readonly-data=\"false\" />\r\n          <environment-type id=\"production\" name=\"Production\" description=\"Productive environment\" color=\"-11574/-10271420\" readonly-code=\"true\" readonly-data=\"true\" />\r\n          <environment-type id=\"other\" name=\"Other\" description=\"\" color=\"-1576/-10724543\" readonly-code=\"false\" readonly-data=\"false\" />\r\n        </environment-types>\r\n        <visibility-settings>\r\n          <connection-tabs value=\"true\" />\r\n          <dialog-headers value=\"true\" />\r\n          <object-editor-tabs value=\"true\" />\r\n          <script-editor-tabs value=\"false\" />\r\n          <execution-result-tabs value=\"true\" />\r\n        </visibility-settings>\r\n      </environment>\r\n    </general-settings>\r\n  </component>\r\n  <component name=\"DBNavigator.Project.StatementExecutionManager\">\r\n    <execution-variables />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/dbnavigator.xml b/.idea/dbnavigator.xml
+--- a/.idea/dbnavigator.xml	(revision cd412219050d32d9db489af352aa26f04ad1a870)
++++ b/.idea/dbnavigator.xml	(date 1689281963794)
+@@ -12,6 +12,11 @@
+     <loaded-nodes />
+   </component>
+   <component name="DBNavigator.Project.DatabaseConsoleManager">
++    <connection id="784ca604-522b-4f03-997d-8e671bf64a4c">
++      <console name="MOS" type="STANDARD" schema="school_management" session="Main" />
++    </connection>
++  </component>
++  <component name="DBNavigator.Project.DatabaseConsoleManager">
+     <connection id="2a3641f5-800d-4435-80b3-4212d5e9b727">
+       <console name="MOS" type="STANDARD" schema="school_management" session="Main"><![CDATA[SELECT * FROM "public".teacher WHERE username = 'jessicajessica']]></console>
+     </connection>
+@@ -30,6 +35,94 @@
+     <filters />
+   </component>
+   <component name="DBNavigator.Project.Settings">
++    <connections>
++      <connection id="784ca604-522b-4f03-997d-8e671bf64a4c" active="true" signed="true">
++        <database>
++          <name value="MOS" />
++          <description value="" />
++          <database-type value="POSTGRES" />
++          <config-type value="BASIC" />
++          <database-version value="14.8" />
++          <driver-source value="BUNDLED" />
++          <driver-library value="" />
++          <driver value="" />
++          <url-type value="DATABASE" />
++          <host value="managementonschools.com" />
++          <port value="5432" />
++          <database value="school_management" />
++          <tns-folder value="" />
++          <tns-profile value="" />
++          <type value="USER_PASSWORD" />
++          <user value="select_user" />
++          <deprecated-pwd value="NDN3NWlqZnNv" />
++        </database>
++        <properties>
++          <auto-commit value="false" />
++        </properties>
++        <ssh-settings>
++          <active value="false" />
++          <proxy-host value="" />
++          <proxy-port value="22" />
++          <proxy-user value="" />
++          <deprecated-proxy-pwd value="" />
++          <auth-type value="PASSWORD" />
++          <key-file value="" />
++          <key-passphrase value="" />
++        </ssh-settings>
++        <ssl-settings>
++          <active value="false" />
++          <certificate-authority-file value="" />
++          <client-certificate-file value="" />
++          <client-key-file value="" />
++        </ssl-settings>
++        <details>
++          <charset value="UTF-8" />
++          <session-management value="true" />
++          <ddl-file-binding value="true" />
++          <database-logging value="true" />
++          <connect-automatically value="true" />
++          <restore-workspace value="true" />
++          <restore-workspace-deep value="false" />
++          <environment-type value="default" />
++          <connectivity-timeout value="30" />
++          <idle-time-to-disconnect value="30" />
++          <idle-time-to-disconnect-pool value="5" />
++          <credential-expiry-time value="10" />
++          <max-connection-pool-size value="7" />
++          <alternative-statement-delimiter value="" />
++        </details>
++        <object-filters hide-empty-schemas="false" hide-pseudo-columns="false">
++          <object-type-filter>
++            <object-type name="SCHEMA" enabled="true" />
++            <object-type name="USER" enabled="true" />
++            <object-type name="ROLE" enabled="true" />
++            <object-type name="PRIVILEGE" enabled="true" />
++            <object-type name="CHARSET" enabled="true" />
++            <object-type name="TABLE" enabled="true" />
++            <object-type name="VIEW" enabled="true" />
++            <object-type name="MATERIALIZED_VIEW" enabled="true" />
++            <object-type name="NESTED_TABLE" enabled="true" />
++            <object-type name="COLUMN" enabled="true" />
++            <object-type name="INDEX" enabled="true" />
++            <object-type name="CONSTRAINT" enabled="true" />
++            <object-type name="DATASET_TRIGGER" enabled="true" />
++            <object-type name="DATABASE_TRIGGER" enabled="true" />
++            <object-type name="SYNONYM" enabled="true" />
++            <object-type name="SEQUENCE" enabled="true" />
++            <object-type name="PROCEDURE" enabled="true" />
++            <object-type name="FUNCTION" enabled="true" />
++            <object-type name="PACKAGE" enabled="true" />
++            <object-type name="TYPE" enabled="true" />
++            <object-type name="TYPE_ATTRIBUTE" enabled="true" />
++            <object-type name="ARGUMENT" enabled="true" />
++            <object-type name="DIMENSION" enabled="true" />
++            <object-type name="CLUSTER" enabled="true" />
++            <object-type name="DBLINK" enabled="true" />
++          </object-type-filter>
++          <object-name-filters />
++        </object-filters>
++      </connection>
++    </connections>
+     <connections>
+       <connection id="2a3641f5-800d-4435-80b3-4212d5e9b727" active="true" signed="true">
+         <database>
+Index: src/test/java/runners/Runner.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package runners;\r\n\r\n\r\nimport io.cucumber.junit.Cucumber;\r\nimport io.cucumber.junit.CucumberOptions;\r\nimport org.junit.runner.RunWith;\r\n\r\n@RunWith(Cucumber.class)\r\n@CucumberOptions(\r\n        //        ADDING CONFIGURATIONS\r\n        plugin = {\r\n                \"pretty\",\r\n                \"html:target/default-cucumber-reports.html\",\r\n                \"json:target/json-reports/cucumber.json\",\r\n                \"junit:target/xml-report/cucumber.xml\",\r\n                \"rerun:target/failedRerun.txt\",\r\n                \"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:\"\r\n        },\r\n\r\n\r\n        monochrome = true,\r\n        features = \"./src/test/resources/features\",//PATH OF FEATURES FOLDER\r\n        glue = {\"stepdefinitions\",\"hooks\"},//PATH OF STEPDEFINITIONS FOLDER\r\n\r\n        dryRun = true,//dryRun = true : RUNS AND GENERATES ONLY MISSING STEP DEFS. dryRun = false: RUN NORMAL. THIS IS DEFAULT VALUE\r\n\r\n        tags = \"@US18_DB\"\r\n\r\n\r\n\r\n\r\n)\r\npublic class Runner {\r\n\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/runners/Runner.java b/src/test/java/runners/Runner.java
+--- a/src/test/java/runners/Runner.java	(revision cd412219050d32d9db489af352aa26f04ad1a870)
++++ b/src/test/java/runners/Runner.java	(date 1689280891765)
+@@ -22,11 +22,9 @@
+         features = "./src/test/resources/features",//PATH OF FEATURES FOLDER
+         glue = {"stepdefinitions","hooks"},//PATH OF STEPDEFINITIONS FOLDER
+ 
+-        dryRun = true,//dryRun = true : RUNS AND GENERATES ONLY MISSING STEP DEFS. dryRun = false: RUN NORMAL. THIS IS DEFAULT VALUE
+-
+-        tags = "@US18_DB"
++        dryRun = false,//dryRun = true : RUNS AND GENERATES ONLY MISSING STEP DEFS. dryRun = false: RUN NORMAL. THIS IS DEFAULT VALUE
+ 
+-
++        tags = "@us02_user_message_api_test"
+ 
+ 
+ )
+Index: src/test/resources/features/database/US18_teacherv_views_test.feature
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\r\n@US18_DB\r\nFeature: The teacher should be able to view and update the grades given to the student.(Student Info List)\r\n\r\n  Scenario Outline: US8_GetStudentList\r\n    Given get student info via id \"<id>\"\r\n    Then body contains lesson_name \"<lesson_name>\", absentee \"<absentee>\", midterm \"<midterm>\", final \"<final>\", note \"<note>\", info_note \"<info_note>\", average \"<average>\"\r\n\r\n    Examples:\r\n      | od | lesson_name | absentee | midterm | final | note | info_note | average |\r\n      | 2  | Java        | 19       | 70      | 60    | BB   | GOOD JOB  | 64      |\r\n\r\n\r\n  @US18_Negative\r\n  Scenario: teacher should be able to delete information of Guest User List\r\n    Given get guest user via username \"john_doeX\"\r\n    Then body should be empty\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/resources/features/database/US18_teacherv_views_test.feature b/src/test/resources/features/database/US18_teacherv_views_test.feature
+--- a/src/test/resources/features/database/US18_teacherv_views_test.feature	(revision cd412219050d32d9db489af352aa26f04ad1a870)
++++ b/src/test/resources/features/database/US18_teacherv_views_test.feature	(date 1689280891771)
+@@ -13,6 +13,6 @@
+ 
+   @US18_Negative
+   Scenario: teacher should be able to delete information of Guest User List
+-    Given get guest user via username "john_doeX"
++    Given get guest user via id "john_doeX"
+     Then body should be empty
+ 
+Index: src/test/java/base_url/Base_Url.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package base_url;\r\n\r\nimport io.restassured.builder.RequestSpecBuilder;\r\nimport io.restassured.specification.RequestSpecification;\r\n\r\npublic class Base_Url {\r\n    public static RequestSpecification spec;\r\n    public static void setSpec(){\r\n        spec=new RequestSpecBuilder().setBaseUri(\"https://managementonschools.com\").build();\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/base_url/Base_Url.java b/src/test/java/base_url/Base_Url.java
+--- a/src/test/java/base_url/Base_Url.java	(revision cd412219050d32d9db489af352aa26f04ad1a870)
++++ b/src/test/java/base_url/Base_Url.java	(date 1689280891763)
+@@ -3,9 +3,13 @@
+ import io.restassured.builder.RequestSpecBuilder;
+ import io.restassured.specification.RequestSpecification;
+ 
++import static utilities.ManagementOnSchoolsAuth.generateToken;
++
+ public class Base_Url {
+     public static RequestSpecification spec;
+     public static void setSpec(){
+-        spec=new RequestSpecBuilder().setBaseUri("https://managementonschools.com").build();
++        spec=new RequestSpecBuilder().
++                addHeader("Authorization",generateToken()).
++                setBaseUri("https://managementonschools.com/app").build();
+     }
+ }
+Index: src/test/java/hooks/Hooks.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package hooks;\r\n\r\nimport io.cucumber.java.After;\r\nimport io.cucumber.java.Before;\r\nimport io.cucumber.java.Scenario;\r\nimport org.openqa.selenium.OutputType;\r\nimport org.openqa.selenium.TakesScreenshot;\r\nimport utilities.Driver;\r\n\r\nimport static base_url.Base_Url.setSpec;\r\n\r\npublic class Hooks {\r\n\r\n\r\n    /*\r\nHOOKS : is used to run BEFORE or AFTER each SCENARIO or SCENARIO OUTLINE\r\n */\r\n    @Before(\"message_api_test\")\r\n    public void setUpScenario(){\r\n//        RUNS BEFORE EACH SCENARIO\r\n//        System.out.println(\"BEFORE METHODS\");\r\n        setSpec();\r\n    }\r\n    @After\r\n    public void tearDown(Scenario scenario){\r\n//        AFTER EACH SCENARIO\r\n//        System.out.println(\"AFTER METHOD\");\r\n        if (scenario.isFailed()) {//attach the report only if a scenario fails\r\n            final byte[] screenshot=((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);\r\n            scenario.attach(screenshot, \"image/png\",\"screenshots\");\r\n            Driver.closeDriver();\r\n        }\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/hooks/Hooks.java b/src/test/java/hooks/Hooks.java
+--- a/src/test/java/hooks/Hooks.java	(revision cd412219050d32d9db489af352aa26f04ad1a870)
++++ b/src/test/java/hooks/Hooks.java	(date 1689280891764)
+@@ -15,7 +15,7 @@
+     /*
+ HOOKS : is used to run BEFORE or AFTER each SCENARIO or SCENARIO OUTLINE
+  */
+-    @Before("message_api_test")
++    @Before("@us02_user_message_api_test")
+     public void setUpScenario(){
+ //        RUNS BEFORE EACH SCENARIO
+ //        System.out.println("BEFORE METHODS");
