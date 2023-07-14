@@ -13,7 +13,7 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="784ca604-522b-4f03-997d-8e671bf64a4c">
-      <console name="MOS" type="STANDARD" schema="school_management" session="Main" />
+      <console name="MOS" type="STANDARD" schema="public" session="Main"><![CDATA[select * from guest_user where username='andrey2357']]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
@@ -21,6 +21,9 @@
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
     <open-files />
+  </component>
+  <component name="DBNavigator.Project.DatasetFilterManager">
+    <filter-actions connection-id="784ca604-522b-4f03-997d-8e671bf64a4c" dataset="public.guest_user" active-filter-id="" />
   </component>
   <component name="DBNavigator.Project.ExecutionManager">
     <retain-sticky-names value="false" />
