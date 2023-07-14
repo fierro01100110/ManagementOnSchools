@@ -13,6 +13,6 @@ Feature: The teacher should be able to view and update the grades given to the s
 
   @US18_Negative
   Scenario: teacher should be able to delete information of Guest User List
-    Given get guest user via username "john_doeX"
+    Given get guest user via id "john_doeX"
     Then body should be empty
 
