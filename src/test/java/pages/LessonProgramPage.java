@@ -62,6 +62,10 @@ public class LessonProgramPage {
     @FindBy(xpath = "//div[text()='lessons must not empty']")
     public WebElement failMessageNoLesson;
 
+    //select cypress2
+    @FindBy(xpath = "//*[@id='react-select-2-listbox']/div[1]")
+    public WebElement cypress2;
+
 
 
 
