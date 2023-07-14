@@ -47,14 +47,16 @@ public class US18_DB_testing {
 
     }
 
-    @Given("get guest user via username {string}")
-    public void get_guest_user_via_username(String username) throws SQLException {
-        assertFalse(resultSet.next());
+    @Given("get guest user via id {string}")
+    public void get_guest_user_via_id(String id)  {
+        String sql = "SELECT * FROM guest_user WHERE id ='2'";
+        resultSet = getResultSet(sql);
 
     }
     @Then("body should be empty")
-    public void body_should_be_empty() {
+    public void body_should_be_empty() throws SQLException {
 
+        assertFalse(resultSet.next());
 
     }
 

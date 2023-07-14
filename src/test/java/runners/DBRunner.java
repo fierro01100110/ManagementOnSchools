@@ -19,10 +19,12 @@ import org.junit.runner.RunWith;
 
 
         monochrome = true,
+
         features = "./src/test/resources/features",
         glue = {"stepdefinitions"},
         dryRun = false,
         tags = ""
+
 )
 
 public class DBRunner {
