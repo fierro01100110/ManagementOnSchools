@@ -66,8 +66,8 @@ ReusableMethods.clickWithTimeOut(teacherPage.submitUpgrade,3);
     }
     @Then("assert the success message in upgrade")
     public void assert_the_success_message_in_upgrade() throws InterruptedException {
-        Thread.sleep(3000);
-ReusableMethods.verifyElementIsDisplayed(teacherPage.upgradeSuccessMessage);
+      ReusableMethods.verifyElementIsDisplayed(teacherPage.upgradeSuccessMessage);
+
 
     }
 
