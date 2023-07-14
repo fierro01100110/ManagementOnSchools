@@ -5,114 +5,90 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1b23fb8-97c1-4e32-b6d1-49bb90892d77" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/base_url/Base_Url.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/AdminManagementPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/ContactHomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/ContactMessagePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/LessonManagement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/LessonsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/MainMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/SchoolHomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/SchoolLoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/TeacherPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/AdminAddedDeanStepDefs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/UI_US08_StepDefs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/US03_ContactPageMessage_UI_Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/US03_User_contact_message_API_test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/US_18_TeacherViewStudentInfo_UI_Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/ViceDeanLessonProgramStepDefs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/database/US18_DB_testing.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/negative_test_cases/US03_InvalidEmail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/negative_test_cases/US03_User_can_not_send_message.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utilities/DataBaseUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/api/US03_user_contact_message.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/database/US18_teacherv_views_test.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/ui/US03_user_contact_message.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/ui/US_08_ui_test.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/ui/US_18_teacher_vieiw_info.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/ui/admin_added_dean.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/ui/negative_test_cases/US03_invalid_email_tets.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/ui/negative_test_cases/US03_user_can_not_send_message.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/ui/vicedean_lessonprogram.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/negative_test_cases/US01_TC002_NegativeStudentRegisterStepDefs.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base_url/Base_Url.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base_url/Base_Url.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/hooks/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hooks/Hooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/DeanManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/DeanManagement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/Register.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/runners/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/Runner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_TC0010_NegativeStudentRegisterStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_student_register_step_defs/US01_TC0010_NegativeStudentRegisterStepDefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_TC0011_NegativeStudentRegisterStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_student_register_step_defs/US01_TC0011_NegativeStudentRegisterStepDefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_TC0012_NegativeStudentRegisterStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_student_register_step_defs/US01_TC0012_NegativeStudentRegisterStepDefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_TC0013_NegativeStudentRegisterStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_student_register_step_defs/US01_TC0013_NegativeStudentRegisterStepDefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_TC0014_NegativeStudentRegisterStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_student_register_step_defs/US01_TC0014_NegativeStudentRegisterStepDefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_TC0015_NegativeStudentRegisterStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_student_register_step_defs/US01_TC0015_NegativeStudentRegisterStepDefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_TC0016_NegativeStudentRegisterStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_student_register_step_defs/US01_TC0016_NegativeStudentRegisterStepDefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_TC0017_NegativeStudentRegisterStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_student_register_step_defs/US01_TC0017_NegativeStudentRegisterStepDefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_TC001_StudentRegisterStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_student_register_step_defs/US01_TC001_StudentRegisterStepDefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_TC002_NegativeStudentRegisterStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_student_register_step_defs/US01_TC002_NegativeStudentRegisterStepDefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_TC003_NegativeStudentRegisterStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_student_register_step_defs/US01_TC003_NegativeStudentRegisterStepDefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_TC004_NegativeStudentRegisterStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_student_register_step_defs/US01_TC004_NegativeStudentRegisterStepDefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_TC005_NegativeStudentRegisterStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_student_register_step_defs/US01_TC005_NegativeStudentRegisterStepDefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_TC006_NegativeStudentRegisterStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_student_register_step_defs/US01_TC006_NegativeStudentRegisterStepDefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_TC007_NegativeStudentRegisterStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_student_register_step_defs/US01_TC007_NegativeStudentRegisterStepDefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_TC008_NegativeStudentRegisterStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_student_register_step_defs/US01_TC008_NegativeStudentRegisterStepDefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_TC009_NegativeStudentRegisterStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_student_register_step_defs/US01_TC009_NegativeStudentRegisterStepDefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/ReusableMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/ReusableMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ui/US01_TC0010_negative_student_register.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ui/US01_student_register/US01_TC0010_negative_student_register.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ui/US01_TC0011_negative_student_register.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ui/US01_student_register/US01_TC0011_negative_student_register.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ui/US01_TC0012_negative_student_register.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ui/US01_student_register/US01_TC0012_negative_student_register.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ui/US01_TC0013_negative_student_register.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ui/US01_student_register/US01_TC0013_negative_student_register.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ui/US01_TC0014_negative_student_register.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ui/US01_student_register/US01_TC0014_negative_student_register.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ui/US01_TC0015_negative_student_register.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ui/US01_student_register/US01_TC0015_negative_student_register.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ui/US01_TC0016_negative_student_register.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ui/US01_student_register/US01_TC0016_negative_student_register.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ui/US01_TC0017_negative_student_register.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ui/US01_student_register/US01_TC0017_negative_student_register.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ui/US01_TC001_student_register.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ui/US01_student_register/US01_TC001_student_register.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ui/US01_TC002_negative_student_register.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ui/US01_student_register/US01_TC002_negative_student_register.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ui/US01_TC003_negative_student_register.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ui/US01_TC004_negative_student_register.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ui/US01_student_register/US01_TC004_negative_student_register.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ui/US01_TC005_negative_student_register.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ui/US01_student_register/US01_TC005_negative_student_register.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ui/US01_TC006_negative_student_register.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ui/US01_student_register/US01_TC006_negative_student_register.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ui/US01_TC007_negative_student_register.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ui/US01_student_register/US01_TC007_negative_student_register.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ui/US01_TC008_negative_student_register.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ui/US01_student_register/US01_TC008_negative_student_register.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ui/US01_TC009_negative_student_register.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ui/US01_student_register/US01_TC009_negative_student_register.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/embedded1.png" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/embedded1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/embedded2.png" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/embedded2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_student_register_step_defs/US01_TC0010_NegativeStudentRegisterStepDefs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_student_register_step_defs/US01_TC0011_NegativeStudentRegisterStepDefs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_student_register_step_defs/US01_TC0012_NegativeStudentRegisterStepDefs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_student_register_step_defs/US01_TC0013_NegativeStudentRegisterStepDefs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_student_register_step_defs/US01_TC0014_NegativeStudentRegisterStepDefs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_student_register_step_defs/US01_TC0015_NegativeStudentRegisterStepDefs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_student_register_step_defs/US01_TC0016_NegativeStudentRegisterStepDefs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_student_register_step_defs/US01_TC0017_NegativeStudentRegisterStepDefs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_student_register_step_defs/US01_TC001_StudentRegisterStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_TC001_StudentRegisterStepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_student_register_step_defs/US01_TC002_NegativeStudentRegisterStepDefs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_student_register_step_defs/US01_TC003_NegativeStudentRegisterStepDefs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_student_register_step_defs/US01_TC004_NegativeStudentRegisterStepDefs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_student_register_step_defs/US01_TC005_NegativeStudentRegisterStepDefs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_student_register_step_defs/US01_TC006_NegativeStudentRegisterStepDefs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_student_register_step_defs/US01_TC007_NegativeStudentRegisterStepDefs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_student_register_step_defs/US01_TC008_NegativeStudentRegisterStepDefs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_student_register_step_defs/US01_TC009_NegativeStudentRegisterStepDefs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ui/US01_student_register/US01_TC0010_negative_student_register.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ui/US01_student_register/US01_TC0011_negative_student_register.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ui/US01_student_register/US01_TC0012_negative_student_register.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ui/US01_student_register/US01_TC0013_negative_student_register.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ui/US01_student_register/US01_TC0014_negative_student_register.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ui/US01_student_register/US01_TC0015_negative_student_register.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ui/US01_student_register/US01_TC0016_negative_student_register.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ui/US01_student_register/US01_TC0017_negative_student_register.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ui/US01_student_register/US01_TC001_student_register.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ui/US01_TC001_student_register.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ui/US01_student_register/US01_TC002_negative_student_register.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ui/negative_test_cases/US01_TC002_negative_student_register.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ui/US01_student_register/US01_TC003_negative_student_register.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ui/US01_student_register/US01_TC004_negative_student_register.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ui/US01_student_register/US01_TC005_negative_student_register.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ui/US01_student_register/US01_TC006_negative_student_register.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ui/US01_student_register/US01_TC007_negative_student_register.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ui/US01_student_register/US01_TC008_negative_student_register.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ui/US01_student_register/US01_TC009_negative_student_register.feature" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/test/java/runners/Runner.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/Users/betul/Desktop/ManagementOnSchools/src/test/resources/features/ui/US01_student_register",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/betul/Desktop/ManagementOnSchools/src/test/resources/features/ui/US01_student_register&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test/resources/features/ui/US01_student_register" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/test/resources/features/ui/US01_student_register" />
+      <recent name="$PROJECT_DIR$/src/test/resources/features/ui/negative_test_cases" />
       <recent name="$PROJECT_DIR$/src/test/resources/features/ui" />
+      <recent name="$PROJECT_DIR$/src/test/resources/features/ui/US01_student_register" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.Runner">

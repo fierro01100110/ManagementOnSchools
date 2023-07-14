@@ -15,7 +15,7 @@ public class Hooks {
     /*
 HOOKS : is used to run BEFORE or AFTER each SCENARIO or SCENARIO OUTLINE
  */
-    @Before("message_api_test")
+    @Before("@Api")
     public void setUpScenario(){
 //        RUNS BEFORE EACH SCENARIO
 //        System.out.println("BEFORE METHODS");

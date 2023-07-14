@@ -1,4 +1,4 @@
-@TC001_student_register @US_01_PositiveTest
+@TC001_student_register
 
 Feature: Student Registration
 

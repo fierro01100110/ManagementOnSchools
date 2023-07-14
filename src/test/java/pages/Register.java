@@ -64,4 +64,8 @@ public class Register {
     @FindBy(xpath = "//div[text()='Guest User registered.']")
     public WebElement successfulRegisterAlert;
 
+//    "Invalid feedback"
+    @FindBy(xpath = "//div[text()='Required']")
+    public WebElement invalidFeedbackAlert;
+
 }

@@ -1,4 +1,4 @@
-package stepdefinitions.US01_student_register_step_defs;
+package stepdefinitions;
 
 
 import com.github.javafaker.Faker;
@@ -18,7 +18,62 @@ import static utilities.ReusableMethods.verifyElementIsDisplayed;
 public class US01_TC001_StudentRegisterStepDefs {
     HomePage homePage = new HomePage();
     Register register = new Register();
-    Faker faker = new Faker();
+    static Faker faker = new Faker();
+
+    public static String name(){
+        Faker faker = new Faker();
+        String name =faker.name().firstName();
+        return name;
+    }
+
+    public static String surname(){
+        Faker faker = new Faker();
+        String surname = faker.name().lastName();
+        return surname;
+    }
+
+    public static String birthPlace(){
+        Faker faker = new Faker();
+        String birthPlace = faker.country().capital();
+        return birthPlace;
+    }
+
+    public static String phoneNumber(){
+        Faker faker = new Faker();
+        String phoneNumber = faker.number().numberBetween(99, 1000) + "-" + faker.number().numberBetween(99, 1000) + "-" + faker.number().numberBetween(999, 10000);
+        return phoneNumber;
+    }
+
+    public static String gender(){
+        Register register = new Register();
+        String gender = String.valueOf(register.genderFemale);
+        return gender;
+    }
+
+    public static String birthDate(){
+        Register register = new Register();
+        String birthDate = String.valueOf(register.birthDate);
+        return birthDate;
+    }
+
+    public static String ssn(){
+        Faker faker = new Faker();
+        String ssn = faker.idNumber().ssnValid();
+        return ssn;
+    }
+
+    public static String username(){
+        Faker faker = new Faker();
+        String username = faker.name().username();
+        return username;
+    }
+
+    public static String password(){
+        String password = faker.internet().password(8,10,true,false,true);
+        return password;
+    }
+
+
 
     String fakeName = faker.name().firstName();
     String fakeSurname = faker.name().lastName();
@@ -143,11 +198,6 @@ public class US01_TC001_StudentRegisterStepDefs {
     public void user_should_see_alert(String string) {
         WaitUtils.waitFor(2);
         register.successfulRegisterAlert.isDisplayed();
-    }
-
-    @Then("close the application")
-    public void closeTheApplication() {
-        Driver.closeDriver();
     }
 
 }
