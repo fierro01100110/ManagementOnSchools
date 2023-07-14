@@ -1,8 +1,10 @@
 package runners;
 
+
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
+
 @RunWith(Cucumber.class)
 @CucumberOptions(
 
@@ -15,12 +17,13 @@ import org.junit.runner.RunWith;
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
         },
 
+
         monochrome = true,
-        tags = "@US_05_database_test",
         features = "./src/test/resources/features",
         glue = {"stepdefinitions"},
-        dryRun = false
-
+        dryRun = false,
+        tags = "@US_05_database_test"
+)
 
 public class DBRunner {
 }
