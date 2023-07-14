@@ -25,11 +25,6 @@ import org.junit.runner.RunWith;
         tags = "@US13_ui_test"
 
 
-
-
-
-
-
 )
 public class Runner {
 
