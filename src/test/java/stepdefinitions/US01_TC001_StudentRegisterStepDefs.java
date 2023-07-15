@@ -15,7 +15,7 @@ import utilities.WaitUtils;
 import static org.testng.Assert.assertTrue;
 import static utilities.ReusableMethods.verifyElementIsDisplayed;
 
-public class US01_TC001_StudentRegisterStepDefs {
+public class US01_TC001_StudentRegisterStepDefs<UserData> {
     HomePage homePage = new HomePage();
     Register register = new Register();
     static Faker faker = new Faker();
@@ -62,7 +62,7 @@ public class US01_TC001_StudentRegisterStepDefs {
         return ssn;
     }
 
-    public static String username(){
+    public static  String username(){
         Faker faker = new Faker();
         String username = faker.name().username();
         return username;
@@ -79,7 +79,8 @@ public class US01_TC001_StudentRegisterStepDefs {
     String fakeSurname = faker.name().lastName();
     String fakeBirthPlace = faker.country().capital();
     String fakePhone = faker.number().numberBetween(99, 1000) + "-" + faker.number().numberBetween(99, 1000) + "-" + faker.number().numberBetween(999, 10000);
-    String fakeBirthDate = faker.date().birthday().toString();
+    String fakeBirthDate = "12-02-1998";       // faker.date().birthday().toString();
+
     String fakeSSN = faker.idNumber().ssnValid();
     String fakeUserName = faker.name().username();
     String fakePassword = faker.internet().password(8,10,true,false,true);
@@ -143,7 +144,7 @@ public class US01_TC001_StudentRegisterStepDefs {
     @When("User enters their date of birth")
     public void user_enters_their_date_of_birth() {
         WaitUtils.waitFor(4);
-        register.birthDate.sendKeys("12-02-1998");
+        register.birthDate.sendKeys(fakeBirthDate);
     }
 
     @When("User enters SSN")

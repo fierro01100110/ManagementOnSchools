@@ -2,6 +2,7 @@ package stepdefinitions;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 
 import static base_url.Base_Url.spec;
@@ -40,9 +41,9 @@ public class US01_ApiStepDefs {
     @Then("body should contain name, surname, birth_place, phone_number, gender, birth_day, ssn, username, password")
     public void bodyShouldContainNameSurnameBirth_placePhone_numberGenderBirth_daySsnUsernamePassword() {
 //        //        Do assertion
-//        JsonPath jsonPath = response.jsonPath();
-//
-//        System.out.println(jsonPath.getList("content.findAll{it.username=='shavonda.ferry'}"));
+        JsonPath jsonPath = response.jsonPath();
+
+        System.out.println(jsonPath.getList("content.findAll{it.username=='shavonda.ferry'}"));
 
     }
 }
