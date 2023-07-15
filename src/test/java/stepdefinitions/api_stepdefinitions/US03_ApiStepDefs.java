@@ -56,7 +56,7 @@ public class US03_ApiStepDefs {
         assertEquals(200,response.statusCode());
         assertEquals(name,actualDataGson.getContent().get(0).getName());
         System.out.println(actualDataGson.getContent().get(0).getName());   //Andrey
-
+        System.out.println("");
 
     }
 }
