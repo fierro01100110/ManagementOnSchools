@@ -49,5 +49,8 @@ public class ViceDeanManagement {
     @FindBy(xpath = "//span[@class='text-white text-white justify-content-center text-center navbar-brand']")
     public WebElement viceDeanSaved;
 
+    @FindBy(xpath = "//div[@class='Toastify__toast-container Toastify__toast-container--top-center']")
+    public WebElement blankNameAlert;
+
 }
 

@@ -18,11 +18,11 @@ import org.junit.runner.RunWith;
         },
 
 
-        monochrome = false,
+        monochrome = true,
         features = "./src/test/resources/features",//PATH OF FEATURES FOLDER
         glue = {"stepdefinitions","hooks"},//PATH OF STEPDEFINITIONS FOLDER
         dryRun = false,//dryRun = true : RUNS AND GENERATES ONLY MISSING STEP DEFS. dryRun = false: RUN NORMAL. THIS IS DEFAULT VALUE
-        tags = "@create_vice_dean_account"
+        tags = "@US06_API"
 )
 public class Runner {
 

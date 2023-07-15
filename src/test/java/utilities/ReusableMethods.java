@@ -185,4 +185,26 @@ public class ReusableMethods {
             fail("Element is not found: "+element);
         }
     }
+
+    public static void sendKeysWithTimeout(WebElement element,String text,int timeout) {
+        for (int i = 0; i < timeout; i++) {
+            try {
+                element.sendKeys(text);
+                return;
+            } catch (WebDriverException e) {
+                WaitUtils.waitFor(1);
+            }
+        }
+    }
+    //    DROPDOWN
+//    USE THIS ONE TO SELECT FROM A DROPDOWN
+    public static void selectByVisibleText(WebElement element, String text){
+        Select select =new Select(element);
+        for (int i =0;i<select.getOptions().size();i++){
+            if(select.getOptions().get(i).getText().equalsIgnoreCase(text)){
+                select.getOptions().get(i).click();
+                break;
+            }
+        }
+    }
 }

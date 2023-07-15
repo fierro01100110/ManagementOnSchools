@@ -20,7 +20,7 @@ public class US_06_TC_01_StepDefs {
 
     @Given("user navigates to login url")
     public void user_navigates_to_login_url() {
-        Driver.getDriver().get(ConfigReader.getProperty("base_url"));
+        Driver.getDriver().get(ConfigReader.getProperty("login_url"));
     }
 
     @When("user login in as admin")
@@ -130,7 +130,7 @@ public class US_06_TC_01_StepDefs {
     }
 
 
-    @And("close the app")
+    @And("close the applications")
     public void closeTheApp() {
         WaitUtils.waitFor(3);
         Driver.closeDriver();
@@ -143,4 +143,9 @@ public class US_06_TC_01_StepDefs {
 
 
     }
+
+//    @And("Admin sees the {string} message")
+//    public void adminSeesTheMessage(String Your_name_must_consist_of_the_characters) {
+//        viceDeanManagement.blankNameAlert.isDisplayed();
+//    }
 }
