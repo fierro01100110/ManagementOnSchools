@@ -17,8 +17,6 @@ HOOKS : is used to run BEFORE or AFTER each SCENARIO or SCENARIO OUTLINE
  */
     @Before("@us03_user_message_api_test")
     public void setUpScenario(){
-//        RUNS BEFORE EACH SCENARIO
-//        System.out.println("BEFORE METHODS");
         setSpec();
     }
     @After
