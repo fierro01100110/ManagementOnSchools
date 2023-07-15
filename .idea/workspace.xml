@@ -5,18 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1b23fb8-97c1-4e32-b6d1-49bb90892d77" name="Changes" comment="" />
+    <list default="true" id="e1b23fb8-97c1-4e32-b6d1-49bb90892d77" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2023-07-13_5_04_p_m___Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2023-07-13_5_04_p_m___Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2023-07-13_5_07_p_m___Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2023-07-13_5_07_p_m___Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2023-07-14_12_35_p_m___Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2023-07-14_12_35_p_m___Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2023-07-14_12_39_p_m___Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2023-07-14_12_39_p_m___Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base_url/Base_Url.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base_url/Base_Url.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runners/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US03_User_contact_message_API_test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/US03_User_contact_message_API_test.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CodeStyleSettingsInfer">
-    <option name="done" value="true" />
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin Class" />
         <option value="Class" />
       </list>
     </option>
@@ -25,17 +30,23 @@
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="andrey" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/test/java/runners/DBRunner.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState"/>
+    <option name="selectedTabId" value="CurrentFile" />
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
-  <component name="ProjectId" id="2S4EDCuheBgTw04zWHx63FsNV1W" />
+  <component name="ProjectId" id="2STUIrRWQF3RA5jMSybnCAaIkDr" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
@@ -50,11 +61,14 @@
     &quot;ToolWindowRun.ShowToolbar&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;hakan&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/mdurm/OneDrive/Desktop&quot;,
+
+
     &quot;last_opened_file_path&quot;: &quot;C:/Users/hp/IdeaProjects/api132-133&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
-  }
+ }
 }</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -63,12 +77,44 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.Runner">
-    <configuration name="Feature: US06_CreateViceDean" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: US06_CreateViceDean" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true"/>
+    <configuration name="Scenario: TC_001 admin can add dean" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/ui/admin_added_dean.feature" />
+      <option name="GLUE" value="stepdefinitions hooks" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="ManagementOnSchools" />
+      <option name="NAME_FILTER" value="^TC_001 admin can add dean$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC_001 admin can add dean$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: TC_001 admin can add dean" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Feature: create_vice_dean" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: create_vice_dean" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true"/>
+    <configuration name="Scenario: TC_001 admin can can add dean" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/ui/admin_added_dean.feature" />
+      <option name="GLUE" value="stepdefinitions hooks" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="ManagementOnSchools" />
+      <option name="NAME_FILTER" value="^TC_001 admin can add dean$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC_001 admin can add dean$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: TC_001 admin can add dean" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -93,8 +139,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: TC_01_admin_creates_vice_dean_account_test_positive" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: TC_01_admin_creates_vice_dean_account_test_positive" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true"/>
+    <configuration name="Scenario: TC_002 update student grade as a teacher" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/ui/US_18_teacher_vieiw_info.feature" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/ui/US06_createViceDean.feature" />
       <option name="GLUE" value="stepdefinitions hooks" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
@@ -134,7 +182,11 @@
         <item itemvalue="Cucumber Java.Scenario: TC_01_admin_creates_vice_dean_account_test_positive" />
         <item itemvalue="Cucumber Java.Feature: US06_CreateViceDean" />
         <item itemvalue="Cucumber Java.Feature: create_vice_dean" />
+        <item itemvalue="JUnit.Runner" />
+        <item itemvalue="Cucumber Java.Scenario: TC_002 update student grade as a teacher" />
         <item itemvalue="Cucumber Java.Scenario: TC_001 dean can see delete button" />
+        <item itemvalue="Cucumber Java.Scenario: TC_001 admin can can add dean" />
+        <item itemvalue="Cucumber Java.Scenario: TC_001 admin can add dean" />
       </list>
     </recent_temporary>
   </component>
@@ -142,10 +194,12 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="e1b23fb8-97c1-4e32-b6d1-49bb90892d77" name="Changes" comment="" />
-      <created>1688397333117</created>
+      <changelist id="213f38b6-cc64-4500-82d1-e0e654171bb9" name="Changes" comment="" />
+      <changelist id="e1b23fb8-97c1-4e32-b6d1-49bb90892d77" name="Changes" comment="" />
+      <created>1689169988022</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1688397333117</updated>
+      <updated>1689169988022</updated>
     </task>
     <servers />
   </component>

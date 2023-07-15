@@ -7,8 +7,17 @@ import utilities.Driver;
 
 public class ViceDeanManagement {
     public ViceDeanManagement(){
+
         PageFactory.initElements(Driver.getDriver(),this);
     }
+
+    //Main Menu Link
+    @FindBy(id = "offcanvasNavbarLabel-expand-lg")
+    public WebElement mainMenu;
+
+    //Teacher Management Link
+    @FindBy(xpath = "//a[text()='Teacher Management']")
+    public WebElement teacherManagement;
 
     @FindBy(xpath = "(//button[@aria-label='Toggle navigation'])[1]")
     public WebElement menu;
@@ -49,8 +58,4 @@ public class ViceDeanManagement {
     @FindBy(xpath = "//span[@class='text-white text-white justify-content-center text-center navbar-brand']")
     public WebElement viceDeanSaved;
 
-    @FindBy(xpath = "//div[@class='Toastify__toast-container Toastify__toast-container--top-center']")
-    public WebElement blankNameAlert;
-
 }
-

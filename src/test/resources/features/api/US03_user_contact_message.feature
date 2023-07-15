@@ -1,6 +1,14 @@
-@e2e @user_message_api_test
-Feature: Get the message created and validate
+@e2e @us03_user_message_api_test
+Feature: Users should be able to send messages from the page(Contact)
 
-  Scenario: Send get request do assertion
-    Given send the request
-    Then validate the body
+  Scenario Outline: US01_GetUserMessageByEmail
+
+  Scenario:update the Dean information by Admin
+    Given update the Dean information via birthplace "<birthplace>"
+    Then verify the birthplace is updated
+
+    Given send get request by "<email>"
+    Then body should contain name "<name>", subject "<subject>", message "<message>",email "<email>"
+    Examples:
+      | email                    | name   | subject                  | message                                              |
+      | andreytest0102@gmail.com | Andrey | greeting and information | hi mr dean i would like to know my final exam result |
