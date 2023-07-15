@@ -7,7 +7,6 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        //        ADDING CONFIGURATIONS
         plugin = {
                 "pretty",
                 "html:target/default-cucumber-reports.html",

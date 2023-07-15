@@ -22,3 +22,8 @@ public class US03_User_contact_message_API_test {
     }
     @Then("validate the body")
     public void validate_the_body() {
+
+
+
+    }
+    }
