@@ -13,7 +13,7 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="e5455790-d9da-4643-88c8-ed2f68e82863">
-      <console name="MOS" type="STANDARD" schema="public" session="Main"><![CDATA[SELECT * FROM vice_dean WHERE birth_place = 'New York']]></console>
+      <console name="MOS" type="STANDARD" schema="school_management" session="Main" />
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
