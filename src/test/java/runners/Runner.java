@@ -26,9 +26,6 @@ import org.junit.runner.RunWith;
         tags = "@US18_DB"
 
 
-        tags = "@us03_user_message_api_test"
-
-
 
 
 
