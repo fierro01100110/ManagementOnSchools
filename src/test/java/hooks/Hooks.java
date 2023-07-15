@@ -7,17 +7,23 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import utilities.Driver;
 
-import static base_url.MOSBaseUrl.setSpec;
+import static base_url.Base_Url.setSpec;
+
 public class Hooks {
 
-    @Before("@us05_api_test")
+
+    /*
+HOOKS : is used to run BEFORE or AFTER each SCENARIO or SCENARIO OUTLINE
+ */
+    @Before("@us03_user_message_api_test")
     public void setUpScenario(){
         setSpec();
     }
     @After
     public void tearDown(Scenario scenario){
-
-        if (scenario.isFailed()) {
+//        AFTER EACH SCENARIO
+//        System.out.println("AFTER METHOD");
+        if (scenario.isFailed()) {//attach the report only if a scenario fails
             final byte[] screenshot=((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
             scenario.attach(screenshot, "image/png","screenshots");
             Driver.closeDriver();
