@@ -15,11 +15,16 @@
     <connection id="784ca604-522b-4f03-997d-8e671bf64a4c">
       <console name="MOS" type="STANDARD" schema="school_management" session="Main" />
     </connection>
+<<<<<<< HEAD
     <connection id="3e25abba-e3e1-4d20-a2d4-e403e42fe84d">
       <console name="MOS" type="STANDARD" schema="school_management" session="Main" />
     </connection>
     <connection id="bce69438-0a66-4e47-8a89-ddec794dcb2a">
       <console name="MOS" type="STANDARD" schema="school_management" session="Main" />
+=======
+    <connection id="7457e661-ee6f-48e5-b4a3-1d813fc47dcc">
+      <console name="Connection" type="STANDARD" schema="postgres" session="Main" />
+>>>>>>> main
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
@@ -131,9 +136,15 @@
           <object-name-filters />
         </object-filters>
       </connection>
+<<<<<<< HEAD
       <connection id="3e25abba-e3e1-4d20-a2d4-e403e42fe84d" active="true" signed="true">
         <database>
           <name value="MOS" />
+=======
+      <connection id="7457e661-ee6f-48e5-b4a3-1d813fc47dcc" active="true" signed="true">
+        <database>
+          <name value="Connection" />
+>>>>>>> main
           <description value="" />
           <database-type value="POSTGRES" />
           <config-type value="BASIC" />
@@ -142,6 +153,7 @@
           <driver-library value="" />
           <driver value="" />
           <url-type value="DATABASE" />
+<<<<<<< HEAD
           <host value="managementonschools.com" />
           <port value="5432" />
           <database value="school_management" />
@@ -236,6 +248,16 @@
           <type value="USER_PASSWORD" />
           <user value="select_user" />
           <deprecated-pwd value="NDN3NWlqZnNv" />
+=======
+          <host value="localhost" />
+          <port value="5432" />
+          <database value="postgres" />
+          <tns-folder value="" />
+          <tns-profile value="" />
+          <type value="USER_PASSWORD" />
+          <user value="" />
+          <deprecated-pwd value="" />
+>>>>>>> main
         </database>
         <properties>
           <auto-commit value="false" />
