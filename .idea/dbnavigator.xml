@@ -12,13 +12,8 @@
     <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
-
-    <connection id="2a3641f5-800d-4435-80b3-4212d5e9b727">
-      <console name="ManagementOnSchools" type="STANDARD" schema="school_management" session="Main" />
-
-    <connection id="784ca604-522b-4f03-997d-8e671bf64a4c">
+    <connection id="e5455790-d9da-4643-88c8-ed2f68e82863">
       <console name="MOS" type="STANDARD" schema="school_management" session="Main" />
-
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
@@ -27,40 +22,42 @@
   <component name="DBNavigator.Project.DatabaseFileManager">
     <open-files />
   </component>
+  <component name="DBNavigator.Project.DatasetFilterManager">
+    <filter-actions connection-id="784ca604-522b-4f03-997d-8e671bf64a4c" dataset="public.guest_user" active-filter-id="" />
+  </component>
+  <component name="DBNavigator.Project.ExecutionManager">
+    <retain-sticky-names value="false" />
+  </component>
+  <component name="DBNavigator.Project.MethodExecutionManager">
+    <method-browser />
+    <execution-history>
+      <group-entries value="true" />
+      <execution-inputs />
+    </execution-history>
+    <argument-values-cache />
+  </component>
   <component name="DBNavigator.Project.ObjectQuickFilterManager">
     <last-used-operator value="EQUAL" />
     <filters />
   </component>
   <component name="DBNavigator.Project.Settings">
     <connections>
-
-      <connection id="2a3641f5-800d-4435-80b3-4212d5e9b727" active="true" signed="true">
-        <database>
-          <name value="ManagementOnSchools" />
-
-      <connection id="784ca604-522b-4f03-997d-8e671bf64a4c" active="true" signed="true">
+      <connection id="e5455790-d9da-4643-88c8-ed2f68e82863" active="true" signed="true">
         <database>
           <name value="MOS" />
-
           <description value="" />
           <database-type value="POSTGRES" />
           <config-type value="BASIC" />
           <database-version value="14.8" />
-
-          <driver-source value="BUILTIN" />
-
           <driver-source value="BUNDLED" />
-
           <driver-library value="" />
           <driver value="" />
           <url-type value="DATABASE" />
           <host value="managementonschools.com" />
           <port value="5432" />
           <database value="school_management" />
-
           <tns-folder value="" />
           <tns-profile value="" />
-
           <type value="USER_PASSWORD" />
           <user value="select_user" />
           <deprecated-pwd value="NDN3NWlqZnNv" />
@@ -93,11 +90,7 @@
           <restore-workspace value="true" />
           <restore-workspace-deep value="false" />
           <environment-type value="default" />
-
-          <connectivity-timeout value="10" />
-
           <connectivity-timeout value="30" />
-
           <idle-time-to-disconnect value="30" />
           <idle-time-to-disconnect-pool value="5" />
           <credential-expiry-time value="10" />
@@ -533,5 +526,8 @@
         </visibility-settings>
       </environment>
     </general-settings>
+  </component>
+  <component name="DBNavigator.Project.StatementExecutionManager">
+    <execution-variables />
   </component>
 </project>
