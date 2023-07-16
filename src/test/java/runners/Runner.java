@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        //        ADDING CONFIGURATIONS
+
         plugin = {
                 "pretty",
                 "html:target/default-cucumber-reports.html",
@@ -23,7 +23,7 @@ import org.junit.runner.RunWith;
         glue = {"stepdefinitions","hooks"},//PATH OF STEPDEFINITIONS FOLDER
 
         dryRun = false,//dryRun = true : RUNS AND GENERATES ONLY MISSING STEP DEFS. dryRun = false: RUN NORMAL. THIS IS DEFAULT VALUE
-        tags = "@US01_API"
+        tags = "@TC001_student_register"
 
 
 )

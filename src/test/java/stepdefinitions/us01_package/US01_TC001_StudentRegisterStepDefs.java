@@ -1,89 +1,41 @@
-package stepdefinitions;
+package stepdefinitions.us01_package;
+
 
 
 import com.github.javafaker.Faker;
+
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pages.HomePage;
 import pages.Register;
-import utilities.Driver;
+
 import utilities.JSUtils;
 import utilities.WaitUtils;
 
 import static org.testng.Assert.assertTrue;
 import static utilities.ReusableMethods.verifyElementIsDisplayed;
 
-public class US01_TC001_StudentRegisterStepDefs<UserData> {
+public class US01_TC001_StudentRegisterStepDefs {
+
+
     HomePage homePage = new HomePage();
     Register register = new Register();
     static Faker faker = new Faker();
 
-    public static String name(){
-        Faker faker = new Faker();
-        String name =faker.name().firstName();
-        return name;
-    }
 
-    public static String surname(){
-        Faker faker = new Faker();
-        String surname = faker.name().lastName();
-        return surname;
-    }
-
-    public static String birthPlace(){
-        Faker faker = new Faker();
-        String birthPlace = faker.country().capital();
-        return birthPlace;
-    }
-
-    public static String phoneNumber(){
-        Faker faker = new Faker();
-        String phoneNumber = faker.number().numberBetween(99, 1000) + "-" + faker.number().numberBetween(99, 1000) + "-" + faker.number().numberBetween(999, 10000);
-        return phoneNumber;
-    }
-
-    public static String gender(){
-        Register register = new Register();
-        String gender = String.valueOf(register.genderFemale);
-        return gender;
-    }
-
-    public static String birthDate(){
-        Register register = new Register();
-        String birthDate = String.valueOf(register.birthDate);
-        return birthDate;
-    }
-
-    public static String ssn(){
-        Faker faker = new Faker();
-        String ssn = faker.idNumber().ssnValid();
-        return ssn;
-    }
-
-    public static  String username(){
-        Faker faker = new Faker();
-        String username = faker.name().username();
-        return username;
-    }
-
-    public static String password(){
-        String password = faker.internet().password(8,10,true,false,true);
-        return password;
-    }
+    public static String fakeName = faker.name().firstName();
+    public static String fakeSurname = faker.name().lastName();
+    public static String fakeBirthPlace = faker.country().capital();
+    public static String fakePhone = faker.number().numberBetween(99, 1000) + "-" + faker.number().numberBetween(99, 1000) + "-" + faker.number().numberBetween(999, 10000);
+    public static String fakeBirthDate = "12-02-1998";       // faker.date().birthday().toString();
+    public static String fakeGender;
+    public static String fakeSSN = faker.idNumber().ssnValid();
+    public static String fakeUserName = faker.name().username();
+    public static String fakePassword = faker.internet().password(8,10,true,false,true);
 
 
-
-    String fakeName = faker.name().firstName();
-    String fakeSurname = faker.name().lastName();
-    String fakeBirthPlace = faker.country().capital();
-    String fakePhone = faker.number().numberBetween(99, 1000) + "-" + faker.number().numberBetween(99, 1000) + "-" + faker.number().numberBetween(999, 10000);
-    String fakeBirthDate = "12-02-1998";       // faker.date().birthday().toString();
-
-    String fakeSSN = faker.idNumber().ssnValid();
-    String fakeUserName = faker.name().username();
-    String fakePassword = faker.internet().password(8,10,true,false,true);
 
 
     @Then("user clicks on register")
@@ -100,11 +52,13 @@ public class US01_TC001_StudentRegisterStepDefs<UserData> {
     public void user_enters_name() {
         WaitUtils.waitFor(2);
         register.name.sendKeys(fakeName);
+        System.out.println("fakeName = " + fakeName);
     }
 
     @When("name must contain any character and cannot be left blank")
     public void name_must_contain_any_character_and_cannot_be_left_blank() {
         assertTrue(fakeName != null && !fakeName.isEmpty(), "Name must contain any character");
+
     }
 
     @When("User enters surname")
@@ -139,7 +93,12 @@ public class US01_TC001_StudentRegisterStepDefs<UserData> {
     public void user_selects_their_gender() {
         WaitUtils.waitFor(2);
         register.genderFemale.click();
+
+         fakeGender = register.genderFemale.getText();
+
     }
+
+
 
     @When("User enters their date of birth")
     public void user_enters_their_date_of_birth() {
@@ -202,3 +161,5 @@ public class US01_TC001_StudentRegisterStepDefs<UserData> {
     }
 
 }
+
+

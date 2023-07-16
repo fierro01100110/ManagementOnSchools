@@ -3,8 +3,11 @@ package hooks;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
+
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 import utilities.Driver;
 
 import static base_url.Base_Url.setSpec;
@@ -12,13 +15,9 @@ import static base_url.Base_Url.setSpec;
 public class Hooks {
 
 
-    /*
-HOOKS : is used to run BEFORE or AFTER each SCENARIO or SCENARIO OUTLINE
- */
-    @Before("@Api")
+    @Before("@US01_API")
     public void setUpScenario(){
-//        RUNS BEFORE EACH SCENARIO
-//        System.out.println("BEFORE METHODS");
+
         setSpec();
     }
     @After

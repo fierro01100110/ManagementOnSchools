@@ -34,5 +34,8 @@ public class HomePage {
     @FindBy(xpath = "//button[@class='fw-semibold btn btn-primary']")
     public WebElement loginSubmitButton;
 
+    @FindBy(xpath = "//a[@href='/register']")
+        public WebElement register;
+
 
 }
