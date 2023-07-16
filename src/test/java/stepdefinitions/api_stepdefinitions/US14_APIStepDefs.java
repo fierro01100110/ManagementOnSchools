@@ -27,7 +27,7 @@ public class US14_APIStepDefs {
 
         //Send the request and get the response
         response = given(spec).get("{first}/{second}");
-        //response.prettyPrint();
+        response.prettyPrint();
 
 
     }
@@ -37,24 +37,24 @@ public class US14_APIStepDefs {
         JsonPath jsonPath = response.jsonPath();
         List<String> mylist=jsonPath.getList("findAll{it.username=='"+username+"'}");
         //Actual data
-        String actBirth_day= jsonPath.getList("findAll{it.username=='"+username+"'}.birth_day").get(0).toString();
-        String actBirth_place= jsonPath.getList("findAll{it.username=='"+username+"'}.birth_place").get(0).toString();
+        String actBirthday= jsonPath.getList("findAll{it.username=='"+username+"'}.birth_day").get(0).toString();
+        String actBirthplace= jsonPath.getList("findAll{it.username=='"+username+"'}.birth_place").get(0).toString();
         String actGender= jsonPath.getList("findAll{it.username=='"+username+"'}.gender").get(0).toString();
         String actName= jsonPath.getList("findAll{it.username=='"+username+"'}.name").get(0).toString();
-        String actPhone_number= jsonPath.getList("findAll{it.username=='"+username+"'}.phone_number").get(0).toString();
+        String actPhonenumber= jsonPath.getList("findAll{it.username=='"+username+"'}.phone_number").get(0).toString();
         String actSsn= jsonPath.getList("findAll{it.username=='"+username+"'}.ssn").get(0).toString();
         String actSurname= jsonPath.getList("findAll{it.username=='"+username+"'}.surname").get(0).toString();
         String actUsername= jsonPath.getList("findAll{it.username=='"+username+"'}.username").get(0).toString();
 
         //Expected data
-        System.out.println(mylist);
+        //System.out.println(mylist);
 
         assertEquals(200,response.statusCode());
-        assertEquals(birth_day,actBirth_day);
-        assertEquals(birth_place,actBirth_place);
+        assertEquals(birth_day,actBirthday);
+        assertEquals(birth_place,actBirthplace);
         assertEquals(gender,actGender);
         assertEquals(name,actName);
-        assertEquals(phone_number,actPhone_number);
+        assertEquals(phone_number,actPhonenumber);
         assertEquals(ssn,actSsn);
         assertEquals(surname,actSurname);
         assertEquals(username,actUsername);
@@ -64,8 +64,8 @@ public class US14_APIStepDefs {
     @Given("get teacher by username {string}")
     public void get_teacher_by_username(String username) {
 
-        List<Objects> myList= response.jsonPath().getList("findAll{it.username=='"+username+"'}");
-        assertTrue(myList.isEmpty());
+        List<Objects> dataList= response.jsonPath().getList("findAll{it.username=='"+username+"'}");
+        assertTrue(dataList.isEmpty());
 
     }
 }
