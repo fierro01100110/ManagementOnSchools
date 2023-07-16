@@ -49,7 +49,7 @@ public class US03_ApiStepDefs {
 //        System.out.println(actContactMessagePojo);//a huge list
 //        System.out.println(actContactMessagePojo.getContent().get(0).getName());  //Andrey
 //        assertEquals(name,actContactMessagePojo.getContent().get(0).getName());
-<<<<<<< HEAD
+
 //
 //
 ////        3rd way by Gson
@@ -58,7 +58,7 @@ public class US03_ApiStepDefs {
 //        assertEquals(name,actualDataGson.getContent().get(0).getName());
 //        System.out.println(actualDataGson.getContent().get(0).getName());   //Andrey
 
-=======
+
 
 
         //3rd way by Gson
@@ -67,7 +67,7 @@ public class US03_ApiStepDefs {
         assertEquals(name,actualDataGson.getContent().get(0).getName());
         System.out.println(actualDataGson.getContent().get(0).getName());   //Andrey
         System.out.println("");
->>>>>>> main
+
 
     }
 }
