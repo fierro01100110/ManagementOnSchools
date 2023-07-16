@@ -5,12 +5,6 @@
     <value-preview-text-wrapping value="false" />
     <value-preview-pinned value="false" />
   </component>
-  <component name="DBNavigator.Project.DatabaseBrowserManager">
-    <autoscroll-to-editor value="false" />
-    <autoscroll-from-editor value="true" />
-    <show-object-properties value="true" />
-    <loaded-nodes />
-  </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="e5455790-d9da-4643-88c8-ed2f68e82863">
       <console name="MOS" type="STANDARD" schema="public" session="Main"><![CDATA[SELECT * FROM guest_user WHERE username = 'jaime.orn']]></console>
@@ -22,6 +16,8 @@
   <component name="DBNavigator.Project.DatabaseFileManager">
     <open-files />
   </component>
+<<<<<<< HEAD
+=======
   <component name="DBNavigator.Project.DatasetFilterManager">
     <filter-actions connection-id="e5455790-d9da-4643-88c8-ed2f68e82863" dataset="public.guest_user" active-filter-id="" />
   </component>
@@ -43,6 +39,7 @@
   <component name="DBNavigator.Project.ScriptExecutionManager" clear-outputs="true">
     <recently-used-interfaces />
   </component>
+>>>>>>> main
   <component name="DBNavigator.Project.Settings">
     <connections>
       <connection id="e5455790-d9da-4643-88c8-ed2f68e82863" active="true" signed="true">
@@ -529,8 +526,5 @@
         </visibility-settings>
       </environment>
     </general-settings>
-  </component>
-  <component name="DBNavigator.Project.StatementExecutionManager">
-    <execution-variables />
   </component>
 </project>
