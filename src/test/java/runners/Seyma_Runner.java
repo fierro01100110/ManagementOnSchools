@@ -24,7 +24,7 @@ import org.junit.runner.RunWith;
         dryRun = false,//dryRun = true : RUNS AND GENERATES ONLY MISSING STEP DEFS. dryRun = false: RUN NORMAL. THIS IS DEFAULT VALUE
         tags = "@e2e_US10"
 )
-public class Runner {
+public class Seyma_Runner {
 
 
 }
