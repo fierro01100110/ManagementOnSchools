@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ce0e83b0-c9b6-47a3-b8ff-9457d24ab1ad" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runners/DBRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/DBRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runners/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/Runner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/ManagementOnSchoolsAuth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/ManagementOnSchoolsAuth.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/api/US04_admin_added_dean_api.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/api/US04_admin_added_dean_api.feature" afterDir="false" />
-    </list>
+    <list default="true" id="ce0e83b0-c9b6-47a3-b8ff-9457d24ab1ad" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -60,7 +53,7 @@
       <recent name="pages" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Runner">
+  <component name="RunManager" selected="JUnit.DBRunner">
     <configuration name="Feature: US04_admin_added_dean_api" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/api/US04_admin_added_dean_api.feature" />
@@ -152,8 +145,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Runner" />
         <item itemvalue="JUnit.DBRunner" />
+        <item itemvalue="JUnit.Runner" />
         <item itemvalue="Cucumber Java.Scenario: TC_001_admin_can_add_dean" />
         <item itemvalue="Cucumber Java.Feature: US04_admin_added_dean_api" />
         <item itemvalue="Cucumber Java.Scenario: TC_001_admin_can_add_dean -  - Example n°1" />

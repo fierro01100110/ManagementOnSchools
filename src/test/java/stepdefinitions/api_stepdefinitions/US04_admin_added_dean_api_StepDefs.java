@@ -14,7 +14,7 @@ public class US04_admin_added_dean_api_StepDefs {
     Response response;
 
     @Given("send get request dean by {string}")
-    public void send_get_request_by(String username) {
+    public void send_get_request_dean_by(String username) {
         // Write code here that turns the phrase above into concrete actions
         //Set the URL
         setSpec();
