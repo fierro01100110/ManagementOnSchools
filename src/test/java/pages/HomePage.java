@@ -19,4 +19,23 @@ public class HomePage {
     @FindBy(xpath = "//a[@href='/login']")
     public WebElement login;
 
+
+
+
+    @FindBy(xpath = "//a[@class='header_link ms-2']")
+    public WebElement homeLoginButton;
+
+    @FindBy(id = "username")
+    public WebElement userName;
+
+    @FindBy(id = "password")
+    public WebElement userPassword;
+
+    @FindBy(xpath = "//button[@class='fw-semibold btn btn-primary']")
+    public WebElement loginSubmitButton;
+
+    @FindBy(xpath = "//a[@href='/register']")
+        public WebElement register;
+
+
 }
