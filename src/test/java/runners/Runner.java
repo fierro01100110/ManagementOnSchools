@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        //        ADDING CONFIGURATIONS
+
         plugin = {
                 "pretty",
                 "html:target/default-cucumber-reports.html",
@@ -23,7 +23,6 @@ import org.junit.runner.RunWith;
         glue = {"stepdefinitions","hooks"},
         dryRun = false,
         tags = "@vice_dean_student_creation"
-
 
 
 

@@ -31,7 +31,7 @@ public class DeanContactMessageStepDefs {
     @Given("user navigates to url")
     public void user_navigates_to_url() {
 
-        Driver.getDriver().get(ConfigReader.getProperty("base_url"));
+        Driver.getDriver().get(ConfigReader.getProperty("login_url"));
 
     }
     @Then("user logs in as dean")

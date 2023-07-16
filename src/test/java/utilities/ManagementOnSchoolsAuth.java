@@ -7,10 +7,10 @@ import static io.restassured.RestAssured.given;
 
 public class ManagementOnSchoolsAuth {
 
-    public static String generateToken(){
+    public static String generateToken() {
 
         String payload = "{ \"password\": \"12345678\", \"username\": \"Project09Admin\"}";
-        Response response =  given()
+        Response response = given()
                 .contentType(ContentType.JSON)
                 .body(payload)
                 .post("https://managementonschools.com/app/auth/login");
@@ -18,3 +18,12 @@ public class ManagementOnSchoolsAuth {
     }
 
 }
+
+
+
+
+
+
+
+
+
