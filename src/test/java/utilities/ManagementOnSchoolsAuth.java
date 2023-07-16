@@ -16,11 +16,10 @@ public class ManagementOnSchoolsAuth {
                 .post("https://managementonschools.com/app/auth/login");
         return response.jsonPath().getString("token");
     }
-<<<<<<< HEAD
+
     
 
 }
-=======
 
-}
->>>>>>> 0cf339bfec7f5c78dfd706fe437dec1689c6fd2a
+
+

@@ -14,8 +14,8 @@ import static org.junit.Assert.assertEquals;
 
 public class US03_ApiStepDefs {
     Response response;
-    @Given("send get request by {string}")
-    public void send_get_request_by(String email) {
+    @Given("send get request by email {string}")
+    public void send_get_request_by_email(String email) {
         //set the url
 //https://managementonschools.com/app/contactMessages/searchByEmail?email=andreytest0102%40gmail.com&size=1000
         spec.pathParams("first","contactMessages","second","searchByEmail").queryParam("email",email);
