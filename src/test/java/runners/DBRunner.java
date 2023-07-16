@@ -22,7 +22,7 @@ import org.junit.runner.RunWith;
         features = "./src/test/resources/features",
         glue = {"stepdefinitions"},
         dryRun = false,
-        tags = "@US13_DB"
+        tags = "@US04_admin_added_dean_db"
 )
 
 public class DBRunner {
