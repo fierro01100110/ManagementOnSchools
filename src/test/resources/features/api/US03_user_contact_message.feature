@@ -3,11 +3,7 @@ Feature: Users should be able to send messages from the page(Contact)
 
   Scenario Outline: US01_GetUserMessageByEmail
 
-  Scenario:update the Dean information by Admin
-    Given update the Dean information via birthplace "<birthplace>"
-    Then verify the birthplace is updated
-
-    Given send get request by "<email>"
+    Given send get request by email "<email>"
     Then body should contain name "<name>", subject "<subject>", message "<message>",email "<email>"
     Examples:
       | email                    | name   | subject                  | message                                              |

@@ -3,7 +3,7 @@ Feature: Deans should be able to create a Vice Dean account.
 
   Scenario Outline: US06_GetViceDeanByUsername
 
-    Given send get request by "<username>"
+    Given send get request by username "<username>"
     Then body should contain name "<name>", surname "<surname>",birth_place "<birth_place>",gender "<gender>",birth_day "<birth_day>",phone_number "<phone_number>",ssn "<ssn>",username "<username>"
     Examples:
       | username      | name  | surname | birth_place | gender | birth_day  | phone_number | ssn         |

@@ -1,0 +1,655 @@
+Index: .idea/dbnavigator.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"DBNavigator.Project.DataEditorManager\">\n    <record-view-column-sorting-type value=\"BY_INDEX\" />\n    <value-preview-text-wrapping value=\"false\" />\n    <value-preview-pinned value=\"false\" />\n  </component>\n  <component name=\"DBNavigator.Project.DatabaseBrowserManager\">\n    <autoscroll-to-editor value=\"false\" />\n    <autoscroll-from-editor value=\"true\" />\n    <show-object-properties value=\"true\" />\n    <loaded-nodes />\n  </component>\n  <component name=\"DBNavigator.Project.DatabaseConsoleManager\">\n    <connection id=\"eead64f9-710c-42c0-b273-facbb3649d2c\">\n      <console name=\"Connection\" type=\"STANDARD\" schema=\"school_management\" session=\"Main\" />\n    </connection>\n  </component>\n  <component name=\"DBNavigator.Project.DatabaseEditorStateManager\">\n    <last-used-providers />\n  </component>\n  <component name=\"DBNavigator.Project.DatabaseFileManager\">\n    <open-files />\n  </component>\n  <component name=\"DBNavigator.Project.DatasetFilterManager\">\n    <filter-actions connection-id=\"784ca604-522b-4f03-997d-8e671bf64a4c\" dataset=\"public.guest_user\" active-filter-id=\"\" />\n  </component>\n  <component name=\"DBNavigator.Project.ExecutionManager\">\n    <retain-sticky-names value=\"false\" />\n  </component>\n  <component name=\"DBNavigator.Project.MethodExecutionManager\">\n    <method-browser />\n    <execution-history>\n      <group-entries value=\"true\" />\n      <execution-inputs />\n    </execution-history>\n    <argument-values-cache />\n  </component>\n  <component name=\"DBNavigator.Project.ObjectQuickFilterManager\">\n    <last-used-operator value=\"EQUAL\" />\n    <filters />\n  </component>\n  <component name=\"DBNavigator.Project.Settings\">\n    <connections>\n      <connection id=\"e5455790-d9da-4643-88c8-ed2f68e82863\" active=\"true\" signed=\"true\">\n        <database>\n          <name value=\"MOS\" />\n          <description value=\"\" />\n          <database-type value=\"POSTGRES\" />\n          <config-type value=\"BASIC\" />\n          <database-version value=\"14.8\" />\n          <driver-source value=\"BUNDLED\" />\n          <driver-library value=\"\" />\n          <driver value=\"\" />\n          <url-type value=\"DATABASE\" />\n          <host value=\"managementonschools.com\" />\n          <port value=\"5432\" />\n          <database value=\"school_management\" />\n          <tns-folder value=\"\" />\n          <tns-profile value=\"\" />\n          <type value=\"USER_PASSWORD\" />\n          <user value=\"select_user\" />\n          <deprecated-pwd value=\"NDN3NWlqZnNv\" />\n        </database>\n        <properties>\n          <auto-commit value=\"false\" />\n        </properties>\n        <ssh-settings>\n          <active value=\"false\" />\n          <proxy-host value=\"\" />\n          <proxy-port value=\"22\" />\n          <proxy-user value=\"\" />\n          <deprecated-proxy-pwd value=\"\" />\n          <auth-type value=\"PASSWORD\" />\n          <key-file value=\"\" />\n          <key-passphrase value=\"\" />\n        </ssh-settings>\n        <ssl-settings>\n          <active value=\"false\" />\n          <certificate-authority-file value=\"\" />\n          <client-certificate-file value=\"\" />\n          <client-key-file value=\"\" />\n        </ssl-settings>\n        <details>\n          <charset value=\"UTF-8\" />\n          <session-management value=\"true\" />\n          <ddl-file-binding value=\"true\" />\n          <database-logging value=\"true\" />\n          <connect-automatically value=\"true\" />\n          <restore-workspace value=\"true\" />\n          <restore-workspace-deep value=\"false\" />\n          <environment-type value=\"default\" />\n          <connectivity-timeout value=\"30\" />\n          <idle-time-to-disconnect value=\"30\" />\n          <idle-time-to-disconnect-pool value=\"5\" />\n          <credential-expiry-time value=\"10\" />\n          <max-connection-pool-size value=\"7\" />\n          <alternative-statement-delimiter value=\"\" />\n        </details>\n        <object-filters hide-empty-schemas=\"false\" hide-pseudo-columns=\"false\">\n          <object-type-filter>\n            <object-type name=\"SCHEMA\" enabled=\"true\" />\n            <object-type name=\"USER\" enabled=\"true\" />\n            <object-type name=\"ROLE\" enabled=\"true\" />\n            <object-type name=\"PRIVILEGE\" enabled=\"true\" />\n            <object-type name=\"CHARSET\" enabled=\"true\" />\n            <object-type name=\"TABLE\" enabled=\"true\" />\n            <object-type name=\"VIEW\" enabled=\"true\" />\n            <object-type name=\"MATERIALIZED_VIEW\" enabled=\"true\" />\n            <object-type name=\"NESTED_TABLE\" enabled=\"true\" />\n            <object-type name=\"COLUMN\" enabled=\"true\" />\n            <object-type name=\"INDEX\" enabled=\"true\" />\n            <object-type name=\"CONSTRAINT\" enabled=\"true\" />\n            <object-type name=\"DATASET_TRIGGER\" enabled=\"true\" />\n            <object-type name=\"DATABASE_TRIGGER\" enabled=\"true\" />\n            <object-type name=\"SYNONYM\" enabled=\"true\" />\n            <object-type name=\"SEQUENCE\" enabled=\"true\" />\n            <object-type name=\"PROCEDURE\" enabled=\"true\" />\n            <object-type name=\"FUNCTION\" enabled=\"true\" />\n            <object-type name=\"PACKAGE\" enabled=\"true\" />\n            <object-type name=\"TYPE\" enabled=\"true\" />\n            <object-type name=\"TYPE_ATTRIBUTE\" enabled=\"true\" />\n            <object-type name=\"ARGUMENT\" enabled=\"true\" />\n            <object-type name=\"DIMENSION\" enabled=\"true\" />\n            <object-type name=\"CLUSTER\" enabled=\"true\" />\n            <object-type name=\"DBLINK\" enabled=\"true\" />\n          </object-type-filter>\n          <object-name-filters />\n        </object-filters>\n      </connection>\n    </connections>\n    <connections>\n      <connection id=\"eead64f9-710c-42c0-b273-facbb3649d2c\" active=\"true\" signed=\"true\">\n        <database>\n          <name value=\"Connection\" />\n          <description value=\"\" />\n          <database-type value=\"POSTGRES\" />\n          <config-type value=\"BASIC\" />\n          <database-version value=\"14.8\" />\n          <driver-source value=\"BUNDLED\" />\n          <driver-library value=\"\" />\n          <driver value=\"\" />\n          <url-type value=\"DATABASE\" />\n          <host value=\"managementonschools.com\" />\n          <port value=\"5432\" />\n          <database value=\"school_management\" />\n          <tns-folder value=\"\" />\n          <tns-profile value=\"\" />\n          <type value=\"USER_PASSWORD\" />\n          <user value=\"select_user\" />\n          <deprecated-pwd value=\"NDN3NWlqZnNv\" />\n        </database>\n        <properties>\n          <auto-commit value=\"false\" />\n        </properties>\n        <ssh-settings>\n          <active value=\"false\" />\n          <proxy-host value=\"\" />\n          <proxy-port value=\"22\" />\n          <proxy-user value=\"\" />\n          <deprecated-proxy-pwd value=\"\" />\n          <auth-type value=\"PASSWORD\" />\n          <key-file value=\"\" />\n          <key-passphrase value=\"\" />\n        </ssh-settings>\n        <ssl-settings>\n          <active value=\"false\" />\n          <certificate-authority-file value=\"\" />\n          <client-certificate-file value=\"\" />\n          <client-key-file value=\"\" />\n        </ssl-settings>\n        <details>\n          <charset value=\"UTF-8\" />\n          <session-management value=\"true\" />\n          <ddl-file-binding value=\"true\" />\n          <database-logging value=\"true\" />\n          <connect-automatically value=\"true\" />\n          <restore-workspace value=\"true\" />\n          <restore-workspace-deep value=\"false\" />\n          <environment-type value=\"default\" />\n          <connectivity-timeout value=\"30\" />\n          <idle-time-to-disconnect value=\"30\" />\n          <idle-time-to-disconnect-pool value=\"5\" />\n          <credential-expiry-time value=\"10\" />\n          <max-connection-pool-size value=\"7\" />\n          <alternative-statement-delimiter value=\"\" />\n        </details>\n        <object-filters hide-empty-schemas=\"false\" hide-pseudo-columns=\"false\">\n          <object-type-filter>\n            <object-type name=\"SCHEMA\" enabled=\"true\" />\n            <object-type name=\"USER\" enabled=\"true\" />\n            <object-type name=\"ROLE\" enabled=\"true\" />\n            <object-type name=\"PRIVILEGE\" enabled=\"true\" />\n            <object-type name=\"CHARSET\" enabled=\"true\" />\n            <object-type name=\"TABLE\" enabled=\"true\" />\n            <object-type name=\"VIEW\" enabled=\"true\" />\n            <object-type name=\"MATERIALIZED_VIEW\" enabled=\"true\" />\n            <object-type name=\"NESTED_TABLE\" enabled=\"true\" />\n            <object-type name=\"COLUMN\" enabled=\"true\" />\n            <object-type name=\"INDEX\" enabled=\"true\" />\n            <object-type name=\"CONSTRAINT\" enabled=\"true\" />\n            <object-type name=\"DATASET_TRIGGER\" enabled=\"true\" />\n            <object-type name=\"DATABASE_TRIGGER\" enabled=\"true\" />\n            <object-type name=\"SYNONYM\" enabled=\"true\" />\n            <object-type name=\"SEQUENCE\" enabled=\"true\" />\n            <object-type name=\"PROCEDURE\" enabled=\"true\" />\n            <object-type name=\"FUNCTION\" enabled=\"true\" />\n            <object-type name=\"PACKAGE\" enabled=\"true\" />\n            <object-type name=\"TYPE\" enabled=\"true\" />\n            <object-type name=\"TYPE_ATTRIBUTE\" enabled=\"true\" />\n            <object-type name=\"ARGUMENT\" enabled=\"true\" />\n            <object-type name=\"DIMENSION\" enabled=\"true\" />\n            <object-type name=\"CLUSTER\" enabled=\"true\" />\n            <object-type name=\"DBLINK\" enabled=\"true\" />\n          </object-type-filter>\n          <object-name-filters />\n        </object-filters>\n      </connection>\n    </connections>\n    <browser-settings>\n      <general>\n        <display-mode value=\"TABBED\" />\n        <navigation-history-size value=\"100\" />\n        <show-object-details value=\"false\" />\n      </general>\n      <filters>\n        <object-type-filter>\n          <object-type name=\"SCHEMA\" enabled=\"true\" />\n          <object-type name=\"USER\" enabled=\"true\" />\n          <object-type name=\"ROLE\" enabled=\"true\" />\n          <object-type name=\"PRIVILEGE\" enabled=\"true\" />\n          <object-type name=\"CHARSET\" enabled=\"true\" />\n          <object-type name=\"TABLE\" enabled=\"true\" />\n          <object-type name=\"VIEW\" enabled=\"true\" />\n          <object-type name=\"MATERIALIZED_VIEW\" enabled=\"true\" />\n          <object-type name=\"NESTED_TABLE\" enabled=\"true\" />\n          <object-type name=\"COLUMN\" enabled=\"true\" />\n          <object-type name=\"INDEX\" enabled=\"true\" />\n          <object-type name=\"CONSTRAINT\" enabled=\"true\" />\n          <object-type name=\"DATASET_TRIGGER\" enabled=\"true\" />\n          <object-type name=\"DATABASE_TRIGGER\" enabled=\"true\" />\n          <object-type name=\"SYNONYM\" enabled=\"true\" />\n          <object-type name=\"SEQUENCE\" enabled=\"true\" />\n          <object-type name=\"PROCEDURE\" enabled=\"true\" />\n          <object-type name=\"FUNCTION\" enabled=\"true\" />\n          <object-type name=\"PACKAGE\" enabled=\"true\" />\n          <object-type name=\"TYPE\" enabled=\"true\" />\n          <object-type name=\"TYPE_ATTRIBUTE\" enabled=\"true\" />\n          <object-type name=\"ARGUMENT\" enabled=\"true\" />\n          <object-type name=\"DIMENSION\" enabled=\"true\" />\n          <object-type name=\"CLUSTER\" enabled=\"true\" />\n          <object-type name=\"DBLINK\" enabled=\"true\" />\n        </object-type-filter>\n      </filters>\n      <sorting>\n        <object-type name=\"COLUMN\" sorting-type=\"NAME\" />\n        <object-type name=\"FUNCTION\" sorting-type=\"NAME\" />\n        <object-type name=\"PROCEDURE\" sorting-type=\"NAME\" />\n        <object-type name=\"ARGUMENT\" sorting-type=\"POSITION\" />\n        <object-type name=\"TYPE ATTRIBUTE\" sorting-type=\"POSITION\" />\n      </sorting>\n      <default-editors>\n        <object-type name=\"VIEW\" editor-type=\"SELECTION\" />\n        <object-type name=\"PACKAGE\" editor-type=\"SELECTION\" />\n        <object-type name=\"TYPE\" editor-type=\"SELECTION\" />\n      </default-editors>\n    </browser-settings>\n    <navigation-settings>\n      <lookup-filters>\n        <lookup-objects>\n          <object-type name=\"SCHEMA\" enabled=\"true\" />\n          <object-type name=\"USER\" enabled=\"false\" />\n          <object-type name=\"ROLE\" enabled=\"false\" />\n          <object-type name=\"PRIVILEGE\" enabled=\"false\" />\n          <object-type name=\"CHARSET\" enabled=\"false\" />\n          <object-type name=\"TABLE\" enabled=\"true\" />\n          <object-type name=\"VIEW\" enabled=\"true\" />\n          <object-type name=\"MATERIALIZED VIEW\" enabled=\"true\" />\n          <object-type name=\"INDEX\" enabled=\"true\" />\n          <object-type name=\"CONSTRAINT\" enabled=\"true\" />\n          <object-type name=\"DATASET TRIGGER\" enabled=\"true\" />\n          <object-type name=\"DATABASE TRIGGER\" enabled=\"true\" />\n          <object-type name=\"SYNONYM\" enabled=\"false\" />\n          <object-type name=\"SEQUENCE\" enabled=\"true\" />\n          <object-type name=\"PROCEDURE\" enabled=\"true\" />\n          <object-type name=\"FUNCTION\" enabled=\"true\" />\n          <object-type name=\"PACKAGE\" enabled=\"true\" />\n          <object-type name=\"TYPE\" enabled=\"true\" />\n          <object-type name=\"DIMENSION\" enabled=\"false\" />\n          <object-type name=\"CLUSTER\" enabled=\"false\" />\n          <object-type name=\"DBLINK\" enabled=\"true\" />\n        </lookup-objects>\n        <force-database-load value=\"false\" />\n        <prompt-connection-selection value=\"true\" />\n        <prompt-schema-selection value=\"true\" />\n      </lookup-filters>\n    </navigation-settings>\n    <dataset-grid-settings>\n      <general>\n        <enable-zooming value=\"true\" />\n        <enable-column-tooltip value=\"true\" />\n      </general>\n      <sorting>\n        <nulls-first value=\"true\" />\n        <max-sorting-columns value=\"4\" />\n      </sorting>\n      <audit-columns>\n        <column-names value=\"\" />\n        <visible value=\"true\" />\n        <editable value=\"false\" />\n      </audit-columns>\n    </dataset-grid-settings>\n    <dataset-editor-settings>\n      <text-editor-popup>\n        <active value=\"false\" />\n        <active-if-empty value=\"false\" />\n        <data-length-threshold value=\"100\" />\n        <popup-delay value=\"1000\" />\n      </text-editor-popup>\n      <values-actions-popup>\n        <show-popup-button value=\"true\" />\n        <element-count-threshold value=\"1000\" />\n        <data-length-threshold value=\"250\" />\n      </values-actions-popup>\n      <general>\n        <fetch-block-size value=\"100\" />\n        <fetch-timeout value=\"30\" />\n        <trim-whitespaces value=\"true\" />\n        <convert-empty-strings-to-null value=\"true\" />\n        <select-content-on-cell-edit value=\"true\" />\n        <large-value-preview-active value=\"true\" />\n      </general>\n      <filters>\n        <prompt-filter-dialog value=\"true\" />\n        <default-filter-type value=\"BASIC\" />\n      </filters>\n      <qualified-text-editor text-length-threshold=\"300\">\n        <content-types>\n          <content-type name=\"Text\" enabled=\"true\" />\n          <content-type name=\"Properties\" enabled=\"true\" />\n          <content-type name=\"XML\" enabled=\"true\" />\n          <content-type name=\"DTD\" enabled=\"true\" />\n          <content-type name=\"HTML\" enabled=\"true\" />\n          <content-type name=\"XHTML\" enabled=\"true\" />\n          <content-type name=\"Java\" enabled=\"true\" />\n          <content-type name=\"SQL\" enabled=\"true\" />\n          <content-type name=\"PL/SQL\" enabled=\"true\" />\n          <content-type name=\"JSON\" enabled=\"true\" />\n          <content-type name=\"JSON5\" enabled=\"true\" />\n          <content-type name=\"Groovy\" enabled=\"true\" />\n          <content-type name=\"AIDL\" enabled=\"true\" />\n          <content-type name=\"YAML\" enabled=\"true\" />\n          <content-type name=\"Manifest\" enabled=\"true\" />\n        </content-types>\n      </qualified-text-editor>\n      <record-navigation>\n        <navigation-target value=\"VIEWER\" />\n      </record-navigation>\n    </dataset-editor-settings>\n    <code-editor-settings>\n      <general>\n        <show-object-navigation-gutter value=\"false\" />\n        <show-spec-declaration-navigation-gutter value=\"true\" />\n        <enable-spellchecking value=\"true\" />\n        <enable-reference-spellchecking value=\"false\" />\n      </general>\n      <confirmations>\n        <save-changes value=\"false\" />\n        <revert-changes value=\"true\" />\n      </confirmations>\n    </code-editor-settings>\n    <code-completion-settings>\n      <filters>\n        <basic-filter>\n          <filter-element type=\"RESERVED_WORD\" id=\"keyword\" selected=\"true\" />\n          <filter-element type=\"RESERVED_WORD\" id=\"function\" selected=\"true\" />\n          <filter-element type=\"RESERVED_WORD\" id=\"parameter\" selected=\"true\" />\n          <filter-element type=\"RESERVED_WORD\" id=\"datatype\" selected=\"true\" />\n          <filter-element type=\"RESERVED_WORD\" id=\"exception\" selected=\"true\" />\n          <filter-element type=\"OBJECT\" id=\"schema\" selected=\"true\" />\n          <filter-element type=\"OBJECT\" id=\"role\" selected=\"true\" />\n          <filter-element type=\"OBJECT\" id=\"user\" selected=\"true\" />\n          <filter-element type=\"OBJECT\" id=\"privilege\" selected=\"true\" />\n          <user-schema>\n            <filter-element type=\"OBJECT\" id=\"table\" selected=\"true\" />\n            <filter-element type=\"OBJECT\" id=\"view\" selected=\"true\" />\n            <filter-element type=\"OBJECT\" id=\"materialized view\" selected=\"true\" />\n            <filter-element type=\"OBJECT\" id=\"index\" selected=\"true\" />\n            <filter-element type=\"OBJECT\" id=\"constraint\" selected=\"true\" />\n            <filter-element type=\"OBJECT\" id=\"trigger\" selected=\"true\" />\n            <filter-element type=\"OBJECT\" id=\"synonym\" selected=\"false\" />\n            <filter-element type=\"OBJECT\" id=\"sequence\" selected=\"true\" />\n            <filter-element type=\"OBJECT\" id=\"procedure\" selected=\"true\" />\n            <filter-element type=\"OBJECT\" id=\"function\" selected=\"true\" />\n            <filter-element type=\"OBJECT\" id=\"package\" selected=\"true\" />\n            <filter-element type=\"OBJECT\" id=\"type\" selected=\"true\" />\n            <filter-element type=\"OBJECT\" id=\"dimension\" selected=\"true\" />\n            <filter-element type=\"OBJECT\" id=\"cluster\" selected=\"true\" />\n            <filter-element type=\"OBJECT\" id=\"dblink\" selected=\"true\" />\n          </user-schema>\n          <public-schema>\n            <filter-element type=\"OBJECT\" id=\"table\" selected=\"false\" />\n            <filter-element type=\"OBJECT\" id=\"view\" selected=\"false\" />\n            <filter-element type=\"OBJECT\" id=\"materialized view\" selected=\"false\" />\n            <filter-element type=\"OBJECT\" id=\"index\" selected=\"false\" />\n            <filter-element type=\"OBJECT\" id=\"constraint\" selected=\"false\" />\n            <filter-element type=\"OBJECT\" id=\"trigger\" selected=\"false\" />\n            <filter-element type=\"OBJECT\" id=\"synonym\" selected=\"false\" />\n            <filter-element type=\"OBJECT\" id=\"sequence\" selected=\"false\" />\n            <filter-element type=\"OBJECT\" id=\"procedure\" selected=\"false\" />\n            <filter-element type=\"OBJECT\" id=\"function\" selected=\"false\" />\n            <filter-element type=\"OBJECT\" id=\"package\" selected=\"false\" />\n            <filter-element type=\"OBJECT\" id=\"type\" selected=\"false\" />\n            <filter-element type=\"OBJECT\" id=\"dimension\" selected=\"false\" />\n            <filter-element type=\"OBJECT\" id=\"cluster\" selected=\"false\" />\n            <filter-element type=\"OBJECT\" id=\"dblink\" selected=\"false\" />\n          </public-schema>\n          <any-schema>\n            <filter-element type=\"OBJECT\" id=\"table\" selected=\"true\" />\n            <filter-element type=\"OBJECT\" id=\"view\" selected=\"true\" />\n            <filter-element type=\"OBJECT\" id=\"materialized view\" selected=\"true\" />\n            <filter-element type=\"OBJECT\" id=\"index\" selected=\"true\" />\n            <filter-element type=\"OBJECT\" id=\"constraint\" selected=\"true\" />\n            <filter-element type=\"OBJECT\" id=\"trigger\" selected=\"true\" />\n            <filter-element type=\"OBJECT\" id=\"synonym\" selected=\"true\" />\n            <filter-element type=\"OBJECT\" id=\"sequence\" selected=\"true\" />\n            <filter-element type=\"OBJECT\" id=\"procedure\" selected=\"true\" />\n            <filter-element type=\"OBJECT\" id=\"function\" selected=\"true\" />\n            <filter-element type=\"OBJECT\" id=\"package\" selected=\"true\" />\n            <filter-element type=\"OBJECT\" id=\"type\" selected=\"true\" />\n            <filter-element type=\"OBJECT\" id=\"dimension\" selected=\"true\" />\n            <filter-element type=\"OBJECT\" id=\"cluster\" selected=\"true\" />\n            <filter-element type=\"OBJECT\" id=\"dblink\" selected=\"true\" />\n          </any-schema>\n        </basic-filter>\n        <extended-filter>\n          <filter-element type=\"RESERVED_WORD\" id=\"keyword\" selected=\"true\" />\n          <filter-element type=\"RESERVED_WORD\" id=\"function\" selected=\"true\" />\n          <filter-element type=\"RESERVED_WORD\" id=\"parameter\" selected=\"true\" />\n          <filter-element type=\"RESERVED_WORD\" id=\"datatype\" selected=\"true\" />\n          <filter-element type=\"RESERVED_WORD\" id=\"exception\" selected=\"true\" />\n          <filter-element type=\"OBJECT\" id=\"schema\" selected=\"true\" />\n          <filter-element type=\"OBJECT\" id=\"user\" selected=\"true\" />\n          <filter-element type=\"OBJECT\" id=\"role\" selected=\"true\" />\n          <filter-element type=\"OBJECT\" id=\"privilege\" selected=\"true\" />\n          <user-schema>\n            <filter-element type=\"OBJECT\" id=\"table\" selected=\"true\" />\n            <filter-element type=\"OBJECT\" id=\"view\" selected=\"true\" />\n            <filter-element type=\"OBJECT\" id=\"materialized view\" selected=\"true\" />\n            <filter-element type=\"OBJECT\" id=\"index\" selected=\"true\" />\n            <filter-element type=\"OBJECT\" id=\"constraint\" selected=\"true\" />\n            <filter-element type=\"OBJECT\" id=\"trigger\" selected=\"true\" />\n            <filter-element type=\"OBJECT\" id=\"synonym\" selected=\"true\" />\n            <filter-element type=\"OBJECT\" id=\"sequence\" selected=\"true\" />\n            <filter-element type=\"OBJECT\" id=\"procedure\" selected=\"true\" />\n            <filter-element type=\"OBJECT\" id=\"function\" selected=\"true\" />\n            <filter-element type=\"OBJECT\" id=\"package\" selected=\"true\" />\n            <filter-element type=\"OBJECT\" id=\"type\" selected=\"true\" />\n            <filter-element type=\"OBJECT\" id=\"dimension\" selected=\"true\" />\n            <filter-element type=\"OBJECT\" id=\"cluster\" selected=\"true\" />\n            <filter-element type=\"OBJECT\" id=\"dblink\" selected=\"true\" />\n          </user-schema>\n          <public-schema>\n            <filter-element type=\"OBJECT\" id=\"table\" selected=\"true\" />\n            <filter-element type=\"OBJECT\" id=\"view\" selected=\"true\" />\n            <filter-element type=\"OBJECT\" id=\"materialized view\" selected=\"true\" />\n            <filter-element type=\"OBJECT\" id=\"index\" selected=\"true\" />\n            <filter-element type=\"OBJECT\" id=\"constraint\" selected=\"true\" />\n            <filter-element type=\"OBJECT\" id=\"trigger\" selected=\"true\" />\n            <filter-element type=\"OBJECT\" id=\"synonym\" selected=\"true\" />\n            <filter-element type=\"OBJECT\" id=\"sequence\" selected=\"true\" />\n            <filter-element type=\"OBJECT\" id=\"procedure\" selected=\"true\" />\n            <filter-element type=\"OBJECT\" id=\"function\" selected=\"true\" />\n            <filter-element type=\"OBJECT\" id=\"package\" selected=\"true\" />\n            <filter-element type=\"OBJECT\" id=\"type\" selected=\"true\" />\n            <filter-element type=\"OBJECT\" id=\"dimension\" selected=\"true\" />\n            <filter-element type=\"OBJECT\" id=\"cluster\" selected=\"true\" />\n            <filter-element type=\"OBJECT\" id=\"dblink\" selected=\"true\" />\n          </public-schema>\n          <any-schema>\n            <filter-element type=\"OBJECT\" id=\"table\" selected=\"true\" />\n            <filter-element type=\"OBJECT\" id=\"view\" selected=\"true\" />\n            <filter-element type=\"OBJECT\" id=\"materialized view\" selected=\"true\" />\n            <filter-element type=\"OBJECT\" id=\"index\" selected=\"true\" />\n            <filter-element type=\"OBJECT\" id=\"constraint\" selected=\"true\" />\n            <filter-element type=\"OBJECT\" id=\"trigger\" selected=\"true\" />\n            <filter-element type=\"OBJECT\" id=\"synonym\" selected=\"true\" />\n            <filter-element type=\"OBJECT\" id=\"sequence\" selected=\"true\" />\n            <filter-element type=\"OBJECT\" id=\"procedure\" selected=\"true\" />\n            <filter-element type=\"OBJECT\" id=\"function\" selected=\"true\" />\n            <filter-element type=\"OBJECT\" id=\"package\" selected=\"true\" />\n            <filter-element type=\"OBJECT\" id=\"type\" selected=\"true\" />\n            <filter-element type=\"OBJECT\" id=\"dimension\" selected=\"true\" />\n            <filter-element type=\"OBJECT\" id=\"cluster\" selected=\"true\" />\n            <filter-element type=\"OBJECT\" id=\"dblink\" selected=\"true\" />\n          </any-schema>\n        </extended-filter>\n      </filters>\n      <sorting enabled=\"true\">\n        <sorting-element type=\"RESERVED_WORD\" id=\"keyword\" />\n        <sorting-element type=\"RESERVED_WORD\" id=\"datatype\" />\n        <sorting-element type=\"OBJECT\" id=\"column\" />\n        <sorting-element type=\"OBJECT\" id=\"table\" />\n        <sorting-element type=\"OBJECT\" id=\"view\" />\n        <sorting-element type=\"OBJECT\" id=\"materialized view\" />\n        <sorting-element type=\"OBJECT\" id=\"index\" />\n        <sorting-element type=\"OBJECT\" id=\"constraint\" />\n        <sorting-element type=\"OBJECT\" id=\"trigger\" />\n        <sorting-element type=\"OBJECT\" id=\"synonym\" />\n        <sorting-element type=\"OBJECT\" id=\"sequence\" />\n        <sorting-element type=\"OBJECT\" id=\"procedure\" />\n        <sorting-element type=\"OBJECT\" id=\"function\" />\n        <sorting-element type=\"OBJECT\" id=\"package\" />\n        <sorting-element type=\"OBJECT\" id=\"type\" />\n        <sorting-element type=\"OBJECT\" id=\"dimension\" />\n        <sorting-element type=\"OBJECT\" id=\"cluster\" />\n        <sorting-element type=\"OBJECT\" id=\"dblink\" />\n        <sorting-element type=\"OBJECT\" id=\"schema\" />\n        <sorting-element type=\"OBJECT\" id=\"role\" />\n        <sorting-element type=\"OBJECT\" id=\"user\" />\n        <sorting-element type=\"RESERVED_WORD\" id=\"function\" />\n        <sorting-element type=\"RESERVED_WORD\" id=\"parameter\" />\n      </sorting>\n      <format>\n        <enforce-code-style-case value=\"true\" />\n      </format>\n    </code-completion-settings>\n    <execution-engine-settings>\n      <statement-execution>\n        <fetch-block-size value=\"100\" />\n        <execution-timeout value=\"20\" />\n        <debug-execution-timeout value=\"600\" />\n        <focus-result value=\"false\" />\n        <prompt-execution value=\"false\" />\n      </statement-execution>\n      <script-execution>\n        <command-line-interfaces />\n        <execution-timeout value=\"300\" />\n      </script-execution>\n      <method-execution>\n        <execution-timeout value=\"30\" />\n        <debug-execution-timeout value=\"600\" />\n        <parameter-history-size value=\"10\" />\n      </method-execution>\n    </execution-engine-settings>\n    <operation-settings>\n      <transactions>\n        <uncommitted-changes>\n          <on-project-close value=\"ASK\" />\n          <on-disconnect value=\"ASK\" />\n          <on-autocommit-toggle value=\"ASK\" />\n        </uncommitted-changes>\n        <multiple-uncommitted-changes>\n          <on-commit value=\"ASK\" />\n          <on-rollback value=\"ASK\" />\n        </multiple-uncommitted-changes>\n      </transactions>\n      <session-browser>\n        <disconnect-session value=\"ASK\" />\n        <kill-session value=\"ASK\" />\n        <reload-on-filter-change value=\"false\" />\n      </session-browser>\n      <compiler>\n        <compile-type value=\"KEEP\" />\n        <compile-dependencies value=\"ASK\" />\n        <always-show-controls value=\"false\" />\n      </compiler>\n      <debugger>\n        <debugger-type value=\"ASK\" />\n        <use-generic-runners value=\"true\" />\n      </debugger>\n    </operation-settings>\n    <ddl-file-settings>\n      <extensions>\n        <mapping file-type-id=\"VIEW\" extensions=\"vw\" />\n        <mapping file-type-id=\"TRIGGER\" extensions=\"trg\" />\n        <mapping file-type-id=\"PROCEDURE\" extensions=\"prc\" />\n        <mapping file-type-id=\"FUNCTION\" extensions=\"fnc\" />\n        <mapping file-type-id=\"PACKAGE\" extensions=\"pkg\" />\n        <mapping file-type-id=\"PACKAGE_SPEC\" extensions=\"pks\" />\n        <mapping file-type-id=\"PACKAGE_BODY\" extensions=\"pkb\" />\n        <mapping file-type-id=\"TYPE\" extensions=\"tpe\" />\n        <mapping file-type-id=\"TYPE_SPEC\" extensions=\"tps\" />\n        <mapping file-type-id=\"TYPE_BODY\" extensions=\"tpb\" />\n      </extensions>\n      <general>\n        <lookup-ddl-files value=\"true\" />\n        <create-ddl-files value=\"false\" />\n        <synchronize-ddl-files value=\"true\" />\n        <use-qualified-names value=\"false\" />\n        <make-scripts-rerunnable value=\"true\" />\n      </general>\n    </ddl-file-settings>\n    <general-settings>\n      <regional-settings>\n        <date-format value=\"MEDIUM\" />\n        <number-format value=\"UNGROUPED\" />\n        <locale value=\"SYSTEM_DEFAULT\" />\n        <use-custom-formats value=\"false\" />\n      </regional-settings>\n      <environment>\n        <environment-types>\n          <environment-type id=\"development\" name=\"Development\" description=\"Development environment\" color=\"-2430209/-12296320\" readonly-code=\"false\" readonly-data=\"false\" />\n          <environment-type id=\"integration\" name=\"Integration\" description=\"Integration environment\" color=\"-2621494/-12163514\" readonly-code=\"true\" readonly-data=\"false\" />\n          <environment-type id=\"production\" name=\"Production\" description=\"Productive environment\" color=\"-11574/-10271420\" readonly-code=\"true\" readonly-data=\"true\" />\n          <environment-type id=\"other\" name=\"Other\" description=\"\" color=\"-1576/-10724543\" readonly-code=\"false\" readonly-data=\"false\" />\n        </environment-types>\n        <visibility-settings>\n          <connection-tabs value=\"true\" />\n          <dialog-headers value=\"true\" />\n          <object-editor-tabs value=\"true\" />\n          <script-editor-tabs value=\"false\" />\n          <execution-result-tabs value=\"true\" />\n        </visibility-settings>\n      </environment>\n    </general-settings>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/dbnavigator.xml b/.idea/dbnavigator.xml
+--- a/.idea/dbnavigator.xml	(revision 24ea5092d69bd5f03479a54a8275caccb192abf0)
++++ b/.idea/dbnavigator.xml	(date 1689517611917)
+@@ -12,8 +12,8 @@
+     <loaded-nodes />
+   </component>
+   <component name="DBNavigator.Project.DatabaseConsoleManager">
+-    <connection id="eead64f9-710c-42c0-b273-facbb3649d2c">
+-      <console name="Connection" type="STANDARD" schema="school_management" session="Main" />
++    <connection id="e5455790-d9da-4643-88c8-ed2f68e82863">
++      <console name="MOS" type="STANDARD" schema="school_management" session="Main" />
+     </connection>
+   </component>
+   <component name="DBNavigator.Project.DatabaseEditorStateManager">
+@@ -45,94 +45,6 @@
+       <connection id="e5455790-d9da-4643-88c8-ed2f68e82863" active="true" signed="true">
+         <database>
+           <name value="MOS" />
+-          <description value="" />
+-          <database-type value="POSTGRES" />
+-          <config-type value="BASIC" />
+-          <database-version value="14.8" />
+-          <driver-source value="BUNDLED" />
+-          <driver-library value="" />
+-          <driver value="" />
+-          <url-type value="DATABASE" />
+-          <host value="managementonschools.com" />
+-          <port value="5432" />
+-          <database value="school_management" />
+-          <tns-folder value="" />
+-          <tns-profile value="" />
+-          <type value="USER_PASSWORD" />
+-          <user value="select_user" />
+-          <deprecated-pwd value="NDN3NWlqZnNv" />
+-        </database>
+-        <properties>
+-          <auto-commit value="false" />
+-        </properties>
+-        <ssh-settings>
+-          <active value="false" />
+-          <proxy-host value="" />
+-          <proxy-port value="22" />
+-          <proxy-user value="" />
+-          <deprecated-proxy-pwd value="" />
+-          <auth-type value="PASSWORD" />
+-          <key-file value="" />
+-          <key-passphrase value="" />
+-        </ssh-settings>
+-        <ssl-settings>
+-          <active value="false" />
+-          <certificate-authority-file value="" />
+-          <client-certificate-file value="" />
+-          <client-key-file value="" />
+-        </ssl-settings>
+-        <details>
+-          <charset value="UTF-8" />
+-          <session-management value="true" />
+-          <ddl-file-binding value="true" />
+-          <database-logging value="true" />
+-          <connect-automatically value="true" />
+-          <restore-workspace value="true" />
+-          <restore-workspace-deep value="false" />
+-          <environment-type value="default" />
+-          <connectivity-timeout value="30" />
+-          <idle-time-to-disconnect value="30" />
+-          <idle-time-to-disconnect-pool value="5" />
+-          <credential-expiry-time value="10" />
+-          <max-connection-pool-size value="7" />
+-          <alternative-statement-delimiter value="" />
+-        </details>
+-        <object-filters hide-empty-schemas="false" hide-pseudo-columns="false">
+-          <object-type-filter>
+-            <object-type name="SCHEMA" enabled="true" />
+-            <object-type name="USER" enabled="true" />
+-            <object-type name="ROLE" enabled="true" />
+-            <object-type name="PRIVILEGE" enabled="true" />
+-            <object-type name="CHARSET" enabled="true" />
+-            <object-type name="TABLE" enabled="true" />
+-            <object-type name="VIEW" enabled="true" />
+-            <object-type name="MATERIALIZED_VIEW" enabled="true" />
+-            <object-type name="NESTED_TABLE" enabled="true" />
+-            <object-type name="COLUMN" enabled="true" />
+-            <object-type name="INDEX" enabled="true" />
+-            <object-type name="CONSTRAINT" enabled="true" />
+-            <object-type name="DATASET_TRIGGER" enabled="true" />
+-            <object-type name="DATABASE_TRIGGER" enabled="true" />
+-            <object-type name="SYNONYM" enabled="true" />
+-            <object-type name="SEQUENCE" enabled="true" />
+-            <object-type name="PROCEDURE" enabled="true" />
+-            <object-type name="FUNCTION" enabled="true" />
+-            <object-type name="PACKAGE" enabled="true" />
+-            <object-type name="TYPE" enabled="true" />
+-            <object-type name="TYPE_ATTRIBUTE" enabled="true" />
+-            <object-type name="ARGUMENT" enabled="true" />
+-            <object-type name="DIMENSION" enabled="true" />
+-            <object-type name="CLUSTER" enabled="true" />
+-            <object-type name="DBLINK" enabled="true" />
+-          </object-type-filter>
+-          <object-name-filters />
+-        </object-filters>
+-      </connection>
+-    </connections>
+-    <connections>
+-      <connection id="eead64f9-710c-42c0-b273-facbb3649d2c" active="true" signed="true">
+-        <database>
+-          <name value="Connection" />
+           <description value="" />
+           <database-type value="POSTGRES" />
+           <config-type value="BASIC" />
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+deleted file mode 100644
+--- a/.idea/workspace.xml	(revision 24ea5092d69bd5f03479a54a8275caccb192abf0)
++++ /dev/null	(revision 24ea5092d69bd5f03479a54a8275caccb192abf0)
+@@ -1,161 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="AutoImportSettings">
+-    <option name="autoReloadType" value="SELECTIVE" />
+-  </component>
+-  <component name="ChangeListManager">
+-    <list default="true" id="e1b23fb8-97c1-4e32-b6d1-49bb90892d77" name="Changes" comment="">
+-      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/negative_test_cases/US01_TC002_NegativeStudentRegisterStepDefs.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/base_url/Base_Url.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base_url/Base_Url.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/hooks/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hooks/Hooks.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/Register.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/runners/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/Runner.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_student_register_step_defs/US01_TC0010_NegativeStudentRegisterStepDefs.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_student_register_step_defs/US01_TC0011_NegativeStudentRegisterStepDefs.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_student_register_step_defs/US01_TC0012_NegativeStudentRegisterStepDefs.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_student_register_step_defs/US01_TC0013_NegativeStudentRegisterStepDefs.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_student_register_step_defs/US01_TC0014_NegativeStudentRegisterStepDefs.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_student_register_step_defs/US01_TC0015_NegativeStudentRegisterStepDefs.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_student_register_step_defs/US01_TC0016_NegativeStudentRegisterStepDefs.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_student_register_step_defs/US01_TC0017_NegativeStudentRegisterStepDefs.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_student_register_step_defs/US01_TC001_StudentRegisterStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_TC001_StudentRegisterStepDefs.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_student_register_step_defs/US01_TC002_NegativeStudentRegisterStepDefs.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_student_register_step_defs/US01_TC003_NegativeStudentRegisterStepDefs.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_student_register_step_defs/US01_TC004_NegativeStudentRegisterStepDefs.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_student_register_step_defs/US01_TC005_NegativeStudentRegisterStepDefs.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_student_register_step_defs/US01_TC006_NegativeStudentRegisterStepDefs.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_student_register_step_defs/US01_TC007_NegativeStudentRegisterStepDefs.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_student_register_step_defs/US01_TC008_NegativeStudentRegisterStepDefs.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US01_student_register_step_defs/US01_TC009_NegativeStudentRegisterStepDefs.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ui/US01_student_register/US01_TC0010_negative_student_register.feature" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ui/US01_student_register/US01_TC0011_negative_student_register.feature" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ui/US01_student_register/US01_TC0012_negative_student_register.feature" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ui/US01_student_register/US01_TC0013_negative_student_register.feature" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ui/US01_student_register/US01_TC0014_negative_student_register.feature" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ui/US01_student_register/US01_TC0015_negative_student_register.feature" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ui/US01_student_register/US01_TC0016_negative_student_register.feature" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ui/US01_student_register/US01_TC0017_negative_student_register.feature" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ui/US01_student_register/US01_TC001_student_register.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ui/US01_TC001_student_register.feature" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ui/US01_student_register/US01_TC002_negative_student_register.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ui/negative_test_cases/US01_TC002_negative_student_register.feature" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ui/US01_student_register/US01_TC003_negative_student_register.feature" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ui/US01_student_register/US01_TC004_negative_student_register.feature" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ui/US01_student_register/US01_TC005_negative_student_register.feature" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ui/US01_student_register/US01_TC006_negative_student_register.feature" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ui/US01_student_register/US01_TC007_negative_student_register.feature" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ui/US01_student_register/US01_TC008_negative_student_register.feature" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ui/US01_student_register/US01_TC009_negative_student_register.feature" beforeDir="false" />
+-    </list>
+-    <option name="SHOW_DIALOG" value="false" />
+-    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+-    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+-    <option name="LAST_RESOLUTION" value="IGNORE" />
+-  </component>
+-  <component name="FileTemplateManagerImpl">
+-    <option name="RECENT_TEMPLATES">
+-      <list>
+-        <option value="Class" />
+-      </list>
+-    </option>
+-  </component>
+-  <component name="Git.Settings">
+-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+-  </component>
+-  <component name="HighlightingSettingsPerFile">
+-    <setting file="file://$PROJECT_DIR$/src/test/java/runners/Runner.java" root0="FORCE_HIGHLIGHTING" />
+-  </component>
+-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+-  <component name="ProjectViewState">
+-    <option name="showLibraryContents" value="true" />
+-  </component>
+-  <component name="PropertiesComponent">{
+-  &quot;keyToString&quot;: {
+-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+-    &quot;last_opened_file_path&quot;: &quot;/Users/betul/Desktop/ManagementOnSchools/src/test/resources/features/ui/US01_student_register&quot;,
+-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+-  }
+-}</component>
+-  <component name="RecentsManager">
+-    <key name="CopyFile.RECENT_KEYS">
+-      <recent name="$PROJECT_DIR$/src/test/resources/features/ui/US01_student_register" />
+-    </key>
+-    <key name="MoveFile.RECENT_KEYS">
+-      <recent name="$PROJECT_DIR$/src/test/resources/features/ui/negative_test_cases" />
+-      <recent name="$PROJECT_DIR$/src/test/resources/features/ui" />
+-      <recent name="$PROJECT_DIR$/src/test/resources/features/ui/US01_student_register" />
+-    </key>
+-  </component>
+-  <component name="RunManager" selected="JUnit.Runner">
+-    <configuration name="Feature: student_register" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+-      <option name="CUCUMBER_CORE_VERSION" value="5" />
+-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/ui/student_register.feature" />
+-      <option name="GLUE" value="stepdefinitions hooks" />
+-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+-      <module name="ManagementOnSchools" />
+-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+-      <option name="SUGGESTED_NAME" value="Feature: student_register" />
+-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+-      <extension name="coverage">
+-        <pattern>
+-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+-          <option name="ENABLED" value="true" />
+-        </pattern>
+-      </extension>
+-      <method v="2">
+-        <option name="Make" enabled="true" />
+-      </method>
+-    </configuration>
+-    <configuration name="Scenario: " type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+-      <option name="CUCUMBER_CORE_VERSION" value="5" />
+-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/ui/student_register.feature" />
+-      <option name="GLUE" value="stepdefinitions hooks" />
+-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+-      <module name="ManagementOnSchools" />
+-      <option name="NAME_FILTER" value="^$" />
+-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^$&quot;" />
+-      <option name="SUGGESTED_NAME" value="Scenario: " />
+-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+-      <extension name="coverage">
+-        <pattern>
+-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+-          <option name="ENABLED" value="true" />
+-        </pattern>
+-      </extension>
+-      <method v="2">
+-        <option name="Make" enabled="true" />
+-      </method>
+-    </configuration>
+-    <configuration name="Runner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+-      <module name="ManagementOnSchools" />
+-      <extension name="coverage">
+-        <pattern>
+-          <option name="PATTERN" value="runners.*" />
+-          <option name="ENABLED" value="true" />
+-        </pattern>
+-      </extension>
+-      <option name="PACKAGE_NAME" value="runners" />
+-      <option name="MAIN_CLASS_NAME" value="runners.Runner" />
+-      <option name="TEST_OBJECT" value="class" />
+-      <method v="2">
+-        <option name="Make" enabled="true" />
+-      </method>
+-    </configuration>
+-    <recent_temporary>
+-      <list>
+-        <item itemvalue="JUnit.Runner" />
+-        <item itemvalue="Cucumber Java.Scenario: " />
+-        <item itemvalue="Cucumber Java.Feature: student_register" />
+-      </list>
+-    </recent_temporary>
+-  </component>
+-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+-  <component name="TaskManager">
+-    <servers />
+-  </component>
+-</project>
+\ No newline at end of file
+Index: src/test/java/pages/ViceDeanLessons.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/pages/ViceDeanLessons.java b/src/test/java/pages/ViceDeanLessons.java
+new file mode 100644
+--- /dev/null	(date 1689517611920)
++++ b/src/test/java/pages/ViceDeanLessons.java	(date 1689517611920)
+@@ -0,0 +1,64 @@
++package pages;
++
++import org.openqa.selenium.WebElement;
++import org.openqa.selenium.support.FindBy;
++import org.openqa.selenium.support.PageFactory;
++import utilities.Driver;
++
++import java.util.List;
++
++public class ViceDeanLessons {
++
++    public ViceDeanLessons(){PageFactory.initElements(Driver.getDriver(),this);
++    }
++
++    //Lessons button
++    @FindBy(id ="controlled-tab-example-tab-lessonsList")
++    public WebElement lessons;
++
++    //Lesson Name
++    @FindBy(id ="lessonName")
++    public WebElement lesson_name;
++
++   //Compulsory Check
++   @FindBy(id ="compulsory")
++   public WebElement compulsory_check;
++
++   //Credit Score
++   @FindBy(id ="creditScore")
++   public WebElement credit_score;
++
++   //Submit Button
++    @FindBy(xpath ="(//button[text()='Submit'])[2]")
++    public WebElement submit_button;
++
++    //Lesson Created Message
++    @FindBy(xpath ="//div[text()='Lesson Created']")
++    public WebElement success_message;
++
++    //Last Page Button
++    @FindBy(xpath ="(//a[@class='page-link'])[8]")
++    public WebElement last_page_button;
++
++    //Table
++
++    @FindBy(xpath ="(//*[@class='table table-striped table-bordered table-hover'])[2]//tr//td[1]")
++    public WebElement table;
++
++    //Lesson Deleted Message
++
++    @FindBy(xpath ="//div[text()='Lesson Deleted']")
++    public WebElement deleted_message;
++
++    //All the delete buttons
++    @FindBy(xpath = "(//button[@class='btn btn-danger'])[4]")
++    public WebElement deleteButtons;
++
++    //Delete message
++    @FindBy(xpath = "//*[text()='Lesson Deleted']")
++    public WebElement deleteMessage;
++
++    //Last page
++    @FindBy(xpath = "(//span[text()='Last'])[1]")
++    public WebElement lastPage;
++}
+Index: src/test/java/base_url/ManagementOnSchoolsBaseUrl.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/base_url/ManagementOnSchoolsBaseUrl.java b/src/test/java/base_url/ManagementOnSchoolsBaseUrl.java
+new file mode 100644
+--- /dev/null	(date 1689517611919)
++++ b/src/test/java/base_url/ManagementOnSchoolsBaseUrl.java	(date 1689517611919)
+@@ -0,0 +1,19 @@
++package base_url;
++
++import io.restassured.builder.RequestSpecBuilder;
++import io.restassured.specification.RequestSpecification;
++
++import static utilities.ManagementOnSchoolsAuth.generateToken;
++
++
++public class ManagementOnSchoolsBaseUrl {
++
++    public static RequestSpecification spec;
++
++    public static void setSpec(){
++        spec = new RequestSpecBuilder()
++                .addHeader("Authorization", generateToken())
++                .setBaseUri("https://managementonschools.com/app").build();
++    }
++
++}
+Index: src/test/resources/features/ui/US_09_vice_dean_lessons_lesson_list.feature
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/resources/features/ui/US_09_vice_dean_lessons_lesson_list.feature b/src/test/resources/features/ui/US_09_vice_dean_lessons_lesson_list.feature
+new file mode 100644
+--- /dev/null	(date 1689517611922)
++++ b/src/test/resources/features/ui/US_09_vice_dean_lessons_lesson_list.feature	(date 1689517611922)
+@@ -0,0 +1,19 @@
++@vicedean_lessons_lessonlist
++Feature: ViceDean_lessons_lessonlist
++
++  Scenario: TC_001 vice dean can see Lesson Name, Compulsory and Credit Score
++    Given user navigates to url
++    Then user logs in vice dean
++    And vice dean clicks Lessons button
++    Then vice dean enter Lesson Name
++    Then vice dean clicks Compulsory
++    Then vice dean enter Credit Score
++    Then vice dean clicks Submit button
++    Then vice dean should be able to see "Lesson Created" message
++
++  Scenario: TC_002 Vice Dean should be able to delete the lesson.
++    And vice dean clicks Lessons button
++    When vice dean clicks the last page of Lesson List
++    Then vice Dean click Delete button
++    And  Verify the "Lesson Deleted" message
++
+Index: src/test/java/stepdefinitions/US_09_ViceDeanLessonsListStepDefs.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/stepdefinitions/US_09_ViceDeanLessonsListStepDefs.java b/src/test/java/stepdefinitions/US_09_ViceDeanLessonsListStepDefs.java
+new file mode 100644
+--- /dev/null	(date 1689517611921)
++++ b/src/test/java/stepdefinitions/US_09_ViceDeanLessonsListStepDefs.java	(date 1689517611921)
+@@ -0,0 +1,99 @@
++package stepdefinitions;
++
++import com.github.javafaker.Faker;
++import io.cucumber.java.en.Then;
++import io.cucumber.java.en.When;
++import org.junit.Assert;
++import pages.HomePage;
++import pages.Login;
++import pages.ViceDeanLessons;
++import utilities.*;
++
++
++
++public class US_09_ViceDeanLessonsListStepDefs {
++
++    HomePage homePage = new HomePage();
++    Login login = new Login();
++    ViceDeanLessons viceDeanLessons=new ViceDeanLessons();
++    Faker faker=new Faker();
++
++
++    @Then("user logs in vice dean")
++    public void user_logs_in_vice_dean() {
++        homePage.login.click();
++        WaitUtils.waitFor(2);
++        login.username.sendKeys(ConfigReader.getProperty("garip_vice_dean_username"));
++        login.password.sendKeys(ConfigReader.getProperty("garip_vice_dean_password"));
++        login.login.click();
++
++    }
++    @Then("vice dean clicks Lessons button")
++    public void vice_dean_clicks_lessons_button() {
++        viceDeanLessons.lessons.click();
++
++    }
++
++    @Then("vice dean enter Lesson Name")
++    public void vice_dean_enter_lesson_name() {
++        String lesson_name=faker.job().field();
++        viceDeanLessons.lesson_name.sendKeys(lesson_name);
++
++    }
++    @Then("vice dean clicks Compulsory")
++    public void vice_dean_clicks_compulsory() {
++        viceDeanLessons.compulsory_check.click();
++
++    }
++    @Then("vice dean enter Credit Score")
++    public void vice_dean_enter_credit_score() {
++        String credit_score=faker.number().digits(2);
++        viceDeanLessons.credit_score.sendKeys(credit_score);
++
++    }
++    @Then("vice dean clicks Submit button")
++    public void vice_dean_clicks_submit_button() {
++        viceDeanLessons.submit_button.click();
++
++    }
++    @Then("vice dean should be able to see {string} message")
++    public void vice_dean_should_be_able_to_see_message(String message) {
++        WaitUtils.waitFor(1);
++
++        Assert.assertEquals(message,viceDeanLessons.success_message.getText());
++
++    }
++
++    @When("vice dean clicks the last page of Lesson List")
++    public void vice_dean_clicks_the_last_page_of_lesson_list() {
++       WaitUtils.waitFor(2);
++       JSUtils.clickWithTimeoutByJS(viceDeanLessons.last_page_button);
++
++    }
++    @Then("vice Dean click Delete button")
++    public void vice_dean_click_delete_button() {
++//     List<WebElement>lessonElements= Driver.getDriver().findElements(By.xpath("(//*[@class='table table-striped table-bordered table-hover'])[2]//tr//td[1]"));
++//     ArrayList lessons=new ArrayList();
++//
++//        for (WebElement lessonElement : lessonElements ) {
++//            lessons.add(lessonElement.getText());
++//
++//        }
++//        for (Object lessonName:lessons) {
++//            System.out.println(lessonName);
++//
++//        }
++//        String table=viceDeanLessons.table.getText();
++//        System.out.println(table);
++
++        WaitUtils.waitFor(2);
++       JSUtils.clickWithTimeoutByJS(viceDeanLessons.deleteButtons);
++
++    }
++    @Then("Verify the {string} message")
++    public void verify_the_message(String string) {
++        WaitUtils.waitFor(2);
++        ReusableMethods.verifyElementIsDisplayed(viceDeanLessons.deleteMessage);
++    }
++
++}
+Index: src/test/resources/features/api/US_09_vice_dean_lessons_lesson_list_api.feature
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/resources/features/api/US_09_vice_dean_lessons_lesson_list_api.feature b/src/test/resources/features/api/US_09_vice_dean_lessons_lesson_list_api.feature
+new file mode 100644
+--- /dev/null	(date 1689517611922)
++++ b/src/test/resources/features/api/US_09_vice_dean_lessons_lesson_list_api.feature	(date 1689517611922)
+@@ -0,0 +1,15 @@
++@US09_Api
++Feature: Vice Dean should be able to view the Lesson Name, Compulsory and Credit Score created(Api)
++
++  Scenario Outline: US09_GetLesson_Information
++
++    Given send get request by lesson_name "<lesson_name>"
++    Then body should contain lesson_name "<lesson_name>" ,compulsory "<compulsory>", credit_score "<credit_score>"
++    Examples:
++      | lesson_name | compulsory | credit_score |
++      | Electronic  | true       | 40           |
++
++
++  Scenario: Admin should be able to delete lesson information
++    Given send get request by lesson_name "Electronic"
++    Then body must be empty with non existing lesson_name "ElectronicX"
+\ No newline at end of file
+Index: src/test/java/stepdefinitions/US_09_ViceDeanLessonsListStepAPIDefs.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/stepdefinitions/US_09_ViceDeanLessonsListStepAPIDefs.java b/src/test/java/stepdefinitions/US_09_ViceDeanLessonsListStepAPIDefs.java
+new file mode 100644
+--- /dev/null	(date 1689517611920)
++++ b/src/test/java/stepdefinitions/US_09_ViceDeanLessonsListStepAPIDefs.java	(date 1689517611920)
+@@ -0,0 +1,68 @@
++package stepdefinitions;
++
++import io.cucumber.java.en.Given;
++import io.cucumber.java.en.Then;
++import io.restassured.path.json.JsonPath;
++import io.restassured.response.Response;
++
++import java.util.List;
++import java.util.Objects;
++
++import static base_url.ManagementOnSchoolsBaseUrl.spec;
++import static io.restassured.RestAssured.given;
++import static org.junit.Assert.assertEquals;
++import static org.junit.Assert.assertTrue;
++
++public class US_09_ViceDeanLessonsListStepAPIDefs {
++    Response response;
++
++    @Given("send get request by lesson_name {string}")
++    public void send_get_request_by_lesson_name(String lesson_name) {
++        //Set the url
++        //https://managementonschools.com/app/lessons/getAll
++        //https://managementonschools.com/app/guestUser/getAll?size=10000
++        spec.pathParams("first", "lessons", "second", "getAll");
++
++        //Set the expected data
++
++        //Send the request and get the response
++        response = given(spec).get("{first}/{second}");
++        response.prettyPrint();
++
++    }
++    @Then("body should contain lesson_name {string} ,compulsory {string}, credit_score {string}")
++    public void body_should_contain_lesson_name_compulsory_credit_score(String lesson_name, String compulsory, String credit_score) {
++
++
++        JsonPath jsonPath = response.jsonPath();
++
++        String actcompulsory = jsonPath.getList("findAll{it.lessonName=='" + lesson_name + "'}.compulsory").get(0).toString();
++        String actcredit_score = jsonPath.getList("findAll{it.lessonName=='" + lesson_name + "'}.creditScore").get(0).toString();
++        String actlesson_name = jsonPath.getList("findAll{it.lessonName=='" + lesson_name + "'}.lessonName").get(0).toString();
++        System.out.println(actlesson_name);
++        System.out.println(actcompulsory);
++        System.out.println(actcredit_score);
++
++
++        assertEquals(200, response.statusCode());
++        assertEquals(lesson_name, actlesson_name);
++        assertEquals(compulsory, actcompulsory);
++        assertEquals(credit_score, actcredit_score);
++    }
++
++
++    @Then("body must be empty with non existing lesson_name {string}")
++    public void body_must_be_empty_with_non_existing_lesson_name(String lesson_name) {
++
++
++        List<Objects> dataList = response.jsonPath().getList("findAll{it.lessonName=='" + lesson_name + "'}");
++        assertTrue(dataList.isEmpty());
++
++    }
++
++
++
++
++
++
++}
+Index: src/test/java/utilities/ManagementOnSchoolsAuth.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package utilities;\n\nimport io.restassured.http.ContentType;\nimport io.restassured.response.Response;\n\nimport static io.restassured.RestAssured.given;\n\npublic class ManagementOnSchoolsAuth {\n\n    public static String generateToken(){\n\n        String payload = \"{ \\\"password\\\": \\\"12345678\\\", \\\"username\\\": \\\"Project09Admin\\\"}\";\n        Response response =  given()\n                .contentType(ContentType.JSON)\n                .body(payload)\n                .post(\"https://managementonschools.com/app/auth/login\");\n        return response.jsonPath().getString(\"token\");\n    }\n\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/utilities/ManagementOnSchoolsAuth.java b/src/test/java/utilities/ManagementOnSchoolsAuth.java
+--- a/src/test/java/utilities/ManagementOnSchoolsAuth.java	(revision 24ea5092d69bd5f03479a54a8275caccb192abf0)
++++ b/src/test/java/utilities/ManagementOnSchoolsAuth.java	(date 1689517611921)
+@@ -16,5 +16,11 @@
+                 .post("https://managementonschools.com/app/auth/login");
+         return response.jsonPath().getString("token");
+     }
++<<<<<<< HEAD
++    
+ 
+ }
++=======
++
++}
++>>>>>>> 0cf339bfec7f5c78dfd706fe437dec1689c6fd2a

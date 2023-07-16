@@ -14,8 +14,8 @@ import static org.junit.Assert.assertEquals;
 
 public class US03_ApiStepDefs {
     Response response;
-    @Given("send get request by {string}")
-    public void send_get_request_by(String email) {
+    @Given("send get request by email {string}")
+    public void send_get_request_by_email(String email) {
         //set the url
 //https://managementonschools.com/app/contactMessages/searchByEmail?email=andreytest0102%40gmail.com&size=1000
         spec.pathParams("first","contactMessages","second","searchByEmail").queryParam("email",email);
@@ -56,7 +56,7 @@ public class US03_ApiStepDefs {
         assertEquals(200,response.statusCode());
         assertEquals(name,actualDataGson.getContent().get(0).getName());
         System.out.println(actualDataGson.getContent().get(0).getName());   //Andrey
-
+        System.out.println("");
 
     }
 }
