@@ -18,10 +18,13 @@ import org.junit.runner.RunWith;
         },
 
         monochrome = true,
+
+
         features = "./src/test/resources/features",
         glue = {"stepdefinitions","hooks"},
         dryRun = false,
         tags = "@us03_user_message_api_test"
+
 
 )
 public class Runner {
