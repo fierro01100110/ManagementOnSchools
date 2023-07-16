@@ -20,9 +20,6 @@ public class ViceDeanManagement {
     @FindBy(xpath = "//a[text()='Lesson Management']")
     public WebElement lessonManagement;
 
-
-
-
     //Main Menu Link
     @FindBy(id = "offcanvasNavbarLabel-expand-lg")
     public WebElement mainMenu;
@@ -30,11 +27,6 @@ public class ViceDeanManagement {
     //Teacher Management Link
     @FindBy(xpath = "//a[text()='Teacher Management']")
     public WebElement teacherManagement;
-
-<<<<<<< HEAD
-=======
-    @FindBy(xpath = "(//button[@aria-label='Toggle navigation'])[1]")
-    public WebElement menu;
 
     @FindBy(xpath = "//a[text()='Vice Dean Management']")
     public WebElement viceDManagment;
@@ -71,6 +63,6 @@ public class ViceDeanManagement {
 
     @FindBy(xpath = "//span[@class='text-white text-white justify-content-center text-center navbar-brand']")
     public WebElement viceDeanSaved;
->>>>>>> main
+
 
 }
