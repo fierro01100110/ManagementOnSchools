@@ -39,10 +39,10 @@ public class JSUtils {
         ((JavascriptExecutor) Driver.getDriver()).executeScript("arguments[0].click();", element);
     }
     /*
-   @param String id of teh webelement that we want to locate
+   @param String id of teh webElement that we want to locate
    locating element using javascript executor
    and returns that WebElement
-   Note that this is NOT common and we should use 8 locators that we learned in selenium
+   Note that this is NOT common, and we should use 8 locators that we learned in selenium
     */
     public WebElement locateElementsByJS(String idOfElement){
         JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();

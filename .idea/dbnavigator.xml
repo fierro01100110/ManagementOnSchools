@@ -5,18 +5,24 @@
     <value-preview-text-wrapping value="false" />
     <value-preview-pinned value="false" />
   </component>
+
   <component name="DBNavigator.Project.DatabaseBrowserManager">
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
     <show-object-properties value="false" />
     <loaded-nodes />
   </component>
-  <component name="DBNavigator.Project.DatabaseConsoleManager">
+  <component name="DBNavigator.Project.DatabaseConsoleManager"/>
     <connection id="784ca604-522b-4f03-997d-8e671bf64a4c">
       <console name="MOS" type="STANDARD" schema="school_management" session="Main" />
     </connection>
-    <connection id="7457e661-ee6f-48e5-b4a3-1d813fc47dcc">
+    <connection id="7457e661-ee6f-48e5-b4a3-1d813fc47dcc"/>
       <console name="Connection" type="STANDARD" schema="postgres" session="Main" />
+
+  <component name="DBNavigator.Project.DatabaseConsoleManager">
+    <connection id="e5455790-d9da-4643-88c8-ed2f68e82863">
+      <console name="MOS" type="STANDARD" schema="public" session="Main"><![CDATA[SELECT * FROM guest_user WHERE username = 'jaime.orn']]></console>
+
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
@@ -25,6 +31,11 @@
   <component name="DBNavigator.Project.DatabaseFileManager">
     <open-files />
   </component>
+
+  <component name="DBNavigator.Project.DatasetFilterManager">
+    <filter-actions connection-id="e5455790-d9da-4643-88c8-ed2f68e82863" dataset="public.guest_user" active-filter-id="" />
+  </component>
+
   <component name="DBNavigator.Project.ExecutionManager">
     <retain-sticky-names value="false" />
   </component>
@@ -40,9 +51,17 @@
     <last-used-operator value="EQUAL" />
     <filters />
   </component>
+  <component name="DBNavigator.Project.ScriptExecutionManager" clear-outputs="true">
+    <recently-used-interfaces />
+  </component>
+
   <component name="DBNavigator.Project.Settings">
     <connections>
-      <connection id="784ca604-522b-4f03-997d-8e671bf64a4c" active="true" signed="true">
+
+      <connection id="784ca604-522b-4f03-997d-8e671bf64a4c" active="true" signed="true"/>
+
+      <connection id="e5455790-d9da-4643-88c8-ed2f68e82863" active="true" signed="true">
+
         <database>
           <name value="MOS" />
           <description value="" />
@@ -91,6 +110,7 @@
           <restore-workspace-deep value="false" />
           <environment-type value="default" />
           <connectivity-timeout value="30" />
+
           <idle-time-to-disconnect value="30" />
           <idle-time-to-disconnect-pool value="5" />
           <credential-expiry-time value="10" />
@@ -177,6 +197,7 @@
           <restore-workspace-deep value="false" />
           <environment-type value="default" />
           <connectivity-timeout value="30" />
+
           <idle-time-to-disconnect value="30" />
           <idle-time-to-disconnect-pool value="5" />
           <credential-expiry-time value="10" />
