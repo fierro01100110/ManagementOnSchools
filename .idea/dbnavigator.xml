@@ -6,8 +6,8 @@
     <value-preview-pinned value="false" />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
-    <connection id="784ca604-522b-4f03-997d-8e671bf64a4c">
-      <console name="MOS" type="STANDARD" schema="school_management" session="Main" />
+    <connection id="e5455790-d9da-4643-88c8-ed2f68e82863">
+      <console name="MOS" type="STANDARD" schema="public" session="Main"><![CDATA[SELECT * FROM guest_user WHERE username = 'jaime.orn']]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
@@ -16,9 +16,33 @@
   <component name="DBNavigator.Project.DatabaseFileManager">
     <open-files />
   </component>
+<<<<<<< HEAD
+=======
+  <component name="DBNavigator.Project.DatasetFilterManager">
+    <filter-actions connection-id="e5455790-d9da-4643-88c8-ed2f68e82863" dataset="public.guest_user" active-filter-id="" />
+  </component>
+  <component name="DBNavigator.Project.ExecutionManager">
+    <retain-sticky-names value="false" />
+  </component>
+  <component name="DBNavigator.Project.MethodExecutionManager">
+    <method-browser />
+    <execution-history>
+      <group-entries value="true" />
+      <execution-inputs />
+    </execution-history>
+    <argument-values-cache />
+  </component>
+  <component name="DBNavigator.Project.ObjectQuickFilterManager">
+    <last-used-operator value="EQUAL" />
+    <filters />
+  </component>
+  <component name="DBNavigator.Project.ScriptExecutionManager" clear-outputs="true">
+    <recently-used-interfaces />
+  </component>
+>>>>>>> main
   <component name="DBNavigator.Project.Settings">
     <connections>
-      <connection id="784ca604-522b-4f03-997d-8e671bf64a4c" active="true" signed="true">
+      <connection id="e5455790-d9da-4643-88c8-ed2f68e82863" active="true" signed="true">
         <database>
           <name value="MOS" />
           <description value="" />

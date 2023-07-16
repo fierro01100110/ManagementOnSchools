@@ -18,6 +18,7 @@ public class DeanManagement {
     @FindBy(xpath = "//a[text()='Contact Get All']")
     public WebElement contactGetAll;
 
+
     //Menu button 2
     @FindBy(xpath = "//*[@class='fw-semibold text-white bg-primary navbar-toggler collapsed']")
     public WebElement menuButton2;
@@ -79,10 +80,23 @@ public class DeanManagement {
     public WebElement deanHakanOnDeanList;
 
 
+    @FindBy(xpath = "(//button[@class='text-dark btn btn-outline-info'])[5]")
+    public WebElement editButton;
+
+    @FindBy(xpath = "(//input[@id='birthPlace'])[2]")
+    public WebElement deanManagementEditBirthplace;
+
+    @FindBy(xpath = "(//input[@id='password'])[2]")
+    public WebElement deanManagementEditPassword;
 
 
+    @FindBy(xpath = "(//button[@class='fw-semibold btn btn-primary btn-lg'])[2]")
+    public WebElement deanManagementSubmitButton;
 
+    @FindBy(xpath = "//div[text()='Dean updated Successful']")
+    public WebElement deanUpdatedSuccessful;
 
-
-
+    public static String DeanId;
 }
+
+
