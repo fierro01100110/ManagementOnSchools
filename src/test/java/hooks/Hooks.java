@@ -11,7 +11,7 @@ import static base_url.Base_Url.setSpec;
 
 public class Hooks {
 
-    @Before("@Api")
+    @Before("@us03_user_message_api_test")
     public void before(){
 
         setSpec();
