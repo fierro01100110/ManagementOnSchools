@@ -19,10 +19,13 @@ import org.junit.runner.RunWith;
 
 
         monochrome = true,
+
         features = "./src/test/resources/features",
         glue = {"stepdefinitions"},
         dryRun = false,
-        tags = "@US04_admin_added_dean_db"
+        tags = "@US13_DB"
+
+
 )
 
 public class DBRunner {
