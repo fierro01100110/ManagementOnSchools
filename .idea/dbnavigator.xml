@@ -5,20 +5,11 @@
     <value-preview-text-wrapping value="false" />
     <value-preview-pinned value="false" />
   </component>
-<<<<<<< HEAD
-=======
-  <component name="DBNavigator.Project.DatabaseBrowserManager">
-    <autoscroll-to-editor value="false" />
-    <autoscroll-from-editor value="true" />
-    <show-object-properties value="true" />
-    <loaded-nodes />
-  </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="784ca604-522b-4f03-997d-8e671bf64a4c">
       <console name="MOS" type="STANDARD" schema="school_management" session="Main" />
     </connection>
   </component>
->>>>>>> main
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
     <last-used-providers />
   </component>
