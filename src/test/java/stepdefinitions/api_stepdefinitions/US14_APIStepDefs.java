@@ -21,7 +21,7 @@ public class US14_APIStepDefs {
         //Set the url
         //https://managementonschools.com/app/teachers/getTeacherByName?name=Fehmi
         setSpec();
-        spec.pathParams("first","teachers","second","getTeacherByName");//queryParam("name","Fehmi");
+        spec.pathParams("first","teachers","second","getTeacherByName").queryParam("name","Fehmi");
 
         //Set the expected data
 
@@ -35,7 +35,7 @@ public class US14_APIStepDefs {
     public void body_should_contain_birth_day_birth_place_gender_name_phone_number_ssn_surname_username(String birth_day, String birth_place, String gender, String name, String phone_number, String ssn, String surname, String username ) {
         //Do assertion
         JsonPath jsonPath = response.jsonPath();
-       // List<String> mylist=jsonPath.getList("findAll{it.username=='"+username+"'}");
+        //List<String> mylist=jsonPath.getList("findAll{it.username=='"+username+"'}");
         //Actual data
         String actBirthday= jsonPath.getList("findAll{it.username=='"+username+"'}.birth_day").get(0).toString();
         String actBirthplace= jsonPath.getList("findAll{it.username=='"+username+"'}.birth_place").get(0).toString();
@@ -58,18 +58,19 @@ public class US14_APIStepDefs {
         assertEquals(ssn,actSsn);
         assertEquals(surname,actSurname);
         assertEquals(username,actUsername);
+        //assertTrue(actName.contains(name));
 
-        throw new io.cucumber.java.PendingException();
+
 
         //System.out.println(jsonPath.getList("findAll{it.username=='Teacherfehmi'}").get(0));
     }
     @Given("get teacher by username {string}")
     public void get_teacher_by_username(String username) {
 
-        List<Objects> dataList= response.jsonPath().getList("findAll{it.username=='"+username+"'}");
+        List<String> dataList= response.jsonPath().getList("findAll{it.username=='"+username+"'}");
         assertTrue(dataList.isEmpty());
 
-        throw new io.cucumber.java.PendingException();
+
 
     }
 }
