@@ -35,7 +35,7 @@ public class US14_APIStepDefs {
     public void body_should_contain_birth_day_birth_place_gender_name_phone_number_ssn_surname_username(String birth_day, String birth_place, String gender, String name, String phone_number, String ssn, String surname, String username ) {
         //Do assertion
         JsonPath jsonPath = response.jsonPath();
-        //List<String> mylist=jsonPath.getList("findAll{it.username=='"+username+"'}");
+        List<String> mylist=jsonPath.getList("findAll{it.username=='"+username+"'}");
         //Actual data
         String actBirthday= jsonPath.getList("findAll{it.username=='"+username+"'}.birth_day").get(0).toString();
         String actBirthplace= jsonPath.getList("findAll{it.username=='"+username+"'}.birth_place").get(0).toString();
@@ -47,7 +47,7 @@ public class US14_APIStepDefs {
         String actUsername= jsonPath.getList("findAll{it.username=='"+username+"'}.username").get(0).toString();
 
         //Expected data
-        //System.out.println(mylist);
+        System.out.println(mylist);
 
         assertEquals(200,response.statusCode());
         assertEquals(birth_day,actBirthday);

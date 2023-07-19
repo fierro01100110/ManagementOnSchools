@@ -77,8 +77,8 @@ public class US14_ViceDeanTeacherManagementStepDefs {
         //JSUtils.clickWithTimeoutByJS(viceDeanTeacherManagement.selectLesson);
         //JSUtils.clickWithTimeoutByJS(viceDeanTeacherManagement.lessonDropdown);
         //viceDeanTeacherManagement.selectLesson.sendKeys(string);
-        ReusableMethods.clickWithTimeOut(viceDeanTeacherManagement.lessonDropdown,5);
-        ReusableMethods.clickWithTimeOut(viceDeanTeacherManagement.selectLesson,5);
+        ReusableMethods.clickWithTimeOut(viceDeanTeacherManagement.lessonDropdown,3);
+        ReusableMethods.clickWithTimeOut(viceDeanTeacherManagement.selectLesson,3);
     }
     @Then("click on the name box to update {string}")
     public void click_on_the_name_box_to_update(String string) {
@@ -182,14 +182,5 @@ public class US14_ViceDeanTeacherManagementStepDefs {
         //softAssert.assertTrue(viceDeanTeacherManagement.successfulMassage.isDisplayed(),"Teacher updated Successful");
         //softAssert.assertAll();
 
-
-
-
-
     }
-
-
-
-
-
 }
