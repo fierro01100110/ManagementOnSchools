@@ -25,7 +25,7 @@ public class TeacherPage {
     @FindBy(xpath = "(//select[@id='educationTermId'])[2]")
     public WebElement educationTerm;
 
-    @FindBy(xpath = "(//input[@placeholder='Absentee'])[2]")
+    @FindBy(xpath = "(//input[@placeholder='Absentee'])[2]")  //(//input[@id='absentee'])[1]
     public WebElement absentee;
 
     @FindBy(xpath = "(//input[@placeholder='Midterm Exam'])[1]")

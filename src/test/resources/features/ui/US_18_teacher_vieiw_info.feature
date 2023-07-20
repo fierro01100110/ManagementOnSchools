@@ -23,7 +23,7 @@ Scenario Outline: TC_002 update student grade as a teacher
 
 Examples: student info
   | Absentee | Midterm_Exam | Final Exam | Info_Note          |
-  | 2        | 55           | 80         | good job well done |
+  | 19        | 55           | 80         | good job well done |
 
   @delete
   Scenario: TC_003 delete student info list as a teacher

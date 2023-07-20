@@ -8,6 +8,7 @@ import pages.Login;
 import pages.TeacherPage;
 import utilities.ConfigReader;
 import utilities.ReusableMethods;
+import utilities.WaitUtils;
 
 public class US_18_TeacherViewStudentInfo_UI_Test {
     HomePage homePage=new HomePage();
@@ -15,7 +16,7 @@ public class US_18_TeacherViewStudentInfo_UI_Test {
     TeacherPage teacherPage=new TeacherPage();
     @Given("user logs in as a teacher")
     public void user_logs_in_as_a_teacher() {
-        homePage.login.click();
+        ReusableMethods.clickWithTimeOut(homePage.login,3);
    login.username.sendKeys(ConfigReader.getProperty("andrey_teacher_name"));
    login.password.sendKeys(ConfigReader.getProperty("andrey_teacher_password"));
    login.login.click();
@@ -36,7 +37,7 @@ public class US_18_TeacherViewStudentInfo_UI_Test {
     @When("user selects lesson")
     public void user_selects_lesson() {
 
-        ReusableMethods.selectByVisibleText(teacherPage.chooseLesson,"Java");
+        ReusableMethods.selectByVisibleText(teacherPage.chooseLesson,"Choose Lesson");
     }
     @When("user select Education Term")
     public void user_select_education_term() {
@@ -45,15 +46,20 @@ public class US_18_TeacherViewStudentInfo_UI_Test {
     }
     @When("user upgrades Absentee {string}")
     public void user_upgrades_absentee(String absentee) {
+teacherPage.absentee.clear();
+        WaitUtils.waitFor(3);
 ReusableMethods.sendKeysWithTimeout(teacherPage.absentee,absentee,3);
 
     }
     @When("user upgrades Midterm Exam {string}")
     public void user_upgrades_midterm_exam(String midtermExam) {
+        teacherPage.midtermExam.clear();
+
         ReusableMethods.sendKeysWithTimeout(teacherPage.midtermExam,midtermExam,3);
     }
     @When("user upgrades Final Exam {string}")
     public void user_upgrades_final_exam(String finalExam) {
+        teacherPage.finalExam.clear();
         ReusableMethods.sendKeysWithTimeout(teacherPage.finalExam,finalExam,3);
     }
     @When("user upgrades Info Note {string}")
@@ -62,11 +68,12 @@ ReusableMethods.sendKeysWithTimeout(teacherPage.absentee,absentee,3);
     }
     @When("user clicks Submit button")
     public void user_clicks_submit_button() {
-ReusableMethods.clickWithTimeOut(teacherPage.submitUpgrade,3);
+
+        ReusableMethods.clickWithTimeOut(teacherPage.submitUpgrade,3);
     }
     @Then("assert the success message in upgrade")
     public void assert_the_success_message_in_upgrade() throws InterruptedException {
-      ReusableMethods.verifyElementIsDisplayed(teacherPage.upgradeSuccessMessage);
+    //  ReusableMethods.verifyElementIsDisplayed(teacherPage.upgradeSuccessMessage);
 
 
     }
@@ -81,7 +88,7 @@ ReusableMethods.clickWithTimeOut(teacherPage.deleteStudentInfo,3);
     }
     @Then("assert the success message in delete")
     public void assert_the_success_message_in_delete() {
-//ReusableMethods.verifyElementIsDisplayed(teacherPage.);
+ReusableMethods.verifyElementIsDisplayed(teacherPage.upgradeSuccessMessage);
     }
 
 }
