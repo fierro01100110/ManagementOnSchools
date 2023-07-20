@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        //        ADDING CONFIGURATIONS
+
         plugin = {
                 "pretty",
                 "html:target/default-cucumber-reports.html",
@@ -17,24 +17,14 @@ import org.junit.runner.RunWith;
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
         },
 
-
         monochrome = true,
-
         features = "./src/test/resources/features",
         glue = {"stepdefinitions","hooks"},
         dryRun = false,
-
-        tags = ""
-
-
-
-
-
-
-
+        tags = "@us_18_upgrade"
 
 )
-public class Runner {
+public class AndreyRunner {
 
 
 }

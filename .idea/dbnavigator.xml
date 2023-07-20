@@ -16,7 +16,7 @@
       <console name="" type="STANDARD" schema="database" session="Main" />
     </connection>
     <connection id="e5455790-d9da-4643-88c8-ed2f68e82863">
-      <console name="MOS" type="STANDARD" schema="public" session="Main"><![CDATA[SELECT * FROM guest_user WHERE username = 'jaime.orn']]></console>
+      <console name="MOS" type="STANDARD" schema="school_management" session="Main" />
     </connection>
     <connection id="7457e661-ee6f-48e5-b4a3-1d813fc47dcc">
       <console name="Connection" type="STANDARD" schema="postgres" session="Main" />
@@ -30,6 +30,9 @@
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
     <filter-actions connection-id="e5455790-d9da-4643-88c8-ed2f68e82863" dataset="public.guest_user" active-filter-id="" />
+
+    <filter-actions connection-id="784ca604-522b-4f03-997d-8e671bf64a4c" dataset="public.guest_user" active-filter-id="" />
+
   </component>
   <component name="DBNavigator.Project.ExecutionManager">
     <retain-sticky-names value="false" />
