@@ -2,7 +2,7 @@
   Feature: vice dean lesson program
     Background:
       Given user navigates to url
-      Then user logs in as vice dean
+      Then user logs in as vice deann
 
       Scenario: TC_001 vice dean can see lesson, day, start time and stop time created
         Then user clicks to Lesson Program

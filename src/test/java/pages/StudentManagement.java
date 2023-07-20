@@ -20,8 +20,9 @@ public class StudentManagement {
     public WebElement teacher;
 
     //Name
-    @FindBy(xpath = "//input[@id='name']")
+    @FindBy(id = "name")
     public WebElement name;
+
 
     //Surname
     @FindBy(xpath = "//input[@id='surname']")

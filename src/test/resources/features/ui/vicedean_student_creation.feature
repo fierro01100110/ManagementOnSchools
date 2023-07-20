@@ -3,7 +3,7 @@ Feature: Vice Deans should be able to create a student
 
   Background:
     Given user navigates to url
-    Then user logins as vice dean
+    Then user logins as malcom_vice dean
 
     Scenario: Vice Deans should be able to create a student
       Given vice dean navigates to menu

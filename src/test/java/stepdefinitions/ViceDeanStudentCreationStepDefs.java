@@ -3,6 +3,7 @@ package stepdefinitions;
 import com.github.javafaker.Faker;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import pages.DeanManagement;
@@ -10,12 +11,14 @@ import pages.HomePage;
 import pages.Login;
 import pages.StudentManagement;
 import utilities.ConfigReader;
+import utilities.Driver;
 import utilities.JSUtils;
 import utilities.WaitUtils;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 
@@ -25,14 +28,14 @@ public class ViceDeanStudentCreationStepDefs {
     Login login = new Login();
     DeanManagement deanManagement = new DeanManagement();
     StudentManagement studentManagement = new StudentManagement();
-    Faker faker = new Faker();
-    String name = faker.name().firstName();
-    String lastName = faker.name().lastName();
-    String birthPlace= faker.country().capital();
+    public static Faker faker = new Faker();
+   public static String name = faker.name().firstName();
+   public static String lastName = faker.name().lastName();
+    public static String birthPlace= faker.country().capital();
 
 
 
-    @Then("user logins as vice dean")
+    @Then("user logins as malcom_vice dean")
     public void user_logins_as_vice_dean() {
         homePage.login.click();
         login.username.sendKeys(ConfigReader.getProperty("malcom_vice_dean_username"));
@@ -40,6 +43,7 @@ public class ViceDeanStudentCreationStepDefs {
         login.login.click();
 
     }
+
     @Given("vice dean navigates to menu")
     public void vice_dean_navigates_to_menu() {
         JSUtils.clickWithTimeoutByJS(deanManagement.menu);
@@ -59,31 +63,34 @@ public class ViceDeanStudentCreationStepDefs {
             System.out.println(w.getText());
         }
         select.selectByValue("5");
-        WaitUtils.waitFor(2);
 
     }
     @Then("enter name")
-    public void enter_name() {
-        WaitUtils.waitFor(3);
+    public void enter_name() throws InterruptedException {
+
         studentManagement.name.sendKeys(name);
-        assertTrue(studentManagement.name.getText().contains(name));
+
+        String expectedData = JSUtils.getValueByJS("name");
+
+        assertEquals(expectedData,name);
     }
     @Then("enter surname")
-    public void enter_surname() {
-        WaitUtils.waitFor(3);
+    public void enter_surname() throws InterruptedException {
+
         studentManagement.surname.sendKeys(lastName);
-        assertTrue(studentManagement.surname.getText().contains(lastName));
+        String expectedData = JSUtils.getValueByJS("surname");
+        assertEquals(expectedData,lastName);
     }
     @Then("enter birth place")
     public void enter_birth_place() {
-        WaitUtils.waitFor(3);
+
         studentManagement.birthPlace.sendKeys(birthPlace);
-        assertTrue(studentManagement.birthPlace.getText().contains(birthPlace));
+        String expectedData = JSUtils.getValueByJS("birthPlace");
+        assertEquals(expectedData,birthPlace);
     }
     @Then("enter email")
     public void enter_email() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+
     }
     @Then("enter phone number")
     public void enter_phone_number() {
@@ -130,4 +137,6 @@ public class ViceDeanStudentCreationStepDefs {
         // Write code here that turns the phrase above into concrete actions
         throw new io.cucumber.java.PendingException();
     }
+
+
 }
