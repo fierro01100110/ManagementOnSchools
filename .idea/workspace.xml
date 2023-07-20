@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c6412267-193b-48dc-a161-ae40f6df89f9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_16_23__12_04__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_16_23__12_04__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/MainMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/TeacherManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/TeacherManagement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/ViceDeanManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/ViceDeanManagement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runners/DBRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/DBRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runners/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/Api/US05_ApiTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US14_ViceDeanTeacherManagementStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/US14_ViceDeanTeacherManagementStepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US_05_SELDA_AdminStepDefs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/api_stepdefinitions/US04_admin_added_dean_api_StepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/api_stepdefinitions/US04_admin_added_dean_api_StepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/database/US_05_SELDA_DB_testing.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/api/US03_user_contact_message.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/api/US03_user_contact_message.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/api/US_05_SELDA_AdminAPI_feature_file.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/api/US05_AdminAPI_feature_file.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/database/US01_TC003_StudentRegisterDatabase.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/database/US01_TC003_StudentRegisterDatabase.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/database/US_05_SELDA_AdminDB_feature_file.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/database/US05_AdminDB_feature_file.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ui/US_05_SELDA_Admin_feature_file.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ui/US05_Admin_feature_file.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/Screenshots/20230711015045image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/Screenshots/20230711015049image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/Screenshots/20230711015052image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/Screenshots/20230711015057image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/Screenshots/20230711020600image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/Screenshots/20230711020605image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/Screenshots/20230711020607image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/Screenshots/20230711020608image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/Screenshots/20230711020613image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/embedded10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/embedded11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/embedded12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/embedded13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/embedded14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/embedded15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/embedded16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/embedded2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/embedded3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/embedded4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/embedded5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/embedded6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/embedded7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/embedded8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/embedded9.png" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/test/java/runners/DBRunner.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Shh9pdfVN1jPwPraCxRWXFfb6Q" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="runners" />
+      <recent name="stepdefinitions.database" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.Selda_Runner">
+    <configuration name="Feature: US24_Admin_add_teacher" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/ui/US24_Admin_add_teacher.feature" />
+      <option name="GLUE" value="stepdefinitions hooks" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="ManagementOnSchools" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: US24_Admin_add_teacher" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Admin should be able to login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/ui/US24_Admin_add_teacher.feature" />
+      <option name="GLUE" value="stepdefinitions hooks" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="ManagementOnSchools" />
+      <option name="NAME_FILTER" value="^Admin should be able to login$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Admin should be able to login$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Admin should be able to login" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Selda_Runner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ManagementOnSchools" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="runners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="runners" />
+      <option name="MAIN_CLASS_NAME" value="runners.Selda_Runner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.Selda_Runner" />
+        <item itemvalue="Cucumber Java.Scenario: Admin should be able to login" />
+        <item itemvalue="Cucumber Java.Feature: US24_Admin_add_teacher" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c6412267-193b-48dc-a161-ae40f6df89f9" name="Changes" comment="" />
+      <created>1689604577103</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1689604577103</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/ManagementOnSchools$Selda_Runner.ic" NAME="Selda_Runner Coverage Results" MODIFIED="1689818277980" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>runners.*</FILTER>
+    </SUITE>
+  </component>
+</project>

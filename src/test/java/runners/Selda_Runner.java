@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        //        ADDING CONFIGURATIONS
+
         plugin = {
                 "pretty",
                 "html:target/default-cucumber-reports.html",
@@ -20,14 +20,12 @@ import org.junit.runner.RunWith;
 
         monochrome = true,
 
-        features = "./src/test/resources/features",
+        features = "./src/test/resources/features/ui",
         glue = {"stepdefinitions","hooks"},
         dryRun = false,
-        tags = ""
-
-
+        tags = "@US24"
 )
-public class Runner {
 
 
+public class Selda_Runner {
 }
