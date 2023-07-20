@@ -4,23 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1b23fb8-97c1-4e32-b6d1-49bb90892d77" name="Changes" comment="">
+    <list default="true" id="66276c5d-7a8d-4257-98ce-de7da3f0825d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/ContactMessagePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/ContactMessagePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/TeacherPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/TeacherPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runners/DBRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/DBRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US03_ContactPageMessage_UI_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/US03_ContactPageMessage_UI_Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runners/AndreyRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/AndreyRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runners/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US03_UI_test_with_Faker.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US_18_TeacherViewStudentInfo_UI_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/US_18_TeacherViewStudentInfo_UI_Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/api/US06_creat_vice_dean.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/api/US06_creat_vice_dean.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ui/US03_user_contact_Faker_message.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ui/US03_user_contact_message.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ui/US03_user_contact_message.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/ui/US_18_teacher_vieiw_info.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ui/US_18_teacher_vieiw_info.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/Screenshots/20230711015045image.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/Screenshots/20230711015049image.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/Screenshots/20230711015052image.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/Screenshots/20230711015057image.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/Screenshots/20230711020600image.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/Screenshots/20230711020605image.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/Screenshots/20230711020607image.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/Screenshots/20230711020608image.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/Screenshots/20230711020613image.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/embedded1.png" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/embedded1.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +63,7 @@
     "ToolWindowRun.ShowToolbar": "false",
     "git-widget-placeholder": "hakan",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/mdurm/IdeaProjects/ManagementOnSchools/src/test/resources/features/ui",
+    "last_opened_file_path": "C:/Users/mdurm/IdeaProjects/ManagementOnSchools/src/test/resources",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"
@@ -76,6 +71,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\mdurm\IdeaProjects\ManagementOnSchools\src\test\resources" />
       <recent name="C:\Users\mdurm\IdeaProjects\ManagementOnSchools\src\test\resources\features\ui" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -85,15 +81,16 @@
       <recent name="pages" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: send a message from Contact page (1)">
-    <configuration name="Feature: US03_user_contact_message" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.Runner">
+    <configuration name="Scenario: Add student on the Student Info List" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/ui/US03_user_contact_message.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/US17_Gizem/ui_test.feature" />
       <option name="GLUE" value="stepdefinitions hooks" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="ManagementOnSchools" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: US03_user_contact_message" />
+      <option name="NAME_FILTER" value="^Add student on the Student Info List$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Add student on the Student Info List$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Add student on the Student Info List" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -105,15 +102,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: US01_GetUserMessageByEmail" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: TC_002 update student grade as a teacher" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/api/US03_user_contact_message.feature" />
-      <option name="GLUE" value="stepdefinitions.api_stepdefinitions hooks" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/ui/US_18_teacher_vieiw_info.feature" />
+      <option name="GLUE" value="stepdefinitions hooks" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="ManagementOnSchools" />
-      <option name="NAME_FILTER" value="^US01_GetUserMessageByEmail$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^US01_GetUserMessageByEmail$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: US01_GetUserMessageByEmail" />
+      <option name="NAME_FILTER" value="^TC_002 update student grade as a teacher$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC_002 update student grade as a teacher$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: TC_002 update student grade as a teacher" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -125,35 +122,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: send a message from Contact page (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: TC_003 delete student info list as a teacher" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/ui/US03_user_contact_Faker_message.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/ui/US_18_teacher_vieiw_info.feature" />
       <option name="GLUE" value="stepdefinitions hooks" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="ManagementOnSchools" />
-      <option name="NAME_FILTER" value="^send a message from Contact page$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^send a message from Contact page$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: send a message from Contact page" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Scenario: send a message from Contact page" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/ui/US03_user_contact_message.feature" />
-      <option name="GLUE" value="stepdefinitions hooks" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="ManagementOnSchools" />
-      <option name="NAME_FILTER" value="^send a message from Contact page$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^send a message from Contact page$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: send a message from Contact page" />
+      <option name="NAME_FILTER" value="^TC_003 delete student info list as a teacher$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC_003 delete student info list as a teacher$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: TC_003 delete student info list as a teacher" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -180,22 +157,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Runner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ManagementOnSchools" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="runners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="runners" />
+      <option name="MAIN_CLASS_NAME" value="runners.Runner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Scenario: send a message from Contact page (1)" />
-        <item itemvalue="Cucumber Java.Scenario: send a message from Contact page" />
-        <item itemvalue="Cucumber Java.Scenario: US01_GetUserMessageByEmail" />
-        <item itemvalue="Cucumber Java.Feature: US03_user_contact_message" />
+        <item itemvalue="JUnit.Runner" />
         <item itemvalue="JUnit.AndreyRunner" />
+        <item itemvalue="Cucumber Java.Scenario: TC_002 update student grade as a teacher" />
+        <item itemvalue="Cucumber Java.Scenario: Add student on the Student Info List" />
+        <item itemvalue="Cucumber Java.Scenario: TC_003 delete student info list as a teacher" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e1b23fb8-97c1-4e32-b6d1-49bb90892d77" name="Changes" comment="" />
-      <changelist id="213f38b6-cc64-4500-82d1-e0e654171bb9" name="Changes" comment="" />
-      <changelist id="e1b23fb8-97c1-4e32-b6d1-49bb90892d77" name="Changes" comment="" />
+      <changelist id="66276c5d-7a8d-4257-98ce-de7da3f0825d" name="Changes" comment="" />
       <created>1689169988022</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />

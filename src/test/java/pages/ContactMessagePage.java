@@ -12,7 +12,7 @@ public class ContactMessagePage {
 
     }
     //conctact page name box
-    @FindBy(id = "name")
+    @FindBy(id = "nam")
     public WebElement yourNameBox;
     //conctact page email box
     @FindBy(id = "email")
@@ -25,7 +25,6 @@ public class ContactMessagePage {
     //conctact page message box
     @FindBy(id = "message")
     public WebElement messageBox;
-
     //conctact page send message button
     @FindBy(xpath = "//button[.='Send Message']")
     public WebElement sendMessageButton;

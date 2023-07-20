@@ -21,7 +21,7 @@ import org.junit.runner.RunWith;
         features = "./src/test/resources/features",
         glue = {"stepdefinitions","hooks"},
         dryRun = false,
-        tags = "@upgrade"
+        tags = "@us_18_upgrade"
 
 )
 public class AndreyRunner {

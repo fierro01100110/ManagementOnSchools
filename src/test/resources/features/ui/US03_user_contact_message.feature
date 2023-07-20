@@ -1,4 +1,4 @@
-@e2e @user_ui_test
+@e2e @US03_user_ui_test
 Feature: US03_User_can_send_a_message
 
   Scenario Outline: send a message from Contact page
@@ -13,5 +13,5 @@ Feature: US03_User_can_send_a_message
     Then assert alert message on contact page
     And  close the app
     Examples:
-      | name   | email                   | subject  | message               |
-      | andrey | andrey_test01@gmail.com | greeting | first message to dean |
+      | nameq | email                   | subject  | message               |
+      | andre | andrey_test01@gmail.com | greeting | first message to dean |
