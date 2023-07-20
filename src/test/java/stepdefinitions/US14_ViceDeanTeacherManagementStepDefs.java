@@ -88,10 +88,10 @@ public class US14_ViceDeanTeacherManagementStepDefs {
 
     }
     @Then("click on the surname  box to update {string}")
-    public void click_on_the_surname_box_to_update(String surname) {
+    public void click_on_the_surname_box_to_update(String string) {
         WaitUtils.waitFor(3);
         //JSUtils.clickWithTimeoutByJS(viceDeanTeacherManagement.surname);
-        viceDeanTeacherManagement.surname.sendKeys(surname);
+        viceDeanTeacherManagement.surname.sendKeys(string);
     }
     @Then("click on the birth place  box to update {string}")
     public void click_on_the_birth_place_box_to_update(String birthPlace) {

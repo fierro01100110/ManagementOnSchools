@@ -7,10 +7,9 @@
     <list default="true" id="88c76c6c-29ef-48df-83ab-cc465aef61f5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/runners/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/Runner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/api_stepdefinitions/US04_admin_added_dean_api_StepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/api_stepdefinitions/US04_admin_added_dean_api_StepDefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/api_stepdefinitions/US14_APIStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/api_stepdefinitions/US14_APIStepDefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/api/US14_vice_dean_teacher_management_api.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/api/US14_vice_dean_teacher_management_api.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US14_ViceDeanTeacherManagementStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/US14_ViceDeanTeacherManagementStepDefs.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/embedded1.png" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/embedded1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/embedded2.png" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/embedded2.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
