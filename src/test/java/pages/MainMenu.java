@@ -13,4 +13,13 @@ public class MainMenu {
     // lesson management page
     @FindBy(partialLinkText = "Lesson Management")
     public WebElement lessonManagementPage;
+
+
+
+    @FindBy(linkText = "(//div[text()='Main Menu'])[2]")
+    public WebElement mainMenuLink;
+    @FindBy(xpath = "//a[text()='Teacher Management']")
+    public WebElement teacherManagementLink;
+
+
 }

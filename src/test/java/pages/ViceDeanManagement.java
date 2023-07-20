@@ -34,6 +34,9 @@ public class ViceDeanManagement {
 
 
 
+
+
+
     @FindBy(xpath = "//a[text()='Vice Dean Management']")
     public WebElement viceDManagment;
 
@@ -69,6 +72,9 @@ public class ViceDeanManagement {
 
     @FindBy(xpath = "//span[@class='text-white text-white justify-content-center text-center navbar-brand']")
     public WebElement viceDeanSaved;
+
+
+
 
 
 }

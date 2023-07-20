@@ -1,27 +1,27 @@
-package stepdefinitions.Api;
+package stepdefinitions.api_stepdefinitions;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 
+
 import java.util.List;
+
 
 import static base_url.MOSBaseUrl.spec;
 import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertEquals;
 
+
 public class US05_ApiTest {
     Response response;
-
-
-
-    @Given("send get request by ssn {string}")
-    public void send_get_request_by_ssn(String string) {
+    @Given("send get request by {string}")
+    public void send_get_request_by(String string) {
         //https://managementonschools.com/app/dean/getAll
         spec.pathParams("first","dean","second", "getAll");
         response = given(spec).get("{first}/{second}");
-       // response.prettyPrint();
+        // response.prettyPrint();
     }
 
     @Then("body should contain name {string}, gender {string}, phoneNumber {string}, ssn {string}, username{string}")
@@ -36,6 +36,7 @@ public class US05_ApiTest {
         String actSsn = jsonPath.getList("findAll{it.ssn=='" + ssn + "'}.ssn").get(0).toString();
         String actUserName = jsonPath.getList("findAll{it.ssn=='" + ssn + "'}.username").get(0).toString();
 
+
         //Expected Data
         //  System.out.println(mylist);
         assertEquals(name, actName);
@@ -44,5 +45,4 @@ public class US05_ApiTest {
         assertEquals(ssn, actSsn);
         assertEquals(username, actUserName);
     }
-
 }
