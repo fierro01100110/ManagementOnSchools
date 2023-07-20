@@ -13,6 +13,9 @@ import static org.junit.Assert.assertEquals;
 
 public class US05_ApiTest {
     Response response;
+
+
+
     @Given("send get request by ssn {string}")
     public void send_get_request_by_ssn(String string) {
         //https://managementonschools.com/app/dean/getAll
@@ -41,4 +44,5 @@ public class US05_ApiTest {
         assertEquals(ssn, actSsn);
         assertEquals(username, actUserName);
     }
+
 }

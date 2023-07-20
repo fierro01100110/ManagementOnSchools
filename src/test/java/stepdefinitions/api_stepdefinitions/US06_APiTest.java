@@ -15,6 +15,9 @@ import static junit.framework.TestCase.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 public class US06_APiTest {
+
+
+
     Response response;
 
     @Given("send get request by username {string}")
@@ -29,7 +32,6 @@ public class US06_APiTest {
         //Set the request and get the response
        response =  given(spec).get("{first}/{second}");
 //       response.prettyPrint();
-
 
 
 
@@ -73,4 +75,5 @@ public class US06_APiTest {
         assertTrue(dataList.isEmpty());
 
     }
+
 }
