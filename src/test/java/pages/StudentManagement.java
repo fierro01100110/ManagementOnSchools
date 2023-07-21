@@ -32,4 +32,61 @@ public class StudentManagement {
     @FindBy(xpath = "//input[@id='birthPlace']")
     public WebElement birthPlace;
 
+    //Email
+    @FindBy(id = "email")
+    public WebElement email;
+
+    //PhoneNumber
+    @FindBy(id = "phoneNumber")
+    public WebElement phoneNumber;
+
+
+    //Gender Female
+    @FindBy(xpath = "//input[@value='FEMALE']")
+    public WebElement female;
+
+    //Gender Male
+    @FindBy(xpath = "//input[@value='MALE']")
+    public WebElement maleGender;
+
+    //Bday
+    @FindBy(id = "birthDay")
+    public WebElement bDay;
+
+    //SSN
+    @FindBy(id = "ssn")
+    public WebElement ssn;
+
+    //Username
+    @FindBy(id = "username")
+    public WebElement username;
+
+    //Fathername
+    @FindBy(id = "fatherName")
+    public WebElement fatherName;
+
+    //Mother name
+    @FindBy(id = "motherName")
+    public WebElement motherName;
+
+    //Password
+    @FindBy(id = "password")
+    public WebElement password;
+
+    //Submit
+    @FindBy(xpath = "//button[text()='Submit']")
+    public WebElement submit;
+
+    //Success
+    @FindBy(xpath = "//div[text()='Student saved Successfully']")
+    public WebElement success;
+
+    //Last Page
+    @FindBy(xpath = "//span[text()='Last']")
+    public WebElement lastPage;
+
+    //Student number
+    @FindBy(xpath = "//th[text()='Student Number']")
+    public WebElement studentNumber;
+
 }

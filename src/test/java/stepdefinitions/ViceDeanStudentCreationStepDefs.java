@@ -3,6 +3,8 @@ package stepdefinitions;
 import com.github.javafaker.Faker;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import io.restassured.path.json.JsonPath;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
@@ -32,6 +34,14 @@ public class ViceDeanStudentCreationStepDefs {
    public static String name = faker.name().firstName();
    public static String lastName = faker.name().lastName();
     public static String birthPlace= faker.country().capital();
+    public static String email = faker.internet().emailAddress();
+    public static String phoneNumber = faker.number().numberBetween(99, 1000) + "-" + faker.number().numberBetween(99, 1000) + "-" + faker.number().numberBetween(999, 10000);
+    public static String dateOfBirth = "06181998";
+    public static String fakeSSN = faker.idNumber().ssnValid();
+    public static String userName = faker.name().username();
+    public static  String fatherName = faker.name().firstName();
+    public static String motherName = faker.name().firstName();
+    public static String fakePassword = faker.internet().password(8,10,true,false,true);
 
 
 
@@ -91,51 +101,76 @@ public class ViceDeanStudentCreationStepDefs {
     @Then("enter email")
     public void enter_email() {
 
+        studentManagement.email.sendKeys(email);
+        String expectedData = JSUtils.getValueByJS("email");
+        assertEquals(expectedData,email);
+
     }
     @Then("enter phone number")
     public void enter_phone_number() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        studentManagement.phoneNumber.sendKeys(phoneNumber);
+        String expectedData = JSUtils.getValueByJS("phoneNumber");
+        assertEquals(expectedData,phoneNumber);
+
     }
     @Then("select gender")
     public void select_gender() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        JSUtils.clickWithTimeoutByJS(studentManagement.female);
+        JSUtils.clickWithTimeoutByJS(studentManagement.maleGender);
     }
     @Then("select date of birth")
     public void select_date_of_birth() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+
+        studentManagement.bDay.sendKeys(dateOfBirth);
+
     }
     @Then("enter SSN respecting {string} after the 3rd and 5th digits and consist of {int} digits in total")
     public void enter_ssn_respecting_after_the_3rd_and_5th_digits_and_consist_of_digits_in_total(String string, Integer int1) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        studentManagement.ssn.sendKeys(fakeSSN);
+        String expectedData = JSUtils.getValueByJS("ssn");
+        assertEquals(expectedData,fakeSSN);
     }
     @Then("enter user name")
     public void enter_user_name() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        WaitUtils.waitFor(1);
+        studentManagement.username.sendKeys(userName);
+        String expectedData = JSUtils.getValueByJS("username");
+        assertEquals(expectedData,userName);
     }
     @Then("enter father name")
     public void enter_father_name() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        WaitUtils.waitFor(1);
+        studentManagement.fatherName.sendKeys(fatherName);
+        String expectedData = JSUtils.getValueByJS("fatherName");
+        assertEquals(expectedData,fatherName);
     }
     @Then("enter mother name")
     public void enter_mother_name() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        WaitUtils.waitFor(1);
+        studentManagement.motherName.sendKeys(motherName);
+        String expectedData = JSUtils.getValueByJS("motherName");
+        assertEquals(expectedData,motherName);
     }
     @Then("enter password respecting password credentials")
     public void enter_password_respecting_password_credentials() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        WaitUtils.waitFor(1);
+        studentManagement.password.sendKeys(fakePassword);
+        String expectedData = JSUtils.getValueByJS("password");
+        assertEquals(expectedData,fakePassword);
     }
     @Then("verify student number automatically appear after submitting")
     public void verify_student_number_automatically_appear_after_submitting() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        studentManagement.submit.click();
+        WaitUtils.waitFor(2);
+        assertTrue(studentManagement.success.isDisplayed());
+
+        JSUtils.clickWithTimeoutByJS(studentManagement.lastPage);
+        WaitUtils.waitFor(1);
+        assertTrue(studentManagement.studentNumber.isDisplayed());
+        WaitUtils.waitFor(1);
+        WebElement nameElement = Driver.getDriver().findElement(By.xpath("//tbody//tr[15]//td[2]//span[text()='"+name+"']"));
+        assertTrue(nameElement.isDisplayed());
+
     }
 
 

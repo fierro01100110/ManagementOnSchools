@@ -1,5 +1,5 @@
 @e2e @teacher_views_info_ui_test
-Feature: US03_User_can_see_the_infolist_of_students
+Feature: US18_User_can_see_the_infolist_of_students
 
 Background:log in as a teacher
   Given user goes to "https://managementonschools.com"
@@ -9,7 +9,7 @@ Background:log in as a teacher
   Scenario:TC_001 view the student info list as a teacher
     Then assert that user sees the student info list
 
-@upgrade
+@us_18_upgrade
 Scenario Outline: TC_002 update student grade as a teacher
     When user clicks Edit button
   And user selects lesson
@@ -23,7 +23,7 @@ Scenario Outline: TC_002 update student grade as a teacher
 
 Examples: student info
   | Absentee | Midterm_Exam | Final Exam | Info_Note          |
-  | 2        | 55           | 80         | good job well done |
+  | 19        | 55           | 80         | good job well done |
 
   @delete
   Scenario: TC_003 delete student info list as a teacher
