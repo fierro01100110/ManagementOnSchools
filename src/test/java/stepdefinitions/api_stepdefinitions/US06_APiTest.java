@@ -17,8 +17,8 @@ import static org.junit.Assert.assertTrue;
 public class US06_APiTest {
     Response response;
 
-    @Given("send get request by {string}")
-    public void send_get_request_by(String username) {
+    @Given("should send get request by orhan {string}")
+    public void should_send_get_request_by_orhan(String phone_number) {
         //Set the url
         //https://managementonschools.com/app/vicedean/getAll
         setSpec();
@@ -30,11 +30,15 @@ public class US06_APiTest {
        response =  given(spec).get("{first}/{second}");
 //       response.prettyPrint();
 
-
-
-
-
     }
+//@Given("should send get request by orhan {string}")
+//public void shouldSendGetRequestByOrhan(String phone_number) {
+//
+//    setSpec();
+//    spec.pathParams("first","vicedean", "second","getAll" );
+//    response =  given(spec).get("{first}/{second}");
+//
+//}
 
     @Then("body should contain name {string}, surname {string},birth_place {string},gender {string},birth_day {string},phone_number {string},ssn {string},username {string}")
     public void body_should_contain_name_surname_birth_place_gender_birth_day_phone_number_ssn_username(String name, String surname, String birth_place, String gender, String birth_day, String phone_number, String ssn, String username) {
@@ -59,17 +63,13 @@ public class US06_APiTest {
         assertEquals(phone_number,actPhoneNumber);
         assertEquals(ssn,actSsn);
         assertEquals(username,actUsername);
-
-
-
-
     }
 
 
-    @Then("body must be empty with non existing username {string}")
-    public void bodyMustBeEmptyWithNonExistingUsername(String username) {
+    @Then("body must be empty with non existing phone_number {string}")
+    public void bodyMustBeEmptyWithNonExistingPhoneNumber(String phone_number) {
 
-        List<Objects> dataList= response.jsonPath().getList("findAll{it.username=='"+username+"'}");
+        List<Objects> dataList= response.jsonPath().getList("findAll{it.username=='"+phone_number+"'}");
         assertTrue(dataList.isEmpty());
 
     }

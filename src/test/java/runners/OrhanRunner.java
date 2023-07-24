@@ -17,13 +17,14 @@ import org.junit.runner.RunWith;
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
         },
 
-
         monochrome = true,
         features = "./src/test/resources/features",
-        glue = {"stepdefinitions"},
+        glue = {"stepdefinitions","hooks"},
         dryRun = false,
-        tags = "@US06_DB"
-)
+        tags = "@create_vice_dean_account"
 
-public class DBRunner {
+)
+public class OrhanRunner {
+
+
 }

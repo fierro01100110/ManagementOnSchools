@@ -12,8 +12,8 @@ import static org.junit.Assert.assertEquals;
 public class US02_API_Test {
 
 Response response;
-    @Given("send get request by {string}")
-    public void send_get_request_by(String string) {
+    @Given("send get request by username {string}")
+    public void send_get_request_by_username(String string) {
         //set the url
         //https://managementonschools.com/app/guestUser/getAll?page=&size=10&sort=name&type=desc
 
