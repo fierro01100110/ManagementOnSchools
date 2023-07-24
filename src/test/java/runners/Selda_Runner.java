@@ -15,19 +15,17 @@ import org.junit.runner.RunWith;
                 "junit:target/xml-report/cucumber.xml",
                 "rerun:target/failedRerun.txt",
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
-
         },
 
 
         monochrome = true,
 
-        features = "./src/test/resources/features",
-        glue = {"stepdefinitions"},
+        features = "./src/test/resources/features/ui",
+        glue = {"stepdefinitions","hooks"},
         dryRun = false,
-        tags = ""
-
-
+        tags = "@US24"
 )
 
-public class DBRunner {
+
+public class Selda_Runner {
 }

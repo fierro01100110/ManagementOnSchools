@@ -1,4 +1,4 @@
-package stepdefinitions.Api;
+package stepdefinitions.api_stepdefinitions;
 
 import api_pojo.*;
 import io.cucumber.core.internal.com.fasterxml.jackson.annotation.JsonIgnoreProperties;
