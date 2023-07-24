@@ -3,7 +3,7 @@
 
     Background:
       Given go to url
-      Then user logs in as vice dean
+      Then user logs in as vice dean admin
       Then user clicks on the menu button
 
     @teacher_management

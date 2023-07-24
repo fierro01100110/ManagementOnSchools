@@ -22,8 +22,8 @@ public class US14_ViceDeanTeacherManagementStepDefs {
     public void go_to_url() {
         Driver.getDriver().get(ConfigReader.getProperty("base_url"));
     }
-    @Then("user logs in as vice dean")
-    public void user_logs_in_as_vice_dean() {
+    @Then("user logs in as vice dean admin")
+    public void user_logs_in_as_vice_dean_admin() {
         viceDeanLogin.login.click();
         WaitUtils.waitFor(3);
         viceDeanLogin.userName.sendKeys(ConfigReader.getProperty("feyza_vice_dean_userName"));
