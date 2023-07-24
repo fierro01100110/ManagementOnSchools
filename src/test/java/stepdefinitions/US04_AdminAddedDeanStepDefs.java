@@ -8,15 +8,17 @@ import org.testng.asserts.SoftAssert;
 import pages.DeanManagement;
 import pages.HomePage;
 import pages.Login;
+import pages.StudentManagement;
 import utilities.*;
 
 
 import static utilities.ReusableMethods.*;
 
-public class US04_AdminAddedDeanStepDefs {
+public class  US04_AdminAddedDeanStepDefs {
     HomePage homePage = new HomePage();
     Login login = new Login();
     DeanManagement deanManagement = new DeanManagement();
+    StudentManagement studentManagement = new StudentManagement();
 
     @Given("user goes to url")
     public void user_goes_to_url() {

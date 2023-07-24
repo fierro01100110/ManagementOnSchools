@@ -23,11 +23,12 @@ import org.junit.runner.RunWith;
         features = "./src/test/resources/features",
         glue = {"stepdefinitions","hooks"},
         dryRun = false,
-        tags = "@US14_API"
+        //tags = "@US04_admin_added_dean_api"
+        tags = "@US04_admin_added_dean_api"
 
 
 )
-public class Runner {
+public class US25_HakanRunner {
 
 
 }
