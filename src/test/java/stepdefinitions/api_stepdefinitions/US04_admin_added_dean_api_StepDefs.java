@@ -4,18 +4,14 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
-<<<<<<< HEAD
-import static base_url.Base_Url.setSpec;
-import static base_url.Base_Url.spec;
-=======
 
 import static base_url.Base_Url.setSpec;
 import static base_url.Base_Url.spec;
-<<<<<<< HEAD
-=======
 
->>>>>>> main
->>>>>>> main
+
+import static base_url.Base_Url.setSpec;
+import static base_url.Base_Url.spec;
+
 import static io.restassured.RestAssured.given;
 import static junit.framework.TestCase.assertEquals;
 

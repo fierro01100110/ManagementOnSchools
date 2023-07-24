@@ -48,7 +48,7 @@ public class TeacherPage {
     public WebElement deleteStudentInfo;
 
 //US18alert text  "Please select lesson"
-    @FindBy(xpath = "(//div[@class='Toastify__toast-body'])[1]")
+    @FindBy(xpath = "//(//*[.='Error: Lesson with lesson id 28 not found'])[2]")   //(//*[.='Please select lesson '])[2]
     public WebElement alertTextLesson;
-}
+}   //(//*[.='Error: Lesson with lesson id 28 not found'])[2]
 
