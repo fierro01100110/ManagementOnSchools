@@ -1,13 +1,12 @@
 package runners;
 
-
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        //        ADDING CONFIGURATIONS
+
         plugin = {
                 "pretty",
                 "html:target/default-cucumber-reports.html",
@@ -17,18 +16,12 @@ import org.junit.runner.RunWith;
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
         },
 
-
         monochrome = true,
-
         features = "./src/test/resources/features",
         glue = {"stepdefinitions","hooks"},
         dryRun = false,
-        //tags = "@US04_admin_added_dean_api"
-        tags ="@US04_admin_added_dean_api"
-
-
+        tags ="@US20_DB"
 )
-public class US25_HakanRunner {
 
-
+public class FeyzaRunner {
 }

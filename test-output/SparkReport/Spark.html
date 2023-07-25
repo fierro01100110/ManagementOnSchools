@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Smoke Test Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jul. 24, 2023 10:38:00 p.m.</span></a>
+<a href="#"><span class="badge badge-primary">Jul. 25, 2023 06:46:17 a.m.</span></a>
 </li>
 </ul>
 </div>
@@ -66,13 +66,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jul. 24, 2023 10:38:00 p.m.</h3>
+<h3>Jul. 25, 2023 06:46:17 a.m.</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jul. 24, 2023 10:38:10 p.m.</h3>
+<h3>Jul. 25, 2023 06:46:20 a.m.</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -123,7 +123,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>1</b> scenarios passed</small></div>
+<div><small data-tooltip='100%'><b>2</b> scenarios passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -143,7 +143,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>3</b> steps passed</small></div>
+<div><small data-tooltip='100%'><b>4</b> steps passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> steps failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -162,7 +162,7 @@
 </div></div>
 <script>
 var timeline = {
-"Verify the added teacher":8.173
+""The teacher should be able to view, update and delete meetings":2.488
 };
 </script>
 <div class="row">
@@ -172,7 +172,15 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@US_24_database_test</td>
+<td>@US20_DB</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@US20_DB_Negative</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -207,13 +215,13 @@ failParent: 0,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 1,
+passChild: 2,
 failChild: 0,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 3,
+passGrandChild: 4,
 failGrandChild: 0,
 warningGrandChild: 0,
 skipGrandChild: 0,
@@ -238,7 +246,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@US_24_database_test</a>
+<a class="dropdown-item" href="#">@US20_DB</a><a class="dropdown-item" href="#">@US20_DB_Negative</a>
 </ul>
 </li>
 </ul>
@@ -249,9 +257,9 @@ eventsCount: 5,
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Verify the added teacher</p>
+            <p class="name">"The teacher should be able to view, update and delete meetings</p>
             <p class="text-sm">
-              <span>10:38:01 p.m.</span> / <span>00:00:08:173</span>
+              <span>6:46:18 a.m.</span> / <span>00:00:02:488</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -259,10 +267,10 @@ eventsCount: 5,
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Verify the added teacher</h5>
-<span class='badge badge-success'>07.24.2023 10:38:01 p.m.</span>
-<span class='badge badge-danger'>07.24.2023 10:38:10 p.m.</span>
-<span class='badge badge-default'>00:00:08:173</span>
+<h5 class="test-status text-pass">"The teacher should be able to view, update and delete meetings</h5>
+<span class='badge badge-success'>07.25.2023 6:46:18 a.m.</span>
+<span class='badge badge-danger'>07.25.2023 6:46:20 a.m.</span>
+<span class='badge badge-default'>00:00:02:488</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -274,34 +282,50 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Admin should be able to see new teacher's information</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>US20_GetMeetList</div>
       </div>
     </div>
         <div class="scenario_outline collapse">
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="3"><span class="badge log pass-bg mr-2">Pass</span>Admin should be able to see new teacher's information</div>
+                  <div class="node" id="3"><span class="badge log pass-bg mr-2">Pass</span>US20_GetMeetList</div>
                 </div>
               </div>
               <div class="card-body mt-3 collapse">
                   <div class="step pass-bg">
-                    <span>Given send get request via id "31"</span>
+                    <span>Given get meet via description "exam result"</span>
       <div>
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>Then body must contain id "31", name "sefa", surname "sefa", birth_place "turkey", email "sefasefa@sefa.com", phone_number "555-111-9900", gender "0", birth_day "1990-12-12", ssn "555-12-1234", username "TeacherSefa", message"Teacher successfully found"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And close the application</span>
+                    <span>Then the body contains date "2023-07-27", description "exam result", start_time "10:00:00", stop_time "10:30:00"</span>
       <div>
       </div>
                   </div>
               </div>
             </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="7"><span class="badge log pass-bg mr-2">Pass</span>Teacher should be able to delete information of Meet List</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.database.US20_DBStepDefs.get_meet_via_description(java.lang.String)">
+                <span>Given get meet via description "exam resulX"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.database.US20_DBStepDefs.body_should_be_empty()">
+                <span>Then Body should be empty</span>
+      <div>
+      </div>
+              </div>
+          </div>
         </div>
   </div>
 </div>
@@ -320,21 +344,67 @@ eventsCount: 5,
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@US20_DB</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@US20_DB</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>06:46:18 a.m.</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>US20_GetMeetList</a>
+<div class="">
+<span class="badge badge-default">"The teacher should be able to view, update and delete meetings.US20_GetMeetList</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>06:46:19 a.m.</td>
+<td>
+<a href="#" class="linked" test-id='1' id='7'>Teacher should be able to delete information of Meet List</a>
+<div class="">
+<span class="badge badge-default">"The teacher should be able to view, update and delete meetings.Teacher should be able to delete information of Meet List</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@US_24_database_test</p>
+<p class="name">@US20_DB_Negative</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@US_24_database_test</h4>
+<h4>@US20_DB_Negative</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -348,11 +418,11 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>22:38:01 p.m.</td>
+<td>06:46:19 a.m.</td>
 <td>
-<a href="#" class="linked" test-id='1' id='3'>Admin should be able to see new teacher's information</a>
+<a href="#" class="linked" test-id='1' id='7'>Teacher should be able to delete information of Meet List</a>
 <div class="">
-<span class="badge badge-default">Verify the added teacher.Admin should be able to see new teacher's information</span>
+<span class="badge badge-default">"The teacher should be able to view, update and delete meetings.Teacher should be able to delete information of Meet List</span>
 </div>
 </td>
 </tr>

@@ -24,8 +24,6 @@ import org.junit.runner.RunWith;
         dryRun = false,//dryRun = true : RUNS AND GENERATES ONLY MISSING STEP DEFS. dryRun = false: RUN NORMAL. THIS IS DEFAULT VALUE
         tags = ""
 
-
-
 )
 public class Runner {
 
