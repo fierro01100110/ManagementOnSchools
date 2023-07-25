@@ -40,10 +40,10 @@
   <component name="DBNavigator.Project.ExecutionManager">
     <retain-sticky-names value="false" />
   </component>
-<<<<<<< HEAD
 
-=======
->>>>>>> b04085f21a3e5b39f93cff891b3220883dd3a897
+
+
+
   <component name="DBNavigator.Project.MethodExecutionManager">
     <method-browser />
     <execution-history>
@@ -52,11 +52,10 @@
     </execution-history>
     <argument-values-cache />
   </component>
-<<<<<<< HEAD
 
 
-=======
->>>>>>> b04085f21a3e5b39f93cff891b3220883dd3a897
+
+
   <component name="DBNavigator.Project.ObjectQuickFilterManager">
     <last-used-operator value="EQUAL" />
     <filters />
