@@ -1,4 +1,4 @@
-@e2e @user_ui_test
+@e2e @US03_user_ui_test
 Feature: US03_User_can_send_a_message
 
   Scenario Outline: send a message from Contact page

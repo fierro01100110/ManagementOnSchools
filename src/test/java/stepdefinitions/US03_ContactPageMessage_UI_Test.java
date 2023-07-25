@@ -20,6 +20,7 @@ public class US03_ContactPageMessage_UI_Test {
     // Scenario:TC_001 view the student info list as a teacher
 @Given("user goes to home page {string}")
 public void userGoesToHomePage(String url) {
+
     Driver.getDriver().get(url);
 }
     @Given("user clicks Contact button")

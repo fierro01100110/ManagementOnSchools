@@ -25,7 +25,7 @@ public class TeacherPage {
     @FindBy(xpath = "(//select[@id='educationTermId'])[2]")
     public WebElement educationTerm;
 
-    @FindBy(xpath = "(//input[@placeholder='Absentee'])[2]")
+    @FindBy(xpath = "(//input[@placeholder='Absentee'])[2]")  //(//input[@id='absentee'])[1]
     public WebElement absentee;
 
     @FindBy(xpath = "(//input[@placeholder='Midterm Exam'])[1]")
@@ -47,6 +47,8 @@ public class TeacherPage {
     @FindBy(xpath = "(//span//button[@type='button'])[1]")
     public WebElement deleteStudentInfo;
 
-
-}
+//US18alert text  "Please select lesson"
+    @FindBy(xpath = "//(//*[.='Error: Lesson with lesson id 28 not found'])[2]")   //(//*[.='Please select lesson '])[2]
+    public WebElement alertTextLesson;
+}   //(//*[.='Error: Lesson with lesson id 28 not found'])[2]
 
