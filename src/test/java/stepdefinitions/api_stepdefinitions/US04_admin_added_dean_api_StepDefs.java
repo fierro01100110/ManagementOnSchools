@@ -7,11 +7,6 @@ import io.restassured.response.Response;
 
 import static base_url.Base_Url.setSpec;
 import static base_url.Base_Url.spec;
-
-
-import static base_url.Base_Url.setSpec;
-import static base_url.Base_Url.spec;
-
 import static io.restassured.RestAssured.given;
 import static junit.framework.TestCase.assertEquals;
 
