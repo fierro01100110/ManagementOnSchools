@@ -18,13 +18,13 @@ public class US_06_TC_01_StepDefs {
     Faker faker = new Faker();
 
 
-    @Given("user navigates to login url")
-    public void user_navigates_to_login_url() {
+    @Given("user should navigates to login url")
+    public void user_should_navigates_to_login_url() {
         Driver.getDriver().get(ConfigReader.getProperty("login_url"));
     }
 
-    @When("user login in as admin")
-    public void user_login_in_as_admin() {
+    @When("user should login in as admin")
+    public void user_should_login_in_as_admin() {
         login.username.sendKeys(ConfigReader.getProperty("jason_dean_username"));
         login.password.sendKeys(ConfigReader.getProperty("jason_dean_password"));
         JavascriptExecutor jse = (JavascriptExecutor) driver;
@@ -142,6 +142,12 @@ public class US_06_TC_01_StepDefs {
         viceDeanManagement.password.sendKeys("burhan2017");
 
 
+    }
+
+    @Then("Admin enters Vice Dean's Name and left blank")
+    public void adminEntersViceDeanSNameAndLeftBlank() {
+        WaitUtils.waitFor(1);
+        viceDeanManagement.name.sendKeys(" ");
     }
 
 //    @And("Admin sees the {string} message")

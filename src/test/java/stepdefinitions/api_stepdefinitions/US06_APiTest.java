@@ -15,30 +15,16 @@ import static junit.framework.TestCase.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 public class US06_APiTest {
-
-
-
     Response response;
 
-    @Given("send get request by username {string}")
-    public void send_get_request_by_username(String username) {
-        //Set the url
-        //https://managementonschools.com/app/vicedean/getAll
+    @Given("send get request by orhan {string}")
+    public void send_get_request_by_orhan(String username) {
         setSpec();
         spec.pathParams("first","vicedean", "second","getAll" );
-
-        //Set the expected data
-
-        //Set the request and get the response
        response =  given(spec).get("{first}/{second}");
-//       response.prettyPrint();
-
-
-
-
     }
 
-    @Then("body should contain name {string}, surname {string},birth_place {string},gender {string},birth_day {string},phone_number {string},ssn {string},username {string}")
+    @Then("body should contain by orhan name {string}, surname {string},birth_place {string},gender {string},birth_day {string},phone_number {string},ssn {string},username {string}")
     public void body_should_contain_name_surname_birth_place_gender_birth_day_phone_number_ssn_username(String name, String surname, String birth_place, String gender, String birth_day, String phone_number, String ssn, String username) {
         //Do assertion
         JsonPath jsonPath = response.jsonPath();
@@ -61,19 +47,14 @@ public class US06_APiTest {
         assertEquals(phone_number,actPhoneNumber);
         assertEquals(ssn,actSsn);
         assertEquals(username,actUsername);
-
-
-
-
     }
 
 
-    @Then("body must be empty with non existing username {string}")
-    public void bodyMustBeEmptyWithNonExistingUsername(String username) {
+    @Then("body must be empty with non existing username orhan {string}")
+    public void bodyMustBeEmptyWithNonExistingUsernameOrhan(String username) {
 
         List<Objects> dataList= response.jsonPath().getList("findAll{it.username=='"+username+"'}");
         assertTrue(dataList.isEmpty());
 
     }
-
 }

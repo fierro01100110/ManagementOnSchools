@@ -24,7 +24,7 @@ import org.junit.runner.RunWith;
         tags = "@US06_API"
 
 )
-public class Runner {
+public class OrhanRunner {
 
 
 }

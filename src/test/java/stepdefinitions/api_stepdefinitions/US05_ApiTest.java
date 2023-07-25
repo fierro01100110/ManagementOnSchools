@@ -16,7 +16,7 @@ import static org.junit.Assert.assertEquals;
 
 public class US05_ApiTest {
     Response response;
-    @Given("send get request by {string}")
+    @Given("send get request by ssn {string}")
     public void send_get_request_by(String string) {
         //https://managementonschools.com/app/dean/getAll
         spec.pathParams("first","dean","second", "getAll");

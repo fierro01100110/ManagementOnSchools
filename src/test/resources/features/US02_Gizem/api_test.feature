@@ -3,7 +3,7 @@
 
     Scenario Outline: US02_GetGuestUserByUserName
 
-      Given send get request by "<username>"
+      Given send get request by username "<username>"
       Then body should contain , name "<name>", ssn "<ssn>", username "<username>" phone_number "<phoneNumber>"
 
       Examples:
