@@ -16,6 +16,7 @@ public class TeacherManagement {
     @FindBy(xpath = "//div[@class=' css-19bb58m']")
     public WebElement selectLesson;
 
+
     @FindBy(xpath = "//div[text()='Cypress']")
     public WebElement cypress;
 
@@ -60,6 +61,9 @@ public class TeacherManagement {
 
     @FindBy(xpath = "//div[@role='alert']")
     public WebElement alertText;
+
+    @FindBy(xpath="//div[@class=' css-9jq23d']")
+    public WebElement selenium;
 
 
 }

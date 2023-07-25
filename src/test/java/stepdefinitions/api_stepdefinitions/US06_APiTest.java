@@ -15,34 +15,20 @@ import static junit.framework.TestCase.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 public class US06_APiTest {
-    Response response;
 
+    Response response;
     @Given("should send get request by orhan {string}")
-    public void should_send_get_request_by_orhan(String phone_number) {
+    public void should_send_get_request_by_orhan(String username) {
         //Set the url
         //https://managementonschools.com/app/vicedean/getAll
         setSpec();
         spec.pathParams("first","vicedean", "second","getAll" );
-
-        //Set the expected data
-
-        //Set the request and get the response
-       response =  given(spec).get("{first}/{second}");
-//       response.prettyPrint();
-
+        response =  given(spec).get("{first}/{second}");
     }
-//@Given("should send get request by orhan {string}")
-//public void shouldSendGetRequestByOrhan(String phone_number) {
-//
-//    setSpec();
-//    spec.pathParams("first","vicedean", "second","getAll" );
-//    response =  given(spec).get("{first}/{second}");
-//
-//}
 
-    @Then("body should contain name {string}, surname {string},birth_place {string},gender {string},birth_day {string},phone_number {string},ssn {string},username {string}")
+    @Then("my body should contain name {string}, surname {string},birth_place {string},gender {string},birth_day {string},phone_number {string},ssn {string},username {string}")
     public void body_should_contain_name_surname_birth_place_gender_birth_day_phone_number_ssn_username(String name, String surname, String birth_place, String gender, String birth_day, String phone_number, String ssn, String username) {
-        //Do assertion
+
         JsonPath jsonPath = response.jsonPath();
 
         String actName= jsonPath.getList("findAll{it.username=='"+username+"'}.name").get(0).toString();
@@ -66,11 +52,10 @@ public class US06_APiTest {
     }
 
 
-    @Then("body must be empty with non existing phone_number {string}")
-    public void bodyMustBeEmptyWithNonExistingPhoneNumber(String phone_number) {
-
-        List<Objects> dataList= response.jsonPath().getList("findAll{it.username=='"+phone_number+"'}");
+    @Then("body must be empty with non existing username {string}")
+    public void bodyMustBeEmptyWithNonExistingPhoneNumber(String username) {
+        List<Objects> dataList= response.jsonPath().getList("findAll{it.username=='"+username+"'}");
         assertTrue(dataList.isEmpty());
 
+        }
     }
-}

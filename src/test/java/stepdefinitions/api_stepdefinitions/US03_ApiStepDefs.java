@@ -29,26 +29,36 @@ public class US03_ApiStepDefs {
 
     }
     @Then("body should contain name {string}, subject {string}, message {string},email {string}")
-    public void body_should_contain_name_subject_message(String name, String subject, String massage, String email) {
+    public void body_should_contain_name_subject_message(String name, String subject, String message, String email) {
 
-//        JsonPath jsonPath = response.jsonPath();
-//        String actName = jsonPath.getList("content.findAll{it.email}.name").get(0).toString();
-//        String actSubject = jsonPath.getList("content.findAll{it.email}.subject").get(0).toString();
-//        String actMessage = jsonPath.getList("content.findAll{it.email}.message").get(0).toString();
+        JsonPath jsonPath = response.jsonPath();
+        String actName = jsonPath.getList("content.findAll{it.email}.name").get(0).toString();
+        String actSubject = jsonPath.getList("content.findAll{it.email}.subject").get(0).toString();
+        String actMessage = jsonPath.getList("content.findAll{it.email}.message").get(0).toString();
+
+        System.out.println("********");
+        System.out.println("actual name is "+actName);
+        System.out.println("********");
+        assertEquals(200,response.statusCode());
+        assertEquals(name,actName);
+        assertEquals(subject,actSubject);
+        assertEquals(actMessage,actMessage);
 //
-//        System.out.println("********");
-//        System.out.println("actual name is "+actName);
-//        System.out.println("********");
-//        assertEquals(200,response.statusCode());
-//        assertEquals(name,actName);
-//        assertEquals(subject,actSubject);
-//        assertEquals(actMessage,actMessage);
-
-        //2nd way  by POJO CLASS
+////        2nd way  by POJO CLASS
 //        ContactMessagePojo actContactMessagePojo=response.as(ContactMessagePojo.class);
 //        System.out.println(actContactMessagePojo);//a huge list
 //        System.out.println(actContactMessagePojo.getContent().get(0).getName());  //Andrey
 //        assertEquals(name,actContactMessagePojo.getContent().get(0).getName());
+
+//
+//
+////        3rd way by Gson
+//        ContactMessagePojo actualDataGson=new Gson().fromJson(response.asString(),ContactMessagePojo.class);
+//        assertEquals(200,response.statusCode());
+//        assertEquals(name,actualDataGson.getContent().get(0).getName());
+//        System.out.println(actualDataGson.getContent().get(0).getName());   //Andrey
+
+
 
 
         //3rd way by Gson
@@ -56,6 +66,7 @@ public class US03_ApiStepDefs {
         assertEquals(200,response.statusCode());
         assertEquals(name,actualDataGson.getContent().get(0).getName());
         System.out.println(actualDataGson.getContent().get(0).getName());   //Andrey
+        System.out.println("");
 
 
     }
