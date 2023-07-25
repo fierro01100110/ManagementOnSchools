@@ -35,6 +35,13 @@
   <component name="DBNavigator.Project.ExecutionManager">
     <retain-sticky-names value="false" />
   </component>
+
+
+
+
+
+
+
   <component name="DBNavigator.Project.MethodExecutionManager">
     <method-browser />
     <execution-history>
@@ -43,6 +50,13 @@
     </execution-history>
     <argument-values-cache />
   </component>
+
+
+
+
+
+
+
   <component name="DBNavigator.Project.ObjectQuickFilterManager">
     <last-used-operator value="EQUAL" />
     <filters />
