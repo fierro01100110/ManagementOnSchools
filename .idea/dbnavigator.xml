@@ -14,6 +14,7 @@
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="784ca604-522b-4f03-997d-8e671bf64a4c">
       <console name="" type="STANDARD" schema="database" session="Main" />
+      <console name="MOS" type="STANDARD" schema="school_management" session="Main" />
     </connection>
     <connection id="e5455790-d9da-4643-88c8-ed2f68e82863">
       <console name="MOS" type="STANDARD" schema="public" session="Main"><![CDATA[SELECT * FROM guest_user WHERE username = 'jaime.orn']]></console>
