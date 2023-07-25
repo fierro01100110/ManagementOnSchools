@@ -14,11 +14,6 @@ import java.util.Random;
 
 public class US22_NewAdminCanBeAdded {
 
-    public static void main(String[] args) {
-
-        // 
-        
-    }
 
     AdminManagementPage adminManagementPage = new AdminManagementPage();
     Faker faker = new Faker();
