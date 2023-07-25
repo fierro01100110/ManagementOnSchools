@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Smoke Test Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jul 24, 2023 08:51:29 pm</span></a>
+<a href="#"><span class="badge badge-primary">Jul 25, 2023 04:46:46 PM</span></a>
 </li>
 </ul>
 </div>
@@ -66,13 +66,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jul 24, 2023 08:51:29 pm</h3>
+<h3>Jul 25, 2023 04:46:46 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jul 24, 2023 08:51:33 pm</h3>
+<h3>Jul 25, 2023 04:47:19 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -143,7 +143,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>2</b> steps passed</small></div>
+<div><small data-tooltip='100%'><b>17</b> steps passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> steps failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -162,7 +162,7 @@
 </div></div>
 <script>
 var timeline = {
-"Teacher upgrade the students":3.198
+"Admin can add new admin":31.539
 };
 </script>
 <div class="row">
@@ -172,7 +172,15 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@US18_API_upgrade</td>
+<td>@TC_001_new_admin</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@new_admin_can_be_added</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -213,7 +221,7 @@ warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 2,
+passGrandChild: 17,
 failGrandChild: 0,
 warningGrandChild: 0,
 skipGrandChild: 0,
@@ -238,7 +246,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@US18_API_upgrade</a>
+<a class="dropdown-item" href="#">@TC_001_new_admin</a><a class="dropdown-item" href="#">@new_admin_can_be_added</a>
 </ul>
 </li>
 </ul>
@@ -249,9 +257,9 @@ eventsCount: 5,
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Teacher upgrade the students</p>
+            <p class="name">Admin can add new admin</p>
             <p class="text-sm">
-              <span>20:51:30</span> / <span>00:00:03:198</span>
+              <span>4:46:47 PM</span> / <span>00:00:31:539</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -259,10 +267,10 @@ eventsCount: 5,
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Teacher upgrade the students</h5>
-<span class='badge badge-success'>07.24.2023 20:51:30</span>
-<span class='badge badge-danger'>07.24.2023 20:51:33</span>
-<span class='badge badge-default'>00:00:03:198</span>
+<h5 class="test-status text-pass">Admin can add new admin</h5>
+<span class='badge badge-success'>07.25.2023 4:46:47 PM</span>
+<span class='badge badge-danger'>07.25.2023 4:47:19 PM</span>
+<span class='badge badge-default'>00:00:31:539</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -274,18 +282,93 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>upgrade</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>TC_001 Admin can add new admin</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.api_stepdefinitions.US18_API.send_get_request_by_id()">
-                <span>Given send get request by id</span>
+              <div class="step pass-bg" title="stepdefinitions.DeanContactMessageStepDefs.user_navigates_to_url()">
+                <span>Given user navigates to url</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.api_stepdefinitions.US18_API.validate_the_body_after_upgade()">
-                <span>Then validate the body after upgade</span>
+              <div class="step pass-bg" title="stepdefinitions.US10_ViceDeanLessonScheduleStepDefs.userClicksOnLoginOnHomepage()">
+                <span>And user clicks on Login on homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.US04_AdminAddedDeanStepDefs.user_logs_in_as_admin()">
+                <span>Then user logs in as admin</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.US10_ViceDeanLessonScheduleStepDefs.user_clicks_on_menu()">
+                <span>Given user clicks on Menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.US05_AdminStepDefs.click_on_admin_management()">
+                <span>And click on Admin Management</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.US22_NewAdminCanBeAdded.user_enters_a_new_admin_name()">
+                <span>And user enters a new admin name</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.US22_NewAdminCanBeAdded.user_enters_a_new_admin_surname()">
+                <span>And user enters a new admin surname</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.US22_NewAdminCanBeAdded.user_enters_a_new_admin_birth_place()">
+                <span>And user enters a new admin birth place</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.US22_NewAdminCanBeAdded.user_enters_a_new_admin_phone_number()">
+                <span>And user enters a new admin phone number</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.US22_NewAdminCanBeAdded.user_chooses_a_new_admin_gender()">
+                <span>And user chooses a new admin gender</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.US22_NewAdminCanBeAdded.user_enters_a_new_admin_date_of_birth()">
+                <span>And user enters a new admin date of birth</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.US22_NewAdminCanBeAdded.user_enters_a_new_admin_ssn()">
+                <span>And user enters a new admin ssn</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.US22_NewAdminCanBeAdded.user_enters_a_new_admin_username()">
+                <span>And user enters a new admin username</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.US22_NewAdminCanBeAdded.user_enters_a_new_admin_password()">
+                <span>And user enters a new admin password</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.US22_NewAdminCanBeAdded.userClicksOnSubmitButtonOnAdminManagement()">
+                <span>And user clicks on submit button on admin management</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.US22_NewAdminCanBeAdded.verify_new_admin_account_is_created()">
+                <span>Then Verify new Admin account is created</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.UI_US08_StepDefs.close_the_application()">
+                <span>Then close the application</span>
       <div>
       </div>
               </div>
@@ -308,7 +391,7 @@ eventsCount: 5,
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
@@ -317,12 +400,12 @@ eventsCount: 5,
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@US18_API_upgrade</p>
+<p class="name">@TC_001_new_admin</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@US18_API_upgrade</h4>
+<h4>@TC_001_new_admin</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -336,11 +419,47 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>20:51:30 pm</td>
+<td>16:46:47 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>upgrade</a>
+<a href="#" class="linked" test-id='1' id='2'>TC_001 Admin can add new admin</a>
 <div class="">
-<span class="badge badge-default">Teacher upgrade the students.upgrade</span>
+<span class="badge badge-default">Admin can add new admin.TC_001 Admin can add new admin</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@new_admin_can_be_added</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@new_admin_can_be_added</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:46:47 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>TC_001 Admin can add new admin</a>
+<div class="">
+<span class="badge badge-default">Admin can add new admin.TC_001 Admin can add new admin</span>
 </div>
 </td>
 </tr>
