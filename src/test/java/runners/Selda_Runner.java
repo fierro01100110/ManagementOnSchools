@@ -23,7 +23,7 @@ import org.junit.runner.RunWith;
         features = "./src/test/resources/features/ui",
         glue = {"stepdefinitions","hooks"},
         dryRun = false,
-        tags = "@US24"
+        tags ="@US24"
 )
 
 
