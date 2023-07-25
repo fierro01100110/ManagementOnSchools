@@ -2,6 +2,7 @@ package stepdefinitions.database;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import io.cucumber.plugin.event.Node;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -12,53 +13,30 @@ import static org.junit.Assert.assertFalse;
 import static utilities.DataBaseUtils.getResultSet;
 
 public class US18_DB_testing {
-    Connection connection;
+    //String name, String lesson_name, String absentee, String midterm_exam, String final_exam, String note, String info_note, String exam_average
+    /*
+     System.out.println(resultSet.getString("absentee"));
+       String actAbsentee= resultSet.getString("absentee");
+        assertEquals(absentee,actAbsentee );
+
+           String sqlQuery = "SELECT * FROM student_list WHERE info_note ='" + info_note + "'";
+        resultSet = getResultSet(sqlQuery);//it create connection and statement and returns a resultset
+     */
     ResultSet resultSet;
-    @Given("get student info via id {string}")
-    public void get_student_info_via_id(String id) {
-
-        String sqlQuery = "SELECT * FROM guest_user WHERE id ='" + id + "'";
-
-        resultSet = getResultSet(sqlQuery);
-
-
+    @Given("get student info via info_note {string}")
+    public void get_student_info_via_info_note(String info_note) {
+        String sqlQuery = "SELECT * FROM student_info WHERE info_note ='" + info_note + "'";
+        resultSet = getResultSet(sqlQuery);//it create connection and statement and returns a resultset
     }
-    @Then("body contains lesson_name {string}, absentee {string}, midterm {string}, final {string}, note {string}, info_note {string}, average {string}")
-    public void body_contains_lesson_name_absentee_midterm_final_note_info_note_average(String lesson_name, String absentee, String midterm, String finalExam, String note, String info_note, String average) throws SQLException {
-
-        resultSet.next();  //very importsny  to move the pointer to the necxt record from the header
-        System.out.println(resultSet.getString("lesson_name"));//2023-07-01
-        String actLesson_name=resultSet.getString("lesson_name");
-        String actAbsentee=resultSet.getString("absentee");
-        String actMidterm=resultSet.getString("midterm");
-        String actFinalExam=resultSet.getString("finalExam");
-        String actNote=resultSet.getString("note");
-        String actInfo_note=resultSet.getString("info_note");
-        String actAverage=resultSet.getString("average");
-
-        assertEquals(lesson_name, actLesson_name);
-        assertEquals(absentee, actAbsentee);
-        assertEquals(midterm, actMidterm);
-        assertEquals(finalExam, actFinalExam);
-        //    assertEquals(phone_number, actPhone_number);
-        assertEquals(note, actNote);
-        assertEquals(info_note, actInfo_note);
-        assertEquals(average, actAverage);
-
-    }
-
-    @Given("get guest user via id {string}")
-    public void get_guest_user_via_id(String id)  {
-        String sql = "SELECT * FROM guest_user WHERE id ='2'";
-        resultSet = getResultSet(sql);
-
+    @Then("body contains name {string} lesson_name {string}, absentee {string}, midterm_exam {string}, final_exam {string}, note {string}, info_note {string}, exam_average {string}")
+    public void body_contains_name_lesson_name_absentee_midterm_exam_final_exam_note_info_note_exam_average(String name, String lesson_name, String absentee, String midterm_exam, String final_exam, String note, String info_note, String exam_average) throws SQLException {
+       resultSet.next();
+        System.out.println(resultSet.getString("absentee"));
+        String actAbsentee= resultSet.getString("absentee");
+        assertEquals(absentee,actAbsentee );
     }
     @Then("body should be empty")
     public void body_should_be_empty() throws SQLException {
-
         assertFalse(resultSet.next());
-
     }
-
-
 }

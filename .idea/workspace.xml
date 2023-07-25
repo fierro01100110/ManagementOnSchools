@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
@@ -18,7 +19,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
-  <component name="RunManager" selected="JUnit.Runner">
+  <component name="RunManager" selected="JUnit.Runner"/>
     <configuration name="Feature: US14_vice_dean_teacher_management_api" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/api/US14_vice_dean_teacher_management_api.feature" />
@@ -38,7 +39,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Runner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Runner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true"/>
+
+  <component name="RunManager">
+    <configuration name="AndreyRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+
       <module name="ManagementOnSchools" />
       <extension name="coverage">
         <pattern>
@@ -47,7 +52,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="runners" />
-      <option name="MAIN_CLASS_NAME" value="runners.Runner" />
+      <option name="MAIN_CLASS_NAME" value="runners.AndreyRunner" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -55,12 +60,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Runner" />
-        <item itemvalue="Cucumber Java.Feature: US14_vice_dean_teacher_management_api" />
+        <item itemvalue="JUnit.AndreyRunner" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="TaskManager">
-    <servers />
   </component>
 </project>
