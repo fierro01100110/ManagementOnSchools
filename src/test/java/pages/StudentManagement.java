@@ -89,4 +89,12 @@ public class StudentManagement {
     @FindBy(xpath = "//th[text()='Student Number']")
     public WebElement studentNumber;
 
+    //Name Required
+    @FindBy(xpath = "//div[text()='Required']")
+    public WebElement requiredAlert;
+
+    //SSN alert
+    @FindBy(xpath = "//div[text()='Please enter valid SSN number']")
+    public WebElement ssnPopUp;
+
 }

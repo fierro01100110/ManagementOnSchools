@@ -23,7 +23,7 @@ import org.junit.runner.RunWith;
         features = "./src/test/resources/features",
         glue = {"stepdefinitions","hooks"},
         dryRun = false,
-        tags = "@vice_dean_student_creation"
+        tags = "@negative_vice_dean_student_creation"
 
 
 

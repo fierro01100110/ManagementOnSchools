@@ -4,12 +4,6 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
-
-
-
-import static base_url.Base_Url.setSpec;
-import static base_url.Base_Url.spec;
-
 import static base_url.Base_Url.setSpec;
 import static base_url.Base_Url.spec;
 
@@ -32,7 +26,7 @@ public class US04_admin_added_dean_api_StepDefs {
         response = given(spec).get("{first}/{second}");
         response.prettyPrint();
 
-        throw new io.cucumber.java.PendingException();
+
     }
     @Then("body should contain username {string}, birth_day {string}, birth_place {string}, gender {string}, name {string}, phone_number {string},ssn {string}, surname {string}")
     public void bodyShouldContainUsernameBirth_dayBirth_placeGenderNamePhone_numberSsnSurname(String username, String birth_day, String birth_place, String gender, String name, String phone_number, String ssn, String surname) {

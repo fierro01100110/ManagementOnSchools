@@ -1,11 +1,10 @@
 package stepdefinitions;
 
 import com.github.javafaker.Faker;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-import io.restassured.path.json.JsonPath;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import pages.DeanManagement;
@@ -16,10 +15,7 @@ import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.JSUtils;
 import utilities.WaitUtils;
-
-import java.util.ArrayList;
 import java.util.List;
-
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
@@ -124,8 +120,9 @@ public class ViceDeanStudentCreationStepDefs {
         studentManagement.bDay.sendKeys(dateOfBirth);
 
     }
-    @Then("enter SSN respecting {string} after the 3rd and 5th digits and consist of {int} digits in total")
-    public void enter_ssn_respecting_after_the_3rd_and_5th_digits_and_consist_of_digits_in_total(String string, Integer int1) {
+
+    @And("enter SSN respecting - after the {int}rd and {int}th digits and consist of {int} digits in total")
+    public void enterSSNRespectingAfterTheRdAndThDigitsAndConsistOfDigitsInTotal(int arg0, int arg1, int arg2) {
         studentManagement.ssn.sendKeys(fakeSSN);
         String expectedData = JSUtils.getValueByJS("ssn");
         assertEquals(expectedData,fakeSSN);
@@ -167,11 +164,15 @@ public class ViceDeanStudentCreationStepDefs {
         JSUtils.clickWithTimeoutByJS(studentManagement.lastPage);
         WaitUtils.waitFor(1);
         assertTrue(studentManagement.studentNumber.isDisplayed());
+
         WaitUtils.waitFor(1);
-        WebElement nameElement = Driver.getDriver().findElement(By.xpath("//tbody//tr[15]//td[2]//span[text()='"+name+"']"));
-        assertTrue(nameElement.isDisplayed());
+
+        //Checking if registered name exists on table UI
+        WebElement textName = Driver.getDriver().findElement(By.xpath("//tbody/tr[last()]//td[2]"));
+        assertTrue(textName.getText().contains(name));
 
     }
+
 
 
 }

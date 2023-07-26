@@ -16,7 +16,7 @@ Feature: Vice Deans should be able to create a student
       And enter phone number
       And select gender
       And select date of birth
-      And enter SSN respecting "-" after the 3rd and 5th digits and consist of 9 digits in total
+      And enter SSN respecting - after the 3rd and 5th digits and consist of 9 digits in total
       And enter user name
       And enter father name
       And enter mother name

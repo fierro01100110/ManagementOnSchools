@@ -4,15 +4,58 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="da957ad1-8645-4d28-a9ba-32cc599c6006" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/test-output/PdfReport/SparkPdf.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output/SparkReport/Spark.html" afterDir="false" />
+    <list default="true" id="b214f21e-eedf-43e2-bdac-460b45f98780" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/runners/Selda_Runner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/US24_AdminTeacherManagementStepDefs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/database/US05_DB_testing.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/ui/US24_Admin_add_teacher.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2023-07-14_12_35_p_m__[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2023-07-14_12_35_p_m___Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2023-07-14_12_39_p_m__[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2023-07-14_12_39_p_m___Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/MainMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/StudentManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/StudentManagement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/TeacherManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/TeacherManagement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/ViceDeanManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/ViceDeanManagement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runners/DBRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/DBRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runners/FierroRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/FierroRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/runners/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/Api/US05_ApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/api_stepdefinitions/US05_ApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US14_ViceDeanTeacherManagementStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/US14_ViceDeanTeacherManagementStepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US_05_SELDA_AdminStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/US05_AdminStepDefs.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/ViceDeanStudentCreationStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/ViceDeanStudentCreationStepDefs.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/api_stepdefinitions/US04_admin_added_dean_api_StepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/api_stepdefinitions/US04_admin_added_dean_api_StepDefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/embedded1.png" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/embedded1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/api_stepdefinitions/US14_APIStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/api_stepdefinitions/US14_APIStepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/database/US_05_SELDA_DB_testing.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/api/US03_user_contact_message.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/api/US03_user_contact_message.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/api/US14_vice_dean_teacher_management_api.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/api/US14_vice_dean_teacher_management_api.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/api/US_05_SELDA_AdminAPI_feature_file.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/api/US05_AdminAPI_feature_file.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/database/US01_TC003_StudentRegisterDatabase.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/database/US01_TC003_StudentRegisterDatabase.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/database/US_05_SELDA_AdminDB_feature_file.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/database/US05_AdminDB_feature_file.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ui/US14_vice_dean_teacher_management.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ui/US14_vice_dean_teacher_management.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ui/US_05_SELDA_Admin_feature_file.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ui/US05_Admin_feature_file.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ui/vicedean_student_creation.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ui/vicedean_student_creation.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/PdfReport/SparkPdf.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport/Spark.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/embedded1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/embedded10.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/embedded11.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/embedded12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/embedded13.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/embedded14.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/embedded15.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/embedded16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/embedded2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/embedded3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/embedded4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/embedded5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/embedded6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/embedded7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/embedded8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/embedded9.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +75,20 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="RunManager">
+  <component name="ProjectId" id="2St8QmuGnXpqj7Sb6peFS7wCJHJ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager" selected="JUnit.FierroRunner">
     <configuration name="FierroRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ManagementOnSchools" />
       <extension name="coverage">
@@ -48,13 +104,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Runner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ManagementOnSchools" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="runners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="runners" />
+      <option name="MAIN_CLASS_NAME" value="runners.Runner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.FierroRunner" />
+        <item itemvalue="JUnit.Runner" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b214f21e-eedf-43e2-bdac-460b45f98780" name="Changes" comment="" />
+      <created>1690216661094</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1690216661094</updated>
+    </task>
     <servers />
   </component>
 </project>
