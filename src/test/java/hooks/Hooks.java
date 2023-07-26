@@ -18,11 +18,10 @@ public class Hooks {
 
 
 
-<<<<<<< HEAD
-        @Before("@US22_API")
-=======
+
+
         @Before("@US18_API_upgrade")
->>>>>>> main
+
         public void setUpScenario () {
 
             setSpec();

@@ -35,11 +35,7 @@
 <a href="#"><span class="badge badge-primary">Smoke Test Report</span></a>
 </li>
 <li class="m-r-10">
-<<<<<<< HEAD
-<a href="#"><span class="badge badge-primary">Jul 25, 2023 06:27:43 PM</span></a>
-=======
-<a href="#"><span class="badge badge-primary">Jul. 25, 2023 06:46:17 a.m.</span></a>
->>>>>>> main
+<a href="#"><span class="badge badge-primary">Jul. 26, 2023 03:52:45 a.m.</span></a>
 </li>
 </ul>
 </div>
@@ -61,6 +57,11 @@
 <span class="ico"><i class="fa fa-tag"></i></span>
 </a>
 </li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
 </ul>
 </div>
 </div>      <div class="vcontainer">
@@ -70,21 +71,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<<<<<<< HEAD
-<h3>Jul 25, 2023 06:27:43 PM</h3>
-=======
-<h3>Jul. 25, 2023 06:46:17 a.m.</h3>
->>>>>>> main
+<h3>Jul. 26, 2023 03:52:45 a.m.</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<<<<<<< HEAD
-<h3>Jul 25, 2023 06:28:17 PM</h3>
-=======
-<h3>Jul. 25, 2023 06:46:20 a.m.</h3>
->>>>>>> main
+<h3>Jul. 26, 2023 03:53:31 a.m.</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -96,7 +89,7 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Features Failed</p>
-<h3>0</h3>
+<h3>1</h3>
 </div></div>
 </div>
 </div>
@@ -112,12 +105,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'>
+<div><small data-tooltip='50%'>
 <b>1</b> features passed
 </small>
 </div>
 <div>
-<small data-tooltip='0%'><b>0</b> features failed,
+<small data-tooltip='50%'><b>1</b> features failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -135,9 +128,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>2</b> scenarios passed</small></div>
+<div><small data-tooltip='50%'><b>1</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> scenarios failed,
+<small data-tooltip='50%'><b>1</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -155,14 +148,10 @@
 </div>
 </div>
 <div class="card-footer">
-<<<<<<< HEAD
-<div><small data-tooltip='100%'><b>17</b> steps passed</small></div>
-=======
-<div><small data-tooltip='100%'><b>4</b> steps passed</small></div>
->>>>>>> main
+<div><small data-tooltip='90%'><b>19</b> steps passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> steps failed,
-<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+<small data-tooltip='4%'><b>1</b> steps failed,
+<b>1</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -178,11 +167,7 @@
 </div></div>
 <script>
 var timeline = {
-<<<<<<< HEAD
-"Admin can add new admin":32.638
-=======
-""The teacher should be able to view, update and delete meetings":2.488
->>>>>>> main
+"Vice Dean creates lesson schedule":33.106,"Admin should be able to add Teacher":10.993
 };
 </script>
 <div class="row">
@@ -192,29 +177,28 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<<<<<<< HEAD
-<td>@TC_001_new_admin</td>
+<td>@vice_dean_lesson_schedule</td>
+<td>0</td>
 <td>1</td>
-=======
-<td>@US20_DB</td>
-<td>2</td>
->>>>>>> main
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@US24</td>
+<td>1</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>100%</td>
 </tr>
 <tr>
-<<<<<<< HEAD
-<td>@new_admin_can_be_added</td>
-=======
-<td>@US20_DB_Negative</td>
->>>>>>> main
+<td>@TC_001</td>
+<td>1</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
-<td>100%</td>
+<td>50%</td>
 </tr>
 </tbody>
 </table></div>
@@ -240,24 +224,20 @@ var timeline = {
 var statusGroup = {
 parentCount: 5,
 passParent: 1,
-failParent: 0,
+failParent: 1,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 2,
-failChild: 0,
+passChild: 1,
+failChild: 1,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-<<<<<<< HEAD
-passGrandChild: 17,
-=======
-passGrandChild: 4,
->>>>>>> main
-failGrandChild: 0,
+passGrandChild: 19,
+failGrandChild: 1,
 warningGrandChild: 0,
-skipGrandChild: 0,
+skipGrandChild: 1,
 infoGrandChild: 0,
 eventsCount: 5,
 };
@@ -272,6 +252,7 @@ eventsCount: 5,
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
 <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -279,48 +260,31 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<<<<<<< HEAD
-<a class="dropdown-item" href="#">@TC_001_new_admin</a><a class="dropdown-item" href="#">@new_admin_can_be_added</a>
-=======
-<a class="dropdown-item" href="#">@US20_DB</a><a class="dropdown-item" href="#">@US20_DB_Negative</a>
->>>>>>> main
+<a class="dropdown-item" href="#">@vice_dean_lesson_schedule</a><a class="dropdown-item" href="#">@US24</a><a class="dropdown-item" href="#">@TC_001</a>
 </ul>
 </li>
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="pass" test-id="1"
+        <li class="test-item"  status="fail" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-<<<<<<< HEAD
-            <p class="name">Admin can add new admin</p>
+            <p class="name">Vice Dean creates lesson schedule</p>
             <p class="text-sm">
-              <span>6:27:45 PM</span> / <span>00:00:32:638</span>
-=======
-            <p class="name">"The teacher should be able to view, update and delete meetings</p>
-            <p class="text-sm">
-              <span>6:46:18 a.m.</span> / <span>00:00:02:488</span>
->>>>>>> main
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>3:52:46 a.m.</span> / <span>00:00:33:106</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<<<<<<< HEAD
-<h5 class="test-status text-pass">Admin can add new admin</h5>
-<span class='badge badge-success'>07.25.2023 6:27:45 PM</span>
-<span class='badge badge-danger'>07.25.2023 6:28:17 PM</span>
-<span class='badge badge-default'>00:00:32:638</span>
-=======
-<h5 class="test-status text-pass">"The teacher should be able to view, update and delete meetings</h5>
-<span class='badge badge-success'>07.25.2023 6:46:18 a.m.</span>
-<span class='badge badge-danger'>07.25.2023 6:46:20 a.m.</span>
-<span class='badge badge-default'>00:00:02:488</span>
->>>>>>> main
+<h5 class="test-status text-fail">Vice Dean creates lesson schedule</h5>
+<span class='badge badge-success'>07.26.2023 3:52:46 a.m.</span>
+<span class='badge badge-danger'>07.26.2023 3:53:20 a.m.</span>
+<span class='badge badge-default'>00:00:33:106</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -332,44 +296,14 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-<<<<<<< HEAD
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>TC_001 Admin can add new admin</div>
-=======
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>US20_GetMeetList</div>
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>TC_001 Vice Dean should be able to create a lesson schedule</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
       </div>
     </div>
-        <div class="scenario_outline collapse">
-            <div class="card-body l1">
-              <div class="card-header">
-                <div class="card-title outline-child">
-                  <div class="node" id="3"><span class="badge log pass-bg mr-2">Pass</span>US20_GetMeetList</div>
-                </div>
-              </div>
-              <div class="card-body mt-3 collapse">
-                  <div class="step pass-bg">
-                    <span>Given get meet via description "exam result"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Then the body contains date "2023-07-27", description "exam result", start_time "10:00:00", stop_time "10:30:00"</span>
-      <div>
-      </div>
-                  </div>
-              </div>
-            </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="7"><span class="badge log pass-bg mr-2">Pass</span>Teacher should be able to delete information of Meet List</div>
->>>>>>> main
-      </div>
-    </div>
-        <div class="collapse">
+        <div class="">
           <div class="card-body">
-<<<<<<< HEAD
               <div class="step pass-bg" title="stepdefinitions.DeanContactMessageStepDefs.user_navigates_to_url()">
                 <span>Given user navigates to url</span>
       <div>
@@ -380,8 +314,13 @@ eventsCount: 5,
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.US04_AdminAddedDeanStepDefs.user_logs_in_as_admin()">
-                <span>Then user logs in as admin</span>
+              <div class="step pass-bg" title="stepdefinitions.US10_ViceDeanLessonScheduleStepDefs.userLogsInAsViceDeanByEnteringUsernameAndPassword(java.lang.String,java.lang.String)">
+                <span>Then user logs in as vice dean by entering username "Seymayazan" and password "12345678"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.US10_ViceDeanLessonScheduleStepDefs.userClicksOnLoginButton()">
+                <span>And user clicks on login button</span>
       <div>
       </div>
               </div>
@@ -390,77 +329,143 @@ eventsCount: 5,
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.US05_AdminStepDefs.click_on_admin_management()">
-                <span>And click on Admin Management</span>
+              <div class="step pass-bg" title="stepdefinitions.US10_ViceDeanLessonScheduleStepDefs.user_selects_lesson_management_from_the_menu()">
+                <span>And user selects Lesson Management from the menu</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.US22_NewAdminCanBeAdded.user_enters_a_new_admin_name()">
-                <span>And user enters a new admin name</span>
+              <div class="step pass-bg" title="stepdefinitions.US10_ViceDeanLessonScheduleStepDefs.user_selects_lesson_program_management()">
+                <span>And user selects Lesson Program Management</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.US22_NewAdminCanBeAdded.user_enters_a_new_admin_surname()">
-                <span>And user enters a new admin surname</span>
+              <div class="step pass-bg" title="stepdefinitions.US10_ViceDeanLessonScheduleStepDefs.user_selects_a_lesson_from_choose_lessons()">
+                <span>And user selects a lesson from Choose Lessons</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.US22_NewAdminCanBeAdded.user_enters_a_new_admin_birth_place()">
-                <span>And user enters a new admin birth place</span>
+              <div class="step pass-bg" title="stepdefinitions.US10_ViceDeanLessonScheduleStepDefs.user_selects_a_semester()">
+                <span>And user selects a semester</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.US22_NewAdminCanBeAdded.user_enters_a_new_admin_phone_number()">
-                <span>And user enters a new admin phone number</span>
+              <div class="step pass-bg" title="stepdefinitions.US10_ViceDeanLessonScheduleStepDefs.user_selects_a_day_from_choose_day()">
+                <span>And user selects a day from Choose Day</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.US22_NewAdminCanBeAdded.user_chooses_a_new_admin_gender()">
-                <span>And user chooses a new admin gender</span>
+              <div class="step pass-bg" title="stepdefinitions.US10_ViceDeanLessonScheduleStepDefs.user_selects_start_time()">
+                <span>And user selects Start Time</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.US22_NewAdminCanBeAdded.user_enters_a_new_admin_date_of_birth()">
-                <span>And user enters a new admin date of birth</span>
+              <div class="step pass-bg" title="stepdefinitions.US10_ViceDeanLessonScheduleStepDefs.user_selects_stop_time()">
+                <span>And user selects Stop Time</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.US22_NewAdminCanBeAdded.user_enters_a_new_admin_ssn()">
-                <span>And user enters a new admin ssn</span>
+              <div class="step fail-bg" title="stepdefinitions.US10_ViceDeanLessonScheduleStepDefs.user_clicks_on_submit_button()">
+                <span>When user clicks on Submit button</span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (8a88a8a2b32b9561d1c275e5e1fefd4b)] -> xpath: (//button[text()='Submit'])[1]] (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '4.10.0', revision: 'c14d967899'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\Owner\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63089}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63089/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8a88a8a2b32b9561d1c275e5e1fefd4b
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at utilities.ReusableMethods.waitForClickablility(ReusableMethods.java:100)
+	at stepdefinitions.US10_ViceDeanLessonScheduleStepDefs.user_clicks_on_submit_button(US10_ViceDeanLessonScheduleStepDefs.java:94)
+	at ✽.user clicks on Submit button(file:///C:/Users/Owner/IdeaProjects/ManagementOnSchools/./src/test/resources/features/ui/US10_vicedean_creates_lesson_schedule.feature:20)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="stepdefinitions.US10_ViceDeanLessonScheduleStepDefs.user_sees_created_lesson_program_success_message()">
+                <span>Then user sees Created lesson program success message</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>hooks.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>screenshots
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../embedded1.png' src="../embedded1.png">
+    
+    </div></div>
+</div>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.US22_NewAdminCanBeAdded.user_enters_a_new_admin_username()">
-                <span>And user enters a new admin username</span>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="18"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Admin should be able to add Teacher</p>
+            <p class="text-sm">
+              <span>3:53:20 a.m.</span> / <span>00:00:10:993</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Admin should be able to add Teacher</h5>
+<span class='badge badge-success'>07.26.2023 3:53:20 a.m.</span>
+<span class='badge badge-danger'>07.26.2023 3:53:31 a.m.</span>
+<span class='badge badge-default'>00:00:10:993</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=18</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="19"><span class="badge log pass-bg mr-2">Pass</span>TC_001 Admin should be able login</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.US05_AdminStepDefs.navigates_to(java.lang.String)">
+                <span>Given navigates to "https://managementonschools.com"</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.US22_NewAdminCanBeAdded.user_enters_a_new_admin_password()">
-                <span>And user enters a new admin password</span>
+              <div class="step pass-bg" title="stepdefinitions.US05_AdminStepDefs.click_on_login()">
+                <span>Then click on login</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.US22_NewAdminCanBeAdded.userClicksOnSubmitButtonOnAdminManagement()">
-                <span>And user clicks on submit button on admin management</span>
+              <div class="step pass-bg" title="stepdefinitions.US05_AdminStepDefs.add_user_name()">
+                <span>Then add user name</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.US22_NewAdminCanBeAdded.verify_new_admin_account_is_created()">
-                <span>Then Verify new Admin account is created</span>
+              <div class="step pass-bg" title="stepdefinitions.US05_AdminStepDefs.add_password()">
+                <span>And add password</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.UI_US08_StepDefs.close_the_application()">
-                <span>Then close the application</span>
-=======
-              <div class="step pass-bg" title="stepdefinitions.database.US20_DBStepDefs.get_meet_via_description(java.lang.String)">
-                <span>Given get meet via description "exam resulX"</span>
+              <div class="step pass-bg" title="stepdefinitions.US05_AdminStepDefs.click_on_login_button()">
+                <span>And click on login button</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.database.US20_DBStepDefs.body_should_be_empty()">
-                <span>Then Body should be empty</span>
->>>>>>> main
+              <div class="step pass-bg" title="stepdefinitions.US05_AdminStepDefs.click_on_the_menu()">
+                <span>And click on the menu</span>
       <div>
       </div>
               </div>
@@ -483,22 +488,96 @@ eventsCount: 5,
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">3</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>2</span>
+<span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">@US20_DB</p>
+<p class="name">@vice_dean_lesson_schedule</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@vice_dean_lesson_schedule</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>03:52:46 a.m.</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>TC_001 Vice Dean should be able to create a lesson schedule</a>
+<div class="">
+<span class="badge badge-default">Vice Dean creates lesson schedule.TC_001 Vice Dean should be able to create a lesson schedule</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@US24</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@US24</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>03:53:20 a.m.</td>
+<td>
+<a href="#" class="linked" test-id='18' id='19'>TC_001 Admin should be able login</a>
+<div class="">
+<span class="badge badge-default">Admin should be able to add Teacher.TC_001 Admin should be able login</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@TC_001</p>
 <p class="duration text-sm">2 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@US20_DB</h4>
-<span status="pass" class='badge log pass-bg'>2 passed</span>
+<h4>@TC_001</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -509,23 +588,23 @@ eventsCount: 5,
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>06:46:18 a.m.</td>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>03:52:46 a.m.</td>
 <td>
-<a href="#" class="linked" test-id='1' id='3'>US20_GetMeetList</a>
+<a href="#" class="linked" test-id='1' id='2'>TC_001 Vice Dean should be able to create a lesson schedule</a>
 <div class="">
-<span class="badge badge-default">"The teacher should be able to view, update and delete meetings.US20_GetMeetList</span>
+<span class="badge badge-default">Vice Dean creates lesson schedule.TC_001 Vice Dean should be able to create a lesson schedule</span>
 </div>
 </td>
 </tr>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>06:46:19 a.m.</td>
+<td>03:53:20 a.m.</td>
 <td>
-<a href="#" class="linked" test-id='1' id='7'>Teacher should be able to delete information of Meet List</a>
+<a href="#" class="linked" test-id='18' id='19'>TC_001 Admin should be able login</a>
 <div class="">
-<span class="badge badge-default">"The teacher should be able to view, update and delete meetings.Teacher should be able to delete information of Meet List</span>
+<span class="badge badge-default">Admin should be able to add Teacher.TC_001 Admin should be able login</span>
 </div>
 </td>
 </tr>
@@ -533,26 +612,34 @@ eventsCount: 5,
 </table>
 </div>
 </li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>1</span>
+<span class='badge log badge-danger'>1</span>
 </span>
-<<<<<<< HEAD
-<p class="name">@TC_001_new_admin</p>
-=======
-<p class="name">@US20_DB_Negative</p>
->>>>>>> main
+<p class="name">org.openqa.selenium.TimeoutException</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<<<<<<< HEAD
-<h4>@TC_001_new_admin</h4>
-=======
-<h4>@US20_DB_Negative</h4>
->>>>>>> main
-<span status="pass" class='badge log pass-bg'>1 passed</span>
+<h4>org.openqa.selenium.TimeoutException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -563,57 +650,13 @@ eventsCount: 5,
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<<<<<<< HEAD
-<td>18:27:45 PM</td>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>03:53:11 a.m.</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>TC_001 Admin can add new admin</a>
+<a href="#" class="linked" test-id='1' id='15'>When user clicks on Submit button</a>
 <div class="">
-<span class="badge badge-default">Admin can add new admin.TC_001 Admin can add new admin</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@new_admin_can_be_added</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@new_admin_can_be_added</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>18:27:45 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='2'>TC_001 Admin can add new admin</a>
-<div class="">
-<span class="badge badge-default">Admin can add new admin.TC_001 Admin can add new admin</span>
-=======
-<td>06:46:19 a.m.</td>
-<td>
-<a href="#" class="linked" test-id='1' id='7'>Teacher should be able to delete information of Meet List</a>
-<div class="">
-<span class="badge badge-default">"The teacher should be able to view, update and delete meetings.Teacher should be able to delete information of Meet List</span>
->>>>>>> main
+<span class="badge badge-default">Vice Dean creates lesson schedule.TC_001 Vice Dean should be able to create a lesson schedule.When user clicks on Submit button</span>
 </div>
 </td>
 </tr>
