@@ -8,7 +8,7 @@
   <component name="DBNavigator.Project.DatabaseBrowserManager">
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
-    <show-object-properties value="false" />
+    <show-object-properties value="true" />
     <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
@@ -16,7 +16,11 @@
       <console name="" type="STANDARD" schema="database" session="Main" />
     </connection>
     <connection id="e5455790-d9da-4643-88c8-ed2f68e82863">
+
       <console name="MOS" type="STANDARD" schema="school_management" session="Main" />
+
+      <console name="MOS" type="STANDARD" schema="school_management" session="Main"><![CDATA[SELECT * FROM meet WHERE description ='exam result']]></console>
+
     </connection>
     <connection id="7457e661-ee6f-48e5-b4a3-1d813fc47dcc">
       <console name="Connection" type="STANDARD" schema="postgres" session="Main" />
@@ -30,10 +34,18 @@
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
     <filter-actions connection-id="e5455790-d9da-4643-88c8-ed2f68e82863" dataset="public.guest_user" active-filter-id="" />
+    <filter-actions connection-id="e5455790-d9da-4643-88c8-ed2f68e82863" dataset="information_schema.sql_features" active-filter-id="" />
   </component>
   <component name="DBNavigator.Project.ExecutionManager">
     <retain-sticky-names value="false" />
   </component>
+
+
+
+
+
+
+
   <component name="DBNavigator.Project.MethodExecutionManager">
     <method-browser />
     <execution-history>
@@ -42,6 +54,13 @@
     </execution-history>
     <argument-values-cache />
   </component>
+
+
+
+
+
+
+
   <component name="DBNavigator.Project.ObjectQuickFilterManager">
     <last-used-operator value="EQUAL" />
     <filters />
@@ -707,5 +726,8 @@
         </visibility-settings>
       </environment>
     </general-settings>
+  </component>
+  <component name="DBNavigator.Project.StatementExecutionManager">
+    <execution-variables />
   </component>
 </project>

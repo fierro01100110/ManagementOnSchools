@@ -2,7 +2,6 @@ package stepdefinitions;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-import org.testng.AssertJUnit;
 import org.testng.asserts.SoftAssert;
 import pages.ViceDeanLogin;
 import pages.ViceDeanManagementt;
@@ -12,18 +11,15 @@ import utilities.*;
 import static utilities.ReusableMethods.verifyElementIsDisplayed;
 
 public class US14_ViceDeanTeacherManagementStepDefs {
-
-    //HomePage homePage = new HomePage();
     ViceDeanLogin viceDeanLogin = new ViceDeanLogin();
     ViceDeanManagementt viceDeanManagement = new ViceDeanManagementt();
     ViceDeanTeacherManagement viceDeanTeacherManagement = new ViceDeanTeacherManagement();
-
     @Given("go to url")
     public void go_to_url() {
         Driver.getDriver().get(ConfigReader.getProperty("base_url"));
     }
-    @Then("user logs in as vice dean")
-    public void user_logs_in_as_vice_dean() {
+    @Then("user log in as vice dean")
+    public void user_log_in_as_vice_dean() {
         viceDeanLogin.login.click();
         WaitUtils.waitFor(3);
         viceDeanLogin.userName.sendKeys(ConfigReader.getProperty("feyza_vice_dean_userName"));
@@ -62,8 +58,6 @@ public class US14_ViceDeanTeacherManagementStepDefs {
     public void click_on_the_edit_button() {
         WaitUtils.waitFor(3);
         //viceDeanTeacherManagement.editButton.click();
-        //JSUtils.scrollAllTheWayDownJS();
-        //JSUtils.getValueByJS("edit");
         JSUtils.clickWithTimeoutByJS(viceDeanTeacherManagement.editButton);
     }
     @Then("verify vice dean is able to see the teacher information in the edit page")
@@ -116,9 +110,7 @@ public class US14_ViceDeanTeacherManagementStepDefs {
     }
     @Then("click on the ssn  box to update {string} number")
     public void click_on_the_ssn_box_to_update_number(String ssn) {
-        //WaitUtils.waitFor(3);
-        //JSUtils.clickWithTimeoutByJS(viceDeanTeacherManagement.ssn);
-        //ReusableMethods.waitForClickablility(viceDeanTeacherManagement.ssn,2);
+
         viceDeanTeacherManagement.ssn.sendKeys(ssn);
         ReusableMethods.sendKeysWithTimeout(viceDeanTeacherManagement.ssn,ssn,3);
     }
@@ -140,25 +132,19 @@ public class US14_ViceDeanTeacherManagementStepDefs {
     }
     @Then("click on the date of birth  box to update {string}")
     public void click_on_the_date_of_birth_box_to_update(String dateOfBirth) {
-        //WaitUtils.waitFor(3);
-        //viceDeanTeacherManagement.dateOfBirth.click();
-        //JSUtils.clickWithTimeoutByJS(viceDeanTeacherManagement.dateOfBirth);
+
         ReusableMethods.sendKeysWithTimeout(viceDeanTeacherManagement.dateOfBirth,dateOfBirth,3);
         viceDeanTeacherManagement.dateOfBirth.sendKeys(dateOfBirth);
     }
     @Then("click on the user name  box to update {string}")
     public void click_on_the_user_name_box_to_update(String userName) {
-        //WaitUtils.waitFor(3);
-        //viceDeanTeacherManagement.userName.click();
-        //JSUtils.clickWithTimeoutByJS(viceDeanTeacherManagement.userName);
+
         ReusableMethods.sendKeysWithTimeout(viceDeanTeacherManagement.userName,userName,3);
         viceDeanTeacherManagement.userName.sendKeys(userName);
     }
     @Then("click on the password  box to update {string}")
     public void click_on_the_password_box_to_update(String password) {
-        //WaitUtils.waitFor(3);
-        //viceDeanTeacherManagement.password.click();
-        //JSUtils.clickWithTimeoutByJS(viceDeanTeacherManagement.password);
+
         ReusableMethods.sendKeysWithTimeout(viceDeanTeacherManagement.password,password,3);
         viceDeanTeacherManagement.password.sendKeys(password);
     }
@@ -167,20 +153,14 @@ public class US14_ViceDeanTeacherManagementStepDefs {
         WaitUtils.waitFor(3);
         //viceDeanTeacherManagement.submitButton.click();
         JSUtils.clickWithTimeoutByJS(viceDeanTeacherManagement.submitButton);
-        //ReusableMethods.sendKeysWithTimeout(viceDeanTeacherManagement.submitButton,submitButton,3);
-        //viceDeanTeacherManagement.submitButton.sendKeys(submitButton);
 
     }
     @Then("verify that the teacher updated successful message is displayed")
     public void verify_that_the_teacher_updated_successful_message_is_displayed() {
-        WaitUtils.waitFor(3);
-        String successfulMassage = viceDeanTeacherManagement.successfulMassage.getText();
-        AssertJUnit.assertTrue(successfulMassage.contains("Teacher updated Successful"));
-        //assertTrue(viceDeanTeacherManagement.successfulMassage.getText().contains("Teacher updated Successful"));
-        //ReusableMethods.verifyElementIsDisplayed(viceDeanTeacherManagement.successfulMassage);
-        //SoftAssert softAssert = new SoftAssert();
-        //softAssert.assertTrue(viceDeanTeacherManagement.successfulMassage.isDisplayed(),"Teacher updated Successful");
-        //softAssert.assertAll();
+        //WaitUtils.waitFor(3);
+        //String successfulMassage = viceDeanTeacherManagement.successfulMassage.getText();
+        //AssertJUnit.assertTrue(successfulMassage.contains("Teacher updated Successful"));
+
 
 
 

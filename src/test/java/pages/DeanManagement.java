@@ -28,7 +28,8 @@ public class DeanManagement {
     public WebElement deanManagementMenu;
 
     //Dean's name
-    @FindBy(xpath = "//*[@id='name']")
+    //@FindBy(xpath = "//*[@id='name']")
+    @FindBy(xpath = "(//*[@class='form-control'])[1]")
     public WebElement deanName;
 
     //Dean's Surname
@@ -72,12 +73,45 @@ public class DeanManagement {
     public WebElement deanSubmit;
 
     //Last page on Dean List
-    @FindBy(xpath="//span[@aria-hidden='true']")
+    @FindBy(xpath="//span[text()='Last']")////span[@aria-hidden='true']
     public WebElement lastPageDeanList;
 
     //Dean Hakan on Dean List
-    @FindBy(xpath="//*[contains(text(), 'hakanmollaoglu')]")
-    public WebElement deanHakanOnDeanList;
+    @FindBy(xpath="(//*[text()='Dean Saved'])[2]")
+    public WebElement deanSaved;
+
+    //Dean Name Required warning
+    @FindBy(xpath = "(//*[@class='invalid-feedback'])[1]")
+    public WebElement deanNameRequiredWarning;
+
+    //Dean Surname Required warning
+    @FindBy(xpath ="(//*[@class='invalid-feedback'])[2]")
+    public WebElement deanSurnameRequiredWarning;
+
+    //Dean Birthplace Required Warning
+    @FindBy(xpath = "(//*[@class='invalid-feedback'])[3]")
+    public WebElement deanBirthPlaceRequiredWarning;
+
+    //Dean Birthday Required Warning
+    @FindBy(xpath = "(//*[@class='invalid-feedback'])[4]")
+    public WebElement deanBirthdayRequiredWarning;
+
+    //Dean Phone Number Minimum 12 Character Required Warning
+    @FindBy(xpath = "(//*[@class='invalid-feedback'])[5]")
+    public WebElement deanPhoneNumberRequiredWarning;
+
+    //Dean SSN Number Minimum 11 Character Required Warning
+    @FindBy(xpath = "(//*[@class='invalid-feedback'])[6]")
+    public WebElement deanSsnRequiredWarning;
+
+    //Dean Username Required Warning
+    @FindBy(xpath = "(//*[@class='invalid-feedback'])[7]")
+    public WebElement deanUsernameRequiredWarning;
+
+    //Dean Password Required Warning
+    @FindBy(xpath = "(//*[@class='invalid-feedback'])[8]")
+    public WebElement deanPasswordRequiredWarning;
+
 
 
     @FindBy(xpath = "(//button[@class='text-dark btn btn-outline-info'])[5]")

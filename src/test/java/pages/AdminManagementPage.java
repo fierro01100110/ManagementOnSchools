@@ -29,5 +29,40 @@ public class AdminManagementPage {
     public WebElement yesLogoutButton;
     @FindBy(xpath = "//button[.='Lessons']")
     public WebElement lessonsButton;
+
+    @FindBy(id = "name")
+    public WebElement name;
+
+    @FindBy(id = "surname")
+    public WebElement surname;
+
+    @FindBy(id = "birthPlace")
+    public WebElement birthPlace;
+
+    @FindBy(id = "phoneNumber")
+    public WebElement phoneNumber;
+
+    @FindBy(xpath = "//input[@value='MALE']")
+    public WebElement maleGender;
+
+    @FindBy(id = "birthDay")
+    public WebElement birthDay;
+
+    @FindBy(id = "ssn")
+    public WebElement ssn;
+
+    @FindBy(id = "username")
+    public WebElement username;
+
+    @FindBy(id = "password")
+    public WebElement password;
+
+    @FindBy(xpath = "//button[text()= 'Submit']")
+    public WebElement submitButton;
+
+    @FindBy(xpath = "//*[text()='Admin Saved']")
+    public WebElement adminSaved;
+
+
 }
 
