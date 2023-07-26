@@ -18,7 +18,7 @@ public class Hooks {
 
 
 
-        @Before("@Api")
+        @Before("@US22_API")
         public void setUpScenario () {
 
             setSpec();
