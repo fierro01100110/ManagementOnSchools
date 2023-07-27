@@ -60,7 +60,7 @@ public class US14_APIStepDefs {
 
 
 
-        System.out.println(jsonPath.getList("findAll{it.username=='Teacherfehmi'}").get(0));
+        //System.out.println(jsonPath.getList("findAll{it.username=='Teacherfehmi'}").get(0));
 
     }
 }

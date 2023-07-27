@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-
+        //        ADDING CONFIGURATIONS
         plugin = {
                 "pretty",
                 "html:target/default-cucumber-reports.html",
@@ -23,13 +23,12 @@ import org.junit.runner.RunWith;
         features = "./src/test/resources/features",
         glue = {"stepdefinitions","hooks"},
         dryRun = false,
-<<<<<<< HEAD
-        tags = "@US24_api_test"
-=======
-        tags ="@US24"
->>>>>>> main
+        //tags = "@US04_admin_added_dean_api"
+        tags ="@US04_admin_added_dean_api"
+
+
 )
+public class US25_HakanRunner {
 
 
-public class Selda_Runner {
 }

@@ -1,6 +1,5 @@
 package runners;
 
-
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
@@ -17,19 +16,12 @@ import org.junit.runner.RunWith;
                 "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
         },
 
-
         monochrome = true,
-
         features = "./src/test/resources/features",
         glue = {"stepdefinitions","hooks"},
         dryRun = false,
-<<<<<<< HEAD
-        tags = "@US24_api_test"
-=======
-        tags ="@US24"
->>>>>>> main
+        tags ="@US20_DB"
 )
 
-
-public class Selda_Runner {
+public class FeyzaRunner {
 }

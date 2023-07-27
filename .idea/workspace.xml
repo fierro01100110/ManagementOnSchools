@@ -4,6 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="cd5843f1-da2f-42ce-9150-68d016395deb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/hooks/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hooks/Hooks.java" afterDir="false" />
@@ -13,6 +14,23 @@
       <change beforePath="$PROJECT_DIR$/test-output/PdfReport/SparkPdf.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/PdfReport/SparkPdf.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/SparkReport/Spark.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/SparkReport/Spark.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/embedded1.png" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/embedded1.png" afterDir="false" />
+=======
+<<<<<<< HEAD
+    <list default="true" id="e1b23fb8-97c1-4e32-b6d1-49bb90892d77" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/PdfReport/SparkPdf.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/PdfReport/SparkPdf.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport/Spark.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/SparkReport/Spark.html" afterDir="false" />
+=======
+    <list default="true" id="b5fba904-de1a-4e2b-b05c-85e71beb8cd1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runners/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runners/US25_HakanRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/US25_HakanRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/PdfReport/SparkPdf.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/PdfReport/SparkPdf.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport/Spark.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/SparkReport/Spark.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/embedded1.png" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/embedded1.png" afterDir="false" />
+>>>>>>> main
+>>>>>>> main
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +57,10 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> main
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
@@ -46,10 +68,46 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+<<<<<<< HEAD
   }
 }</component>
   <component name="RunManager" selected="JUnit.Selda_Runner">
     <configuration name="AndreyRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+=======
+=======
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "last_opened_file_path": "/Users/feyzamollaoglu/IdeaProjects/ManagementOnSchools/src/test/resources/features/database"
+>>>>>>> main
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources/features/database" />
+      <recent name="$PROJECT_DIR$/src/test/resources/features/ui" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="runners" />
+      <recent name="stepdefinitions.database" />
+      <recent name="stepdefinitions" />
+      <recent name="pages" />
+    </key>
+  </component>
+<<<<<<< HEAD
+  <component name="RunManager" selected="JUnit.Runner">
+    <configuration name="US22_NewAdminCanBeAdded" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="stepdefinitions.US22_NewAdminCanBeAdded" />
+      <module name="ManagementOnSchools" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="stepdefinitions.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+=======
+  <component name="RunManager" selected="JUnit.FeyzaRunner">
+    <configuration name="FeyzaRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+>>>>>>> main
       <module name="ManagementOnSchools" />
       <extension name="coverage">
         <pattern>
@@ -58,7 +116,53 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="runners" />
-      <option name="MAIN_CLASS_NAME" value="runners.AndreyRunner" />
+      <option name="MAIN_CLASS_NAME" value="runners.FeyzaRunner" />
+      <option name="TEST_OBJECT" value="class" />
+>>>>>>> main
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Runner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ManagementOnSchools" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="runners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="runners" />
+      <option name="MAIN_CLASS_NAME" value="runners.Runner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Selda_Runner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ManagementOnSchools" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="runners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="runners" />
+      <option name="MAIN_CLASS_NAME" value="runners.Selda_Runner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="US25_HakanRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ManagementOnSchools" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="runners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="runners" />
+      <option name="MAIN_CLASS_NAME" value="runners.US25_HakanRunner" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -81,13 +185,25 @@
     </configuration>
     <recent_temporary>
       <list>
+<<<<<<< HEAD
         <item itemvalue="JUnit.Selda_Runner" />
         <item itemvalue="JUnit.AndreyRunner" />
+=======
+        <item itemvalue="JUnit.FeyzaRunner" />
+        <item itemvalue="JUnit.Runner" />
+<<<<<<< HEAD
+        <item itemvalue="Application.US22_NewAdminCanBeAdded" />
+=======
+        <item itemvalue="JUnit.Selda_Runner" />
+        <item itemvalue="JUnit.US25_HakanRunner" />
+>>>>>>> main
+>>>>>>> main
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+<<<<<<< HEAD
     <task active="true" id="Default" summary="Default task">
       <changelist id="cd5843f1-da2f-42ce-9150-68d016395deb" name="Changes" comment="" />
       <created>1690493582791</created>
@@ -95,11 +211,35 @@
       <option name="presentableId" value="Default" />
       <updated>1690493582791</updated>
     </task>
+=======
+<<<<<<< HEAD
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e1b23fb8-97c1-4e32-b6d1-49bb90892d77" name="Changes" comment="" />
+      <created>1689914821541</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1689914821541</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+=======
+>>>>>>> main
     <servers />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ManagementOnSchools$Selda_Runner.ic" NAME="Selda_Runner Coverage Results" MODIFIED="1689818277980" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>runners.*</FILTER>
     </SUITE>
+>>>>>>> main
   </component>
 </project>
