@@ -23,7 +23,7 @@ public class US24_ApiStepDefs {
         spec.pathParams("first", "teachers", "second", "getSavedTeacherById", "third", 31);
 
 //set the expected date
-        expectedData=new SeldaExpectedPojo("nelle.zbon","John","Doe","1999-05-01","408-85-8397","Germany","683-103-7713","MALE","clarice.cummerata@gmail.com");
+        expectedData=new SeldaExpectedPojo("weldon.lin","John","Doe","1999-05-01","876-69-5810","Germany","680-251-3248","MALE","hunter.tillman@gmail.com");
         System.out.println(expectedData);
 
         System.out.println("Hello");
@@ -38,14 +38,14 @@ public class US24_ApiStepDefs {
         System.out.println(actualData.get("message"));
         System.out.println( ( (Map) actualData.get("object") ).get("birthPlace").toString() );
 //do assertion
-        // assertEquals(expectedData.getUsername(),((Map) actualData.get("object") ).get("username").toString() );
+        assertEquals(expectedData.getUsername(),((Map) actualData.get("object") ).get("username").toString() );
         assertEquals(expectedData.getSurname(),((Map) actualData.get("object") ).get("surname").toString() );
         assertEquals(expectedData.getName(),((Map) actualData.get("object") ).get("name").toString() );
         assertEquals(expectedData.getBirthDay(),((Map) actualData.get("object") ).get("birthDay").toString() );
-        // assertEquals(expectedData.getSsn(),((Map) actualData.get("object") ).get("ssn").toString() );
+        assertEquals(expectedData.getSsn(),((Map) actualData.get("object") ).get("ssn").toString() );
         assertEquals(expectedData.getBirthPlace(),((Map) actualData.get("object") ).get("birthPlace").toString() );
-        //assertEquals(expectedData.getPhoneNumber(),((Map) actualData.get("object") ).get("phoneNumber").toString() );
+        assertEquals(expectedData.getPhoneNumber(),((Map) actualData.get("object") ).get("phoneNumber").toString() );
         assertEquals(expectedData.getGender(),((Map) actualData.get("object") ).get("gender").toString() );
-        //assertEquals(expectedData.getEmail(),((Map) actualData.get("object") ).get("email").toString() );
+        assertEquals(expectedData.getEmail(),((Map) actualData.get("object") ).get("email").toString() );
     }
 }
