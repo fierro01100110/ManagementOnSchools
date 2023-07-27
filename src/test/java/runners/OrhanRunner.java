@@ -21,7 +21,7 @@ import org.junit.runner.RunWith;
         features = "./src/test/resources/features",
         glue = {"stepdefinitions","hooks"},
         dryRun = false,
-        tags = "@create_vice_dean_account"
+        tags = "@US23_DB"
 
 )
 public class OrhanRunner {

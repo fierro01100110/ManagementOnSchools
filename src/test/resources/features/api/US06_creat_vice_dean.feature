@@ -1,7 +1,7 @@
 @US06_API @Api
 Feature: Deans should be able to create a Vice Dean account.
 
-  Scenario Outline: US06_GetViceDeanByPhoneNumber
+  Scenario Outline: US06_GetViceDeanByUsername
 
     Given should send get request by orhan "<username>"
     Then my body should contain name "<name>", surname "<surname>",birth_place "<birth_place>",gender "<gender>",birth_day "<birth_day>",phone_number "<phone_number>",ssn "<ssn>",username "<username>"
@@ -12,5 +12,6 @@ Feature: Deans should be able to create a Vice Dean account.
     @US06_NegativeApi
     Scenario: My Dean should be able to delete information of Vice Dean
       Given should send get request by orhan "hasan.huseyinX"
-      Then body must be empty with non existing username "hasan.huseyinX"
+      Then body must be empty with non existing username by orhan "hasan.huseyinX"
+
 

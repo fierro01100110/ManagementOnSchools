@@ -5,104 +5,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a18b2521-1809-46d0-9bc1-5ede020311f2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_16_23,_12_04_[Changes]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_16_23__12_04__Changes_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/LessonProgramPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/Register.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/ViceDeanLogin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/ViceDeanManagementt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/ViceDeanTeacherManagement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/runners/AndreyRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/runners/Selda_Runner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/US10_ViceDeanLessonScheduleStepDefs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/US14_ViceDeanTeacherManagementStepDefs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/US24_AdminTeacherManagementStepDefs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/api_stepdefinitions/US04_admin_added_dean_api_StepDefs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/api_stepdefinitions/US10_ApiStepDefs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/api_stepdefinitions/US14_APIStepDefs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/database/US04_admin_added_dean_db_StepDefs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/database/US05_DB_testing.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/negative_test_cases/US01_TC002_NegativeStudentRegisterStepDefs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/negative_test_cases/US04_AdminAddedDeanNegativeStepDefs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/us01_package/US01_TC001_StudentRegisterStepDefs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/us01_package/US01_TC002_ApiStepDefs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/us01_package/US01_TC003_DBStepDefs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utilities/Content02Pojo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utilities/FakerUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utilities/US01_Pojo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/extent-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/extent.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/api/US01_TC002_StudentRegisterApi.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/api/US04_admin_added_dean_api.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/api/US10_ViceDean_lessonprogram.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/api/US14_vice_dean_teacher_management_api.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/api/US18_Api_test.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/database/US01_TC003_StudentRegisterDatabase.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/database/US04_admin_added_dean_db.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/ui/US01_TC001_student_register.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/ui/US04_admin_added_dean.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/ui/US10_vicedean_creates_lesson_schedule.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/ui/US14_vice_dean_teacher_management.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/ui/US24_Admin_add_teacher.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/ui/negative_test_cases/US01_TC002_negative_student_register.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/ui/negative_test_cases/US04_admin_added_dean_negative.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_16_23__12_04__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_7_16_23__12_04__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/base_url/Base_Url.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base_url/Base_Url.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/hooks/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hooks/Hooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/ContactMessagePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/ContactMessagePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/DeanManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/DeanManagement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/MainMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/TeacherManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/TeacherManagement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/TeacherPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/TeacherPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/ViceDeanManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/ViceDeanManagement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runners/DBRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/DBRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/runners/OrhanRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/OrhanRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runners/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/Runner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/AdminAddedDeanStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/US04_AdminAddedDeanStepDefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/Api/US05_ApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/api_stepdefinitions/US05_ApiTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US02_API_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/US02_API_Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US03_ContactPageMessage_UI_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/US03_ContactPageMessage_UI_Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US03_User_contact_message_API_test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US_05_SELDA_AdminStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/US05_AdminStepDefs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US_18_TeacherViewStudentInfo_UI_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/US_18_TeacherViewStudentInfo_UI_Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/api_stepdefinitions/US03_ApiStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/api_stepdefinitions/US03_ApiStepDefs.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/api_stepdefinitions/US06_APiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/api_stepdefinitions/US06_APiTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/database/US_05_SELDA_DB_testing.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/ManagementOnSchoolsAuth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/ManagementOnSchoolsAuth.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/api/US03_user_contact_message.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/api/US03_user_contact_message.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/database/US06.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/database/US06.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/api/US06_creat_vice_dean.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/api/US06_creat_vice_dean.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/api/US_05_SELDA_AdminAPI_feature_file.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/api/US05_AdminAPI_feature_file.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/database/US_05_SELDA_AdminDB_feature_file.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/database/US05_AdminDB_feature_file.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ui/US03_user_contact_message.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ui/US03_user_contact_message.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ui/US_05_SELDA_Admin_feature_file.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ui/US05_Admin_feature_file.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ui/US_18_teacher_vieiw_info.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ui/US_18_teacher_vieiw_info.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ui/admin_added_dean.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/Screenshots/20230711015045image.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/Screenshots/20230711015049image.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/Screenshots/20230711015052image.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/Screenshots/20230711015057image.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/Screenshots/20230711020600image.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/Screenshots/20230711020605image.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/Screenshots/20230711020607image.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/Screenshots/20230711020608image.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/Screenshots/20230711020613image.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/embedded1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/PdfReport/SparkPdf.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/PdfReport/SparkPdf.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport/Spark.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/SparkReport/Spark.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProjectId" id="2T52PsyyInLYeOtr8aAVtN9hBHc" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true"
+  }
+}]]></component>
   <component name="RunManager">
     <configuration name="OrhanRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ManagementOnSchools" />
@@ -125,7 +65,15 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a18b2521-1809-46d0-9bc1-5ede020311f2" name="Changes" comment="" />
+      <created>1690318609207</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1690318609207</updated>
+    </task>
     <servers />
   </component>
 </project>
