@@ -21,13 +21,11 @@ import org.junit.runner.RunWith;
         features = "./src/test/resources/features",
         glue = {"stepdefinitions","hooks"},
         dryRun = false,
-        tags = "@negative_test2"
-
-
+        tags = "@Admin_creates_vice_dean_account"
 
 
 )
-public class Runner {
+public class OrhanRunner {
 
 
 }

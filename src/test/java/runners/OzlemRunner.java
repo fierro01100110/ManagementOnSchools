@@ -1,10 +1,8 @@
 package runners;
 
-
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
-
 @RunWith(Cucumber.class)
 @CucumberOptions(
 
@@ -21,13 +19,8 @@ import org.junit.runner.RunWith;
         features = "./src/test/resources/features",
         glue = {"stepdefinitions","hooks"},
         dryRun = false,
-        tags = "@negative_test2"
-
-
-
+        tags =""
 
 )
-public class Runner {
-
-
+public class OzlemRunner {
 }
