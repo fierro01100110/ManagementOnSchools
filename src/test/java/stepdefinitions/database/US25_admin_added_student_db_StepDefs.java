@@ -49,6 +49,9 @@ public class US25_admin_added_student_db_StepDefs {
         assertEquals(name, actName);
         assertEquals(phoneNumber, actPhone_number);
         assertEquals(surname, actSurname);
+        assertEquals(motherName, actMotherName);
+        assertEquals(fatherName, actFatherName);
+        assertEquals(email, actEmail);
         assertEquals(username, actUsername);
 
     }
