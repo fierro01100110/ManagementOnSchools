@@ -1,4 +1,4 @@
-package stepdefinitions;
+package stepdefinitions.api_stepdefinitions;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -10,7 +10,6 @@ import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertEquals;
 
 public class US02_API_Test {
-
     Response response;
 //    @Given("send get request by username2{string}")
 //    public void send_get_request_by_username2(String string) {
@@ -62,7 +61,4 @@ public class US02_API_Test {
         assertEquals(phoneNumber, actPhoneNumber);
 
     }
-
-
-
 }
