@@ -16,7 +16,7 @@ public class Hooks {
 
 
 
-        @Before("@Api")
+        @Before("@US24")
 
         public void setUpScenario () {
 
