@@ -9,7 +9,11 @@
         | username     | birth_day  | birth_place | gender | name  | phone_number | ssn         | surname      |
         | TeacherFehmi | 2001-03-27 | New York    | MALE   | Fehmi | 146-258-9866 | 889-99-6971 | TeacherFehmi |
 
+<<<<<<< HEAD
    #  @US14_API_Negative
+=======
+   # @US14_API_Negative
+>>>>>>> main
    # Scenario: vice dean should be able to update information of teacher list
    #   Given get teacher by username "TeacherF ehmi"
    #   Then body should be empty
