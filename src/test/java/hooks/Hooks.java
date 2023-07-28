@@ -14,15 +14,8 @@ import static base_url.Base_Url.setSpec;
 
 public class Hooks {
 
-
-
-        @Before("@US24")
-
-<<<<<<< HEAD
-
         @Before("@US02_API")
-=======
->>>>>>> main
+
         public void setUpScenario () {
 
             setSpec();
