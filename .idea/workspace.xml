@@ -5,14 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="69993b7e-643f-4b33-b8cb-9a99433e521a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api_pojo/StudentObjectPojo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api_pojo/StudentObjectPojo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api_pojo/StudentPutRequestPojo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api_pojo/StudentPutRequestPojo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/TeacherPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/TeacherPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runners/AndreyRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/AndreyRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US_18_TeacherViewStudentInfo_UI_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/US_18_TeacherViewStudentInfo_UI_Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/api_stepdefinitions/US18_API.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/api_stepdefinitions/US18_API.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/api_stepdefinitions/US18_Api_full.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/api/US18_API_test.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/api/US18_API_test.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ui/US01_TC001_student_register.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ui/US01_TC001_student_register.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ui/US_18_teacher_vieiw_info.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ui/US_18_teacher_vieiw_info.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/PdfReport/SparkPdf.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/PdfReport/SparkPdf.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/SparkReport/Spark.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/SparkReport/Spark.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/embedded1.png" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/embedded1.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -20,10 +39,48 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/test/java/runners/DBRunner.java" root0="FORCE_HIGHLIGHTING" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2T2H53fb8GEU7MXVBdWsDWSP39t" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
-  <component name="RunManager">
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="utilities" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.AndreyRunner">
+    <configuration name="Feature: US18_API_test" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/api/US18_API_test.feature" />
+      <option name="GLUE" value="stepdefinitions.api_stepdefinitions hooks" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="ManagementOnSchools" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: US18_API_test" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AndreyRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ManagementOnSchools" />
       <extension name="coverage">
@@ -42,10 +99,30 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.AndreyRunner" />
+        <item itemvalue="Cucumber Java.Feature: US18_API_test" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="69993b7e-643f-4b33-b8cb-9a99433e521a" name="Changes" comment="" />
+      <created>1690234071455</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1690234071455</updated>
+    </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
