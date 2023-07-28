@@ -58,9 +58,10 @@ public class US14_APIStepDefs {
         assertEquals(username,actUsername);
 
 
-
-
         System.out.println(jsonPath.getList("findAll{it.username=='Teacherfehmi'}").get(0));
+
+        //System.out.println(jsonPath.getList("findAll{it.username=='Teacherfehmi'}").get(0));
+
 
     }
 }

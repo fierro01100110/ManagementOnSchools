@@ -12,9 +12,9 @@
       <change beforePath="$PROJECT_DIR$/src/test/java/hooks/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hooks/Hooks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/StudentInfoManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/StudentInfoManagement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/runners/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/Runner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US02_API_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/US02_API_Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US17_UI_Test_StepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/US17_UI_Test_StepDefs.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US_06_TC_01_StepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/US_06_TC_01_StepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/api_stepdefinitions/US02_API_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/api_stepdefinitions/US02_API_Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/US02_Gizem/api_test.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/api/US02_api_test.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/US02_Gizem/ui_test.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ui/US02_ui_test.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/US17_Gizem/api_test.feature" beforeDir="false" />
