@@ -144,11 +144,13 @@ public class US_06_TC_01_StepDefs {
 
     }
 
+
     @Then("Admin enters Vice Dean's Name and left blank")
     public void adminEntersViceDeanSNameAndLeftBlank() {
         WaitUtils.waitFor(1);
         viceDeanManagement.name.sendKeys(" ");
     }
+
 
 //    @And("Admin sees the {string} message")
 //    public void adminSeesTheMessage(String Your_name_must_consist_of_the_characters) {
