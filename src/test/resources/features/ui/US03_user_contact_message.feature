@@ -13,5 +13,5 @@ Feature: US03_User_can_send_a_message
     Then assert alert message on contact page
     And  close the app
     Examples:
-      | nameq  | email                   | subject  | message               |
+      | name   | email                   | subject  | message               |
       | andrey | andrey_test01@gmail.com | greeting | first message to dean |
