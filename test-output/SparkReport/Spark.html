@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Smoke Test Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jul 27, 2023 02:31:41 PM</span></a>
+<a href="#"><span class="badge badge-primary">Jul 27, 2023 04:19:34 PM</span></a>
 </li>
 </ul>
 </div>
@@ -66,13 +66,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jul 27, 2023 02:31:41 PM</h3>
+<h3>Jul 27, 2023 04:19:34 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jul 27, 2023 02:31:52 PM</h3>
+<h3>Jul 27, 2023 04:20:23 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -123,7 +123,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>3</b> scenarios passed</small></div>
+<div><small data-tooltip='100%'><b>2</b> scenarios passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -143,7 +143,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>6</b> steps passed</small></div>
+<div><small data-tooltip='100%'><b>32</b> steps passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> steps failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -162,7 +162,7 @@
 </div></div>
 <script>
 var timeline = {
-"Admin should be able to create a Vice Dean account.":5.714
+"Admin Create Vice Dean Account":46.926
 };
 </script>
 <div class="row">
@@ -172,24 +172,16 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@LoopExample</td>
-<td>1</td>
+<td>@Admin_creates_vice_dean_account</td>
+<td>2</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>100%</td>
 </tr>
 <tr>
-<td>@US06_Negative</td>
+<td>@negative_test_US23</td>
 <td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@US23_DB</td>
-<td>3</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -223,13 +215,13 @@ failParent: 0,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 3,
+passChild: 2,
 failChild: 0,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 6,
+passGrandChild: 32,
 failGrandChild: 0,
 warningGrandChild: 0,
 skipGrandChild: 0,
@@ -254,7 +246,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@LoopExample</a><a class="dropdown-item" href="#">@US06_Negative</a><a class="dropdown-item" href="#">@US23_DB</a>
+<a class="dropdown-item" href="#">@Admin_creates_vice_dean_account</a><a class="dropdown-item" href="#">@negative_test_US23</a>
 </ul>
 </li>
 </ul>
@@ -265,9 +257,9 @@ eventsCount: 5,
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Admin should be able to create a Vice Dean account.</p>
+            <p class="name">Admin Create Vice Dean Account</p>
             <p class="text-sm">
-              <span>2:31:47 PM</span> / <span>00:00:05:714</span>
+              <span>4:19:36 PM</span> / <span>00:00:46:926</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -275,10 +267,10 @@ eventsCount: 5,
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Admin should be able to create a Vice Dean account.</h5>
-<span class='badge badge-success'>07.27.2023 2:31:47 PM</span>
-<span class='badge badge-danger'>07.27.2023 2:31:52 PM</span>
-<span class='badge badge-default'>00:00:05:714</span>
+<h5 class="test-status text-pass">Admin Create Vice Dean Account</h5>
+<span class='badge badge-success'>07.27.2023 4:19:36 PM</span>
+<span class='badge badge-danger'>07.27.2023 4:20:23 PM</span>
+<span class='badge badge-default'>00:00:46:926</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -290,46 +282,88 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>US23_GetViceDean</div>
-      </div>
-    </div>
-        <div class="scenario_outline collapse">
-            <div class="card-body l1">
-              <div class="card-header">
-                <div class="card-title outline-child">
-                  <div class="node" id="3"><span class="badge log pass-bg mr-2">Pass</span>US23_GetViceDean</div>
-                </div>
-              </div>
-              <div class="card-body mt-3 collapse">
-                  <div class="step pass-bg">
-                    <span>Given get vice dean via username orhan db "kasim.aydemir"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Then body contains birth_day orhan db "1992-01-01", birth_place "FL", gender "0", name "KASIM", phone_number "783-570-0743", ssn "783-57-0743", surname "AYDEMIR", username "kasim.aydemir"</span>
-      <div>
-      </div>
-                  </div>
-              </div>
-            </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="7"><span class="badge log pass-bg mr-2">Pass</span>Admin should be able to delete information of Vice Dean List</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>TC_01</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.database.US23_DB.get_vice_dean_via_username_orhan_db(java.lang.String)">
-                <span>Given get vice dean via username orhan db "kasim.aydemirX"</span>
+              <div class="step pass-bg" title="stepdefinitions.US23_StepDefs.userAdminShouldNavigatesToLoginUrl()">
+                <span>Given user Admin should navigates to login url</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.database.US23_DB.bodyMustBeEmptyOrhanDb()">
-                <span>Then body must be empty orhan db</span>
+              <div class="step pass-bg" title="stepdefinitions.US23_StepDefs.userAdminShouldLoginInAsAdmin()">
+                <span>When user Admin should login in as admin</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.US23_StepDefs.admin_click_on_menu_button()">
+                <span>Then Admin Go to Menu button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.US23_StepDefs.admin_click_on_vice_dean_management()">
+                <span>Then Admin Click on Vice Dean Management</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.US23_StepDefs.admin_should_enters_vice_dean_s_name()">
+                <span>Then Admin should enter Vice Dean's Name</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.US23_StepDefs.admin_enters_vice_dean_s_surname()">
+                <span>Then Admin should enters Vice Dean's Surname</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.US23_StepDefs.admin_enters_vice_dean_s_birthplace()">
+                <span>Then Admin should enters Vice Dean's Birthplace</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.US23_StepDefs.adminClicksOnGender()">
+                <span>Then Admin should clicks on Gender</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.US23_StepDefs.adminEntersViceDeanSDateOfBirthAs(java.lang.String)">
+                <span>Then Admin should enters Vice Dean's Date Of Birth as "1990-01-01"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.US23_StepDefs.admin_enters_vice_dean_s_phone_number()">
+                <span>Then Admin should enters Vice Dean's Phone number</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.US23_StepDefs.adminEntersViceDeanSSSN()">
+                <span>Then Admin should enters Vice Dean's SSN</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.US23_StepDefs.adminEntersViceDeanSUsernameCannotBeLeftBlank()">
+                <span>Then Admin should enters Vice Dean's username (Cannot be left blank)</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.US23_StepDefs.admin_enters_vice_dean_s_password_contains_character_uppercase_lowercase_and_number(java.lang.Integer)">
+                <span>Then Admin should enters Vice Dean's password (Contains 8 character, uppercase, lowercase and number)</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.US23_StepDefs.admin_clicks_on_submit_button()">
+                <span>Then Admin should clicks on Submit button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.US23_StepDefs.admin_sees_vice_dean_is_registered()">
+                <span>And Admin should sees Vice Dean is registered</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.US23_StepDefs.closeTheApp()">
+                <span>And should close the applications</span>
       <div>
       </div>
               </div>
@@ -339,18 +373,88 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="11"><span class="badge log pass-bg mr-2">Pass</span>There must be at least 10 users whose birth_place is New York</div>
+        <div class="node" id="20"><span class="badge log pass-bg mr-2">Pass</span>TC_02</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.database.US23_DB.getVicaDeanViaBirth_placeOrhanDb(java.lang.String)">
-                <span>Given get vica dean via birth_place orhan db "birth_place"</span>
+              <div class="step pass-bg" title="stepdefinitions.US23_StepDefs.userAdminShouldNavigatesToLoginUrl()">
+                <span>Given user Admin should navigates to login url</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.database.US23_DB.thereMustBeAtLeastUsersOrhanDb(int)">
-                <span>Then There must be at least 2 users orhan db</span>
+              <div class="step pass-bg" title="stepdefinitions.US23_StepDefs.userAdminShouldLoginInAsAdmin()">
+                <span>When user Admin should login in as admin</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.US23_StepDefs.admin_click_on_menu_button()">
+                <span>Then Admin Go to Menu button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.US23_StepDefs.admin_click_on_vice_dean_management()">
+                <span>Then Admin Click on Vice Dean Management</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.US23_StepDefs.admin_should_enters_vice_dean_s_name()">
+                <span>Then Admin should enter Vice Dean's Name</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.US23_StepDefs.adminShouldEntersViceDeanSSurnameAndLeftBlank()">
+                <span>Then Admin should enters Vice Dean's Surname and left blank</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.US23_StepDefs.admin_enters_vice_dean_s_birthplace()">
+                <span>Then Admin should enters Vice Dean's Birthplace</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.US23_StepDefs.adminClicksOnGender()">
+                <span>Then Admin should clicks on Gender</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.US23_StepDefs.adminEntersViceDeanSDateOfBirthAs(java.lang.String)">
+                <span>Then Admin should enters Vice Dean's Date Of Birth as "1990-01-01"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.US23_StepDefs.admin_enters_vice_dean_s_phone_number()">
+                <span>Then Admin should enters Vice Dean's Phone number</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.US23_StepDefs.adminEntersViceDeanSSSN()">
+                <span>Then Admin should enters Vice Dean's SSN</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.US23_StepDefs.adminEntersViceDeanSUsernameCannotBeLeftBlank()">
+                <span>Then Admin should enters Vice Dean's username (Cannot be left blank)</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.US23_StepDefs.admin_enters_vice_dean_s_password_contains_character_uppercase_lowercase_and_number(java.lang.Integer)">
+                <span>Then Admin should enters Vice Dean's password (Contains 8 character, uppercase, lowercase and number)</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.US23_StepDefs.admin_clicks_on_submit_button()">
+                <span>Then Admin should clicks on Submit button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.US23_StepDefs.admin_sees_vice_dean_is_registered()">
+                <span>And Admin should sees Vice Dean is registered</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.US23_StepDefs.closeTheApp()">
+                <span>And should close the applications</span>
       <div>
       </div>
               </div>
@@ -373,21 +477,67 @@ eventsCount: 5,
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">3</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@Admin_creates_vice_dean_account</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Admin_creates_vice_dean_account</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:19:36 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>TC_01</a>
+<div class="">
+<span class="badge badge-default">Admin Create Vice Dean Account.TC_01</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>16:20:02 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='20'>TC_02</a>
+<div class="">
+<span class="badge badge-default">Admin Create Vice Dean Account.TC_02</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@LoopExample</p>
+<p class="name">@negative_test_US23</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@LoopExample</h4>
+<h4>@negative_test_US23</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -401,103 +551,11 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>14:31:51 PM</td>
+<td>16:20:02 PM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='11'>There must be at least 10 users whose birth_place is New York</a>
+<a href="#" class="linked" test-id='1' id='20'>TC_02</a>
 <div class="">
-<span class="badge badge-default">Admin should be able to create a Vice Dean account..There must be at least 10 users whose birth_place is New York</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@US06_Negative</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@US06_Negative</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>14:31:50 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='7'>Admin should be able to delete information of Vice Dean List</a>
-<div class="">
-<span class="badge badge-default">Admin should be able to create a Vice Dean account..Admin should be able to delete information of Vice Dean List</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>3</span>
-</span>
-<p class="name">@US23_DB</p>
-<p class="duration text-sm">3 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@US23_DB</h4>
-<span status="pass" class='badge log pass-bg'>3 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>14:31:47 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='3'>US23_GetViceDean</a>
-<div class="">
-<span class="badge badge-default">Admin should be able to create a Vice Dean account..US23_GetViceDean</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>14:31:50 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='7'>Admin should be able to delete information of Vice Dean List</a>
-<div class="">
-<span class="badge badge-default">Admin should be able to create a Vice Dean account..Admin should be able to delete information of Vice Dean List</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>14:31:51 PM</td>
-<td>
-<a href="#" class="linked" test-id='1' id='11'>There must be at least 10 users whose birth_place is New York</a>
-<div class="">
-<span class="badge badge-default">Admin should be able to create a Vice Dean account..There must be at least 10 users whose birth_place is New York</span>
+<span class="badge badge-default">Admin Create Vice Dean Account.TC_02</span>
 </div>
 </td>
 </tr>

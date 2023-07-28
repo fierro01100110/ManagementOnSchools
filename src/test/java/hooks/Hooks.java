@@ -18,7 +18,10 @@ public class Hooks {
 
 
 
+
         @Before("@Api")
+
+
         public void setUpScenario () {
 
             setSpec();

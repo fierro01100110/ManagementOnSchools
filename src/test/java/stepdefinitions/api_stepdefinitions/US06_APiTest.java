@@ -26,7 +26,8 @@ public class US06_APiTest {
         response =  given(spec).get("{first}/{second}");
     }
 
-    @Then("my body should contain name {string}, surname {string},birth_place {string},gender {string},birth_day {string},phone_number {string},ssn {string},username {string}")
+    @Then("my body should contain by orhan name {string}, surname {string},birth_place {string},gender {string},birth_day {string},phone_number {string},ssn {string},username {string}")
+
     public void body_should_contain_name_surname_birth_place_gender_birth_day_phone_number_ssn_username(String name, String surname, String birth_place, String gender, String birth_day, String phone_number, String ssn, String username) {
 
         JsonPath jsonPath = response.jsonPath();
@@ -54,6 +55,8 @@ public class US06_APiTest {
 
     @Then("body must be empty with non existing username by orhan {string}")
     public void bodyMustBeEmptyWithNonExistingUsernameByOrhan(String username) {
+
+
         List<Objects> dataList= response.jsonPath().getList("findAll{it.username=='"+username+"'}");
         assertTrue(dataList.isEmpty());
 
