@@ -48,6 +48,7 @@ public class TeacherPage {
     public WebElement deleteStudentInfo;
 
 //US18alert text  "Please select lesson"
+<<<<<<< HEAD
 
     @FindBy(xpath = "(//div[@class='Toastify__toast-body'])[1]")
     public WebElement alertTextLesson;
@@ -58,4 +59,12 @@ public class TeacherPage {
 //    public WebElement alertTextLesson;
 //}   //(//*[.='Error: Lesson with lesson id 28 not found'])[2]
 
+=======
+    @FindBy(xpath = "(//div[@class='Toastify__toast-body'])[1]")   //(//*[.='Please select lesson '])[2]
+    public WebElement alertTextLesson;
+}   //(//*[.='Error: Lesson with lesson id 28 not found'])[2]
+//   (//div[@role='alert']//div[.='Error: Lesson with lesson id 28 not found'])[2]
+>>>>>>> main
 
+//(//div[text()='Error: Lesson with lesson id 28 not found'])[2]
+//(//div[text()='Error: Lesson with lesson id 28 not found'])[1]

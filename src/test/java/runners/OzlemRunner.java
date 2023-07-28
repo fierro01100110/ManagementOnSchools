@@ -1,11 +1,8 @@
 package runners;
 
-
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
-
-
 @RunWith(Cucumber.class)
 @CucumberOptions(
 
@@ -22,13 +19,8 @@ import org.junit.runner.RunWith;
         features = "./src/test/resources/features",
         glue = {"stepdefinitions","hooks"},
         dryRun = false,
-        tags = "@us_18_upgrade"
-
-
+        tags =""
 
 )
-public class AndreyRunner {
-
-
+public class OzlemRunner {
 }
-

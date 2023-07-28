@@ -15,3 +15,8 @@
  #     Given get teacher by username "TeacherFehmi"
       Then body should be empty
 
+   # @US14_API_Negative
+    #Scenario: vice dean should be able to update information of teacher list
+     # Given get teacher by username "TeacherF ehmi"
+      #Then body should be empty
+
