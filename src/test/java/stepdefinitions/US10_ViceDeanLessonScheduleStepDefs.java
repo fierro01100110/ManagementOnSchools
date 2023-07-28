@@ -92,7 +92,7 @@ public class US10_ViceDeanLessonScheduleStepDefs {
 
         ReusableMethods.waitFor(3);
         JSUtils.clickWithTimeoutByJS(ReusableMethods.waitForClickablility(lessonProgramPage.submitButton, 5));
-       //ReusableMethods.clickWithTimeOut(lessonProgramPage.submitButton, 5);
+       ReusableMethods.clickWithTimeOut(lessonProgramPage.submitButton, 5);
 
     }
     @Then("user sees Created lesson program success message")
