@@ -16,8 +16,13 @@ import static org.junit.Assert.assertEquals;
 
 public class US05_ApiTest {
     Response response;
+
+
+
+
     @Given("send get request by ssn {string}")
-    public void send_get_request_by(String string) {
+    public void sendGetRequestBySsn(String string) {
+
         //https://managementonschools.com/app/dean/getAll
         spec.pathParams("first","dean","second", "getAll");
         response = given(spec).get("{first}/{second}");
@@ -45,4 +50,6 @@ public class US05_ApiTest {
         assertEquals(ssn, actSsn);
         assertEquals(username, actUserName);
     }
+
+
 }

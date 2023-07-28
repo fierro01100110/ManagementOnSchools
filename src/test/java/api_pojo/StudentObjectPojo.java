@@ -1,5 +1,8 @@
 package api_pojo;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class StudentObjectPojo {
     public int id;
     public double midtermExam;
