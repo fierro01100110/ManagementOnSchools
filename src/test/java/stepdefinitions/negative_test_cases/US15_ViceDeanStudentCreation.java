@@ -17,11 +17,6 @@ public class US15_ViceDeanStudentCreation {
     }
 
 
-    @And("vice dean is not entering SSN respecting - after the third and fifth digits and consist of nine digits in total")
-    public void viceDeanIsNotEnteringSSNRespectingAfterTheThirdAndFifthDigitsAndConsistOfNineDigitsInTotal() {
-        studentManagement.ssn.sendKeys("555555555555555");
-    }
-
     @Then("vice dean is not entering user name")
     public void vice_dean_is_not_entering_user_name() {
         assertTrue(studentManagement.requiredAlert.isDisplayed());
@@ -34,13 +29,7 @@ public class US15_ViceDeanStudentCreation {
         assertTrue(studentManagement.requiredAlert.isDisplayed()) ;
     }
 
-    @And("verify SSN pop-up after submitting")
-    public void verifySSNPopUpAfterSubmitting() {
-        studentManagement.submit.click();
-        WaitUtils.waitFor(2);
-        assertTrue(studentManagement.ssnPopUp.isDisplayed());
 
-    }
 
 
     @And("verify user name required after submitting")

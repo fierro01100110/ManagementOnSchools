@@ -27,17 +27,19 @@ public class ViceDeanStudentCreationStepDefs {
     DeanManagement deanManagement = new DeanManagement();
     StudentManagement studentManagement = new StudentManagement();
     public static Faker faker = new Faker();
-   public static String name = faker.name().firstName();
+   public static String studentName = faker.name().firstName();
    public static String lastName = faker.name().lastName();
     public static String birthPlace= faker.country().capital();
     public static String email = faker.internet().emailAddress();
     public static String phoneNumber = faker.number().numberBetween(99, 1000) + "-" + faker.number().numberBetween(99, 1000) + "-" + faker.number().numberBetween(999, 10000);
     public static String dateOfBirth = "06181998";
     public static String fakeSSN = faker.idNumber().ssnValid();
-    public static String userName = faker.name().username();
+    public static String fierroUserName = faker.name().username();
     public static  String fatherName = faker.name().firstName();
     public static String motherName = faker.name().firstName();
     public static String fakePassword = faker.internet().password(8,10,true,false,true);
+
+    public static String studentNumber;
 
 
 
@@ -74,11 +76,11 @@ public class ViceDeanStudentCreationStepDefs {
     @Then("enter name")
     public void enter_name() throws InterruptedException {
 
-        studentManagement.name.sendKeys(name);
+        studentManagement.name.sendKeys(studentName);
 
         String expectedData = JSUtils.getValueByJS("name");
 
-        assertEquals(expectedData,name);
+        assertEquals(expectedData, studentName);
     }
     @Then("enter surname")
     public void enter_surname() throws InterruptedException {
@@ -130,9 +132,9 @@ public class ViceDeanStudentCreationStepDefs {
     @Then("enter user name")
     public void enter_user_name() {
         WaitUtils.waitFor(1);
-        studentManagement.username.sendKeys(userName);
+        studentManagement.username.sendKeys(fierroUserName);
         String expectedData = JSUtils.getValueByJS("username");
-        assertEquals(expectedData,userName);
+        assertEquals(expectedData, fierroUserName);
     }
     @Then("enter father name")
     public void enter_father_name() {
@@ -156,20 +158,24 @@ public class ViceDeanStudentCreationStepDefs {
         assertEquals(expectedData,fakePassword);
     }
     @Then("verify student number automatically appear after submitting")
-    public void verify_student_number_automatically_appear_after_submitting() {
+    public void verify_student_number_automatically_appear_after_submitting() throws InterruptedException {
         studentManagement.submit.click();
-        WaitUtils.waitFor(2);
+        Thread.sleep(2000);
         assertTrue(studentManagement.success.isDisplayed());
 
         JSUtils.clickWithTimeoutByJS(studentManagement.lastPage);
         WaitUtils.waitFor(1);
         assertTrue(studentManagement.studentNumber.isDisplayed());
+        Thread.sleep(2000);
+        //studentNumber = JSUtils.getValueByJS(studentManagement.studentNumber.getText());
+        //studentNumber = studentManagement.studentNumber.toString();
+        //System.out.println("studentNumber = " + studentNumber);
 
         WaitUtils.waitFor(1);
 
         //Checking if registered name exists on table UI
         WebElement textName = Driver.getDriver().findElement(By.xpath("//tbody/tr[last()]//td[2]"));
-        assertTrue(textName.getText().contains(name));
+        assertTrue(textName.getText().contains(studentName));
 
     }
 

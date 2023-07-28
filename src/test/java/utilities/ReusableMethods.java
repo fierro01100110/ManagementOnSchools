@@ -428,7 +428,29 @@ public class ReusableMethods {
     //    ACTIONS_DRAG_AND_DROP_BY
     public static void dragAndDropActions(WebElement source, int x, int y) {
         //        Actions actions = new Actions(driver);
-        new Actions(Driver.getDriver()).dragAndDropBy(source,x,y).perform();
+        new Actions(Driver.getDriver()).dragAndDropBy(source, x, y).perform();
+    }
+
+    // Random Phone Number Generator
+    public static String phoneNumberGenerator(){
+        Random generator = new Random();
+        int pnum1, pnum2, pnum3;
+        pnum1 = generator.nextInt(899)+100;
+        pnum2 = generator.nextInt(899) + 100;
+        pnum3 = generator.nextInt(8999)+1000;
+        String phoneNumber = pnum1 + "-" + pnum2  + "-" + pnum3;
+        return phoneNumber;
+    }
+
+    // Random SSN Generator
+    public static String ssnGenerator(){
+        Random generator = new Random();
+        int ssn1, ssn2, ssn3;
+        ssn1 = generator.nextInt(899) + 100;
+        ssn2 = generator.nextInt(89) + 10;
+        ssn3 = generator.nextInt(6999) + 1000;
+        String ssn = ssn1 + "-" + ssn2 + "-" + ssn3;
+        return ssn;
     }
 }
 
