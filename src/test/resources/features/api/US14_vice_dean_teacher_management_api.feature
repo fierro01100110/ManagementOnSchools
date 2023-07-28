@@ -10,6 +10,12 @@
         | TeacherFehmi | 2001-03-27 | New York    | MALE   | Fehmi | 146-258-9866 | 889-99-6971 | TeacherFehmi |
 
    # @US14_API_Negative
+<<<<<<< HEAD
    # Scenario: vice dean should be able to update information of teacher list
    #   Given get teacher by username "TeacherF ehmi"
    #   Then body should be empty
+=======
+    #Scenario: vice dean should be able to update information of teacher list
+     # Given get teacher by username "TeacherF ehmi"
+      #Then body should be empty
+>>>>>>> 8839d85aeea3dcf0c6f2e723721994dee2225625
