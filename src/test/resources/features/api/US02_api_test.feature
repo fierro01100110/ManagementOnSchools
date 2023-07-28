@@ -3,10 +3,12 @@
 
     Scenario Outline: US02_GetGuestUserByUserName
 
-      Given send get request by "<username>"
+      Given send get request by username for guest user
+
       Then body should contain , name "<name>", ssn "<ssn>", username "<username>" phone_number "<phoneNumber>"
 
       Examples:
 
-        | name | ssn         | username    | phoneNumber |
-        | Dave | 868-67-6606 | lavern.kihn | 548-569-1727 |
+
+        | name | ssn         | username | phoneNumber  |
+        | Amee | 845-03-3414 | Jamal    | 965 146 8851 |

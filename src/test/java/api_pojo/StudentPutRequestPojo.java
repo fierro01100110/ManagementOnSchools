@@ -19,6 +19,7 @@ public class StudentPutRequestPojo {
     private Integer lessonId ;
     private int midtermExam;
 
+
     public StudentPutRequestPojo (){
 
     }

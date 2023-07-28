@@ -4,11 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd9f75b4-29b9-4b98-8467-b4069c60663d" name="Changes" comment="" />
+    <list default="true" id="fd9f75b4-29b9-4b98-8467-b4069c60663d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/ui/US17_test.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/api_pojo/StudentPutRequestPojo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/api_pojo/StudentPutRequestPojo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/hooks/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hooks/Hooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/StudentInfoManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/StudentInfoManagement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runners/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US02_API_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/US02_API_Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US17_UI_Test_StepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/US17_UI_Test_StepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/US_06_TC_01_StepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/US_06_TC_01_StepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/US02_Gizem/api_test.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/api/US02_api_test.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/US02_Gizem/ui_test.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ui/US02_ui_test.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/US17_Gizem/api_test.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/US17_Gizem/ui_test.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/PdfReport/SparkPdf.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/PdfReport/SparkPdf.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport/Spark.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/SparkReport/Spark.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/embedded1.png" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/embedded1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/embedded2.png" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/embedded2.png" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -23,19 +49,41 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;copyright&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\16314\IdeaProjects\ManagementOnSchools\src\test\resources\features\US02_Gizem" />
+      <recent name="C:\Users\16314\IdeaProjects\ManagementOnSchools\src\test\resources\features\ui" />
       <recent name="C:\Users\16314\IdeaProjects\ManagementOnSchools\src\test\resources\features\api" />
+      <recent name="C:\Users\16314\IdeaProjects\ManagementOnSchools\src\test\resources\features\US02_Gizem" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.Runner">
+    <configuration name="Scenario: all student info on the Add Student Info page entered successfully" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/US17_Gizem/ui_test.feature" />
+      <option name="GLUE" value="stepdefinitions hooks" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="ManagementOnSchools" />
+      <option name="NAME_FILTER" value="^all student info on the Add Student Info page entered successfully$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^all student info on the Add Student Info page entered successfully$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: all student info on the Add Student Info page entered successfully" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Runner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ManagementOnSchools" />
       <extension name="coverage">
@@ -54,6 +102,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.Runner" />
+        <item itemvalue="Cucumber Java.Scenario: all student info on the Add Student Info page entered successfully" />
       </list>
     </recent_temporary>
   </component>
@@ -79,15 +128,9 @@
       </map>
     </option>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/runners/Runner.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/ManagementOnSchools$Scenario__all_student_info_on_the_Add_Student_Info_page_entered_successfully.ic" NAME="Scenario: all student info on the Add Student Info page entered successfully Coverage Results" MODIFIED="1690398214193" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>io.cucumber.core.cli.*</FILTER>
+    </SUITE>
   </component>
 </project>
