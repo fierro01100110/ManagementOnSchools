@@ -3,10 +3,11 @@ package stepdefinitions;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+
 import org.codehaus.groovy.transform.SourceURIASTTransformation;
 import org.junit.Assert;
+
 import org.openqa.selenium.Keys;
-import org.testng.asserts.SoftAssert;
 import pages.HomePage;
 import pages.Login;
 import pages.TeacherPage;
@@ -24,9 +25,9 @@ public class US_18_TeacherViewStudentInfo_UI_Test {
     @Given("user logs in as a teacher")
     public void user_logs_in_as_a_teacher() {
         ReusableMethods.clickWithTimeOut(homePage.login,3);
-   login.username.sendKeys(ConfigReader.getProperty("andrey_teacher_name"));
-   login.password.sendKeys(ConfigReader.getProperty("andrey_teacher_password"));
-   login.login.click();
+        login.username.sendKeys(ConfigReader.getProperty("andrey_teacher_name"));
+        login.password.sendKeys(ConfigReader.getProperty("andrey_teacher_password"));
+        login.login.click();
     }
     @Then("assert that user sees the student info list")
     public void assert_that_user_sees_the_student_info_list() {
@@ -42,7 +43,7 @@ public class US_18_TeacherViewStudentInfo_UI_Test {
 
     @When("user clicks delete button")
     public void user_clicks_delete_button() {
-ReusableMethods.clickWithTimeOut(teacherPage.deleteStudentInfo,3);
+        ReusableMethods.clickWithTimeOut(teacherPage.deleteStudentInfo,3);
 
     }
     @Then("assert the success message in delete")

@@ -14,21 +14,22 @@ import static io.restassured.RestAssured.given;
 import static junit.framework.TestCase.assertEquals;
 import static org.junit.Assert.assertTrue;
 
-public class US06_APiTest {
+public class US23_ApiTest {
 
     Response response;
-    @Given("should send get request by orhan {string}")
-    public void should_send_get_request_by_orhan(String username) {
+
+    @Given("us23 should send get request by orhan {string}")
+    public void us23_should_send_get_request_by_orhan(String username) {
+
         //Set the url
         //https://managementonschools.com/app/vicedean/getAll
         setSpec();
         spec.pathParams("first","vicedean", "second","getAll" );
         response =  given(spec).get("{first}/{second}");
+
     }
-
-    @Then("my body should contain by orhan name {string}, surname {string},birth_place {string},gender {string},birth_day {string},phone_number {string},ssn {string},username {string}")
-
-    public void body_should_contain_name_surname_birth_place_gender_birth_day_phone_number_ssn_username(String name, String surname, String birth_place, String gender, String birth_day, String phone_number, String ssn, String username) {
+    @Then("us23 body should contain name {string}, surname {string},birth_place {string},gender {string},birth_day {string},phone_number {string},ssn {string},username {string}")
+    public void us23_body_should_contain_name_surname_birth_place_gender_birth_day_phone_number_ssn_username(String name, String surname, String birth_place, String gender, String birth_day, String phone_number, String ssn, String username) {
 
         JsonPath jsonPath = response.jsonPath();
 
@@ -52,13 +53,11 @@ public class US06_APiTest {
         assertEquals(username,actUsername);
     }
 
-
-    @Then("body must be empty with non existing username by orhan {string}")
-    public void bodyMustBeEmptyWithNonExistingUsernameByOrhan(String username) {
-
+    @Then("US twenty three body must be empty with non existing username {string}")
+    public void USTwentyThreeBodyMustBeEmptyWithNonExistingUsername(String username) {
 
         List<Objects> dataList= response.jsonPath().getList("findAll{it.username=='"+username+"'}");
         assertTrue(dataList.isEmpty());
 
-        }
     }
+}

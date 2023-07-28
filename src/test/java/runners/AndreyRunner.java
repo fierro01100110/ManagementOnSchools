@@ -21,9 +21,9 @@ import org.junit.runner.RunWith;
         monochrome = true,
         features = "./src/test/resources/features",
         glue = {"stepdefinitions","hooks"},
-        dryRun = true,
+        dryRun = false,
+        tags = "@us_18_upgrade"
 
-        tags = "@US18_teacher_views_info_ui_test"
 
 
 )
