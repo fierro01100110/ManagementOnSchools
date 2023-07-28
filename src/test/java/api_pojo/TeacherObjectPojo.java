@@ -5,20 +5,18 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 @JsonIgnoreProperties(ignoreUnknown = true)
 
 public class TeacherObjectPojo {
-    /*
-    "object": {
-                "userId": 31,
-                "username": "TeacherSefa",
-                "name": "sefa",
-                "surname": "sefa",
-                "birthDay": "1990-12-12",
-                "ssn": "555-12-1234",
-                "birthPlace": "turkey",
-                "phoneNumber": "555-111-9900",
-                "gender": "MALE",
-                "email": "sefasefa@sefa.com"
-                }
-     */
+    //       "object": {
+//        "userId": 31,
+//                "username": "lynetta.ru",
+//                "name": "John",
+//                "surname": "Doe",
+//                "birthDay": "1999-05-01",
+//                "ssn": "573-72-4256",
+//                "birthPlace": "Germany",
+//                "phoneNumber": "685-103-4153",
+//                "gender": "MALE",
+//                "email": "shondra.wyman@gmail.com"
+
     private Integer userId;
     private String username;
     private String name;
