@@ -18,7 +18,7 @@ public class Hooks {
 
 
 
-        @Before("@US18_API_upgrade")
+        @Before("@US24_api_test")
         public void setUpScenario () {
 
             setSpec();

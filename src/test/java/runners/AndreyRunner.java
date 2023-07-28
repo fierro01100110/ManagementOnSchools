@@ -21,8 +21,10 @@ import org.junit.runner.RunWith;
         monochrome = true,
         features = "./src/test/resources/features",
         glue = {"stepdefinitions","hooks"},
-        dryRun = false,
+        dryRun = true,
+
         tags = "@US18_teacher_views_info_ui_test"
+
 
 )
 public class AndreyRunner {
