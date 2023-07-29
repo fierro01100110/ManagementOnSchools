@@ -1,4 +1,4 @@
-@SMOKE @US01_UI @TC001_student_register @e2e @apiui  @uidb
+@US01_UI @TC001_student_register @e2e
 
 Feature: Student Registration
 
@@ -28,21 +28,21 @@ Feature: Student Registration
       Then close the application
 
 
-#  @US01_API @TC001_student_register @e2e @apiui
-#  Feature: API Student Registration
   @US01_API
   Scenario: API US01_Student Registration
 
     Given send get request by username
     Then body should contain name, surname, birth_place, phone_number, gender, birth_day, ssn, username, password
+    Then close the application
 
-#  @US01_DB @TC001_student_register @e2e
 
-#  Feature: Database - Prospective students should be able to register in the system.
+
+  @US01_DB
   Scenario: DB US01_Student Registration
 
-    Given get guest user with username "username"
-    Then body contains name "fakeName", surname "fakeSurname", birth_place "fakeBirth_place", phone_number "fakePhone", gender "fakeGender", birth_day "fakeBirth_day", ssn "fakeSSN", username "fakeUsername"
+    Given get guest user db with username
+    Then body contains db name, surname, birth_place, phone_number, gender, birth_day, ssn, username
+    Then close the application
 
 
 

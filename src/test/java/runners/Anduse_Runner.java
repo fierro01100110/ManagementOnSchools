@@ -1,6 +1,4 @@
 package runners;
-
-
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
@@ -18,15 +16,12 @@ import org.junit.runner.RunWith;
         },
 
         monochrome = true,
-        features = "./src/test/resources/features",
-        glue = {"stepdefinitions", "hooks"},
-        dryRun = false,
-        tags = "@TC001_student_register"
-
-
+        features = "./src/test/resources/features/api",
+        glue = {"stepdefinitions","hooks"},
+        dryRun =false,
+        tags = "@US16_Api"
 
 )
-public class Runner {
 
-
+public class Anduse_Runner {
 }

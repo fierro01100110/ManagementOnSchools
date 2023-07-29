@@ -52,7 +52,7 @@ public class TeacherPage {
 
     @FindBy(xpath = "(//div[@class='Toastify__toast-body'])[1]")
     public WebElement alertTextLesson;
-}
+
 
 
 //    @FindBy(xpath = "//(//*[.='Error: Lesson with lesson id 28 not found'])[2]")   //(//*[.='Please select lesson '])[2]
@@ -61,7 +61,11 @@ public class TeacherPage {
 
 
 
+
 //(//*[.='Error: Lesson with lesson id 28 not found'])[2]
+
+}   //(//*[.='Error: Lesson with lesson id 28 not found'])[2]
+
 //   (//div[@role='alert']//div[.='Error: Lesson with lesson id 28 not found'])[2]
 
 
