@@ -3,7 +3,6 @@ Feature: Admin added dean api
 
   Scenario Outline: TC_001 admin can add dean
 
-
     Given send get request dean by "<username>"
     Then body should contain username "<username>", birth_day "<birth_day>", birth_place "<birth_place>", gender "<gender>", name "<name>", phone_number "<phone_number>",ssn "<ssn>", surname "<surname>"
 

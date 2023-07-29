@@ -2,6 +2,10 @@ package stepdefinitions;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+
+import org.testng.AssertJUnit;
+
+
 import org.testng.asserts.SoftAssert;
 import pages.ViceDeanLogin;
 import pages.ViceDeanManagementt;
@@ -11,13 +15,21 @@ import utilities.*;
 import static utilities.ReusableMethods.verifyElementIsDisplayed;
 
 public class US14_ViceDeanTeacherManagementStepDefs {
+
+
+    //HomePage homePage = new HomePage();
     ViceDeanLogin viceDeanLogin = new ViceDeanLogin();
     ViceDeanManagementt viceDeanManagement = new ViceDeanManagementt();
     ViceDeanTeacherManagement viceDeanTeacherManagement = new ViceDeanTeacherManagement();
+
+
     @Given("go to url")
     public void go_to_url() {
         Driver.getDriver().get(ConfigReader.getProperty("base_url"));
     }
+
+
+
     @Then("user log in as vice dean")
     public void user_log_in_as_vice_dean() {
         viceDeanLogin.login.click();
@@ -161,15 +173,17 @@ public class US14_ViceDeanTeacherManagementStepDefs {
         //String successfulMassage = viceDeanTeacherManagement.successfulMassage.getText();
         //AssertJUnit.assertTrue(successfulMassage.contains("Teacher updated Successful"));
 
+            viceDeanLogin.login.click();
+            WaitUtils.waitFor(3);
+            viceDeanLogin.userName.sendKeys(ConfigReader.getProperty("feyza_vice_dean_userName"));
+            viceDeanLogin.Password.sendKeys(ConfigReader.getProperty("feyza_vice_dean_Password"));
+            viceDeanLogin.Login.click();
+        }
 
 
 
 
 
-    }
+        }
 
 
-
-
-
-}

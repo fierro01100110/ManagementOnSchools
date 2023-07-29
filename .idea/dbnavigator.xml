@@ -12,10 +12,6 @@
     <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
-
-    <connection id="62fa46b5-d6af-4123-8dea-b4e246265e12"/>
-      <console name="MON" type="STANDARD" schema="public" session="Main"><![CDATA[select * from student_info where info_note='i appriciate your hard work, you re doing great']]></console>
-
     <connection id="784ca604-522b-4f03-997d-8e671bf64a4c">
       <console name="" type="STANDARD" schema="database" session="Main" />
     </connection>
@@ -24,7 +20,6 @@
     </connection>
     <connection id="7457e661-ee6f-48e5-b4a3-1d813fc47dcc">
       <console name="Connection" type="STANDARD" schema="postgres" session="Main" />
-
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
@@ -33,14 +28,8 @@
   <component name="DBNavigator.Project.DatabaseFileManager">
     <open-files />
   </component>
-
-  <component name="DBNavigator.Project.ExecutionManager">
-    <retain-sticky-names value="false" />
-  </component>
-
   <component name="DBNavigator.Project.DatasetFilterManager">
-    <filter-actions connection-id="e5455790-d9da-4643-88c8-ed2f68e82863" dataset="public.guest_user" active-filter-id="" />
-    <filter-actions connection-id="e5455790-d9da-4643-88c8-ed2f68e82863" dataset="information_schema.sql_features" active-filter-id="" />
+    <filter-actions connection-id="784ca604-522b-4f03-997d-8e671bf64a4c" dataset="public.guest_user" active-filter-id="" />
   </component>
   <component name="DBNavigator.Project.ExecutionManager">
     <retain-sticky-names value="false" />
@@ -53,16 +42,13 @@
     </execution-history>
     <argument-values-cache />
   </component>
-
   <component name="DBNavigator.Project.ObjectQuickFilterManager">
     <last-used-operator value="EQUAL" />
     <filters />
   </component>
-
   <component name="DBNavigator.Project.ScriptExecutionManager" clear-outputs="true">
     <recently-used-interfaces />
   </component>
-
   <component name="DBNavigator.Project.Settings">
     <connections>
       <connection id="784ca604-522b-4f03-997d-8e671bf64a4c" active="true" signed="true">
