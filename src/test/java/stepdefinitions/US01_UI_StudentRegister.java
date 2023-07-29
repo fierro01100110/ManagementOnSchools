@@ -1,28 +1,24 @@
-package stepdefinitions.us01_package;
-
-
+package stepdefinitions;
 
 import com.github.javafaker.Faker;
-
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pages.HomePage;
 import pages.Register;
-
 import utilities.JSUtils;
 import utilities.WaitUtils;
 
 import static org.testng.Assert.assertTrue;
 import static utilities.ReusableMethods.verifyElementIsDisplayed;
 
-public class US01_TC001_StudentRegisterStepDefs {
-
+public class US01_UI_StudentRegister {
 
     HomePage homePage = new HomePage();
     Register register = new Register();
     static Faker faker = new Faker();
+
 
 
     public static String fakeName = faker.name().firstName();
@@ -36,8 +32,6 @@ public class US01_TC001_StudentRegisterStepDefs {
     public static String fakePassword = faker.internet().password(8,10,true,false,true);
 
 
-
-
     @Then("user clicks on register")
     public void user_clicks_on_register() {
         homePage.register.click();
@@ -45,7 +39,7 @@ public class US01_TC001_StudentRegisterStepDefs {
 
     @Given("User is on registration page")
     public void user_is_on_registration_page() {
-       verifyElementIsDisplayed(register.registerPage);
+        verifyElementIsDisplayed(register.registerPage);
     }
 
     @When("User enters name")
@@ -58,25 +52,21 @@ public class US01_TC001_StudentRegisterStepDefs {
     @When("name must contain any character and cannot be left blank")
     public void name_must_contain_any_character_and_cannot_be_left_blank() {
         assertTrue(fakeName != null && !fakeName.isEmpty(), "Name must contain any character");
-
     }
 
     @When("User enters surname")
     public void user_enters_surname() {
         WaitUtils.waitFor(2);
         register.surname.sendKeys(fakeSurname);
-
     }
     @When("Surname must contain any character and cannot be left blank")
     public void surname_must_contain_any_character_and_cannot_be_left_blank() {
         assertTrue(fakeSurname != null && !fakeName.isEmpty(), "Surname must contain any character" );
-
     }
     @When("User enters their birth place")
     public void user_enters_their_birth_place() {
         WaitUtils.waitFor(2);
         register.birthPlace.sendKeys(fakeBirthPlace);
-
     }
     @When("Birth place must contain any character and cannot be left blank")
     public void birth_place_must_contain_any_character_and_cannot_be_left_blank() {
@@ -93,12 +83,8 @@ public class US01_TC001_StudentRegisterStepDefs {
     public void user_selects_their_gender() {
         WaitUtils.waitFor(2);
         register.genderFemale.click();
-
-         fakeGender = register.genderFemale.getText();
-
+        fakeGender = register.genderFemale.getText();
     }
-
-
 
     @When("User enters their date of birth")
     public void user_enters_their_date_of_birth() {
@@ -159,7 +145,4 @@ public class US01_TC001_StudentRegisterStepDefs {
         WaitUtils.waitFor(2);
         register.successfulRegisterAlert.isDisplayed();
     }
-
 }
-
-

@@ -1,10 +1,6 @@
-package utilities;
+package api_pojo;
 
-import io.cucumber.core.internal.com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-
-@JsonIgnoreProperties(ignoreUnknown = true)
-
-public class Content02Pojo {
+public class ContentPojo {
     private int id;
     private String name;
     private String surname;
@@ -14,11 +10,11 @@ public class Content02Pojo {
     private String ssn;
     private String username;
     private String phoneNumber;
-public Content02Pojo(){
+    public ContentPojo(){
 
-}
+    }
 
-    public Content02Pojo(int id, String name, String surname, String birthPlace, String gender, String birthDay, String ssn, String username, String phoneNumber) {
+    public ContentPojo(int id, String name, String surname, String birthPlace, String gender, String birthDay, String ssn, String username, String phoneNumber) {
         this.id = id;
         this.name = name;
         this.surname = surname;
@@ -117,4 +113,3 @@ public Content02Pojo(){
                 '}';
     }
 }
-
