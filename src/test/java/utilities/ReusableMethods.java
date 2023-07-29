@@ -207,4 +207,26 @@ public class ReusableMethods {
             }
         }
     }
+
+    // Random Phone Number Generator
+    public static String phoneNumberGenerator(){
+        Random generator = new Random();
+        int pnum1, pnum2, pnum3;
+        pnum1 = generator.nextInt(899)+100;
+        pnum2 = generator.nextInt(899) + 100;
+        pnum3 = generator.nextInt(8999)+1000;
+        String phoneNumber = pnum1 + "-" + pnum2  + "-" + pnum3;
+        return phoneNumber;
+    }
+
+    // Random SSN Generator
+    public static String ssnGenerator(){
+        Random generator = new Random();
+        int ssn1, ssn2, ssn3;
+        ssn1 = generator.nextInt(899) + 100;
+        ssn2 = generator.nextInt(89) + 10;
+        ssn3 = generator.nextInt(6999) + 1000;
+        String ssn = ssn1 + "-" + ssn2 + "-" + ssn3;
+        return ssn;
+    }
 }

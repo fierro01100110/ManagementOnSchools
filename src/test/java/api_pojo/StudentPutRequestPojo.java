@@ -4,27 +4,30 @@ import org.bouncycastle.pqc.crypto.newhope.NHOtherInfoGenerator;
 
 public class StudentPutRequestPojo {
     /*
-     "absentee": 11,
-  "educationTermId": 1,
-  "finalExam": 99,
-  "infoNote": "you did a great jon i appriciate you",
+{
+  "absentee": 16,
+  "educationTermId":1,
+  "finalExam": 90,
+  "infoNote": "i appriciate your hard work, you re doing great",
   "lessonId": 1,
-  "midtermExam": 98
+  "midtermExam": 80
+}
      */
 
-    private Integer abseente;
+    private Integer absentee;
     private Integer educationTermId;
     private Integer finalExam;
     private String infoNote;
     private Integer lessonId ;
-    private int midtermExam;
+    private Integer midtermExam;
+
 
     public StudentPutRequestPojo (){
 
     }
 
-    public StudentPutRequestPojo(Integer abseente, Integer educationTermId, Integer finalExam, String infoNote, Integer lessonId, int midtermExam) {
-        this.abseente = abseente;
+    public StudentPutRequestPojo(Integer absentee, Integer educationTermId, Integer finalExam, String infoNote, Integer lessonId, Integer midtermExam) {
+        this.absentee = absentee;
         this.educationTermId = educationTermId;
         this.finalExam = finalExam;
         this.infoNote = infoNote;
@@ -32,12 +35,12 @@ public class StudentPutRequestPojo {
         this.midtermExam = midtermExam;
     }
 
-    public Integer getAbseente() {
-        return abseente;
+    public Integer getAbsentee() {
+        return absentee;
     }
 
-    public void setAbseente(Integer abseente) {
-        this.abseente = abseente;
+    public void setAbsentee(Integer abseente) {
+        this.absentee = absentee;
     }
 
     public Integer getEducationTermId() {
@@ -72,18 +75,18 @@ public class StudentPutRequestPojo {
         this.lessonId = lessonId;
     }
 
-    public int getMidtermExam() {
+    public Integer getMidtermExam() {
         return midtermExam;
     }
 
-    public void setMidtermExam(int midtermExam) {
+    public void setMidtermExam(Integer midtermExam) {
         this.midtermExam = midtermExam;
     }
 
     @Override
     public String toString() {
         return "StudentPutRequestPojo{" +
-                "abseente=" + abseente +
+                "absentee=" + absentee +
                 ", educationTermId=" + educationTermId +
                 ", finalExam=" + finalExam +
                 ", infoNote='" + infoNote + '\'' +

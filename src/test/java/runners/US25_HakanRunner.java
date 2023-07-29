@@ -24,7 +24,7 @@ import org.junit.runner.RunWith;
         glue = {"stepdefinitions","hooks"},
         dryRun = false,
         //tags = "@US04_admin_added_dean_api"
-        tags = "@US04_admin_added_dean_api"
+        tags ="@US04_admin_added_dean_api"
 
 
 )

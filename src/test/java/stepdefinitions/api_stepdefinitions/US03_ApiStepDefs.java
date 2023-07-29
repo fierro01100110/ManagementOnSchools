@@ -13,6 +13,7 @@ import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertEquals;
 
 public class US03_ApiStepDefs {
+
     Response response;
     @Given("send get request by email {string}")
     public void send_get_request_by_email(String email) {
@@ -24,8 +25,8 @@ public class US03_ApiStepDefs {
         //my scenario outline datas stands for my expectating data
 
         //send the get request and get the response
-       response=given(spec).get("{first}/{second}");
-       response.prettyPrint();
+        response=given(spec).get("{first}/{second}");
+        response.prettyPrint();
 
     }
     @Then("body should contain name {string}, subject {string}, message {string},email {string}")

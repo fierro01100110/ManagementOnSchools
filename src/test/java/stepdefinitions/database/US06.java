@@ -45,10 +45,6 @@ public class US06 {
         assertEquals(ssn,actSsn);
         assertEquals(surname,actSurname);
         assertEquals(username,actUsername);
-
-
-
-
     }
 
     @Then("body must be empty")
