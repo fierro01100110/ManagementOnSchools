@@ -4,6 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
 
     <list default="true" id="740f4ebf-393a-485a-9b71-63afa3f6bde8" name="Changes" comment=""/>
       <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
@@ -12,6 +13,20 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/hooks/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hooks/Hooks.java" afterDir="false" />
 
+=======
+    <list default="true" id="16883194-a04c-484e-b0bd-ff5a22c5cc39" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/TeacherPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/TeacherPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runners/FeyzaRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/FeyzaRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runners/US25_HakanRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/US25_HakanRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/api_stepdefinitions/US25_AdminAddedStudentApiStepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/api_stepdefinitions/US25_AdminAddedStudentApiStepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/database/US25_admin_added_student_db_StepDefs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/database/US25_admin_added_student_db_StepDefs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/database/US_05_SELDA_DB_testing.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/api/US25_admin_added_student_api.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/api/US25_admin_added_student_api.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/database/US25_admin_added_student_db.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/database/US25_admin_added_student_db.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/PdfReport/SparkPdf.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/PdfReport/SparkPdf.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport/Spark.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/SparkReport/Spark.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/embedded1.png" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/embedded1.png" afterDir="false" />
+>>>>>>> 8a0d838489a997faefdea4d5b796495a57fd8655
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,21 +42,50 @@
 
     <setting file="jar://$MAVEN_REPOSITORY$/io/cucumber/cucumber-gherkin-messages/7.12.1/cucumber-gherkin-messages-7.12.1.jar!/io/cucumber/core/gherkin/messages/GherkinMessagesFeatureParser.class" root0="SKIP_INSPECTION" />
     <setting file="jar://$MAVEN_REPOSITORY$/io/cucumber/cucumber-junit/7.12.1/cucumber-junit-7.12.1.jar!/io/cucumber/junit/Cucumber.class" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/runners/DBRunner.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/test/java/runners/Runner.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
+  <component name="RunManager">
+    <configuration name="FeyzaRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ManagementOnSchools" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="runners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="runners" />
+      <option name="MAIN_CLASS_NAME" value="runners.FeyzaRunner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.FeyzaRunner" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="TaskManager">
     <servers />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+<<<<<<< HEAD
     <SUITE FILE_PATH="coverage/ManagementOnSchools$Scenario__TC_002_Vice_Deans_shouldn_t_be_able_to_create_a_student_leaving_user_name_blank.ic" NAME="Scenario: TC_002 Vice Deans shouldn't be able to create a student leaving user name blank Coverage Results" MODIFIED="1690501617149" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>io.cucumber.core.cli.*</FILTER>
     </SUITE>
+=======
+>>>>>>> 8a0d838489a997faefdea4d5b796495a57fd8655
     <SUITE FILE_PATH="coverage/ManagementOnSchools$Selda_Runner.ic" NAME="Selda_Runner Coverage Results" MODIFIED="1689818277980" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>runners.*</FILTER>
     </SUITE>
   </component>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8a0d838489a997faefdea4d5b796495a57fd8655
 </project>
