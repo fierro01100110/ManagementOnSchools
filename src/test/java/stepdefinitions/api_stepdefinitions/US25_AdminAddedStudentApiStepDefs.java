@@ -13,9 +13,8 @@ import static junit.framework.TestCase.assertEquals;
 public class US25_AdminAddedStudentApiStepDefs {
 
     Response response;
-
-    @Given("send get request student by {string}")
-    public void send_get_request_student_by(String username) {
+    @Given("send get request student Hakan by {string}")
+    public void sendGetRequestStudentHakanBy(String username) {
         // Write code here that turns the phrase above into concrete actions
         //Set the URL
         setSpec();
@@ -27,10 +26,13 @@ public class US25_AdminAddedStudentApiStepDefs {
         response.prettyPrint();
 
 
+
     }
 
-    @Then("body should contain userId {string}, username {string}, name {string}, surname {string}, birthDay {string}, birthPlace {string}, phoneNumber {string}, gender {string}, motherName {string}, fatherName {string}, email {string}")
-    public void bodyShouldContainUserIdUsernameNameSurnameBirthDayBirthPlacePhoneNumberGenderMotherNameFatherNameEmail(String userId, String username, String name, String surname, String birthDay, String birthPlace, String phoneNumber, String gender, String motherName, String fatherName, String email) {
+
+
+    @Then("body should contain Hakan userId {string}, username {string}, name {string}, surname {string}, birthDay {string}, birthPlace {string}, phoneNumber {string}, gender {string}, motherName {string}, fatherName {string}, email {string}")
+    public void bodyShouldContainHakanUserIdUsernameNameSurnameBirthDayBirthPlacePhoneNumberGenderMotherNameFatherNameEmail(String userId, String username, String name, String surname, String birthDay, String birthPlace, String phoneNumber, String gender, String motherName, String fatherName, String email) {
 
         //@Then("body should contain username {string}, name {string }, surname {string}, birthDay {string}, birthPlace {string}, phoneNumber {string}, gender {gender}, motherName {string}, fatherName {string}, email {string}")
         //@Then("body should contain username {string}, name {string}, surname {string}, birth_place {string}, email {string}, phone_number {string}, gender {string}, birth_day {string}, ssn {string}, father_name {string}, mother_name {string}, password {string}")
@@ -64,6 +66,9 @@ public class US25_AdminAddedStudentApiStepDefs {
         assertEquals(username, actUsername);
 
         throw new io.cucumber.java.PendingException();
+
+
+
     }
 }
 

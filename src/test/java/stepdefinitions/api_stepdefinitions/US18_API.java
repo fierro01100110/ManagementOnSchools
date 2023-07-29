@@ -26,13 +26,13 @@ public class US18_API {
       // expectedData= new StudentPutRequestPojo(13,1,99,"you did a great job i appreciate you",1,97);
         expectedData= new UpgradeStudentInfoPojo("Cypress","SPRING_SEMESTER",11,97,88,"you did a great job i appreciate you");
         //send the out rquest get the response  ,,i need to create expected data bcs i need to send a body for put request
-      //  System.out.println("heyyy this is the info message   "+expectedData);
+        System.out.println("heyyy this is the info message   "+expectedData);
         response= given(spec).get("{first}/{second}/{third}");
         response.prettyPrint();
 
     }
-    @Then("validate the body after upgade")
-    public void validate_the_body_after_upgade() {
+    @Then("validate the body after upgrade")
+    public void validate_the_body_after_upgrade() {
 //        JsonPath jsonPath=response.jsonPath();
 //        System.out.println("***");
 //        System.out.println(jsonPath.getList("studentResponse.name").get(0));//student_andrey
@@ -45,8 +45,9 @@ public class US18_API {
 //           assertEquals(expectedData.getInfoNote(),actInfoNote);
 
 
-        List<ReadStudentInfoPojo> actualData=response.as(ReadStudentInfoPojo.class);
+     ReadStudentInfoPojo actualData=response.as(ReadStudentInfoPojo.class);// List<ReadStudentInfoPojo>
         System.out.println("****");
+        System.out.println(actualData.get(0).getStudentResponse().getBirthPlace());
 
         System.out.println("actualData = " + actualData);
 //        actualData.getStudentResponse().
@@ -72,3 +73,6 @@ public class US18_API {
     }
 
 }
+/*
+
+ */

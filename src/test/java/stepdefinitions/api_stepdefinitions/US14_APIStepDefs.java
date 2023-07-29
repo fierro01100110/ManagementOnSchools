@@ -17,8 +17,10 @@ public class US14_APIStepDefs {
     public void send_get_request_by_teacherfehmi(String username) {
         //Set the url
         //https://managementonschools.com/app/teachers/getTeacherByName?name=Fehmi
+        //https://managementonschools.com/app/vicedean/getAll
+        //https://managementonschools.com/app/teachers/getAll
         setSpec();
-        spec.pathParams("first","teachers","second","getTeacherByName").queryParam("name","Fehmi");
+        spec.pathParams("first","teachers","second","getAll");
 
         //Set the expected data
 
@@ -26,14 +28,11 @@ public class US14_APIStepDefs {
         response = given(spec).get("{first}/{second}");
         response.prettyPrint();
 
-
     }
     @Then("body should contain  birth_place {string}, gender {string}, name {string}, phone_number {string}, ssn {string}, surname {string}, username {string}")
     public void body_should_contain_birth_place_gender_name_phone_number_ssn_surname_username(String birth_place, String gender, String name, String phone_number, String ssn, String surname, String username) {
 
-
-
-    JsonPath jsonPath = response.jsonPath();
+        JsonPath jsonPath = response.jsonPath();
 
         //Actual data
         //String actBirthday= jsonPath.getList("findAll{it.username=='"+username+"'}.birth_day").get(0).toString();
@@ -46,8 +45,6 @@ public class US14_APIStepDefs {
         String actUsername= jsonPath.getList("findAll{it.username=='"+username+"'}.username").get(0).toString();
 
         //Expected data
-
-
         assertEquals(200,response.statusCode());
         assertEquals(birth_place,actBirthplace);
         assertEquals(gender,actGender);
@@ -57,10 +54,6 @@ public class US14_APIStepDefs {
         assertEquals(surname,actSurname);
         assertEquals(username,actUsername);
 
-
-
-
-        //System.out.println(jsonPath.getList("findAll{it.username=='Teacherfehmi'}").get(0));
 
     }
 }

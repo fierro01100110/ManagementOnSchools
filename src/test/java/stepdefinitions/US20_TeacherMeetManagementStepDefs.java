@@ -84,12 +84,11 @@ public class US20_TeacherMeetManagementStepDefs {
     @Then("Click on the Date Of Meet box to update date")
     public void click_on_the_date_of_meet_box_to_update_date() {
 
-
-
         ReusableMethods.clickWithTimeOut(teacherMeetManagement.date,5);
         ReusableMethods.waitFor(3);
         //Select select = new Select(teacherMeetManagement.date);
         //select.selectByVisibleText("2023-07-27");
+        //teacherMeetManagement.date.clear();
         teacherMeetManagement.date.sendKeys("");
         WaitUtils.waitFor(1);
 
