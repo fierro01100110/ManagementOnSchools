@@ -1,16 +1,16 @@
 package utilities;
 
-<<<<<<< HEAD
-=======
 
->>>>>>> main
+
+
+
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.IOException;
 
 public class ObjectMapperUtils {
-<<<<<<< HEAD
-=======
+
+
 
     //we will create a method to handle the exception which can occur by ObjectMapper().readValue()
     //Generic method =  returns any data type
@@ -28,7 +28,7 @@ public class ObjectMapperUtils {
 
 
 
->>>>>>> main
+
     //This method will accept json data as String, then convert it any data type
     public static <T> T convertJsonToJavaObject(String json, Class<T> cls) {//Generic Method
         try {
@@ -37,10 +37,10 @@ public class ObjectMapperUtils {
             throw new RuntimeException(e);
         }
     }
-<<<<<<< HEAD
+
 
 }
-=======
-}
 
->>>>>>> main
+
+
+
