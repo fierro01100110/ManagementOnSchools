@@ -24,7 +24,7 @@ public class US24_ApiStepDefs {
         spec.pathParams("first", "teachers", "second", "getSavedTeacherById","third",31);
 
 //set the expected date
-        expectedData=new SeldaExpectedPojo("weldon.lin","John","Doe","1999-05-01","876-69-5810","Germany","680-251-3248","MALE","hunter.tillman@gmail.com");
+        expectedData=new SeldaExpectedPojo("lynetta.ru","John","Doe","1999-05-01","573-72-4256","Germany","685-103-4153","MALE","shondra.wyman@gmail.com");
         System.out.println(expectedData);
 
         System.out.println("Hello");

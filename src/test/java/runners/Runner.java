@@ -18,19 +18,10 @@ import org.junit.runner.RunWith;
         },
 
         monochrome = true,
-
         features = "./src/test/resources/features",//PATH OF FEATURES FOLDER
-        glue = {"stepdefinitions","hooks"},//PATH OF STEPDEFINITIONS FOLDER
+        glue = {"stepdefinitions", "hooks"},//PATH OF STEPDEFINITIONS FOLDER
         dryRun = false,//dryRun = true : RUNS AND GENERATES ONLY MISSING STEP DEFS. dryRun = false: RUN NORMAL. THIS IS DEFAULT VALUE
-
-        tags = "@new_admin_can_be_added"
-
-
-
-
-
-
-
+        tags = "@e2e_us17"
 
 
 

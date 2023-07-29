@@ -17,8 +17,10 @@ public class US14_APIStepDefs {
     public void send_get_request_by_teacherfehmi(String username) {
         //Set the url
         //https://managementonschools.com/app/teachers/getTeacherByName?name=Fehmi
+        //https://managementonschools.com/app/vicedean/getAll
+        //https://managementonschools.com/app/teachers/getAll
         setSpec();
-        spec.pathParams("first","teachers","second","getTeacherByName").queryParam("name","Fehmi");
+        spec.pathParams("first","teachers","second","getAll");
 
         //Set the expected data
 
@@ -53,9 +55,10 @@ public class US14_APIStepDefs {
         assertEquals(username,actUsername);
 
 
-
+        System.out.println(jsonPath.getList("findAll{it.username=='Teacherfehmi'}").get(0));
 
         //System.out.println(jsonPath.getList("findAll{it.username=='Teacherfehmi'}").get(0));
+
 
     }
 }
