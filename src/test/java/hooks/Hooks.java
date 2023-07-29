@@ -14,7 +14,10 @@ import static base_url.Base_Url.setSpec;
 
 public class Hooks {
 
-        @Before("@US24_api_test")
+
+        @Before("@US01_API")
+
+
         public void setUpScenario () {
 
             setSpec();

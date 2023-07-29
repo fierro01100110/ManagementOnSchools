@@ -1,7 +1,6 @@
  @US01_NegativeTest
 
 Feature: Student Registration
-
   Background:
     Given user navigates to url
     Then user clicks on register
