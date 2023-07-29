@@ -90,7 +90,8 @@ public class US10_ViceDeanLessonScheduleStepDefs {
     @When("user clicks on Submit button")
     public void user_clicks_on_submit_button() {
 
-        ReusableMethods.waitFor(2);
+        ReusableMethods.waitFor(3);
+        JSUtils.clickWithTimeoutByJS(ReusableMethods.waitForClickablility(lessonProgramPage.submitButton, 5));
        ReusableMethods.clickWithTimeOut(lessonProgramPage.submitButton, 5);
 
     }
@@ -98,7 +99,7 @@ public class US10_ViceDeanLessonScheduleStepDefs {
     public void user_sees_created_lesson_program_success_message() {
 
 
-        //ReusableMethods.verifyElementIsDisplayed(ReusableMethods.waitForVisibility(lessonProgramPage.successMessage, 5));
+        ReusableMethods.verifyElementIsDisplayed(ReusableMethods.waitForVisibility(lessonProgramPage.successMessage, 5));
     }
 
 
