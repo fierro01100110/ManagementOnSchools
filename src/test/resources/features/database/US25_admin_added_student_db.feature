@@ -4,7 +4,7 @@ Feature: Admin added student db
   Scenario Outline: TC_001 admin can add student
 
 
-    Given send get request student by "<username>"
+    Given send get request student Hakan db by "<username>"
     Then body should contain userId "<userId>", username "<username>", name "<name>", surname "<surname>", birthDay "<birthDay>", birthPlace "<birthPlace>", phoneNumber "<phoneNumber>", gender "<gender>", motherName "<motherName>", fatherName "<fatherName>", email "<email>"
     Examples:
       | userId | username | name  | surname  | birthDay   | birthPlace | phoneNumber  | gender | motherName | fatherName | email         |
