@@ -17,7 +17,7 @@
       <console name="MOS" type="STANDARD" schema="school_management" session="Main" />
     </connection>
     <connection id="e5455790-d9da-4643-88c8-ed2f68e82863">
-      <console name="MOS" type="STANDARD" schema="public" session="Main"><![CDATA[SELECT * FROM guest_user WHERE username = 'jaime.orn']]></console>
+      <console name="MOS" type="STANDARD" schema="public" session="Main"><![CDATA[SELECT * FROM guest_user]]></console>
     </connection>
     <connection id="7457e661-ee6f-48e5-b4a3-1d813fc47dcc">
       <console name="Connection" type="STANDARD" schema="postgres" session="Main" />
