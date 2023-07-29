@@ -4,8 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="740f4ebf-393a-485a-9b71-63afa3f6bde8" name="Changes" comment="">
+
+    <list default="true" id="740f4ebf-393a-485a-9b71-63afa3f6bde8" name="Changes" comment=""/>
       <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+
+    <list default="true" id="2716f810-e3a4-42db-9342-fce42a926a9b" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/hooks/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hooks/Hooks.java" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,7 +22,12 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+
     <setting file="file://$PROJECT_DIR$/src/test/java/runners/DBRunner.java" root0="FORCE_HIGHLIGHTING" />
+
+    <setting file="jar://$MAVEN_REPOSITORY$/io/cucumber/cucumber-gherkin-messages/7.12.1/cucumber-gherkin-messages-7.12.1.jar!/io/cucumber/core/gherkin/messages/GherkinMessagesFeatureParser.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/io/cucumber/cucumber-junit/7.12.1/cucumber-junit-7.12.1.jar!/io/cucumber/junit/Cucumber.class" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/runners/Runner.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -32,4 +43,5 @@
       <FILTER>runners.*</FILTER>
     </SUITE>
   </component>
+
 </project>

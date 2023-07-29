@@ -7,4 +7,4 @@ Then body must contain id "<id>", name "<name>", surname "<surname>", birth_plac
 And close the application
   Examples:
     | id | name | surname | birth_place | email             | phone_number | gender | birth_day  | ssn         | username    | message                    |
-    | 31 | sefa | sefa    | turkey      | sefasefa@sefa.com | 555-111-9900 | 0      | 1990-12-12 | 555-12-1234 | TeacherSefa | Teacher successfully found |
+    | 31 | John | Doe    | Germany      | shondra.wyman@gmail.com | 685-103-4153 | 0      | 1999-05-01 | 573-72-4256 | lynetta.ru | Teacher successfully found |

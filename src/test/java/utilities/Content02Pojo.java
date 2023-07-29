@@ -5,27 +5,37 @@ import io.cucumber.core.internal.com.fasterxml.jackson.annotation.JsonIgnoreProp
 @JsonIgnoreProperties(ignoreUnknown = true)
 
 public class Content02Pojo {
-
+    private int id;
     private String name;
     private String surname;
-    private String birth_place;
+    private String birthPlace;
     private String gender;
-    private String birth_date;
+    private String birthDay;
     private String ssn;
     private String username;
-    private String phone_number;
+    private String phoneNumber;
 public Content02Pojo(){
 
 }
-    public Content02Pojo(String name, String surname, String birth_place, String gender, String birth_date, String ssn, String username, String phone_number) {
+
+    public Content02Pojo(int id, String name, String surname, String birthPlace, String gender, String birthDay, String ssn, String username, String phoneNumber) {
+        this.id = id;
         this.name = name;
         this.surname = surname;
-        this.birth_place = birth_place;
+        this.birthPlace = birthPlace;
         this.gender = gender;
-        this.birth_date = birth_date;
+        this.birthDay = birthDay;
         this.ssn = ssn;
         this.username = username;
-        this.phone_number = phone_number;
+        this.phoneNumber = phoneNumber;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -44,12 +54,12 @@ public Content02Pojo(){
         this.surname = surname;
     }
 
-    public String getBirth_place() {
-        return birth_place;
+    public String getBirthPlace() {
+        return birthPlace;
     }
 
-    public void setBirth_place(String birth_place) {
-        this.birth_place = birth_place;
+    public void setBirthPlace(String birthPlace) {
+        this.birthPlace = birthPlace;
     }
 
     public String getGender() {
@@ -60,12 +70,12 @@ public Content02Pojo(){
         this.gender = gender;
     }
 
-    public String getBirth_date() {
-        return birth_date;
+    public String getBirthDay() {
+        return birthDay;
     }
 
-    public void setBirth_date(String birth_date) {
-        this.birth_date = birth_date;
+    public void setBirthDay(String birthDay) {
+        this.birthDay = birthDay;
     }
 
     public String getSsn() {
@@ -84,25 +94,27 @@ public Content02Pojo(){
         this.username = username;
     }
 
-    public String getPhone_number() {
-        return phone_number;
+    public String getPhoneNumber() {
+        return phoneNumber;
     }
 
-    public void setPhone_number(String phone_number) {
-        this.phone_number = phone_number;
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 
     @Override
     public String toString() {
         return "Content02Pojo{" +
-                "name='" + name + '\'' +
+                "id=" + id +
+                ", name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
-                ", birth_place='" + birth_place + '\'' +
+                ", birthPlace='" + birthPlace + '\'' +
                 ", gender='" + gender + '\'' +
-                ", birth_date='" + birth_date + '\'' +
+                ", birthDay='" + birthDay + '\'' +
                 ", ssn='" + ssn + '\'' +
                 ", username='" + username + '\'' +
-                ", phone_number='" + phone_number + '\'' +
+                ", phoneNumber='" + phoneNumber + '\'' +
                 '}';
     }
 }
+

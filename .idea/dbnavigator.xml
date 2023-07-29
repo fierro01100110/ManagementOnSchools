@@ -8,15 +8,16 @@
   <component name="DBNavigator.Project.DatabaseBrowserManager">
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
-    <show-object-properties value="true" />
+    <show-object-properties value="false" />
     <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="784ca604-522b-4f03-997d-8e671bf64a4c">
       <console name="" type="STANDARD" schema="database" session="Main" />
+      <console name="MOS" type="STANDARD" schema="school_management" session="Main" />
     </connection>
     <connection id="e5455790-d9da-4643-88c8-ed2f68e82863">
-      <console name="MOS" type="STANDARD" schema="school_management" session="Main" />
+      <console name="MOS" type="STANDARD" schema="public" session="Main"><![CDATA[SELECT * FROM guest_user]]></console>
     </connection>
     <connection id="7457e661-ee6f-48e5-b4a3-1d813fc47dcc">
       <console name="Connection" type="STANDARD" schema="postgres" session="Main" />
@@ -43,6 +44,10 @@
     </execution-history>
     <argument-values-cache />
   </component>
+
+  <component name="DBNavigator.Project.ExecutionManager">
+    <retain-sticky-names value="false" />
+  </component>
   <component name="DBNavigator.Project.ObjectQuickFilterManager">
     <last-used-operator value="EQUAL" />
     <filters />
@@ -50,6 +55,7 @@
   <component name="DBNavigator.Project.ScriptExecutionManager" clear-outputs="true">
     <recently-used-interfaces />
   </component>
+
   <component name="DBNavigator.Project.Settings">
     <connections>
       <connection id="784ca604-522b-4f03-997d-8e671bf64a4c" active="true" signed="true">
