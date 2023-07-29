@@ -41,7 +41,7 @@ public class StudentInfoManagement {
     //@FindBy(xpath = "//option[text()='Choose Lesson']")
    // public WebElement lesson;
 //----------------------------------------------------------------------------
-    @FindBy(id = "lessonId")
+    @FindBy(xpath="//select[@id='lessonId']")
      public WebElement lesson;
 //---------------------------------------------------------------------------------
     // @FindBy(xpath = "(//select[@class='form-select'])[1]")
@@ -65,6 +65,7 @@ public class StudentInfoManagement {
 //STUDENT NAME WEB ELEMENT
     @FindBy(id = "studentId")
     public WebElement studentName;
+
 //---------------------------------------------------------
     //@FindBy(xpath = "(//select[@class='form-select'])[2]")
     //public WebElement studentDropDown;
@@ -81,6 +82,8 @@ public class StudentInfoManagement {
     @FindBy(id = "educationTermId")
     public WebElement clickOnTerm;
 
+
+
     //@FindBy(xpath = "//option[text()='Choose Education Term']")
     //public WebElement term;
 
@@ -96,8 +99,11 @@ public class StudentInfoManagement {
     @FindBy(xpath = "//input[@placeholder='Absentee']")
     public WebElement absentee;
 
-    @FindBy(xpath = "//select[@id='educationTermId']")
-    public WebElement midtermExam;
+   // @FindBy(xpath = "//select[@id='educationTermId']")
+   // public WebElement midtermExam;
+
+   @FindBy(xpath = "//input[@placeholder='Midterm Exam']")
+   public WebElement midtermExam;
 
     @FindBy(xpath = "//input[@id='finalExam']")
     public WebElement finalExam;
@@ -107,6 +113,17 @@ public class StudentInfoManagement {
 
     @FindBy(xpath= "//button[text()='Submit']")
     public WebElement submit;
+
+   // @FindBy(xpath= "(//button[@type='button'])[5]")
+   // public WebElement submit2;
+
+    //    @FindBy(xpath = "(//div[@role=‘alert’])[1]")
+//    public WebElement studentInfoSuccessAlert;
+//    @FindBy(xpath = "//div[@class=‘Toastify__toast-body’]")
+//    public WebElement studentInfoSuccessAlert;
+    @FindBy(xpath = "(//div[text()='Student Info saved Successfully'])[1]")
+    public WebElement studentInfoSuccessAlert;
+
 
 
 
