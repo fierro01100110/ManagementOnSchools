@@ -20,7 +20,7 @@ import org.junit.runner.RunWith;
         features = "./src/test/resources/features",
         glue = {"stepdefinitions","hooks"},
         dryRun = false,
-        tags ="@US20_API"
+        tags ="@US20_DB"
 )
 
 public class FeyzaRunner {
