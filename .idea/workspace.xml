@@ -4,16 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
+
 
     <list default="true" id="740f4ebf-393a-485a-9b71-63afa3f6bde8" name="Changes" comment=""/>
       <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
 
-    <list default="true" id="2716f810-e3a4-42db-9342-fce42a926a9b" name="Changes" comment="">
+    <list default="true" id="2716f810-e3a4-42db-9342-fce42a926a9b" name="Changes" comment=""/>
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/hooks/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hooks/Hooks.java" afterDir="false" />
 
-=======
+
     <list default="true" id="16883194-a04c-484e-b0bd-ff5a22c5cc39" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/TeacherPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/TeacherPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/runners/FeyzaRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/FeyzaRunner.java" afterDir="false" />
@@ -26,7 +26,6 @@
       <change beforePath="$PROJECT_DIR$/test-output/PdfReport/SparkPdf.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/PdfReport/SparkPdf.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/SparkReport/Spark.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/SparkReport/Spark.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/embedded1.png" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/embedded1.png" afterDir="false" />
->>>>>>> 8a0d838489a997faefdea4d5b796495a57fd8655
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,18 +73,13 @@
     <servers />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-<<<<<<< HEAD
     <SUITE FILE_PATH="coverage/ManagementOnSchools$Scenario__TC_002_Vice_Deans_shouldn_t_be_able_to_create_a_student_leaving_user_name_blank.ic" NAME="Scenario: TC_002 Vice Deans shouldn't be able to create a student leaving user name blank Coverage Results" MODIFIED="1690501617149" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>io.cucumber.core.cli.*</FILTER>
     </SUITE>
-=======
->>>>>>> 8a0d838489a997faefdea4d5b796495a57fd8655
+
     <SUITE FILE_PATH="coverage/ManagementOnSchools$Selda_Runner.ic" NAME="Selda_Runner Coverage Results" MODIFIED="1689818277980" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>runners.*</FILTER>
     </SUITE>
   </component>
-<<<<<<< HEAD
 
-=======
->>>>>>> 8a0d838489a997faefdea4d5b796495a57fd8655
 </project>

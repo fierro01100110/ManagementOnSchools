@@ -7,7 +7,7 @@ Feature: Vice Dean creates lesson schedule
     And user clicks on login button
 
 
-    @TC_001
+    @TC_001_US10
     Scenario: TC_001 Vice Dean should be able to create a lesson schedule
       Given user clicks on Menu
       And user selects Lesson Management from the menu
