@@ -1,4 +1,4 @@
-@US13_Api @Api
+@US13_Api @Api @smokeTest
 Feature: Vice Deans should be able to create a teacher.
 
   Scenario Outline: US13_GetTeacherByUsername

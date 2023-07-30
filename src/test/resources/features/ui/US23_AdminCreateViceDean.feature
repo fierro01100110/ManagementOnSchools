@@ -1,4 +1,4 @@
-@Admin_creates_vice_dean_account
+@Admin_creates_vice_dean_account @smokeTest
 
 Feature: Admin Create Vice Dean Account
 

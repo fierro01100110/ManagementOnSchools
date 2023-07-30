@@ -4,6 +4,9 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
+import static base_url.Base_Url.setSpec;
+import static base_url.Base_Url.spec;
+
 
 import static base_url.Base_Url.setSpec;
 import static base_url.Base_Url.spec;

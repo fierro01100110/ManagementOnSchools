@@ -10,11 +10,3 @@ Feature: Admin added dean api
       | username        | birth_day  | birth_place | gender | name  | phone_number | ssn         | surname   |
       | hakanmollaoglu4 | 1970-10-10 | Toronto     | 0      | Hakan | 333-999-2222 | 333-44-6666 | Mollaoglu |
 
-  #"username": "hakanmollaoglu4",
-  #"name": "Hakan",
-  #"surname": "Mollaoglu",
-  #"birthDay": "1970-10-10",
-  #"ssn": "333-44-6666",
-  #"birthPlace": "Toronto",
-  #"phoneNumber": "333-999-2222",
-  #"gender": "MALE"

@@ -23,7 +23,7 @@ public class ViceDeanLessonProgramStepDefs {
     MainMenu mainMenu = new MainMenu();
 
 
-    @Then("user logs in as vice dean")
+    @Then("user logs in as vice deann")
     public void user_logs_in_as_vice_dean() {
         homePage.login.click();
         WaitUtils.waitFor(2);

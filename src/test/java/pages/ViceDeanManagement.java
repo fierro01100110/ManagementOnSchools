@@ -29,7 +29,6 @@ public class ViceDeanManagement {
     @FindBy(xpath = "//a[text()='Teacher Management']")
     public WebElement teacherManagement;
 
-
     @FindBy(xpath = "//a[text()='Vice Dean Management']")
     public WebElement viceDManagment;
 

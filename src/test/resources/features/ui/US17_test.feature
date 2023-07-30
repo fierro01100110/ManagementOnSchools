@@ -1,4 +1,4 @@
-@e2e_us17
+@e2e_us17 @smokeTest
 
 
 @us17_ui_test
