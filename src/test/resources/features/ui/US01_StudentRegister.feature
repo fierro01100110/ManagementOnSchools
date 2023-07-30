@@ -1,4 +1,4 @@
-@US01_UI @TC001_student_register @e2e @smokeTest
+@US01_UI @TC001_student_register @e2e
 
 Feature: Student Registration
 

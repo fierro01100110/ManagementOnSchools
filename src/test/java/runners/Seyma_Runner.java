@@ -1,14 +1,11 @@
 package runners;
-
-
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-
-
+        //        ADDING CONFIGURATIONS
         plugin = {
                 "pretty",
                 "html:target/default-cucumber-reports.html",
@@ -20,13 +17,12 @@ import org.junit.runner.RunWith;
 
 
         monochrome = true,
-        features = "./src/test/resources/features",
-        glue = {"stepdefinitions","hooks"},
-        dryRun = false,
-        tags = "@negativeStudentCreation1"
-
+        features = "./src/test/resources/features",//PATH OF FEATURES FOLDER
+        glue = {"stepdefinitions","hooks"},//PATH OF STEPDEFINITIONS FOLDER
+        dryRun = false,//dryRun = true : RUNS AND GENERATES ONLY MISSING STEP DEFS. dryRun = false: RUN NORMAL. THIS IS DEFAULT VALUE
+        tags = "@vice_dean_lesson_schedule"
 
 
 )
-public class FierroRunner {
+public class Seyma_Runner {
 }

@@ -1,4 +1,4 @@
-@vice_dean_student_creation
+@vice_dean_student_creation @smokeTest
 Feature: Vice Deans should be able to create a student
 
   Background:

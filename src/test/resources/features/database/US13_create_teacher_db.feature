@@ -1,4 +1,4 @@
-@US13_DB
+@US13_DB @smokeTest
 Feature: Vice Deans should be able to create a teacher.
 
   Scenario Outline: US13_GetTeacher

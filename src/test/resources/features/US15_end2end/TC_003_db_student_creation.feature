@@ -1,4 +1,4 @@
-@vice_dean_student_creation
+@vice_dean_student_creation @smokeTest
 
 
 

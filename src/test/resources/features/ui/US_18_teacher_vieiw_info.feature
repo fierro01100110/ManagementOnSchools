@@ -1,4 +1,4 @@
-@e2e @US18_teacher_views_info_ui_test
+@e2e @US18_teacher_views_info_ui_test @smokeTest
 Feature: US18_User_can_see_the_infolist_of_students
 
   Background:log in as a teacher
